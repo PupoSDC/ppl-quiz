@@ -4,6 +4,7 @@ import {
   OngoingQuestionnaire,
   OngoingQuestionnaireActions,
 } from "types/Questionnaire";
+import { TRANSITION_DELAY } from "constants/Animations";
 
 export default (
   questionnaire: Questionnaire
@@ -12,9 +13,12 @@ export default (
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const currentQuestion = state.questions[currentQuestionIndex];
-  const totalAnswers = state.questions.filter((q) => q.selected).length;
+  const answeredQuestions = state.questions.filter((q) => q.selected);
+  const totalAnswers = answeredQuestions.length;
   const isCompleted = totalAnswers === state.questions.length;
-  const correctAnswers = 0;
+  const correctAnswers = answeredQuestions.filter(
+    (q) => q.selected === q.correct
+  ).length;
 
   return [
     {
@@ -26,7 +30,10 @@ export default (
     },
     {
       answerQuestion: (questionId, answerId) => {
-        setCurrentQuestionIndex((index) => index + 1);
+        setTimeout(
+          () => setCurrentQuestionIndex((index) => index + 1),
+          TRANSITION_DELAY
+        );
         setState(({ questions, ...state }) => ({
           ...state,
           questions: questions.map((question) => {

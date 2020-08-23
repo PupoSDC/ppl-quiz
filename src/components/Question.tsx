@@ -1,6 +1,5 @@
-import { StackScreenProps } from "@react-navigation/stack";
-import * as React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import React, { FunctionComponent } from "react";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import {
   Question as QuestionType,
   OngoingQuestionnaireActions,
@@ -9,7 +8,7 @@ import {
 type QuestionProps = QuestionType &
   Pick<OngoingQuestionnaireActions, "answerQuestion">;
 
-const Question: React.FunctionComponent<QuestionProps> = ({
+const Question: FunctionComponent<QuestionProps> = ({
   id: questionId,
   question,
   answers,
@@ -17,14 +16,15 @@ const Question: React.FunctionComponent<QuestionProps> = ({
   answerQuestion,
 }) => (
   <View style={styles.container}>
-    <Text style={styles.title}>{question}</Text>
+    <Text style={styles.question}>{question}</Text>
     {answers.map(({ answer, id: answerId }) => (
       <View style={styles.answer} key={answerId}>
-        <Button
-          color={selected === answerId ? "#cfcfcf" : undefined}
+        <TouchableOpacity
+          style={styles.answer}
           onPress={() => answerQuestion(questionId, answerId)}
-          title={answer}
-        />
+        >
+          <Text>{answer}</Text>
+        </TouchableOpacity>
       </View>
     ))}
   </View>
@@ -35,16 +35,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
     padding: 20,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
+  question: {
+    fontSize: 14,
     marginVertical: 8,
   },
   answer: {
-    marginVertical: 8,
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
+    alignSelf: "stretch",
+    margin: 10,
   },
 });
 

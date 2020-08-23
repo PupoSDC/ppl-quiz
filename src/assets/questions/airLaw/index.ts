@@ -1,6 +1,9 @@
-export default [
+import { Question } from "types/Questionnaire";
+
+const questions: Question[] = [
   {
     id: "ALW100",
+    correct: "ALW100-2",
     question:
       "What is the primary purpose of an aircraft accident investigation?",
     answers: [
@@ -27,10 +30,14 @@ export default [
   {
     id: "ALW001",
     question: `Which of the following documents have to be on board for an international flight?
-            a) Certificate of aircraft registration b) Certificate of airworthiness
-            c) Airworthiness review certificate d) EASA Form-1
+            a) Certificate of aircraft registration 
+            b) Certificate of airworthiness
+            c) Airworthiness review certificate 
+            d) EASA Form-1
             e) Airplane logbook
-            f) Appropriate papers for every crew member g) Technical logbook (1,00 P.)`,
+            f) Appropriate papers for every crew member 
+            g) Technical logbook`,
+    correct: "ALW001-3",
     answers: [
       {
         answer: "b, c, d, e, f, g",
@@ -51,3 +58,5 @@ export default [
     ],
   },
 ];
+
+export default questions;

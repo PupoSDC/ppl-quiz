@@ -1,32 +1,15 @@
-import { StackScreenProps } from "@react-navigation/stack";
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import {
-  Question as QuestionType,
-  OngoingQuestionnaireActions,
-} from "types/Questionnaire";
+import { OngoingQuestionnaire } from "types/Questionnaire";
 
-type QuestionProps = QuestionType &
-  Pick<OngoingQuestionnaireActions, "answerQuestion">;
-
-const Question: React.FunctionComponent<QuestionProps> = ({
-  id: questionId,
-  question,
-  answers,
-  selected,
-  answerQuestion,
+const Overview: FunctionComponent<OngoingQuestionnaire> = ({
+  correctAnswers,
+  questions,
 }) => (
   <View style={styles.container}>
-    <Text style={styles.title}>{question}</Text>
-    {answers.map(({ answer, id: answerId }) => (
-      <View style={styles.answer} key={answerId}>
-        <Button
-          color={selected === answerId ? "#cfcfcf" : undefined}
-          onPress={() => answerQuestion(questionId, answerId)}
-          title={answer}
-        />
-      </View>
-    ))}
+    <Text style={styles.title}>
+      {correctAnswers} / {questions.length}
+    </Text>
   </View>
 );
 
@@ -43,9 +26,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 8,
   },
-  answer: {
-    marginVertical: 8,
-  },
 });
 
-export default Question;
+export default Overview;

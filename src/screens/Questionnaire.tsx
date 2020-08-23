@@ -2,18 +2,22 @@ import { StackScreenProps } from "@react-navigation/stack";
 import React, { useState, FunctionComponent } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-import { RootStackParamList } from "../types";
 import Question from "components/Question";
-import { AnswerId } from "types/Questionnaire";
 import questions from "assets/questions/airLaw";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
+import Overview from "components/Overview";
 
 const Questionnaire: FunctionComponent<{}> = () => {
-  const [
-    { currentQuestion, isCompleted },
-    { answerQuestion },
-  ] = useOngoingQuestionnaire({ questions, isFinished: false });
-  return <Question {...currentQuestion} onAnswerSelected={answerQuestion} />;
+  const [questionnaire, { answerQuestion }] = useOngoingQuestionnaire({
+    questions,
+    isFinished: false,
+  });
+  const { currentQuestion, isCompleted } = questionnaire;
+  return currentQuestion ? (
+    <Question {...currentQuestion} answerQuestion={answerQuestion} />
+  ) : (
+    <Overview {...questionnaire} />
+  );
 };
 
 const styles = StyleSheet.create({

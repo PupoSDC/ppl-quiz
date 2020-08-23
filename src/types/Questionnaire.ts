@@ -8,6 +8,7 @@ export type Answer = {
 
 export type Question = {
   id: QuestionId;
+  correct: AnswerId;
   question: string;
   answers: Answer[];
   selected?: AnswerId;
