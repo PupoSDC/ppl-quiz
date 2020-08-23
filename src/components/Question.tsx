@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Button, Text } from "native-base";
 import {
   Question as QuestionType,
   OngoingQuestionnaireActions,
@@ -19,12 +20,16 @@ const Question: FunctionComponent<QuestionProps> = ({
     <Text style={styles.question}>{question}</Text>
     {answers.map(({ answer, id: answerId }) => (
       <View style={styles.answer} key={answerId}>
-        <TouchableOpacity
+        <Button
+          block
+          vertical
           style={styles.answer}
+          light={selected !== answerId}
+          primary={selected === answerId}
           onPress={() => answerQuestion(questionId, answerId)}
         >
           <Text>{answer}</Text>
-        </TouchableOpacity>
+        </Button>
       </View>
     ))}
   </View>
@@ -42,10 +47,9 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
   answer: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    alignSelf: "stretch",
-    margin: 10,
+    width: "100%",
+    margin: 5,
+    padding: 3,
   },
 });
 
