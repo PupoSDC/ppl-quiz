@@ -4,7 +4,14 @@ const questions: Question[] = [
   {
     id: "ALW0001",
     question:
-      " Which of the following documents have to be on board for an international flight? a) Certificate of aircraft registration b) Certificate of airworthiness c) Airworthiness review certificate d) EASA Form- 1 e) Airplane logbook f) Appropriate papers for every crew member g) Technical logbook (1,00 P.)",
+      "Which of the following documents have to be on board for an international flight? \n" +
+      "a) Certificate of aircraft registration \n" +
+      "b) Certificate of airworthiness \n" +
+      "c) Airworthiness review certificate \n" +
+      "d) EASA Form- 1 \n" +
+      "e) Airplane logbook \n" +
+      "f) Appropriate papers for every crew member \n" +
+      "g) Technical logbook (1,00 P.)",
     answers: [
       {
         id: "ALWALW0001001",
@@ -23,12 +30,12 @@ const questions: Question[] = [
         answer: "d, f, g",
       },
     ],
-    correct: "",
+    correct: "ALWALW0001003",
   },
   {
     id: "ALW0002",
     question:
-      " Which area could be crossed with certain restrictions? (1,00 P.)",
+      "Which area could be crossed with certain restrictions? (1,00 P.)",
     answers: [
       {
         id: "ALWALW0002001",
@@ -395,7 +402,7 @@ const questions: Question[] = [
         answer: "17 years",
       },
     ],
-    correct: "",
+    correct: "ALWALW0016004",
   },
   {
     id: "ALW0017",
@@ -536,7 +543,7 @@ const questions: Question[] = [
         answer: "Transponder Mandatory Zone",
       },
     ],
-    correct: "",
+    correct: "ALWALW0022004",
   },
   {
     id: "ALW0023",
@@ -633,7 +640,7 @@ const questions: Question[] = [
         answer: "Variable meteorological conditions",
       },
     ],
-    correct: "",
+    correct: "ALWALW0026003",
   },
   {
     id: "ALW0027",
@@ -657,7 +664,7 @@ const questions: Question[] = [
         answer: "The lighter one has to climb",
       },
     ],
-    correct: "",
+    correct: "ALWALW0027002",
   },
   {
     id: "ALW0028",
@@ -1254,7 +1261,7 @@ const questions: Question[] = [
         answer: "7700",
       },
     ],
-    correct: "",
+    correct: "ALWALW0051004",
   },
   {
     id: "ALW0052",
@@ -1657,7 +1664,7 @@ const questions: Question[] = [
           "rectangular area on a land aerodrome prepared for the landing and take-off of helicopters.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0067002",
   },
   {
     id: "ALW0068",
@@ -1982,7 +1989,7 @@ const questions: Question[] = [
           "It contains special symbols to indicate the conditions at the aerodrome visually to over-flying aircraft",
       },
     ],
-    correct: "",
+    correct: "ALWALW0080004",
   },
   {
     id: "ALW0081",
@@ -2377,7 +2384,7 @@ const questions: Question[] = [
         answer: "Rescue phase",
       },
     ],
-    correct: "",
+    correct: "ALWALW0096001",
   },
   {
     id: "ALW0097",
@@ -2424,7 +2431,7 @@ const questions: Question[] = [
         answer: "Rock the wings",
       },
     ],
-    correct: "",
+    correct: "ALWALW0098004",
   },
   {
     id: "ALW0099",

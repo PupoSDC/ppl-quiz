@@ -30,5 +30,7 @@ export type OngoingQuestionnaire = {
 
 export type OngoingQuestionnaireActions = {
   answerQuestion: (questionId: QuestionId, answerId: AnswerId) => void;
+  goToNextQuestion: (delay?: boolean) => void;
+  goToQuestion: (questionId: QuestionId, delay?: boolean) => void;
   finishTest: () => void;
 };

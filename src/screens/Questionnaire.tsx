@@ -1,22 +1,59 @@
 import { StackScreenProps } from "@react-navigation/stack";
 import React, { useState, FunctionComponent } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet } from "react-native";
 
 import Question from "components/Question";
 import questions from "assets/questions/airLaw";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
+import { Button, Text } from "native-base";
+
+const randomSort = () => Math.random() - 0.5;
+
+const examQuestions = questions
+  .sort(randomSort)
+  .slice(0, 24)
+  .map(({ answers, ...question }) => ({
+    answers: answers.sort(randomSort),
+    ...question,
+  }));
 
 const Questionnaire: FunctionComponent<{}> = () => {
-  const [questionnaire, { answerQuestion }] = useOngoingQuestionnaire({
-    questions,
+  const [
+    questionnaire,
+    { answerQuestion, goToNextQuestion, goToQuestion },
+  ] = useOngoingQuestionnaire({
+    questions: examQuestions,
     isFinished: false,
   });
   const { currentQuestion, isCompleted } = questionnaire;
-  return currentQuestion ? (
-    <Question {...currentQuestion} answerQuestion={answerQuestion} />
-  ) : (
-    <Overview {...questionnaire} />
+  const [overview, setOverview] = useState(false);
+
+  const answerQuestionAndGoToNext = (questionId: string, answerId: string) => {
+    answerQuestion(questionId, answerId);
+    goToNextQuestion(true);
+  };
+
+  const goToQuestionFromOverview = (questionId: string) => {
+    goToQuestion(questionId, false);
+    setOverview(false);
+  };
+  return (
+    <>
+      {overview || !currentQuestion ? (
+        <Overview {...questionnaire} goToQuestion={goToQuestionFromOverview} />
+      ) : (
+        <>
+          <Question
+            {...currentQuestion}
+            answerQuestion={answerQuestionAndGoToNext}
+          />
+          <Button onPress={() => setOverview(true)}>
+            <Text>Overview</Text>
+          </Button>
+        </>
+      )}
+    </>
   );
 };
 

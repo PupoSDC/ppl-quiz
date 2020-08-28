@@ -30,10 +30,6 @@ export default (
     },
     {
       answerQuestion: (questionId, answerId) => {
-        setTimeout(
-          () => setCurrentQuestionIndex((index) => index + 1),
-          TRANSITION_DELAY
-        );
         setState(({ questions, ...state }) => ({
           ...state,
           questions: questions.map((question) => {
@@ -46,6 +42,21 @@ export default (
             };
           }),
         }));
+      },
+      goToNextQuestion: (delay) => {
+        setTimeout(
+          () => setCurrentQuestionIndex((index) => index + 1),
+          delay ? TRANSITION_DELAY : 0
+        );
+      },
+      goToQuestion: (questionId, delay) => {
+        const index = state.questions.findIndex(({ id }) => id === questionId);
+        if (index > 0) {
+          setTimeout(
+            () => setCurrentQuestionIndex((index) => index + 1),
+            delay ? TRANSITION_DELAY : 0
+          );
+        }
       },
       finishTest: () => {
         setState((state) => ({ ...state, isFinished: true }));
