@@ -11,7 +11,7 @@ const questions: Question[] = [
       "d) EASA Form- 1 \n" +
       "e) Airplane logbook \n" +
       "f) Appropriate papers for every crew member \n" +
-      "g) Technical logbook (1,00 P.)",
+      "g) Technical logbook",
     answers: [
       {
         id: "ALWALW0001001",
@@ -34,8 +34,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0002",
-    question:
-      "Which area could be crossed with certain restrictions? (1,00 P.)",
+    question: "Which area could be crossed with certain restrictions?",
     answers: [
       {
         id: "ALWALW0002001",
@@ -59,7 +58,7 @@ const questions: Question[] = [
   {
     id: "ALW0003",
     question:
-      " Where can the type of restriction for a restricted airspace be found? (1,00 P.)",
+      " Where can the type of restriction for a restricted airspace be found?",
     answers: [
       {
         id: "ALWALW0003001",
@@ -83,7 +82,7 @@ const questions: Question[] = [
   {
     id: "ALW0004",
     question:
-      " What is the status of the rules and procedures created by the EASA? (e.g. Part-SFCL, Part-MED) (1,00 P.)",
+      " What is the status of the rules and procedures created by the EASA? (e.g. Part-SFCL, Part-MED)",
     answers: [
       {
         id: "ALWALW0004001",
@@ -108,8 +107,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0005",
-    question:
-      ' Which validity does the "Certificate of Airworthiness" have? (1,00 P.)',
+    question: ' Which validity does the "Certificate of Airworthiness" have?',
     answers: [
       {
         id: "ALWALW0005001",
@@ -132,7 +130,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0006",
-    question: ' What is the meaning of the abbreviation "ARC"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "ARC"?',
     answers: [
       {
         id: "ALWALW0006001",
@@ -155,8 +153,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0007",
-    question:
-      ' The "Certificate of Airworthiness" is issued by the state... (1,00 P.)',
+    question: ' The "Certificate of Airworthiness" is issued by the state...',
     answers: [
       {
         id: "ALWALW0007001",
@@ -175,12 +172,12 @@ const questions: Question[] = [
         answer: "in which the airworthiness review is done.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0007003",
   },
   {
     id: "ALW0008",
     question:
-      " A pilot license issued in accordance with ICAO Annex 1 is valid in... (1,00 P.)",
+      " A pilot license issued in accordance with ICAO Annex 1 is valid in...",
     answers: [
       {
         id: "ALWALW0008001",
@@ -204,7 +201,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0009",
-    question: " What is the subject of ICAO Annex 1? (1,00 P.)",
+    question: " What is the subject of ICAO Annex 1?",
     answers: [
       {
         id: "ALWALW0009001",
@@ -228,7 +225,7 @@ const questions: Question[] = [
   {
     id: "ALW0010",
     question:
-      " What is the period of validity of a private pilot license (PPL)? (1,00 P.)",
+      " What is the period of validity of a private pilot license (PPL)?",
     answers: [
       {
         id: "ALWALW0010001",
@@ -251,8 +248,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0011",
-    question:
-      " What is the minimum age to obtain a private pilot license? (1,00 P.)",
+    question: " What is the minimum age to obtain a private pilot license?",
     answers: [
       {
         id: "ALWALW0011001",
@@ -276,7 +272,7 @@ const questions: Question[] = [
   {
     id: "ALW0012",
     question:
-      " What are the minimum requirements among others to acquire a rating for VFR night flights? (1,00 P.)",
+      " What are the minimum requirements among others to acquire a rating for VFR night flights?",
     answers: [
       {
         id: "ALWALW0012001",
@@ -304,7 +300,7 @@ const questions: Question[] = [
   {
     id: "ALW0013",
     question:
-      " The validity of a medical examination certificate class 2 for a 62 years old pilot is... (1,00 P.)",
+      " The validity of a medical examination certificate class 2 for a 62 years old pilot is...",
     answers: [
       {
         id: "ALWALW0013001",
@@ -328,7 +324,7 @@ const questions: Question[] = [
   {
     id: "ALW0014",
     question:
-      " In which way is a SEP (land) rating renewed if you do not meet the required flight time? (1,00 P.)",
+      " In which way is a SEP (land) rating renewed if you do not meet the required flight time?",
     answers: [
       {
         id: "ALWALW0014001",
@@ -354,8 +350,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0015",
-    question:
-      " The possession of a european PPL(A) entitles the holder to... (1,00 P.)",
+    question: " The possession of a european PPL(A) entitles the holder to...",
     answers: [
       {
         id: "ALWALW0015001",
@@ -383,7 +378,7 @@ const questions: Question[] = [
   {
     id: "ALW0016",
     question:
-      " What is the minimum age to start a private pilot training at a flight school? (1,00 P.)",
+      " What is the minimum age to start a private pilot training at a flight school?",
     answers: [
       {
         id: "ALWALW0016001",
@@ -406,7 +401,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0017",
-    question: ' What is the meaning of the abbreviation "SERA"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "SERA"?',
     answers: [
       {
         id: "ALWALW0017001",
@@ -429,7 +424,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0018",
-    question: ' What is the meaning of the abbreviation "TRA"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "TRA"?',
     answers: [
       {
         id: "ALWALW0018001",
@@ -448,11 +443,11 @@ const questions: Question[] = [
         answer: "Terminal Area",
       },
     ],
-    correct: "",
+    correct: "ALWALW0018002",
   },
   {
     id: "ALW0019",
-    question: " What has to be considered when entering an RMZ? (1,00 P.)",
+    question: " What has to be considered when entering an RMZ?",
     answers: [
       {
         id: "ALWALW0019001",
@@ -476,8 +471,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0020",
-    question:
-      " What condition has to be met during a Special VFR flight? (1,00 P.)",
+    question: " What condition has to be met during a Special VFR flight?",
     answers: [
       {
         id: "ALWALW0020001",
@@ -496,11 +490,11 @@ const questions: Question[] = [
         answer: "Visual reference to the terrain",
       },
     ],
-    correct: "",
+    correct: "ALWALW0020004", // To be confirmed.
   },
   {
     id: "ALW0021",
-    question: " What has to be done before entering a TMZ? (1,00 P.)",
+    question: " What has to be done before entering a TMZ?",
     answers: [
       {
         id: "ALWALW0021001",
@@ -520,11 +514,11 @@ const questions: Question[] = [
           'Switch on the transponder, activate mode A, and squawk "IDENT"',
       },
     ],
-    correct: "",
+    correct: "ALWALW0021004", // To be confirmed
   },
   {
     id: "ALW0022",
-    question: ' What is the meaning of an area marked as "TMZ"? (1,00 P.)',
+    question: ' What is the meaning of an area marked as "TMZ"?',
     answers: [
       {
         id: "ALWALW0022001",
@@ -548,7 +542,7 @@ const questions: Question[] = [
   {
     id: "ALW0023",
     question:
-      ' According to ICAO Annex 2, the term "aerodrome traffic" is defined as: (1,00 P.)',
+      ' According to ICAO Annex 2, the term "aerodrome traffic" is defined as:',
     answers: [
       {
         id: "ALWALW0023001",
@@ -571,11 +565,11 @@ const questions: Question[] = [
           "All traffic on the apron and on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0023003", // To  be confirmed
   },
   {
     id: "ALW0024",
-    question: ' What is the meaning of the abbreviation "IFR"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "IFR"?',
     answers: [
       {
         id: "ALWALW0024001",
@@ -594,11 +588,11 @@ const questions: Question[] = [
         answer: "Commercial Flight Rules",
       },
     ],
-    correct: "",
+    correct: "ALWALW0024003",
   },
   {
     id: "ALW0025",
-    question: ' A flight is called a "visual flight", if the... (1,00 P.)',
+    question: ' A flight is called a "visual flight", if the...',
     answers: [
       {
         id: "ALWALW0025001",
@@ -617,11 +611,11 @@ const questions: Question[] = [
         answer: "flight is conducted in visual meteorological conditions.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0025001",
   },
   {
     id: "ALW0026",
-    question: ' What is the meaning of the abbreviation "VMC"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "VMC"?',
     answers: [
       {
         id: "ALWALW0026001",
@@ -645,7 +639,7 @@ const questions: Question[] = [
   {
     id: "ALW0027",
     question:
-      " Two engine-driven aircraft are flying on crossing courses at the same altitude. Which one has to divert? (1,00 P.)",
+      " Two engine-driven aircraft are flying on crossing courses at the same altitude. Which one has to divert?",
     answers: [
       {
         id: "ALWALW0027001",
@@ -669,7 +663,7 @@ const questions: Question[] = [
   {
     id: "ALW0028",
     question:
-      " Two aeroplanes are flying on crossing tracks. Which one has to divert? (1,00 P.)",
+      " Two aeroplanes are flying on crossing tracks. Which one has to divert?",
     answers: [
       {
         id: "ALWALW0028001",
@@ -690,12 +684,12 @@ const questions: Question[] = [
           "The aircraft which flies from left to right has the right of priority",
       },
     ],
-    correct: "",
+    correct: "ALWALW0028003",
   },
   {
     id: "ALW0029",
     question:
-      ' In airspace "D" a Boeing 737 and a Cessna 152 are flying on crossing courses. Which aeroplane has to divert? (1,00 P.)',
+      ' In airspace "D" a Boeing 737 and a Cessna 152 are flying on crossing courses. Which aeroplane has to divert?',
     answers: [
       {
         id: "ALWALW0029001",
@@ -718,12 +712,12 @@ const questions: Question[] = [
           "The Cessna 152, because IFR and commercial flights have priority",
       },
     ],
-    correct: "",
+    correct: "ALWALW0029003", // to be confirmed
   },
   {
     id: "ALW0030",
     question:
-      " Which of the following options is NOT a sufficient reason to fly below the required minimum height? (1,00 P.)",
+      " Which of the following options is NOT a sufficient reason to fly below the required minimum height?",
     answers: [
       {
         id: "ALWALW0030001",
@@ -747,7 +741,7 @@ const questions: Question[] = [
   {
     id: "ALW0031",
     question:
-      " A single-engine piston and a turboprop aeroplane are approaching each other opposite at the same altitude. Which aeroplane has to change its track to avoid a collision? (1,00 P.)",
+      " A single-engine piston and a turboprop aeroplane are approaching each other opposite at the same altitude. Which aeroplane has to change its track to avoid a collision?",
     answers: [
       {
         id: "ALWALW0031001",
@@ -768,12 +762,12 @@ const questions: Question[] = [
         answer: "Both aircraft have to alter their tracks to the right",
       },
     ],
-    correct: "",
+    correct: "ALWALW0031004", // to be confirmed
   },
   {
     id: "ALW0032",
     question:
-      " Which distances to clouds have to be maintained during a VFR flight in airpaces C, D and E? (1,00 P.)",
+      " Which distances to clouds have to be maintained during a VFR flight in airpaces C, D and E?",
     answers: [
       {
         id: "ALWALW0032001",
@@ -792,12 +786,12 @@ const questions: Question[] = [
         answer: "1500 m horizontally, 1000 m vertically",
       },
     ],
-    correct: "",
+    correct: "ALWALW0032002",
   },
   {
     id: "ALW0033",
     question:
-      " The minimum flight visibility at 5000 ft MSL in airspace B for VFR flights is... (1,00 P.)",
+      " The minimum flight visibility at 5000 ft MSL in airspace B for VFR flights is...",
     answers: [
       {
         id: "ALWALW0033001",
@@ -816,12 +810,12 @@ const questions: Question[] = [
         answer: "3000 m.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0033002",
   },
   {
     id: "ALW0034",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at 5000 ft MSL? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at 5000 ft MSL?',
     answers: [
       {
         id: "ALWALW0034001",
@@ -840,12 +834,12 @@ const questions: Question[] = [
         answer: "8000 m",
       },
     ],
-    correct: "",
+    correct: "ALWALW0034002",
   },
   {
     id: "ALW0035",
     question:
-      ' What is the minimum flight visibility in airspace "E" for an aircraft operating under VFR at FL75? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "E" for an aircraft operating under VFR at FL75?',
     answers: [
       {
         id: "ALWALW0035001",
@@ -864,12 +858,12 @@ const questions: Question[] = [
         answer: "5000 m",
       },
     ],
-    correct: "",
+    correct: "ALWALW0035004",
   },
   {
     id: "ALW0036",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL110? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL110?',
     answers: [
       {
         id: "ALWALW0036001",
@@ -888,12 +882,12 @@ const questions: Question[] = [
         answer: "5000 m",
       },
     ],
-    correct: "",
+    correct: "ALWALW0036002",
   },
   {
     id: "ALW0037",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL125? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL125?',
     answers: [
       {
         id: "ALWALW0037001",
@@ -912,12 +906,12 @@ const questions: Question[] = [
         answer: "1500 m",
       },
     ],
-    correct: "",
+    correct: "ALWALW0037003",
   },
   {
     id: "ALW0038",
     question:
-      ' What are the minimum distances to clouds for a VFR flight in airspace "B"? (1,00 P.)',
+      ' What are the minimum distances to clouds for a VFR flight in airspace "B"?',
     answers: [
       {
         id: "ALWALW0038001",
@@ -936,12 +930,12 @@ const questions: Question[] = [
         answer: "Horizontally 1.500 m, vertically 300 m",
       },
     ],
-    correct: "",
+    correct: "ALWALW0038004",
   },
   {
     id: "ALW0039",
     question:
-      ' What is the minimum flight visibility in airspace "C" below FL 100 for an aircraft operating under VFR? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "C" below FL 100 for an aircraft operating under VFR?',
     answers: [
       {
         id: "ALWALW0039001",
@@ -960,12 +954,12 @@ const questions: Question[] = [
         answer: "10 km",
       },
     ],
-    correct: "",
+    correct: "ALWALW0039002",
   },
   {
     id: "ALW0040",
     question:
-      ' What is the minimum flight visibility in airspace "C" at and above FL 100 for an aircraft operating under VFR? (1,00 P.)',
+      ' What is the minimum flight visibility in airspace "C" at and above FL 100 for an aircraft operating under VFR?',
     answers: [
       {
         id: "ALWALW0040001",
@@ -984,11 +978,11 @@ const questions: Question[] = [
         answer: "10 km",
       },
     ],
-    correct: "",
+    correct: "ALWALW0040003",
   },
   {
     id: "ALW0041",
-    question: ' The term "ceiling" is defined as the... (1,00 P.)',
+    question: ' The term "ceiling" is defined as the...',
     answers: [
       {
         id: "ALWALW0041001",
@@ -1011,12 +1005,12 @@ const questions: Question[] = [
           "altitude of the base of the lowest layer of clouds covering more than half of the sky below 20000 ft.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0041001",
   },
   {
     id: "ALW0042",
     question:
-      ' State the minimum weather conditions to enter a control zone (airspace "D") under special VFR conditions for a fixed-wing aircraft? (1,00 P.)',
+      ' State the minimum weather conditions to enter a control zone (airspace "D") under special VFR conditions for a fixed-wing aircraft?',
     answers: [
       {
         id: "ALWALW0042001",
@@ -1044,7 +1038,7 @@ const questions: Question[] = [
   {
     id: "ALW0043",
     question:
-      " Being intercepted by a military aircraft at daytime, what is the meaning of the following signal: Alternating movement of the ailerons, normally left of the intercepted aircraft, followed by a smooth turn to the left? (1,00 P.)",
+      " Being intercepted by a military aircraft at daytime, what is the meaning of the following signal: Alternating movement of the ailerons, normally left of the intercepted aircraft, followed by a smooth turn to the left?",
     answers: [
       {
         id: "ALWALW0043001",
@@ -1066,12 +1060,12 @@ const questions: Question[] = [
         answer: "Follow me",
       },
     ],
-    correct: "",
+    correct: "ALWALW0043004",
   },
   {
     id: "ALW0044",
     question:
-      " Being intercepted by a military aircraft at daytime, what is the meaning of the following signal: A sudden heading change of 90 degrees or more and a pull-up of the aircraft without crossing the track of the intercepted aircraft? (1,00 P.)",
+      " Being intercepted by a military aircraft at daytime, what is the meaning of the following signal: A sudden heading change of 90 degrees or more and a pull-up of the aircraft without crossing the track of the intercepted aircraft?",
     answers: [
       {
         id: "ALWALW0044001",
@@ -1092,12 +1086,11 @@ const questions: Question[] = [
         answer: "You may continue your flight",
       },
     ],
-    correct: "",
+    correct: "ALWALW0044004",
   },
   {
     id: "ALW0045",
-    question:
-      " The altimeter is switched from local QNH to 1013.25 hPa... (1,00 P.)",
+    question: " The altimeter is switched from local QNH to 1013.25 hPa...",
     answers: [
       {
         id: "ALWALW0045001",
@@ -1116,12 +1109,11 @@ const questions: Question[] = [
         answer: "at the decision height.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0045001",
   },
   {
     id: "ALW0046",
-    question:
-      " During a flight at FL 80, the altimeter setting has to be... (1,00 P.)",
+    question: " During a flight at FL 80, the altimeter setting has to be...",
     answers: [
       {
         id: "ALWALW0046001",
@@ -1140,11 +1132,11 @@ const questions: Question[] = [
         answer: "1013.25 hPa.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0046003", // to be confirmed
   },
   {
     id: "ALW0047",
-    question: " What is the purpose of the semi-circular rule? (1,00 P.)",
+    question: " What is the purpose of the semi-circular rule?",
     answers: [
       {
         id: "ALWALW0047001",
@@ -1165,12 +1157,12 @@ const questions: Question[] = [
           "To fly without a filed flight plan in prescribed zones published in the AIP",
       },
     ],
-    correct: "",
+    correct: "ALWALW0047003",
   },
   {
     id: "ALW0048",
     question:
-      " Which of the following options are possible SSR-Transponder modes? (1,00 P.)",
+      " Which of the following options are possible SSR-Transponder modes?",
     answers: [
       {
         id: "ALWALW0048001",
@@ -1189,12 +1181,12 @@ const questions: Question[] = [
         answer: "B, R, S",
       },
     ],
-    correct: "",
+    correct: "ALWALW0048001",
   },
   {
     id: "ALW0049",
     question:
-      " A transponder with the ability to send the current pressure level is a... (1,00 P.)",
+      " A transponder with the ability to send the current pressure level is a...",
     answers: [
       {
         id: "ALWALW0049001",
@@ -1213,12 +1205,12 @@ const questions: Question[] = [
         answer: "mode A transponder.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0049001",
   },
   {
     id: "ALW0050",
     question:
-      " Which transponder code indicates a loss of radio communication? (1,00 P.)",
+      " Which transponder code indicates a loss of radio communication?",
     answers: [
       {
         id: "ALWALW0050001",
@@ -1237,12 +1229,12 @@ const questions: Question[] = [
         answer: "7000",
       },
     ],
-    correct: "",
+    correct: "ALWALW0050001",
   },
   {
     id: "ALW0051",
     question:
-      " Which transponder code should be set during a radio failure without any request? (1,00 P.)",
+      " Which transponder code should be set during a radio failure without any request?",
     answers: [
       {
         id: "ALWALW0051001",
@@ -1261,12 +1253,12 @@ const questions: Question[] = [
         answer: "7700",
       },
     ],
-    correct: "ALWALW0051004",
+    correct: "ALWALW0051001", // TO be confirmed. No emergency
   },
   {
     id: "ALW0052",
     question:
-      " Which transponder code has to be set unrequested during an emergency? (1,00 P.)",
+      " Which transponder code has to be set unrequested during an emergency?",
     answers: [
       {
         id: "ALWALW0052001",
@@ -1285,12 +1277,12 @@ const questions: Question[] = [
         answer: "7500",
       },
     ],
-    correct: "",
+    correct: "ALWALW0052001",
   },
   {
     id: "ALW0053",
     question:
-      " Which air traffic service is responsible for the safe conduct of flights? (1,00 P.)",
+      " Which air traffic service is responsible for the safe conduct of flights?",
     answers: [
       {
         id: "ALWALW0053001",
@@ -1313,8 +1305,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0054",
-    question:
-      " Air traffic control service is conducted by which services? (1,00 P.)",
+    question: " Air traffic control service is conducted by which services?",
     answers: [
       {
         id: "ALWALW0054001",
@@ -1337,12 +1328,12 @@ const questions: Question[] = [
           "APP (approach control service) ACC (area control service) FIS (flight information service)",
       },
     ],
-    correct: "",
+    correct: "ALWALW0054003", // To be confirmed
   },
   {
     id: "ALW0055",
     question:
-      ' Which answer is correct with regard to separation in airspace "E"? (1,00 P.)',
+      ' Which answer is correct with regard to separation in airspace "E"?',
     answers: [
       {
         id: "ALWALW0055001",
@@ -1361,12 +1352,12 @@ const questions: Question[] = [
         answer: "VFR traffic is separated only from IFR traffic",
       },
     ],
-    correct: "",
+    correct: "ALWALW0055003",
   },
   {
     id: "ALW0056",
     question:
-      " Which air traffic services can be expected within an FIR (flight information region)? (1,00 P.)",
+      " Which air traffic services can be expected within an FIR (flight information region)?",
     answers: [
       {
         id: "ALWALW0056001",
@@ -1387,12 +1378,11 @@ const questions: Question[] = [
           "ATC (air traffic control) AIS (aeronautical information service)",
       },
     ],
-    correct: "",
+    correct: "ALWALW0055003", // TO be confirmed, SR is a service?
   },
   {
     id: "ALW0057",
-    question:
-      " A pilot can contact FIS (flight information service)... (1,00 P.)",
+    question: " A pilot can contact FIS (flight information service)...",
     answers: [
       {
         id: "ALWALW0057001",
@@ -1416,7 +1406,7 @@ const questions: Question[] = [
   {
     id: "ALW0058",
     question:
-      " What is the correct phrase with respect to wake turbulence to indicate that a light aircraft is following an aircraft of a higher wake turbulence category? (1,00 P.)",
+      " What is the correct phrase with respect to wake turbulence to indicate that a light aircraft is following an aircraft of a higher wake turbulence category?",
     answers: [
       {
         id: "ALWALW0058001",
@@ -1440,7 +1430,7 @@ const questions: Question[] = [
   {
     id: "ALW0059",
     question:
-      " Which of the following options states a correct position report? (1,00 P.)",
+      " Which of the following options states a correct position report?",
     answers: [
       {
         id: "ALWALW0059001",
@@ -1463,7 +1453,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0060",
-    question: ' What is the meaning of the abbreviation "AIREP"? (1,00 P.)',
+    question: ' What is the meaning of the abbreviation "AIREP"?',
     answers: [
       {
         id: "ALWALW0060001",
@@ -1482,12 +1472,12 @@ const questions: Question[] = [
         answer: "Aeronautical information report",
       },
     ],
-    correct: "",
+    correct: "ALWALW0060002", // To be confirmed
   },
   {
     id: "ALW0061",
     question:
-      " What information is provided in the general part (GEN) of the AIP? (1,00 P.)",
+      " What information is provided in the general part (GEN) of the AIP?",
     answers: [
       {
         id: "ALWALW0061001",
@@ -1510,7 +1500,7 @@ const questions: Question[] = [
           "Access restrictions for airfields, passenger controls, requirements for pilots, license samples and validity periods",
       },
     ],
-    correct: "",
+    correct: "ALWALW0061001", // to be confirmed
   },
   {
     id: "ALW0062",
@@ -1538,8 +1528,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0063",
-    question:
-      ' What information is provided in the part "AD" of the AIP? (1,00 P.)',
+    question: ' What information is provided in the part "AD" of the AIP?',
     answers: [
       {
         id: "ALWALW0063001",
@@ -1562,12 +1551,12 @@ const questions: Question[] = [
           "Table of content, classification of airfields with corresponding maps, approach charts, taxi charts",
       },
     ],
-    correct: "",
+    correct: "ALWALW0063004", // to be confirmed
   },
   {
     id: "ALW0064",
     question:
-      " The shown NOTAM is valid until... A1024/13 A) LOWW B) 1305211200 C) 1305211400 E) STOCKERAU VOR STO 113.00 UNSERVICEABLE. (1,00 P.)",
+      " The shown NOTAM is valid until... A1024/13 A) LOWW B) 1305211200 C) 1305211400 E) STOCKERAU VOR STO 113.00 UNSERVICEABLE.",
     answers: [
       {
         id: "ALWALW0064001",
@@ -1591,7 +1580,7 @@ const questions: Question[] = [
   {
     id: "ALW0065",
     question:
-      " A Pre-Flight Information Bulletin (PIB) is a presentation of current... (1,00 P.)",
+      " A Pre-Flight Information Bulletin (PIB) is a presentation of current...",
     answers: [
       {
         id: "ALWALW0065001",
@@ -1618,7 +1607,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0066",
-    question: ' The term "aerodrome elevation" is defined as... (1,00 P.)',
+    question: ' The term "aerodrome elevation" is defined as...',
     answers: [
       {
         id: "ALWALW0066001",
@@ -1637,11 +1626,11 @@ const questions: Question[] = [
         answer: "the highest point of the landing area.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0066004",
   },
   {
     id: "ALW0067",
-    question: ' The term "runway" is defined as a... (1,00 P.)',
+    question: ' The term "runway" is defined as a...',
     answers: [
       {
         id: "ALWALW0067001",
@@ -1669,7 +1658,7 @@ const questions: Question[] = [
   {
     id: "ALW0068",
     question:
-      ' Which statement is correct with regard to the term "taxi holding point"? (1,00 P.)',
+      ' Which statement is correct with regard to the term "taxi holding point"?',
     answers: [
       {
         id: "ALWALW0068001",
@@ -1696,7 +1685,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0069",
-    question: ' What does the reported runway condition "WET" mean? (1,00 P.)',
+    question: ' What does the reported runway condition "WET" mean?',
     answers: [
       {
         id: "ALWALW0069001",
@@ -1716,11 +1705,11 @@ const questions: Question[] = [
         answer: "The runway is clear of water, ice, and snow",
       },
     ],
-    correct: "",
+    correct: "ALWALW0069002",
   },
   {
     id: "ALW0070",
-    question: ' What does the reported runway condition "DAMP" mean? (1,00 P.)',
+    question: ' What does the reported runway condition "DAMP" mean?',
     answers: [
       {
         id: "ALWALW0070001",
@@ -1739,7 +1728,7 @@ const questions: Question[] = [
         answer: "The runway is clear of water, ice, and snow",
       },
     ],
-    correct: "",
+    correct: "ALWALW0070001",
   },
   {
     id: "ALW0071",
@@ -1768,7 +1757,7 @@ const questions: Question[] = [
   {
     id: "ALW0072",
     question:
-      " How can a wind direction indicator be marked for better visibility? (1,00 P.)",
+      " How can a wind direction indicator be marked for better visibility?",
     answers: [
       {
         id: "ALWALW0072001",
@@ -1796,7 +1785,7 @@ const questions: Question[] = [
   {
     id: "ALW0073",
     question:
-      " What is the meaning of a flashing red light signal at a controlled aerodrome directed to an aircraft in flight? (1,00 P.)",
+      " What is the meaning of a flashing red light signal at a controlled aerodrome directed to an aircraft in flight?",
     answers: [
       {
         id: "ALWALW0073001",
@@ -1816,12 +1805,12 @@ const questions: Question[] = [
         answer: "Airport unsafe, do not land",
       },
     ],
-    correct: "",
+    correct: "ALWALW0073004",
   },
   {
     id: "ALW0074",
     question:
-      " What is the meaning of a flashing green light signal at a controlled aerodrome directed to an aircraft in flight? (1,00 P.)",
+      " What is the meaning of a flashing green light signal at a controlled aerodrome directed to an aircraft in flight?",
     answers: [
       {
         id: "ALWALW0074001",
@@ -1841,12 +1830,12 @@ const questions: Question[] = [
         answer: "Airport unsafe, do not land",
       },
     ],
-    correct: "",
+    correct: "ALWALW0074002",
   },
   {
     id: "ALW0075",
     question:
-      " What is the meaning of a steady green light signal at a controlled aerodrome directed to an aircraft in flight? (1,00 P.)",
+      " What is the meaning of a steady green light signal at a controlled aerodrome directed to an aircraft in flight?",
     answers: [
       {
         id: "ALWALW0075001",
@@ -1866,12 +1855,12 @@ const questions: Question[] = [
           "Return for landing, followed by steady green at the appropriate time",
       },
     ],
-    correct: "",
+    correct: "ALWALW0075003",
   },
   {
     id: "ALW0076",
     question:
-      " What is the meaning of a flashing white light signal at a controlled aerodrome directed to an aircraft on ground? (1,00 P.)",
+      " What is the meaning of a flashing white light signal at a controlled aerodrome directed to an aircraft on ground?",
     answers: [
       {
         id: "ALWALW0076001",
@@ -1895,7 +1884,7 @@ const questions: Question[] = [
   {
     id: "ALW0077",
     question:
-      " What is the meaning of a flashing red light signal at a controlled aerodrome directed to an aircraft on ground? (1,00 P.)",
+      " What is the meaning of a flashing red light signal at a controlled aerodrome directed to an aircraft on ground?",
     answers: [
       {
         id: "ALWALW0077001",
@@ -1914,12 +1903,12 @@ const questions: Question[] = [
         answer: "Cleared to taxi",
       },
     ],
-    correct: "",
+    correct: "ALWALW0077003",
   },
   {
     id: "ALW0078",
     question:
-      " What is the meaning of a flashing green light signal at a controlled aerodrome directed to an aircraft on ground? (1,00 P.)",
+      " What is the meaning of a flashing green light signal at a controlled aerodrome directed to an aircraft on ground?",
     answers: [
       {
         id: "ALWALW0078001",
@@ -1938,11 +1927,11 @@ const questions: Question[] = [
         answer: "Cleared to taxi",
       },
     ],
-    correct: "",
+    correct: "ALWALW0078004",
   },
   {
     id: "ALW0079",
-    question: " Of what shape is a landing direction indicator? (1,00 P.)",
+    question: " Of what shape is a landing direction indicator?",
     answers: [
       {
         id: "ALWALW0079001",
@@ -1965,8 +1954,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0080",
-    question:
-      " What is the purpose of the signal square at an aerodrome? (1,00 P.)",
+    question: " What is the purpose of the signal square at an aerodrome?",
     answers: [
       {
         id: "ALWALW0080001",
@@ -1994,7 +1982,7 @@ const questions: Question[] = [
   {
     id: "ALW0081",
     question:
-      " In which way should a pilot confirm received light signals in flight? (1,00 P.)",
+      " In which way should a pilot confirm received light signals in flight?",
     answers: [
       {
         id: "ALWALW0081001",
@@ -2013,12 +2001,12 @@ const questions: Question[] = [
         answer: "Apply some changes of the rudder",
       },
     ],
-    correct: "",
+    correct: "ALWALW0081001",
   },
   {
     id: "ALW0082",
     question:
-      " What is the meaning of a steady red light signal at a controlled aerodrome directed to an aircraft on ground? (1,00 P.)",
+      " What is the meaning of a steady red light signal at a controlled aerodrome directed to an aircraft on ground?",
     answers: [
       {
         id: "ALWALW0082001",
@@ -2037,11 +2025,11 @@ const questions: Question[] = [
         answer: "Stop",
       },
     ],
-    correct: "",
+    correct: "ALWALW0082004",
   },
   {
     id: "ALW0083",
-    question: " How are two parallel runways designated? (1,00 P.)",
+    question: " How are two parallel runways designated?",
     answers: [
       {
         id: "ALWALW0083001",
@@ -2062,12 +2050,12 @@ const questions: Question[] = [
         answer: 'The left runway gets the suffix "L", the right runway "R"',
       },
     ],
-    correct: "",
+    correct: "ALWALW0083004",
   },
   {
     id: "ALW0084",
     question:
-      " According to ICAO Anex 14, which is the colour marking of a runway? (1,00 P.)",
+      " According to ICAO Anex 14, which is the colour marking of a runway?",
     answers: [
       {
         id: "ALWALW0084001",
@@ -2086,12 +2074,12 @@ const questions: Question[] = [
         answer: "Green",
       },
     ],
-    correct: "",
+    correct: "ALWALW0084001",
   },
   {
     id: "ALW0085",
     question:
-      " What is indicated by a pattern of longitudinal stripes of uniform dimensions disposed symmetrically about the centerline of a runway? (1,00 P.)",
+      " What is indicated by a pattern of longitudinal stripes of uniform dimensions disposed symmetrically about the centerline of a runway?",
     answers: [
       {
         id: "ALWALW0085001",
@@ -2110,12 +2098,11 @@ const questions: Question[] = [
         answer: "A ground roll could be started from this position",
       },
     ],
-    correct: "",
+    correct: "ALWALW0085003",
   },
   {
     id: "ALW0086",
-    question:
-      " Which runway designators are correct for 2 parallel runways? (1,00 P.)",
+    question: " Which runway designators are correct for 2 parallel runways?",
     answers: [
       {
         id: "ALWALW0086001",
@@ -2134,12 +2121,11 @@ const questions: Question[] = [
         answer: '"18" and "18-2"',
       },
     ],
-    correct: "",
+    correct: "ALWALW0086003",
   },
   {
     id: "ALW0087",
-    question:
-      ' What is a "PAPI" (Precision Approach Path Indicator)? (1,00 P.)',
+    question: ' What is a "PAPI" (Precision Approach Path Indicator)?',
     answers: [
       {
         id: "ALWALW0087001",
@@ -2162,11 +2148,11 @@ const questions: Question[] = [
           "An instrumental aid that provides guidance information to help a pilot acquire and maintain the correct approach to an aerodrome or an airport",
       },
     ],
-    correct: "",
+    correct: "ALWALW0087001",
   },
   {
     id: "ALW0088",
-    question: " An aerodrome beacon (ABN) is a... (1,00 P.)",
+    question: " An aerodrome beacon (ABN) is a...",
     answers: [
       {
         id: "ALWALW0088001",
@@ -2193,7 +2179,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0089",
-    question: " Which is the colour of runway edge lights? (1,00 P.)",
+    question: " Which is the colour of runway edge lights?",
     answers: [
       {
         id: "ALWALW0089001",
@@ -2212,11 +2198,11 @@ const questions: Question[] = [
         answer: "Green",
       },
     ],
-    correct: "",
+    correct: "ALWALW0089001",
   },
   {
     id: "ALW0090",
-    question: " Which is the colour of runway end lights? (1,00 P.)",
+    question: " Which is the colour of runway end lights?",
     answers: [
       {
         id: "ALWALW0090001",
@@ -2235,12 +2221,12 @@ const questions: Question[] = [
         answer: "Green",
       },
     ],
-    correct: "",
+    correct: "ALWALW0090001",
   },
   {
     id: "ALW0091",
     question:
-      " What is shown on the printed sign? See figure (ALW-019) (1,00 P.) Siehe Anlage 1",
+      " What is shown on the printed sign? See figure (ALW-019) Siehe Anlage 1",
     answers: [
       {
         id: "ALWALW0091001",
@@ -2264,7 +2250,7 @@ const questions: Question[] = [
   {
     id: "ALW0092",
     question:
-      " What is shown on the printed sign? See figure (ALW-020) (1,00 P.) Siehe Anlage 2",
+      " What is shown on the printed sign? See figure (ALW-020) Siehe Anlage 2",
     answers: [
       {
         id: "ALWALW0092001",
@@ -2291,7 +2277,7 @@ const questions: Question[] = [
   {
     id: "ALW0093",
     question:
-      " Which meaning has a yellow cross on red ground signal as shown in the signal area of an aerodrome? See figure (ALW-010) (1,00 P.) Siehe Anlage 3",
+      " Which meaning has a yellow cross on red ground signal as shown in the signal area of an aerodrome? See figure (ALW-010) Siehe Anlage 3",
     answers: [
       {
         id: "ALWALW0093001",
@@ -2316,7 +2302,7 @@ const questions: Question[] = [
   {
     id: "ALW0094",
     question:
-      " What is the meaning of this sign at an aerodrome? See figure (ALW-011) (1,00 P.) Siehe Anlage 4",
+      " What is the meaning of this sign at an aerodrome? See figure (ALW-011) Siehe Anlage 4",
     answers: [
       {
         id: "ALWALW0094001",
@@ -2341,7 +2327,7 @@ const questions: Question[] = [
   {
     id: "ALW0095",
     question:
-      " What is the meaning of the illustrated ground signal as shown in the signal area of an aerodrome? See figure (ALW-012) (1,00 P.) Siehe Anlage 5",
+      " What is the meaning of the illustrated ground signal as shown in the signal area of an aerodrome? See figure (ALW-012) Siehe Anlage 5",
     answers: [
       {
         id: "ALWALW0095001",
@@ -2365,7 +2351,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0096",
-    question: ' What is the meaning of "DETRESFA"? (1,00 P.)',
+    question: ' What is the meaning of "DETRESFA"?',
     answers: [
       {
         id: "ALWALW0096001",
@@ -2388,7 +2374,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0097",
-    question: " Who provides search and rescue service? (1,00 P.)",
+    question: " Who provides search and rescue service?",
     answers: [
       {
         id: "ALWALW0097001",
@@ -2407,12 +2393,12 @@ const questions: Question[] = [
         answer: "International approved organisations",
       },
     ],
-    correct: "",
+    correct: "ALWALW0097003",
   },
   {
     id: "ALW0098",
     question:
-      " How can a pilot confirm a search and rescue signal on ground in flight? (1,00 P.)",
+      " How can a pilot confirm a search and rescue signal on ground in flight?",
     answers: [
       {
         id: "ALWALW0098001",
@@ -2436,31 +2422,31 @@ const questions: Question[] = [
   {
     id: "ALW0099",
     question:
-      " With respect to aircraft accident and incident investigation, what are the three categories regarding aircraft occurrences? (1,00 P.)",
+      " With respect to aircraft accident and incident investigation, what are the three categories regarding aircraft occurrences?",
     answers: [
       {
         id: "ALWALW0099001",
-        answer: "Event Serious event Accident",
+        answer: "Event, Serious event, Accident",
       },
       {
         id: "ALWALW0099002",
-        answer: "Happening Event Serious event",
+        answer: "Happening, Event, Serious event",
       },
       {
         id: "ALWALW0099003",
-        answer: "Incident Serious incident Accident",
+        answer: "Incident, Serious incident, Accident",
       },
       {
         id: "ALWALW0099004",
-        answer: "Event Crash Disaster",
+        answer: "Event, Crash, Disaster",
       },
     ],
-    correct: "",
+    correct: "ALWALW0099003",
   },
   {
     id: "ALW0100",
     question:
-      " What is the primary purpose of an aircraft accident investigation? (1,00 P.)",
+      " What is the primary purpose of an aircraft accident investigation?",
     answers: [
       {
         id: "ALWALW0100001",
@@ -2481,7 +2467,7 @@ const questions: Question[] = [
           "To work for the public prosecutor and help to follow-up flight accidents",
       },
     ],
-    correct: "",
+    correct: "ALWALW0100002",
   },
 ];
 
