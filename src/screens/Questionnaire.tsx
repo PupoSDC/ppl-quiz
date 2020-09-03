@@ -7,14 +7,12 @@ import questions from "assets/questions/operationalProcedures";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
 import { Button, Text } from "native-base";
+import shuffle from "utils/shuffle";
 
-const randomSort = () => Math.random() - 0.5;
-
-const examQuestions = questions
-  .sort(randomSort)
+const examQuestions = shuffle(questions)
   .slice(0, 24)
   .map(({ answers, ...question }) => ({
-    answers: answers.sort(randomSort),
+    answers: shuffle(answers),
     ...question,
   }));
 
