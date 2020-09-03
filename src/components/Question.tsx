@@ -3,21 +3,24 @@ import { StyleSheet, View } from "react-native";
 import { Button, Text } from "native-base";
 import {
   Question as QuestionType,
-  OngoingQuestionnaireActions,
+  QuestionId,
+  AnswerId,
 } from "types/Questionnaire";
 
-type QuestionProps = QuestionType &
-  Pick<OngoingQuestionnaireActions, "answerQuestion">;
+type QuestionProps = QuestionType & {
+  answerQuestion: (questionId: QuestionId, answerId: AnswerId) => void;
+};
 
 const Question: FunctionComponent<QuestionProps> = ({
   id: questionId,
   question,
   answers,
   selected,
+  index = 0,
   answerQuestion,
 }) => (
   <View style={styles.container}>
-    <Text style={styles.question}>{question}</Text>
+    <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
     {answers.map(({ answer, id: answerId }) => (
       <View style={styles.answer} key={answerId}>
         <Button

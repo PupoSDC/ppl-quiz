@@ -26,7 +26,7 @@ const questions: Question[] = [
           "the total time from the first take-off until the last landing in conjunction with one or more\nconsecutive flights.",
       },
     ],
-    correct: "METALW0001002",
+    correct: "OPR0001002",
   },
   {
     id: "OPR0002",
@@ -52,7 +52,7 @@ const questions: Question[] = [
         answer: "The flight plan has to contain the exact waypoints",
       },
     ],
-    correct: "METALW0002003",
+    correct: "OPR0002003",
   },
   {
     id: "OPR0003",
@@ -76,7 +76,7 @@ const questions: Question[] = [
         answer: "3, 4, 5, 6, 7",
       },
     ],
-    correct: "METALW0003001",
+    correct: "OPR0003001",
   },
   {
     id: "OPR0004",
@@ -104,7 +104,7 @@ const questions: Question[] = [
           "High approach with minimum power setting, late descent, late configuration, adherence to\nestablished arrival routes",
       },
     ],
-    correct: "METALW0004004",
+    correct: "OPR0004004",
   },
   {
     id: "OPR0005",
@@ -128,7 +128,7 @@ const questions: Question[] = [
         answer: "In horizontal flight",
       },
     ],
-    correct: "METALW0005002",
+    correct: "OPR0005002",
   },
   {
     id: "OPR0006",
@@ -153,7 +153,7 @@ const questions: Question[] = [
           "Villages should be circumnavigated and crossed in a sufficient altitude",
       },
     ],
-    correct: "METALW0006004",
+    correct: "OPR0006004",
   },
   {
     id: "OPR0007",
@@ -177,7 +177,7 @@ const questions: Question[] = [
         answer: "Turboprop engines",
       },
     ],
-    correct: "METALW0007001",
+    correct: "OPR0007001",
   },
   {
     id: "OPR0008",
@@ -201,7 +201,7 @@ const questions: Question[] = [
         answer: "The oil will become diluted",
       },
     ],
-    correct: "METALW0008001",
+    correct: "OPR0008001",
   },
   {
     id: "OPR0009",
@@ -224,7 +224,7 @@ const questions: Question[] = [
         answer: "Smoke emission",
       },
     ],
-    correct: "METALW0009002",
+    correct: "OPR0009002",
   },
   {
     id: "OPR0010",
@@ -249,7 +249,7 @@ const questions: Question[] = [
           "Yes, but only if the cause of the fire was a carburettor fire during engine start",
       },
     ],
-    correct: "METALW0010001",
+    correct: "OPR0010001",
   },
   {
     id: "OPR0011",
@@ -272,7 +272,7 @@ const questions: Question[] = [
         answer: "Carbon dioxide",
       },
     ],
-    correct: "METALW0011001",
+    correct: "OPR0011001",
   },
   {
     id: "OPR0012",
@@ -296,7 +296,7 @@ const questions: Question[] = [
         answer: "Switching off the avionics and the cabin lighting",
       },
     ],
-    correct: "METALW0012002",
+    correct: "OPR0012002",
   },
   {
     id: "OPR0013",
@@ -320,7 +320,7 @@ const questions: Question[] = [
         answer: "Open cabin ventialtion",
       },
     ],
-    correct: "METALW0013003",
+    correct: "OPR0013003",
   },
   {
     id: "OPR0014",
@@ -344,7 +344,7 @@ const questions: Question[] = [
         answer: "Foam",
       },
     ],
-    correct: "METALW0014003",
+    correct: "OPR0014003",
   },
   {
     id: "OPR0015",
@@ -368,7 +368,7 @@ const questions: Question[] = [
         answer: "Use the fire extinguisher",
       },
     ],
-    correct: "METALW0015003",
+    correct: "OPR0015003",
   },
   {
     id: "OPR0016",
@@ -392,7 +392,7 @@ const questions: Question[] = [
         answer: "Turn off the master switch",
       },
     ],
-    correct: "METALW0016001",
+    correct: "OPR0016001",
   },
   {
     id: "OPR0017",
@@ -417,7 +417,7 @@ const questions: Question[] = [
         answer: "a meteorological downslope wind phenomenon in the alps.",
       },
     ],
-    correct: "METALW0017003",
+    correct: "OPR0017003",
   },
   {
     id: "OPR0018",
@@ -441,7 +441,7 @@ const questions: Question[] = [
         answer: "Stable high pressure areas.",
       },
     ],
-    correct: "METALW0018003",
+    correct: "OPR0018003",
   },
   {
     id: "OPR0019",
@@ -464,7 +464,7 @@ const questions: Question[] = [
         answer: "When passing a warm front",
       },
     ],
-    correct: "METALW0019001",
+    correct: "OPR0019001",
   },
   {
     id: "OPR0020",
@@ -488,7 +488,7 @@ const questions: Question[] = [
         answer: "Path is lower, IAS decreases",
       },
     ],
-    correct: "METALW0020004",
+    correct: "OPR0020004",
   },
   {
     id: "OPR0021",
@@ -512,7 +512,7 @@ const questions: Question[] = [
         answer: "Path is lower, IAS decreases",
       },
     ],
-    correct: "METALW0021003",
+    correct: "OPR0021003",
   },
   {
     id: "OPR0022",
@@ -536,7 +536,7 @@ const questions: Question[] = [
         answer: "Path is lower, IAS increases",
       },
     ],
-    correct: "METALW0022002",
+    correct: "OPR0022002",
   },
   {
     id: "OPR0023",
@@ -560,7 +560,7 @@ const questions: Question[] = [
         answer: "the aeroplane flies below the estimated climb path.",
       },
     ],
-    correct: "METALW0023004",
+    correct: "OPR0023004",
   },
   {
     id: "OPR0024",
@@ -587,7 +587,7 @@ const questions: Question[] = [
           "Rather unexpected onset of drizzle associated with high stratus clouds following previously\nclear skies and calm conditions.",
       },
     ],
-    correct: "METALW0024001",
+    correct: "OPR0024001",
   },
   {
     id: "OPR0025",
@@ -611,7 +611,7 @@ const questions: Question[] = [
         answer: "Decrease of climb rate",
       },
     ],
-    correct: "METALW0025004",
+    correct: "OPR0025004",
   },
   {
     id: "OPR0026",
@@ -635,7 +635,7 @@ const questions: Question[] = [
         answer: "Decrease in climb rate",
       },
     ],
-    correct: "METALW0026001",
+    correct: "OPR0026001",
   },
   {
     id: "OPR0027",
@@ -662,7 +662,7 @@ const questions: Question[] = [
           "Avoid thermally active areas, particularly during summer, or stay below these areas",
       },
     ],
-    correct: "METALW0027001",
+    correct: "OPR0027001",
   },
   {
     id: "OPR0029",
@@ -686,7 +686,7 @@ const questions: Question[] = [
         answer: "A decreased climb rate and increased airspeed",
       },
     ],
-    correct: "METALW0029003",
+    correct: "OPR0029003",
   },
   {
     id: "OPR0030",
@@ -714,7 +714,7 @@ const questions: Question[] = [
           "Set maximum power, maintain present aircraft configuration, pick up speed in an attempt to\nleave the area of the microburst as fast as possible",
       },
     ],
-    correct: "METALW0030001",
+    correct: "OPR0030001",
   },
   {
     id: "OPR0031",
@@ -738,7 +738,7 @@ const questions: Question[] = [
         answer: "accelerates.",
       },
     ],
-    correct: "METALW0031003",
+    correct: "OPR0031003",
   },
   {
     id: "OPR0032",
@@ -761,7 +761,7 @@ const questions: Question[] = [
         answer: "pressure compensation at the wingtip of an aerofoil.",
       },
     ],
-    correct: "METALW0032004",
+    correct: "OPR0032004",
   },
   {
     id: "OPR0033",
@@ -784,7 +784,7 @@ const questions: Question[] = [
         answer: "when flying at low altitudes.",
       },
     ],
-    correct: "METALW0033003",
+    correct: "OPR0033003",
   },
   {
     id: "OPR0034",
@@ -807,7 +807,7 @@ const questions: Question[] = [
         answer: "at a low aeroplane weight.",
       },
     ],
-    correct: "METALW0034001",
+    correct: "OPR0034001",
   },
   {
     id: "OPR0035",
@@ -830,7 +830,7 @@ const questions: Question[] = [
         answer: "the altitude of the aeroplane.",
       },
     ],
-    correct: "METALW0035003",
+    correct: "OPR0035003",
   },
   {
     id: "OPR0036",
@@ -854,7 +854,7 @@ const questions: Question[] = [
         answer: "The aircraft flying at higher altitude.",
       },
     ],
-    correct: "METALW0036002",
+    correct: "OPR0036002",
   },
   {
     id: "OPR0037",
@@ -878,7 +878,7 @@ const questions: Question[] = [
         answer: "The aircraft flying at lower speed.",
       },
     ],
-    correct: "METALW0037004",
+    correct: "OPR0037004",
   },
   {
     id: "OPR0038",
@@ -902,7 +902,7 @@ const questions: Question[] = [
         answer: "Wake turbulence twisting transverse to the runway.",
       },
     ],
-    correct: "METALW0038001",
+    correct: "OPR0038001",
   },
   {
     id: "OPR0039",
@@ -930,7 +930,7 @@ const questions: Question[] = [
           "By making a shallow approach and a very short landing. The light aircraft should be able to stop\nbefore reaching the airliner's touchdown point",
       },
     ],
-    correct: "METALW0039001",
+    correct: "OPR0039001",
   },
   {
     id: "OPR0040",
@@ -958,7 +958,7 @@ const questions: Question[] = [
           "To avoid the jet blast, a minimum distance of 200 m should be maintained",
       },
     ],
-    correct: "METALW0040004",
+    correct: "OPR0040004",
   },
   {
     id: "OPR0041",
@@ -986,7 +986,7 @@ const questions: Question[] = [
           "Declare an emergency, complete the applicable emergency procedure, cover as much distance\ntowards the airport as possible to be closer to the rescue forces.",
       },
     ],
-    correct: "METALW0041003",
+    correct: "OPR0041003",
   },
   {
     id: "OPR0042",
@@ -1012,7 +1012,7 @@ const questions: Question[] = [
           "Terrain investigation to determine approach points and landing",
       },
     ],
-    correct: "METALW0042004",
+    correct: "OPR0042004",
   },
   {
     id: "OPR0043",
@@ -1035,7 +1035,7 @@ const questions: Question[] = [
         answer: "Sports area in a village",
       },
     ],
-    correct: "METALW0043001",
+    correct: "OPR0043001",
   },
   {
     id: "OPR0044",
@@ -1060,7 +1060,7 @@ const questions: Question[] = [
           "conducted in response to circumstances forcing the aircraft to land.",
       },
     ],
-    correct: "METALW0044004",
+    correct: "OPR0044004",
   },
   {
     id: "OPR0045",
@@ -1084,7 +1084,7 @@ const questions: Question[] = [
         answer: "field or out landing.",
       },
     ],
-    correct: "METALW0045003",
+    correct: "OPR0045003",
   },
   {
     id: "OPR0046",
@@ -1108,7 +1108,7 @@ const questions: Question[] = [
         answer: "conducted with the flaps retracted.",
       },
     ],
-    correct: "METALW0046003",
+    correct: "OPR0046003",
   },
   {
     id: "OPR0047",
@@ -1132,7 +1132,7 @@ const questions: Question[] = [
         answer: "A field with ripe waving crops",
       },
     ],
-    correct: "METALW0047002",
+    correct: "OPR0047002",
   },
   {
     id: "OPR0048",
@@ -1156,7 +1156,7 @@ const questions: Question[] = [
         answer: "Maintain continuous radio contact with ATC.",
       },
     ],
-    correct: "METALW0048003",
+    correct: "OPR0048003",
   },
   {
     id: "OPR0049",
@@ -1184,7 +1184,7 @@ const questions: Question[] = [
           "How to read an emergency checklist, how to cut the engine, telephone number of the home\nairport",
       },
     ],
-    correct: "METALW0049003",
+    correct: "OPR0049003",
   },
   {
     id: "OPR0050",
@@ -1208,7 +1208,7 @@ const questions: Question[] = [
         answer: "From the front, right or left side",
       },
     ],
-    correct: "METALW0050003",
+    correct: "OPR0050003",
   },
   {
     id: "OPR0051",
@@ -1233,7 +1233,7 @@ const questions: Question[] = [
         answer: "The wheel fairing shall be taken off to increase the cooldown",
       },
     ],
-    correct: "METALW0051002",
+    correct: "OPR0051002",
   },
   {
     id: "OPR0052",
@@ -1258,7 +1258,7 @@ const questions: Question[] = [
         answer: "after disembarking the aircraft.",
       },
     ],
-    correct: "METALW0052004",
+    correct: "OPR0052004",
   },
   {
     id: "OPR0053",
@@ -1286,7 +1286,7 @@ const questions: Question[] = [
           "Increase of the take-off distance and decrease of the landing distance",
       },
     ],
-    correct: "METALW0053002",
+    correct: "OPR0053002",
   },
   {
     id: "OPR0054",
@@ -1314,7 +1314,7 @@ const questions: Question[] = [
           "When more than 50 % of the required runway length and width are covered by contaminants\nsuch as snow, frost, ice or sand",
       },
     ],
-    correct: "METALW0054001",
+    correct: "OPR0054001",
   },
   {
     id: "OPR0055",
@@ -1338,7 +1338,7 @@ const questions: Question[] = [
         answer: "75 %",
       },
     ],
-    correct: "METALW0055002",
+    correct: "OPR0055002",
   },
   {
     id: "OPR0056",
@@ -1361,7 +1361,7 @@ const questions: Question[] = [
         answer: "increased rolling resistance during take-off.",
       },
     ],
-    correct: "METALW0056004",
+    correct: "OPR0056004",
   },
   {
     id: "OPR0057",
@@ -1385,7 +1385,7 @@ const questions: Question[] = [
         answer: "A decrease in lift",
       },
     ],
-    correct: "METALW0057003",
+    correct: "OPR0057003",
   },
   {
     id: "OPR0058",
@@ -1409,7 +1409,7 @@ const questions: Question[] = [
         answer: "Decreased braking distance due to aquaplaning",
       },
     ],
-    correct: "METALW0058003",
+    correct: "OPR0058003",
   },
   {
     id: "OPR0059",
@@ -1436,7 +1436,7 @@ const questions: Question[] = [
           "If all wheels are in motion, brake moderately. Maintain directional control by aerodynamic\nmeans",
       },
     ],
-    correct: "METALW0059004",
+    correct: "OPR0059004",
   },
   {
     id: "OPR0060",
@@ -1464,7 +1464,7 @@ const questions: Question[] = [
           "Approach with the minimum crosswind component possible, use minimum flaps, touch down\nsoftly with minimum speed, do not apply brakes",
       },
     ],
-    correct: "METALW0060003",
+    correct: "OPR0060003",
   },
   {
     id: "OPR0061",
@@ -1491,7 +1491,7 @@ const questions: Question[] = [
         answer: "Approach with increased speed, avoid using wheel brakes",
       },
     ],
-    correct: "METALW0061003",
+    correct: "OPR0061003",
   },
 ];
 

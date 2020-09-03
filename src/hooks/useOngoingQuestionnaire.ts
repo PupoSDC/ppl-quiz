@@ -1,10 +1,27 @@
 import { useState } from "react";
 import {
   Questionnaire,
-  OngoingQuestionnaire,
-  OngoingQuestionnaireActions,
+  Question,
+  QuestionId,
+  AnswerId,
 } from "types/Questionnaire";
 import { TRANSITION_DELAY } from "constants/Animations";
+
+export type OngoingQuestionnaire = {
+  /** Undefined if the user has reached the end of the test */
+  currentQuestion?: Question;
+
+  isCompleted: boolean;
+  correctAnswers: number;
+  totalAnswers: number;
+} & Questionnaire;
+
+export type OngoingQuestionnaireActions = {
+  answerQuestion: (questionId: QuestionId, answerId: AnswerId) => void;
+  goToNextQuestion: (delay?: boolean) => void;
+  goToQuestion: (questionId: QuestionId, delay?: boolean) => void;
+  finishTest: () => void;
+};
 
 export default (
   questionnaire: Questionnaire
@@ -12,7 +29,11 @@ export default (
   const [state, setState] = useState(questionnaire);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  const currentQuestion = state.questions[currentQuestionIndex];
+  const currentQuestion = {
+    ...state.questions[currentQuestionIndex],
+    index: currentQuestionIndex,
+  };
+
   const answeredQuestions = state.questions.filter((q) => q.selected);
   const totalAnswers = answeredQuestions.length;
   const isCompleted = totalAnswers === state.questions.length;
@@ -51,7 +72,7 @@ export default (
       },
       goToQuestion: (questionId, delay) => {
         const index = state.questions.findIndex(({ id }) => id === questionId);
-        if (index > 0) {
+        if (index > -1) {
           setTimeout(
             () => setCurrentQuestionIndex(index),
             delay ? TRANSITION_DELAY : 0

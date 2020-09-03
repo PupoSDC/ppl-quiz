@@ -12,25 +12,12 @@ export type Question = {
   question: string;
   answers: Answer[];
   selected?: AnswerId;
+
+  /** Index of the question in a test. */
+  index?: number;
 };
 
 export type Questionnaire = {
   questions: Question[];
   isFinished: Boolean;
-};
-
-export type OngoingQuestionnaire = {
-  /** Undefined if the user has reached the end of the test */
-  currentQuestion?: Question;
-
-  isCompleted: boolean;
-  correctAnswers: number;
-  totalAnswers: number;
-} & Questionnaire;
-
-export type OngoingQuestionnaireActions = {
-  answerQuestion: (questionId: QuestionId, answerId: AnswerId) => void;
-  goToNextQuestion: (delay?: boolean) => void;
-  goToQuestion: (questionId: QuestionId, delay?: boolean) => void;
-  finishTest: () => void;
 };
