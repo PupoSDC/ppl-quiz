@@ -53,15 +53,14 @@ export default (
       answerQuestion: (questionId, answerId) => {
         setState(({ questions, ...state }) => ({
           ...state,
-          questions: questions.map((question) => {
-            if (question.id !== questionId) {
-              return question;
-            }
-            return {
-              selected: answerId,
-              ...question,
-            };
-          }),
+          questions: questions.map((question) =>
+            question.id !== questionId
+              ? question
+              : {
+                  ...question,
+                  selected: answerId,
+                }
+          ),
         }));
       },
       goToNextQuestion: (delay) => {
