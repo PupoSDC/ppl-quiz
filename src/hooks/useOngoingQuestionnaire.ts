@@ -53,7 +53,7 @@ export default (
         const index = state.questions.findIndex(({ id }) => id === questionId);
         if (index > 0) {
           setTimeout(
-            () => setCurrentQuestionIndex((index) => index + 1),
+            () => setCurrentQuestionIndex(index),
             delay ? TRANSITION_DELAY : 0
           );
         }
