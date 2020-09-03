@@ -4,13 +4,13 @@ const { exit } = require("process");
 const { Console } = require("console");
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream("./questions/meteorology/rawdata.md"),
+  input: fs.createReadStream("./questions/operationalProcedures/rawdata.md"),
   console: false,
 });
 
 const questions = [];
 
-const CORRECT_QUARE = " ";
+const CORRECT_SQUARE = " ";
 const WRONG_SQUARE = " ";
 
 let wipQuestion;
@@ -36,21 +36,21 @@ readInterface.on("line", function (line) {
       }
       return;
     }
-    if (line.includes(CORRECT_QUARE) || line.includes(WRONG_SQUARE)) {
-      const answer = line.replace(WRONG_SQUARE, "").replace(CORRECT_QUARE, "");
+    if (line.includes(CORRECT_SQUARE) || line.includes(WRONG_SQUARE)) {
+      const answer = line.replace(WRONG_SQUARE, "").replace(CORRECT_SQUARE, "");
       const id = `MET${wipQuestion.id}00${wipQuestion.answers.length + 1}`;
       wipAnswer = {
         id,
         answer,
       };
       wipQuestion.answers.push(wipAnswer);
-      if (line.includes(CORRECT_QUARE)) {
-        wipQuestion.selected = id;
+      if (line.includes(CORRECT_SQUARE)) {
+        wipQuestion.correct = id;
       }
       return;
     }
     if (wipAnswer) {
-      wipAnswer.correct += " " + line;
+      wipAnswer.answer += "\n" + line;
     }
   } catch (e) {
     console.error(e);

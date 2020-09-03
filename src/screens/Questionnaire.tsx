@@ -3,7 +3,7 @@ import React, { useState, FunctionComponent } from "react";
 import { StyleSheet } from "react-native";
 
 import Question from "components/Question";
-import questions from "assets/questions/meteorology";
+import questions from "assets/questions/operationalProcedures";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
 import { Button, Text } from "native-base";
@@ -12,7 +12,7 @@ const randomSort = () => Math.random() - 0.5;
 
 const examQuestions = questions
   .sort(randomSort)
-  .slice(0, 4)
+  .slice(0, 24)
   .map(({ answers, ...question }) => ({
     answers: answers.sort(randomSort),
     ...question,
