@@ -29,7 +29,7 @@ export default (
   const [state, setState] = useState(questionnaire);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  const currentQuestion = {
+  const currentQuestion = state.questions[currentQuestionIndex] && {
     ...state.questions[currentQuestionIndex],
     index: currentQuestionIndex,
   };

@@ -36,6 +36,7 @@ const Questionnaire: FunctionComponent<{}> = () => {
     goToQuestion(questionId, false);
     setOverview(false);
   };
+
   return (
     <>
       {overview || !currentQuestion ? (
