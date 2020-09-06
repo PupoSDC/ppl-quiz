@@ -4,12 +4,9 @@ import { registerRootComponent } from "expo";
 import { useFonts } from "expo-font";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { NativeRouter, Route } from "react-router-native";
 
 import Questionnaire from "screens/Questionnaire";
-
-const Stack = createStackNavigator();
 
 const App: FunctionComponent<{}> = () => {
   const [loaded, error] = useFonts({
@@ -24,15 +21,9 @@ const App: FunctionComponent<{}> = () => {
 
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Questionnaire"
-            component={Questionnaire}
-            options={{ title: "Questionnaire" }}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <NativeRouter>
+        <Route exact path="/" component={Questionnaire} />
+      </NativeRouter>
     </SafeAreaProvider>
   );
 };

@@ -15,6 +15,8 @@ export type Question = {
 
   /** Index of the question in a test. */
   index?: number;
+
+  explanation?: string;
 };
 
 export type Questionnaire = {

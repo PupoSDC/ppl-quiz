@@ -1,9 +1,8 @@
-import { StackScreenProps } from "@react-navigation/stack";
 import React, { useState, FunctionComponent } from "react";
 import { StyleSheet } from "react-native";
 
 import Question from "components/Question";
-import questions from "assets/questions/operationalProcedures";
+import questions from "assets/questions/meteorology";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
 import { Button, Text } from "native-base";

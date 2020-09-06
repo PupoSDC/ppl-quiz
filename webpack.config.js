@@ -8,6 +8,7 @@ module.exports = async function (env, argv) {
         dangerouslyAddModulePathsToTranspile: [
           "@ui-kitten/components",
           "@codler",
+          "react-router-native",
         ],
       },
     },

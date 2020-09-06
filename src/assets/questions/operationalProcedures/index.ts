@@ -513,6 +513,8 @@ const questions: Question[] = [
       },
     ],
     correct: "OPR0021003",
+    explanation:
+      "the incoming Air speed is increasing, so due to momentum, you will see an increase of IAS. Also because of this, Lift will be increased in the wings, causing you to fly higher than your intended path",
   },
   {
     id: "OPR0022",
