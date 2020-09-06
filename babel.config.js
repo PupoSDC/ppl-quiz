@@ -16,6 +16,7 @@ module.exports = function (api) {
             screens: "./src/screens",
             navigation: "./src/navigation",
             utils: "./src/utils",
+            reducers: "./src/reducers",
           },
         },
       ],

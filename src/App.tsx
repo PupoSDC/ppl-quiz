@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { StatusBar } from "expo-status-bar";
+import { Provider } from "react-redux";
 import { registerRootComponent } from "expo";
 import { useFonts } from "expo-font";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -9,6 +9,7 @@ import { NativeRouter, Route } from "react-router-native";
 import Questionnaire from "screens/Questionnaire";
 import QuestionnaireConfiguration from "screens/QuestionnaireConfiguration";
 import { HOME, QUESTIONNAIRE } from "constants/Routes";
+import store from "./store";
 
 const App: FunctionComponent<{}> = () => {
   const [loaded, error] = useFonts({
@@ -23,10 +24,12 @@ const App: FunctionComponent<{}> = () => {
 
   return (
     <SafeAreaProvider>
-      <NativeRouter>
-        <Route exact path={HOME} component={QuestionnaireConfiguration} />
-        <Route exact path={QUESTIONNAIRE} component={Questionnaire} />
-      </NativeRouter>
+      <Provider store={store}>
+        <NativeRouter>
+          <Route exact path={HOME} component={QuestionnaireConfiguration} />
+          <Route exact path={QUESTIONNAIRE} component={Questionnaire} />
+        </NativeRouter>
+      </Provider>
     </SafeAreaProvider>
   );
 };
