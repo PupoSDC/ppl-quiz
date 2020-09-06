@@ -7,6 +7,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { NativeRouter, Route } from "react-router-native";
 
 import Questionnaire from "screens/Questionnaire";
+import QuestionnaireConfiguration from "screens/QuestionnaireConfiguration";
+import { HOME, QUESTIONNAIRE } from "constants/Routes";
 
 const App: FunctionComponent<{}> = () => {
   const [loaded, error] = useFonts({
@@ -22,7 +24,8 @@ const App: FunctionComponent<{}> = () => {
   return (
     <SafeAreaProvider>
       <NativeRouter>
-        <Route exact path="/" component={Questionnaire} />
+        <Route exact path={HOME} component={QuestionnaireConfiguration} />
+        <Route exact path={QUESTIONNAIRE} component={Questionnaire} />
       </NativeRouter>
     </SafeAreaProvider>
   );
