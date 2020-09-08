@@ -7,11 +7,12 @@ import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
 import { Button, Text } from "native-base";
 import shuffle from "utils/shuffle";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { QuestionnaireState } from "reducers/questionnaire";
 
 const Questionnaire: FunctionComponent<{}> = () => {
   const questions = useSelector((state) => state.questions);
+  const dispatch = useDispatch;
 
   const [
     questionnaire,
