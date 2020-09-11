@@ -53,12 +53,12 @@ const questions: Question[] = [
         answer: "Restricted area",
       },
     ],
-    correct: "",
+    correct: "ALWALW0002004",
   },
   {
     id: "ALW0003",
     question:
-      " Where can the type of restriction for a restricted airspace be found?",
+      "Where can the type of restriction for a restricted airspace be found?",
     answers: [
       {
         id: "ALWALW0003001",
@@ -77,7 +77,7 @@ const questions: Question[] = [
         answer: "AIC",
       },
     ],
-    correct: "",
+    correct: "ALWALW0003001",
   },
   {
     id: "ALW0004",
@@ -103,7 +103,7 @@ const questions: Question[] = [
           "They are part of the EU regulation and legally binding to all EU member states",
       },
     ],
-    correct: "",
+    correct: "ALWALW0004004",
   },
   {
     id: "ALW0005",
@@ -126,7 +126,7 @@ const questions: Question[] = [
         answer: "Unlimited",
       },
     ],
-    correct: "",
+    correct: "ALWALW0005004", // really ?????
   },
   {
     id: "ALW0006",
@@ -149,7 +149,7 @@ const questions: Question[] = [
         answer: "Airspace Restriction Criteria",
       },
     ],
-    correct: "",
+    correct: "ALWALW0006001",
   },
   {
     id: "ALW0007",
@@ -197,7 +197,7 @@ const questions: Question[] = [
         answer: "the country where the license was issued.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0008001",
   },
   {
     id: "ALW0009",
@@ -220,7 +220,7 @@ const questions: Question[] = [
         answer: "Flight crew licensing",
       },
     ],
-    correct: "",
+    correct: "ALWALW0009004",
   },
   {
     id: "ALW0010",
@@ -244,7 +244,7 @@ const questions: Question[] = [
         answer: "48 months",
       },
     ],
-    correct: "",
+    correct: "ALWALW0010003", // reallllllllly
   },
   {
     id: "ALW0011",
@@ -263,11 +263,11 @@ const questions: Question[] = [
         answer: "21 years",
       },
       {
-        id: "ALWALW0011004",
+        id: "ALWALW0011001",
         answer: "18 years",
       },
     ],
-    correct: "",
+    correct: "ALWALW0011001",
   },
   {
     id: "ALW0012",
@@ -295,7 +295,7 @@ const questions: Question[] = [
           "At least 5 additional flight hours at night, three of them with a flight instructor with at least 1 hour cross-country flight plus 10 solo take-offs and full-stop landings",
       },
     ],
-    correct: "",
+    correct: "ALWALW0012003",
   },
   {
     id: "ALW0013",
@@ -319,7 +319,7 @@ const questions: Question[] = [
         answer: "60 Months.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0013003",
   },
   {
     id: "ALW0014",
@@ -346,7 +346,7 @@ const questions: Question[] = [
           "According to the flight experience there have to be several training flights under supervision of an ATO",
       },
     ],
-    correct: "",
+    correct: "ALWALW0014003",
   },
   {
     id: "ALW0015",
@@ -365,7 +365,7 @@ const questions: Question[] = [
       {
         id: "ALWALW0015003",
         answer:
-          "act as PIC on non-commercial flights without compensation as well as to receive compensation as a flight instrucor.",
+          "act as PIC on non-commercial flights without compensation as well as to receive compensation as a flight instructor.",
       },
       {
         id: "ALWALW0015004",
@@ -373,7 +373,7 @@ const questions: Question[] = [
           "act as PIC, and only for flights in aircraft with a MTOW of maximum 2000 kg a compensation may be obtained.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0015003",
   },
   {
     id: "ALW0016",
@@ -397,7 +397,7 @@ const questions: Question[] = [
         answer: "17 years",
       },
     ],
-    correct: "ALWALW0016004",
+    correct: "ALWALW0016001",
   },
   {
     id: "ALW0017",
@@ -420,7 +420,7 @@ const questions: Question[] = [
         answer: "Standard European Routes of the Air",
       },
     ],
-    correct: "",
+    correct: "ALWALW0017002",
   },
   {
     id: "ALW0018",
@@ -467,7 +467,7 @@ const questions: Question[] = [
           "To permanently monitor the radio and if possible to establish radio contact",
       },
     ],
-    correct: "",
+    correct: "ALWALW0019004", // please confirm
   },
   {
     id: "ALW0020",
@@ -490,7 +490,7 @@ const questions: Question[] = [
         answer: "Visual reference to the terrain",
       },
     ],
-    correct: "ALWALW0020004", // To be confirmed.
+    correct: "ALWALW0020004",
   },
   {
     id: "ALW0021",
@@ -514,7 +514,7 @@ const questions: Question[] = [
           'Switch on the transponder, activate mode A, and squawk "IDENT"',
       },
     ],
-    correct: "ALWALW0021004", // To be confirmed
+    correct: "ALWALW0021001",
   },
   {
     id: "ALW0022",
@@ -684,7 +684,7 @@ const questions: Question[] = [
           "The aircraft which flies from left to right has the right of priority",
       },
     ],
-    correct: "ALWALW0028003",
+    correct: "ALWALW0028001", // confirm
   },
   {
     id: "ALW0029",
@@ -736,7 +736,7 @@ const questions: Question[] = [
         answer: "Take-off or landing at an aerodrome",
       },
     ],
-    correct: "",
+    correct: "ALWALW0030003", // whyyyyyyyy
   },
   {
     id: "ALW0031",
@@ -762,7 +762,7 @@ const questions: Question[] = [
         answer: "Both aircraft have to alter their tracks to the right",
       },
     ],
-    correct: "ALWALW0031004", // to be confirmed
+    correct: "ALWALW0031004",
   },
   {
     id: "ALW0032",
@@ -1005,7 +1005,7 @@ const questions: Question[] = [
           "altitude of the base of the lowest layer of clouds covering more than half of the sky below 20000 ft.",
       },
     ],
-    correct: "ALWALW0041001",
+    correct: "ALWALW0041001", // to be confirmed...
   },
   {
     id: "ALW0042",
@@ -1033,7 +1033,7 @@ const questions: Question[] = [
           "Ground visibility at least 5 km Flight visibility at least 5 km Ceiling not below 1500 ft Visual contact to the ground must be maintained The aircraft must remain always clear of clouds.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0042003",
   },
   {
     id: "ALW0043",
@@ -1132,7 +1132,7 @@ const questions: Question[] = [
         answer: "1013.25 hPa.",
       },
     ],
-    correct: "ALWALW0046003", // to be confirmed
+    correct: "ALWALW0046004",
   },
   {
     id: "ALW0047",
@@ -1253,7 +1253,7 @@ const questions: Question[] = [
         answer: "7700",
       },
     ],
-    correct: "ALWALW0051001", // TO be confirmed. No emergency
+    correct: "ALWALW0051003", // TO be confirmed. No emergency
   },
   {
     id: "ALW0052",
@@ -1301,7 +1301,7 @@ const questions: Question[] = [
         answer: "AIS (aeronautical information service)",
       },
     ],
-    correct: "",
+    correct: "ALWALW0053001",
   },
   {
     id: "ALW0054",
@@ -1328,7 +1328,7 @@ const questions: Question[] = [
           "APP (approach control service) ACC (area control service) FIS (flight information service)",
       },
     ],
-    correct: "ALWALW0054003", // To be confirmed
+    correct: "ALWALW0054003",
   },
   {
     id: "ALW0055",
@@ -1352,8 +1352,10 @@ const questions: Question[] = [
         answer: "VFR traffic is separated only from IFR traffic",
       },
     ],
-    correct: "ALWALW0055003",
+    correct: "ALWALW0055003", // to be confirmed
   },
+
+  /// I AM HERE
   {
     id: "ALW0056",
     question:
@@ -1378,7 +1380,7 @@ const questions: Question[] = [
           "ATC (air traffic control) AIS (aeronautical information service)",
       },
     ],
-    correct: "ALWALW0055003", // TO be confirmed, SR is a service?
+    correct: "ALWALW0056003", // but why?
   },
   {
     id: "ALW0057",
@@ -1401,7 +1403,7 @@ const questions: Question[] = [
         answer: "via internet.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0057002", // to be confirmed
   },
   {
     id: "ALW0058",
@@ -1425,7 +1427,7 @@ const questions: Question[] = [
         answer: "Be careful wake winds",
       },
     ],
-    correct: "",
+    correct: "ALWALW0058003", // to be confirmed
   },
   {
     id: "ALW0059",
@@ -1449,7 +1451,7 @@ const questions: Question[] = [
         answer: 'DEABC reaching "N"',
       },
     ],
-    correct: "",
+    correct: "ALWALW0059003",
   },
   {
     id: "ALW0060",
@@ -1500,7 +1502,7 @@ const questions: Question[] = [
           "Access restrictions for airfields, passenger controls, requirements for pilots, license samples and validity periods",
       },
     ],
-    correct: "ALWALW0061001", // to be confirmed
+    correct: "ALWALW0061003", // to be confirmed
   },
   {
     id: "ALW0062",
@@ -1524,7 +1526,7 @@ const questions: Question[] = [
         answer: "GEN COM MET",
       },
     ],
-    correct: "",
+    correct: "ALWALW0062003",
   },
   {
     id: "ALW0063",
@@ -1575,7 +1577,7 @@ const questions: Question[] = [
         answer: "21/05/2013 14:00 UTC.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0064004",
   },
   {
     id: "ALW0065",
@@ -1603,7 +1605,7 @@ const questions: Question[] = [
           "AIC information of operational significance prepared after the flight.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0065002", // explain
   },
   {
     id: "ALW0066",
@@ -1681,7 +1683,7 @@ const questions: Question[] = [
           "A taxi holding point is only to be observed for IFR traffic if instrument weather conditions are prevailing",
       },
     ],
-    correct: "",
+    correct: "ALWALW0068003",
   },
   {
     id: "ALW0069",
@@ -1752,7 +1754,7 @@ const questions: Question[] = [
         answer: "A large part of the surface is flooded",
       },
     ],
-    correct: "",
+    correct: "ALWALW0071001",
   },
   {
     id: "ALW0072",
@@ -1879,7 +1881,7 @@ const questions: Question[] = [
         answer: "Cleared for take-off",
       },
     ],
-    correct: "",
+    correct: "ALWALW0076001",
   },
   {
     id: "ALW0077",
@@ -1950,7 +1952,7 @@ const questions: Question[] = [
         answer: "An angled arrow",
       },
     ],
-    correct: "",
+    correct: "ALWALW0079003",
   },
   {
     id: "ALW0080",
@@ -2001,7 +2003,7 @@ const questions: Question[] = [
         answer: "Apply some changes of the rudder",
       },
     ],
-    correct: "ALWALW0081001",
+    correct: "ALWALW0081001", // confirm
   },
   {
     id: "ALW0082",
@@ -2245,7 +2247,7 @@ const questions: Question[] = [
         answer: "Point A on a taxiway",
       },
     ],
-    correct: "",
+    correct: "ALWALW0091001",
   },
   {
     id: "ALW0092",
@@ -2297,7 +2299,7 @@ const questions: Question[] = [
         answer: "Prohibition on landing for a longer period.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0093004",
   },
   {
     id: "ALW0094",
