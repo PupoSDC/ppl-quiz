@@ -263,7 +263,7 @@ const questions: Question[] = [
         answer: "21 years",
       },
       {
-        id: "ALWALW0011001",
+        id: "ALWALW0011004",
         answer: "18 years",
       },
     ],
@@ -565,7 +565,9 @@ const questions: Question[] = [
           "All traffic on the apron and on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.",
       },
     ],
-    correct: "ALWALW0023003", // To  be confirmed
+    correct: "ALWALW0023002",
+    explanation:
+      "[Annex 2, Chapter 1 Definitions](https://www.icao.int/Meetings/anconf12/Document%20Archive/an02_cons%5B1%5D.pdf)",
   },
   {
     id: "ALW0024",
@@ -1782,7 +1784,7 @@ const questions: Question[] = [
           "The wind direction indicator could be located on a big black surface.",
       },
     ],
-    correct: "",
+    correct: "ALWALW0072001",
   },
   {
     id: "ALW0073",
@@ -2349,7 +2351,7 @@ const questions: Question[] = [
         answer: "Caution, manoeuvring area is poor",
       },
     ],
-    correct: "",
+    correct: "ALWALW0095003",
   },
   {
     id: "ALW0096",
