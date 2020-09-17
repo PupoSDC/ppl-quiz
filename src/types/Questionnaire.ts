@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from "react-native";
+
 export type AnswerId = string;
 export type QuestionId = string;
 
@@ -12,6 +14,8 @@ export type Question = {
   question: string;
   answers: Answer[];
   selected?: AnswerId;
+
+  image?: ImageSourcePropType;
 
   /** Index of the question in a test. */
   index?: number;

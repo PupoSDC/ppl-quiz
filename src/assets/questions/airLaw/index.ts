@@ -2229,8 +2229,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0091",
-    question:
-      " What is shown on the printed sign? See figure (ALW-019) Siehe Anlage 1",
+    question: " What is shown on the printed sign?",
     answers: [
       {
         id: "ALWALW0091001",
@@ -2250,11 +2249,11 @@ const questions: Question[] = [
       },
     ],
     correct: "ALWALW0091001",
+    image: require("./images/ALW91.png"),
   },
   {
     id: "ALW0092",
-    question:
-      " What is shown on the printed sign? See figure (ALW-020) Siehe Anlage 2",
+    question: " What is shown on the printed sign?",
     answers: [
       {
         id: "ALWALW0092001",
@@ -2276,12 +2275,13 @@ const questions: Question[] = [
           "From this intersection the available runway length is 2500 m in the stated direction",
       },
     ],
-    correct: "",
+    correct: "ALWALW0092004",
+    image: require("./images/ALW92.png"),
   },
   {
     id: "ALW0093",
     question:
-      " Which meaning has a yellow cross on red ground signal as shown in the signal area of an aerodrome? See figure (ALW-010) Siehe Anlage 3",
+      " Which meaning has a yellow cross on red ground signal as shown in the signal area of an aerodrome?",
     answers: [
       {
         id: "ALWALW0093001",
@@ -2302,11 +2302,11 @@ const questions: Question[] = [
       },
     ],
     correct: "ALWALW0093004",
+    image: require("./images/ALW93.png"),
   },
   {
     id: "ALW0094",
-    question:
-      " What is the meaning of this sign at an aerodrome? See figure (ALW-011) Siehe Anlage 4",
+    question: " What is the meaning of this sign at an aerodrome?",
     answers: [
       {
         id: "ALWALW0094001",
@@ -2326,7 +2326,8 @@ const questions: Question[] = [
           "After take-off and before landing all turns have to be made to the right",
       },
     ],
-    correct: "",
+    correct: "ALWALW0094002",
+    image: require("./images/ALW94.png"),
   },
   {
     id: "ALW0095",
@@ -2352,6 +2353,7 @@ const questions: Question[] = [
       },
     ],
     correct: "ALWALW0095003",
+    image: require("./images/ALW95.png"),
   },
   {
     id: "ALW0096",
