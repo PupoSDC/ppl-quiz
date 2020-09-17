@@ -1451,7 +1451,7 @@ const questions: Question[] = [
         answer: 'DEABC reaching "N"',
       },
     ],
-    correct: "ALWALW0059003",
+    correct: "ALWALW0059002",
   },
   {
     id: "ALW0060",
