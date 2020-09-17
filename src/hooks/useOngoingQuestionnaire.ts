@@ -67,7 +67,7 @@ export default (
         );
       },
       goToQuestion: (questionId, delay) => {
-        const index = state.questions.findIndex(({ id }) => id === questionId);
+        const index = questions.findIndex(({ id }) => id === questionId);
         if (index > -1) {
           setTimeout(
             () => setCurrentQuestionIndex(index),
