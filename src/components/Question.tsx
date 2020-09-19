@@ -20,7 +20,6 @@ const Question: FunctionComponent<QuestionProps> = ({
   index = 0,
   answerQuestion,
 }) => {
-  console.log(image);
   return (
     <View style={styles.container}>
       <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
