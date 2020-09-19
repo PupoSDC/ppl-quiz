@@ -71,8 +71,8 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     alignSelf: "stretch",
-    width: win.width * 0.8,
-    height: win.width * 0.4,
+    width: win.width > 500 ? 500 : win.width * 0.8,
+    height: win.width > 500 ? 250 : win.width * 0.4,
   },
 });
 

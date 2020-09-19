@@ -1,15 +1,15 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet, View } from "react-native";
-import {
-  OngoingQuestionnaire,
-  OngoingQuestionnaireActions,
-} from "types/Questionnaire";
 import { Button, Text } from "native-base";
+import { Question } from "types/Questionnaire";
 
-type QuestionProps = OngoingQuestionnaire &
-  Pick<OngoingQuestionnaireActions, "goToQuestion">;
+type OverviewProps = {
+  correctAnswers: Question[];
+  goToQuestion: (index: unknown) => void;
+  questions: Question[];
+};
 
-const Overview: FunctionComponent<QuestionProps> = ({
+const Overview: FunctionComponent<OverviewProps> = ({
   correctAnswers,
   goToQuestion,
   questions,

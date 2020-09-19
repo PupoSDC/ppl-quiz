@@ -12,7 +12,6 @@ import { QuestionnaireState } from "reducers/questionnaire";
 
 const Questionnaire: FunctionComponent<{}> = () => {
   const questions = useSelector((state) => state.questions);
-  const dispatch = useDispatch;
 
   const [
     questionnaire,
