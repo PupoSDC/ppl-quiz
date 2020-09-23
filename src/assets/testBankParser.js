@@ -4,7 +4,7 @@ const { exit } = require("process");
 const { Console } = require("console");
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream("./questions/operationalProcedures/rawdata.md"),
+  input: fs.createReadStream("./questions/humanPerformance/rawdata.md"),
   console: false,
 });
 
@@ -25,7 +25,7 @@ readInterface.on("line", function (line) {
       const id = Number(noTrail.split(" ")[0]);
       if (!isNaN(id)) {
         wipQuestion = {
-          id: `ALW${id.toString().padStart(4, "0")}`,
+          id: `HPL${id.toString().padStart(4, "0")}`,
           question: noTrail.replace(id, ""),
           answers: [],
           correct: "",
@@ -38,7 +38,7 @@ readInterface.on("line", function (line) {
     }
     if (line.includes(CORRECT_SQUARE) || line.includes(WRONG_SQUARE)) {
       const answer = line.replace(WRONG_SQUARE, "").replace(CORRECT_SQUARE, "");
-      const id = `MET${wipQuestion.id}00${wipQuestion.answers.length + 1}`;
+      const id = `${wipQuestion.id}00${wipQuestion.answers.length + 1}`;
       wipAnswer = {
         id,
         answer,
