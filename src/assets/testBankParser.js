@@ -4,7 +4,7 @@ const { exit } = require("process");
 const { Console } = require("console");
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream("./questions/humanPerformance/rawdata.md"),
+  input: fs.createReadStream("./questions/communications/rawdata.md"),
   console: false,
 });
 
@@ -25,7 +25,7 @@ readInterface.on("line", function (line) {
       const id = Number(noTrail.split(" ")[0]);
       if (!isNaN(id)) {
         wipQuestion = {
-          id: `HPL${id.toString().padStart(4, "0")}`,
+          id: `COM${id.toString().padStart(4, "0")}`,
           question: noTrail.replace(id, ""),
           answers: [],
           correct: "",
