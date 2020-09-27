@@ -31,7 +31,7 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
   return (
     <View>
       {questionBanks.map(([name, questions]) => (
-        <Button onPress={() => onTestSelected(questions)}>
+        <Button onPress={() => onTestSelected(questions)} key={name}>
           <Text>{name}</Text>
         </Button>
       ))}

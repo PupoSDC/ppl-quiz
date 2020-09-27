@@ -8,7 +8,7 @@ import principlesOfFlight from "./principlesOfFlight";
 import navigation from "./navigation";
 import aircraftGeneralKnowledge from "./aircraftGeneralKnowledge";
 
-export default {
+const questionnaires = {
   aircraftGeneralKnowledge,
   airLaw,
   meteorology,
@@ -18,4 +18,9 @@ export default {
   communications,
   principlesOfFlight,
   navigation,
+};
+
+export default {
+  ...questionnaires,
+  all: Object.values(questionnaires).flat(),
 };

@@ -1387,7 +1387,7 @@ const questions: Question[] = [
       },
       {
         id: "COM0058003",
-        answer: "Squawk 4321, 131.",
+        answer: "Squawk 4321, 131.325",
       },
       {
         id: "COM0058004",
