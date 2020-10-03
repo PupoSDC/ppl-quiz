@@ -1324,7 +1324,7 @@ const questions: Question[] = [
   {
     id: "ALW0056",
     question:
-      ' What weather phenomenon designated by "2" has to be expected on the lee side during "Foehn" conditions? See figure (MET-001). (1,00 P.) Siehe Anlage 1',
+      ' What weather phenomenon designated by "2" has to be expected on the lee side during "Foehn" conditions? See figure (MET-001).',
     answers: [
       {
         id: "METALW0056001",
@@ -1344,11 +1344,12 @@ const questions: Question[] = [
       },
     ],
     correct: "METALW0056004",
+    image: require("./images/MET1.png"),
   },
   {
     id: "ALW0057",
-    question:
-      " What cloud type does the picture show? See figure (MET-002). (1,00 P.) Siehe Anlage 2",
+    question: " What cloud type does the picture show?",
+    image: require("./images/MET2.png"),
     answers: [
       {
         id: "METALW0057001",
@@ -1371,8 +1372,8 @@ const questions: Question[] = [
   },
   {
     id: "ALW0058",
-    question:
-      " What cloud type does the picture show? See figure (MET-004). (1,00 P.) Siehe Anlage 3",
+    question: " What cloud type does the picture show?",
+    image: require("./images/MET3.png"),
     answers: [
       {
         id: "METALW0058001",
@@ -1658,8 +1659,8 @@ const questions: Question[] = [
   },
   {
     id: "ALW0070",
-    question:
-      " The symbol labeled (1) as shown in the picture is a / an... See figure (MET-005) (1,00 P.) Siehe Anlage 4",
+    question: " The symbol labeled (1) as shown in the picture is a / an...",
+    image: require("./images/MET4.png"),
     answers: [
       {
         id: "METALW0070001",
@@ -1682,8 +1683,8 @@ const questions: Question[] = [
   },
   {
     id: "ALW0071",
-    question:
-      " The symbol labeled (2) as shown in the picture is a / an... See figure (MET-005) (1,00 P.) Siehe Anlage 4",
+    question: " The symbol labeled (2) as shown in the picture is a / an...",
+    image: require("./images/MET4.png"),
     answers: [
       {
         id: "METALW0071001",
@@ -1706,8 +1707,8 @@ const questions: Question[] = [
   },
   {
     id: "ALW0072",
-    question:
-      " The symbol labeled (3) as shown in the picture is a / an... See figure (MET-005) (1,00 P.) Siehe Anlage 4",
+    question: " The symbol labeled (3) as shown in the picture is a / an...",
+    image: require("./images/MET4.png"),
     answers: [
       {
         id: "METALW0072001",
