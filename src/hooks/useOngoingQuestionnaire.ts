@@ -24,11 +24,9 @@ export type OngoingQuestionnaireActions = {
   goToQuestion: (questionId: QuestionId, delay?: boolean) => void;
 };
 
-export default (
-  questionnaire: Questionnaire
-): [OngoingQuestionnaire, OngoingQuestionnaireActions] => {
+export default (): [OngoingQuestionnaire, OngoingQuestionnaireActions] => {
   const dispatch = useDispatch();
-  const questions = useSelector((state) => state.questions);
+  const questions = useSelector((state) => state.questionnaire.questions);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const currentQuestion = questions[currentQuestionIndex] && {

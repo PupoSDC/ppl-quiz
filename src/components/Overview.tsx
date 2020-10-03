@@ -6,12 +6,14 @@ import { Question } from "types/Questionnaire";
 type OverviewProps = {
   correctAnswers: Question[];
   goToQuestion: (index: unknown) => void;
+  finishTest: () => void;
   questions: Question[];
 };
 
 const Overview: FunctionComponent<OverviewProps> = ({
   correctAnswers,
   goToQuestion,
+  finishTest,
   questions,
 }) => (
   <View>
@@ -31,6 +33,11 @@ const Overview: FunctionComponent<OverviewProps> = ({
           <Text>{i + 1}</Text>
         </Button>
       ))}
+    </View>
+    <View style={styles.container}>
+      <Button onPress={() => finishTest()}>
+        <Text>Finish Test</Text>
+      </Button>
     </View>
   </View>
 );

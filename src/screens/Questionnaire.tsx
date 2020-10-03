@@ -1,25 +1,23 @@
 import React, { useState, FunctionComponent } from "react";
+import { Button, Text } from "native-base";
+import { useDispatch, useSelector } from "react-redux";
 import { StyleSheet } from "react-native";
-
+import { useHistory } from "react-router-native";
 import Question from "components/Question";
-import questions from "assets/questions/meteorology";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
-import { Button, Text } from "native-base";
-import shuffle from "utils/shuffle";
-import { useSelector, useDispatch } from "react-redux";
-import { QuestionnaireState } from "reducers/questionnaire";
+import { addQuestionnareToStatistics } from "constants/Actions";
+import { HOME } from "constants/Routes";
 
 const Questionnaire: FunctionComponent<{}> = () => {
-  const questions = useSelector((state) => state.questions);
+  const questions = useSelector((state) => state.questionnaire.questions);
+  const { push } = useHistory();
+  const dispatch = useDispatch();
 
   const [
     questionnaire,
     { answerQuestion, goToNextQuestion, goToQuestion },
-  ] = useOngoingQuestionnaire({
-    questions,
-    isFinished: false,
-  });
+  ] = useOngoingQuestionnaire();
   const { currentQuestion, isCompleted } = questionnaire;
   const [overview, setOverview] = useState(false);
 
@@ -33,10 +31,19 @@ const Questionnaire: FunctionComponent<{}> = () => {
     setOverview(false);
   };
 
+  const finishTest = () => {
+    dispatch(addQuestionnareToStatistics({ questions }));
+    push(HOME);
+  };
+
   return (
     <>
       {overview || !currentQuestion ? (
-        <Overview {...questionnaire} goToQuestion={goToQuestionFromOverview} />
+        <Overview
+          {...questionnaire}
+          goToQuestion={goToQuestionFromOverview}
+          finishTest={finishTest}
+        />
       ) : (
         <>
           <Question
