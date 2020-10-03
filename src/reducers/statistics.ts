@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { addQuestionnareToStatistics } from "constants/Actions";
+import { finishQuestionnaire } from "constants/Actions";
 import { GlobalTestStatistics } from "types/Statistics";
 
 export { GlobalTestStatistics };
@@ -10,7 +10,7 @@ export default createReducer<GlobalTestStatistics>(
   },
   (builder) =>
     builder.addCase(
-      addQuestionnareToStatistics,
+      finishQuestionnaire,
       (state, { payload: { questions } }) => {
         questions
           .filter(({ selected }) => Boolean(selected))

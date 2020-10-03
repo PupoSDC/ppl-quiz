@@ -6,7 +6,7 @@ import { useHistory } from "react-router-native";
 import Question from "components/Question";
 import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
 import Overview from "components/Overview";
-import { addQuestionnareToStatistics } from "constants/Actions";
+import { finishQuestionnaire } from "constants/Actions";
 import { HOME } from "constants/Routes";
 
 const Questionnaire: FunctionComponent<{}> = () => {
@@ -32,7 +32,7 @@ const Questionnaire: FunctionComponent<{}> = () => {
   };
 
   const finishTest = () => {
-    dispatch(addQuestionnareToStatistics({ questions }));
+    dispatch(finishQuestionnaire({ questions }));
     push(HOME);
   };
 
