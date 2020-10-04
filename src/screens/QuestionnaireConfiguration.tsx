@@ -6,15 +6,15 @@ import { useHistory } from "react-router-native";
 import { QUESTIONNAIRE } from "constants/Routes";
 import { createQuestionnaire } from "constants/Actions";
 import { Question } from "types/Questionnaire";
-import shuffle from "utils/shuffle";
+import { shuffleAnswers, shuffleQuestions } from "utils/questionnaireShufle";
 
 const questionBanks = Object.entries(questions);
 
 const getQuestionnaire = (questions: Question[]) =>
-  shuffle(questions)
+  shuffleQuestions(questions)
     .slice(0, 24)
     .map(({ answers, ...question }) => ({
-      answers: shuffle(answers),
+      answers: shuffleAnswers(answers),
       ...question,
     }));
 
