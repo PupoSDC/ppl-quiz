@@ -20,7 +20,7 @@ const getQuestionnaire = (
   statistics: QuestionsHeatMap
 ) =>
   shuffleQuestions(questions, statistics, ShuffleMode.BIASED_ALL)
-    .slice(0, 24)
+    .slice(0, 12)
     .map(({ answers, ...question }) => ({
       answers: shuffleAnswers(answers),
       ...question,
