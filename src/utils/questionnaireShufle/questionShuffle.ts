@@ -2,6 +2,7 @@ import questions from "assets/questions/airLaw/flightAcademy";
 import { Question } from "types/Questionnaire";
 import { QuestionsHeatMap, QuestionsHeatMapEntry } from "types/Statistics";
 import perfectShuffle from "./perfectShuffle";
+import biasedShuffle from "./biasedShuffle";
 
 export enum ShuffleMode {
   NEVER_SEEN_BEFORE = "NEVER_SEEN_BEFORE",
@@ -31,15 +32,17 @@ export default (
   ]);
 
   if (mode === ShuffleMode.BIASED_ALL) {
-    return mappedQuestions
-      .sort(function sortPrioritizingWrongAndUnanswered([, a], [, b]) {
+    return biasedShuffle(
+      mappedQuestions.sort(function sortPrioritizingWrongAndUnanswered(
+        [, a],
+        [, b]
+      ) {
         const wrongnessWeight =
-          a.timesWrong - a.timesCorrect - (b.timesWrong - b.timesCorrect);
-        const appearenceWeight = b.answers.length - a.answers.length;
+          b.timesWrong - b.timesCorrect - (a.timesWrong - a.timesCorrect);
+        const appearenceWeight = a.answers.length - b.answers.length;
         return wrongnessWeight !== 0 ? wrongnessWeight : appearenceWeight;
       })
-      .sort(() => Math.random() - 0.5)
-      .map(([question]) => question);
+    ).map(([question]) => question);
   }
 
   // NEVER_SEEN_BEFORE, WRONG, NEVER_SEEN_BEFORE_AND_WRONG
