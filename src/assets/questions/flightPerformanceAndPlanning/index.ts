@@ -2,2534 +2,2514 @@ import { Question } from "types/Questionnaire";
 
 const questions: Question[] = [
   {
-    id: "ALW0001",
+    id: "FPP0001",
     question:
       " A flight plan has been files for a flight departing at an uncontrolled aerodrome. When has the actual take-off time been transmitted to ATC? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0001001",
+        id: "FPP0001001",
         answer: "Upon request from ATC.",
       },
       {
-        id: "FPPALW0001002",
+        id: "FPP0001002",
         answer: "When landing is assured.",
       },
       {
-        id: "FPPALW0001003",
+        id: "FPP0001003",
         answer: "Immediately after take-off.",
       },
       {
-        id: "FPPALW0001004",
+        id: "FPP0001004",
         answer:
           "At deviation from expected off-block time by more than 15 min.",
       },
     ],
-    correct: "FPPALW0001003",
+    correct: "FPP0001003",
   },
   {
-    id: "ALW0002",
+    id: "FPP0002",
     question:
       " During a flight with a flight plan submitted, landing is conducted at an airfield other than the destination stated in the filed flight plan. Who has to be contacted by the pilot immediately? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0002001",
+        id: "FPP0002001",
         answer: "The flight manager on duty.",
       },
       {
-        id: "FPPALW0002002",
+        id: "FPP0002002",
         answer: "Aeronatical Information Service (AIS).",
       },
       {
-        id: "FPPALW0002003",
+        id: "FPP0002003",
         answer: "The police department.",
       },
       {
-        id: "FPPALW0002004",
+        id: "FPP0002004",
         answer: "Local office for aereal supervision.",
       },
     ],
-    correct: "FPPALW0002002",
+    correct: "FPP0002002",
   },
   {
-    id: "ALW0003",
+    id: "FPP0003",
     question: " Exceeding the maximum allowed aircraft mass is... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0003001",
+        id: "FPP0003001",
         answer: "only relevant if the excess is more than 10 %.",
       },
       {
-        id: "FPPALW0003002",
+        id: "FPP0003002",
         answer: "not permissible and essentially dangerous.",
       },
       {
-        id: "FPPALW0003003",
+        id: "FPP0003003",
         answer: "exceptionally permissible to avoid delays.",
       },
       {
-        id: "FPPALW0003004",
+        id: "FPP0003004",
         answer: "compensated by the pilot's control inputs.",
       },
     ],
-    correct: "FPPALW0003002",
+    correct: "FPP0003002",
   },
   {
-    id: "ALW0004",
+    id: "FPP0004",
     question: " The center of gravity has to be located... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0004001",
+        id: "FPP0004001",
         answer: "right of the lateral C. G. limit.",
       },
       {
-        id: "FPPALW0004002",
+        id: "FPP0004002",
         answer: "in front of the front C.G. limit.",
       },
       {
-        id: "FPPALW0004003",
+        id: "FPP0004003",
         answer: "behind the rear C.G. limit.",
       },
       {
-        id: "FPPALW0004004",
+        id: "FPP0004004",
         answer: "between the front and the rear C.G. limit.",
       },
     ],
-    correct: "FPPALW0004004",
+    correct: "FPP0004004",
   },
   {
-    id: "ALW0005",
+    id: "FPP0005",
     question: " The result of a rear C.G. position is... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0005001",
+        id: "FPP0005001",
         answer: "an increased stall speed.",
       },
       {
-        id: "FPPALW0005002",
+        id: "FPP0005002",
         answer: "an increased fuel consumption.",
       },
       {
-        id: "FPPALW0005003",
+        id: "FPP0005003",
         answer: "a decrease of range.",
       },
       {
-        id: "FPPALW0005004",
+        id: "FPP0005004",
         answer:
           "a decrease of stability.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0005004",
+    correct: "FPP0005004",
   },
   {
-    id: "ALW0006",
+    id: "FPP0006",
     question:
       " An aircraft must be loaded and operated in such a way that the center of gravity (CG) stays within the approved limits during all phases of flight. This is done to ensure... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0006001",
+        id: "FPP0006001",
         answer:
           "that the aircraft does not tip over on its tail while it is being loaded.",
       },
       {
-        id: "FPPALW0006002",
+        id: "FPP0006002",
         answer: "that the aircraft does not stall.",
       },
       {
-        id: "FPPALW0006003",
+        id: "FPP0006003",
         answer: "both stability and controllability of the aircraft.",
       },
       {
-        id: "FPPALW0006004",
+        id: "FPP0006004",
         answer:
           "that the aircraft does not exceed the maximum permissible airspeed during a descent.",
       },
     ],
-    correct: "FPPALW0006003",
+    correct: "FPP0006003",
   },
   {
-    id: "ALW0007",
-    question: " The result of a front C.G. position is:",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "ALW0001",
-    question: ". Increase in stability.",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "ALW0002",
-    question: ". Increase in fuel consumption.",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "ALW0003",
-    question: ". Increase in stall speed.",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "ALW0004",
-    question: ". Increase in range. (1,00 P.)",
+    id: "FPP0007",
+    question: `The result of a front C.G. position is:
+    1) Increase in stability.
+    2). Increase in fuel consumption.
+    3) Increase in stall speed.
+    4) Increase in range.`,
     answers: [
       {
-        id: "FPPALW0004001",
+        id: "FPP0004001",
         answer: "2, 4",
       },
       {
-        id: "FPPALW0004002",
+        id: "FPP0004002",
         answer: "1, 2, 3",
       },
       {
-        id: "FPPALW0004003",
+        id: "FPP0004003",
         answer: "2, 3, 4",
       },
       {
-        id: "FPPALW0004004",
+        id: "FPP0004004",
         answer: "1, 2",
       },
     ],
-    correct: "FPPALW0004002",
+    correct: "FPP0004002",
   },
   {
-    id: "ALW0008",
+    id: "FPP0008",
     question: " The basic empty mass of an aircraft includes... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0008001",
+        id: "FPP0008001",
         answer:
           "the total mass of the aeroplane ready for a specific type of operation including crew, navigation\ninstruments and engine cowling.",
       },
       {
-        id: "FPPALW0008002",
+        id: "FPP0008002",
         answer:
           "the total mass of an aeroplane ready for a specific type of operation including the required fuel\nand crew, but excluding traffic load.",
       },
       {
-        id: "FPPALW0008003",
+        id: "FPP0008003",
         answer:
           "the total mass of the aeroplane ready for a specific type of operation excluding unusable fuel\nand traffic load. The mass includes items such as crew and crew baggage.",
       },
       {
-        id: "FPPALW0008004",
+        id: "FPP0008004",
         answer:
           "the mass of the aeroplane plus standard items such as unusable fuel and other unusable\nliquids, lubricating oil in engine and auxiliary units, fire extinguishers, pyrotechnics, emergency\noxygen equipment, supplementary electronic equipment.",
       },
     ],
-    correct: "FPPALW0008004",
+    correct: "FPP0008004",
   },
   {
-    id: "ALW0009",
+    id: "FPP0009",
     question:
       " The empty weight and the corresponding center of gravity (CG) of an aircraft are initially determined... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0009001",
+        id: "FPP0009001",
         answer: "by weighing.",
       },
       {
-        id: "FPPALW0009002",
+        id: "FPP0009002",
         answer:
           "for one aircraft of a type only, since all aircraft of the same type have the same mass and CG\nposition.",
       },
       {
-        id: "FPPALW0009003",
+        id: "FPP0009003",
         answer: "by calculation.",
       },
       {
-        id: "FPPALW0009004",
+        id: "FPP0009004",
         answer: "through data provided by the aircraft manufacturer.",
       },
     ],
-    correct: "FPPALW0009001",
+    correct: "FPP0009001",
   },
   {
-    id: "ALW0010",
+    id: "FPP0010",
     question: " The density of AVGAS 100LL at 15° C is... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0010001",
+        id: "FPP0010001",
         answer: "0.68 kg/l.",
       },
       {
-        id: "FPPALW0010002",
+        id: "FPP0010002",
         answer: "1.0 kg/l.",
       },
       {
-        id: "FPPALW0010003",
+        id: "FPP0010003",
         answer: "0.82 kg/l.",
       },
       {
-        id: "FPPALW0010004",
+        id: "FPP0010004",
         answer: "0.72 kg/l.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0010004",
+    correct: "FPP0010004",
   },
   {
-    id: "ALW0011",
+    id: "FPP0011",
     question:
       " The conversion factor from kilogram [kg] into pounds [lb] is... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0011001",
+        id: "FPP0011001",
         answer: "kg x 0.454 = lb.",
       },
       {
-        id: "FPPALW0011002",
+        id: "FPP0011002",
         answer: "kg / 2.205 = lb.",
       },
       {
-        id: "FPPALW0011003",
+        id: "FPP0011003",
         answer: "kg x 2.205 = lb.",
       },
       {
-        id: "FPPALW0011004",
+        id: "FPP0011004",
         answer: "kg x 2 = lb.",
       },
     ],
-    correct: "FPPALW0011003",
+    correct: "FPP0011003",
   },
   {
-    id: "ALW0012",
+    id: "FPP0012",
     question:
       " Baggage and cargo must be properly stowed and fastened, otherwise a shift of the cargo may cause... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0012001",
+        id: "FPP0012001",
         answer:
           "uncontrollable attitudes, structural damage, risk of injuries.",
       },
       {
-        id: "FPPALW0012002",
+        id: "FPP0012002",
         answer:
           "continuous attitudes which can be corrected by the pilot using the flight controls.",
       },
       {
-        id: "FPPALW0012003",
+        id: "FPP0012003",
         answer:
           "calculable instability if the C.G. is shifting by less than 10 %.",
       },
       {
-        id: "FPPALW0012004",
+        id: "FPP0012004",
         answer:
           "structural damage, angle of attack stability, velocity stability.",
       },
     ],
-    correct: "FPPALW0012001",
+    correct: "FPP0012001",
   },
   {
-    id: "ALW0013",
+    id: "FPP0013",
     question: " Loads must be adequately secured in order to... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0013001",
+        id: "FPP0013001",
         answer: "allow steep turns.",
       },
       {
-        id: "FPPALW0013002",
+        id: "FPP0013002",
         answer: "carry extra fuel.",
       },
       {
-        id: "FPPALW0013003",
+        id: "FPP0013003",
         answer: "prevent excessive 'g'-loading during the landing flare.",
       },
       {
-        id: "FPPALW0013004",
+        id: "FPP0013004",
         answer: "avoid any centre of gravity (C.G.) movements.",
       },
     ],
-    correct: "FPPALW0013004",
+    correct: "FPP0013004",
   },
   {
-    id: "ALW0014",
+    id: "FPP0014",
     question:
       " The total weight of an aeroplane is acting vertically through the... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0014001",
+        id: "FPP0014001",
         answer: "center of pressure.",
       },
       {
-        id: "FPPALW0014002",
+        id: "FPP0014002",
         answer: "stagnation point.",
       },
       {
-        id: "FPPALW0014003",
+        id: "FPP0014003",
         answer: "neutral point.",
       },
       {
-        id: "FPPALW0014004",
+        id: "FPP0014004",
         answer: "center of gravity.",
       },
     ],
-    correct: "FPPALW0014004",
+    correct: "FPP0014004",
   },
   {
-    id: "ALW0015",
+    id: "FPP0015",
     question: ' The term "center of gravity" is defined as... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0015001",
+        id: "FPP0015001",
         answer: "the heaviest point on an aeroplane.",
       },
       {
-        id: "FPPALW0015002",
+        id: "FPP0015002",
         answer: "another designation for the neutral point.",
       },
       {
-        id: "FPPALW0015003",
+        id: "FPP0015003",
         answer:
           "half the distance between the neutral point and the datum line.",
       },
       {
-        id: "FPPALW0015004",
+        id: "FPP0015004",
         answer:
           "the point at which the total mass of the aeroplane is considered to act.",
       },
     ],
-    correct: "FPPALW0015004",
+    correct: "FPP0015004",
   },
   {
-    id: "ALW0016",
+    id: "FPP0016",
     question: " The center of gravity (CG) defines... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0016001",
+        id: "FPP0016001",
         answer:
           "the point through which the force of gravity is said to act on a mass.",
       },
       {
-        id: "FPPALW0016002",
+        id: "FPP0016002",
         answer: "the product of mass and balance arm.",
       },
       {
-        id: "FPPALW0016003",
+        id: "FPP0016003",
         answer: "the distance from the datum to the position of a mass.",
       },
       {
-        id: "FPPALW0016004",
+        id: "FPP0016004",
         answer:
           "the point on the longitudinal axis or its extension from which the centers of gravity of all masses\nare referenced.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0016001",
+    correct: "FPP0016001",
   },
   {
-    id: "ALW0017",
+    id: "FPP0017",
     question: " During an unaccelerated flight... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0017001",
+        id: "FPP0017001",
         answer: "thrust equals drag and lift equals gravity.",
       },
       {
-        id: "FPPALW0017002",
+        id: "FPP0017002",
         answer: "thrust equals the sum of drag and gravity.",
       },
       {
-        id: "FPPALW0017003",
+        id: "FPP0017003",
         answer: "thrust equals lift and drag equals gravity.",
       },
       {
-        id: "FPPALW0017004",
+        id: "FPP0017004",
         answer: "drag equals lift and thrust equals gravity.",
       },
     ],
-    correct: "FPPALW0017001",
+    correct: "FPP0017001",
   },
   {
-    id: "ALW0018",
+    id: "FPP0018",
     question:
       ' The term "datum" with regard to a mass and balance calculation defines... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0018001",
+        id: "FPP0018001",
         answer:
           "the distance from the reference plane to the center of gravity of an aircraft.",
       },
       {
-        id: "FPPALW0018002",
+        id: "FPP0018002",
         answer:
           "the point on the lateral axis of an aeroplane or its extension from which the centers of gravity of\nall masses are referenced.",
       },
       {
-        id: "FPPALW0018003",
+        id: "FPP0018003",
         answer:
           "the point on the vertical axis of an aeroplane or its extension from which the centers of gravity of\nall masses are referenced.",
       },
       {
-        id: "FPPALW0018004",
+        id: "FPP0018004",
         answer:
           "the point on the longitudinal axis of an aeroplane or its extension from which the centers of\ngravity of all masses are referenced.",
       },
     ],
-    correct: "FPPALW0018004",
+    correct: "FPP0018004",
   },
   {
-    id: "ALW0019",
+    id: "FPP0019",
     question:
       ' The term "moment" with regard to a mass and balance calculation is referred to as... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0019001",
+        id: "FPP0019001",
         answer: "sum of a mass and a balance arm.",
       },
       {
-        id: "FPPALW0019002",
+        id: "FPP0019002",
         answer: "quotient of a mass and a balance arm.",
       },
       {
-        id: "FPPALW0019003",
+        id: "FPP0019003",
         answer: "product of a mass and a balance arm.",
       },
       {
-        id: "FPPALW0019004",
+        id: "FPP0019004",
         answer: "difference of a mass and a balance arm.",
       },
     ],
-    correct: "FPPALW0019003",
+    correct: "FPP0019003",
   },
   {
-    id: "ALW0020",
+    id: "FPP0020",
     question:
       ' The term "balance arm" in the context of a mass and balance calculation defines the... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0020001",
+        id: "FPP0020001",
         answer: "distance from the datum to the center of gravity of a mass.",
       },
       {
-        id: "FPPALW0020002",
+        id: "FPP0020002",
         answer: "distance of a mass from the center of gravity.",
       },
       {
-        id: "FPPALW0020003",
+        id: "FPP0020003",
         answer:
           "point on the longitudinal axis of an aeroplane or its extension from which the centers of gravity\nof all masses are referenced.",
       },
       {
-        id: "FPPALW0020004",
+        id: "FPP0020004",
         answer:
           "point through which the force of gravity is said to act on a mass.",
       },
     ],
-    correct: "FPPALW0020001",
+    correct: "FPP0020001",
   },
   {
-    id: "ALW0021",
+    id: "FPP0021",
     question:
       " The distance between the center of gravity and the datum is called... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0021001",
+        id: "FPP0021001",
         answer: "balance arm.",
       },
       {
-        id: "FPPALW0021002",
+        id: "FPP0021002",
         answer: "span width.",
       },
       {
-        id: "FPPALW0021003",
+        id: "FPP0021003",
         answer: "lever.",
       },
       {
-        id: "FPPALW0021004",
+        id: "FPP0021004",
         answer: "torque.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0021001",
+    correct: "FPP0021001",
   },
   {
-    id: "ALW0022",
+    id: "FPP0022",
     question:
       " The balance arm is the horizontal distance between... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0022001",
+        id: "FPP0022001",
         answer: "the front C.G. limit and the datum line.",
       },
       {
-        id: "FPPALW0022002",
+        id: "FPP0022002",
         answer: "the front C.G. limit and the rear C.G. limit.",
       },
       {
-        id: "FPPALW0022003",
+        id: "FPP0022003",
         answer: "the C.G. of a mass and the datum line.",
       },
       {
-        id: "FPPALW0022004",
+        id: "FPP0022004",
         answer: "the C.G. of a mass and the rear C.G. limit.",
       },
     ],
-    correct: "FPPALW0022003",
+    correct: "FPP0022003",
   },
   {
-    id: "ALW0023",
+    id: "FPP0023",
     question:
       " The required data for a mass and balance calculation including masses and balance arms can be found in the... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0023001",
+        id: "FPP0023001",
         answer:
           "performance section of the pilot's operating handbook of this particular aircraft.",
       },
       {
-        id: "FPPALW0023002",
+        id: "FPP0023002",
         answer: "documentation of the annual inspection.",
       },
       {
-        id: "FPPALW0023003",
+        id: "FPP0023003",
         answer:
           "mass and balance section of the pilot's operating handbook of this particular aircraft.",
       },
       {
-        id: "FPPALW0023004",
+        id: "FPP0023004",
         answer: "certificate of airworthiness.",
       },
     ],
-    correct: "FPPALW0023003",
+    correct: "FPP0023003",
   },
   {
-    id: "ALW0024",
+    id: "FPP0024",
     question:
       " When preparing to carry out the weighing procedure on an aircraft, which of the following is required? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0024001",
+        id: "FPP0024001",
         answer: "Remove the batteries",
       },
       {
-        id: "FPPALW0024002",
+        id: "FPP0024002",
         answer: "Remove service equipment",
       },
       {
-        id: "FPPALW0024003",
+        id: "FPP0024003",
         answer: "Drain all useable fuel",
       },
       {
-        id: "FPPALW0024004",
+        id: "FPP0024004",
         answer: "Drain all engine tank oil",
       },
     ],
-    correct: "FPPALW0024003",
+    correct: "FPP0024003",
   },
   {
-    id: "ALW0025",
+    id: "FPP0025",
     question:
       " Which section of the flight manual describes the basic empty mass of an aircraft? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0025001",
+        id: "FPP0025001",
         answer: "Weight and balance",
       },
       {
-        id: "FPPALW0025002",
+        id: "FPP0025002",
         answer: "Performance",
       },
       {
-        id: "FPPALW0025003",
+        id: "FPP0025003",
         answer: "Normal procedures",
       },
       {
-        id: "FPPALW0025004",
+        id: "FPP0025004",
         answer: "Limitations",
       },
     ],
-    correct: "FPPALW0025001",
+    correct: "FPP0025001",
   },
   {
-    id: "ALW0026",
+    id: "FPP0026",
     question:
       " The position of the center of gravity equals... See figure (PFP-052e) (1,00 P.) Siehe Anlage 1",
     answers: [
       {
-        id: "FPPALW0026001",
+        id: "FPP0026001",
         answer: "147.5 in.",
       },
       {
-        id: "FPPALW0026002",
+        id: "FPP0026002",
         answer: "137.5 in.",
       },
       {
-        id: "FPPALW0026003",
+        id: "FPP0026003",
         answer: "145.7 in.",
       },
       {
-        id: "FPPALW0026004",
+        id: "FPP0026004",
         answer: "142 in.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0026004",
+    correct: "FPP0026004",
   },
   {
-    id: "ALW0027",
+    id: "FPP0027",
     question: " What mass equals 102 litres of Avgas 100LL? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0027001",
+        id: "FPP0027001",
         answer: "74 lbs",
       },
       {
-        id: "FPPALW0027002",
+        id: "FPP0027002",
         answer: "74 kg",
       },
       {
-        id: "FPPALW0027003",
+        id: "FPP0027003",
         answer: "142 lbs",
       },
       {
-        id: "FPPALW0027004",
+        id: "FPP0027004",
         answer: "142 kg",
       },
     ],
-    correct: "FPPALW0027002",
+    correct: "FPP0027002",
   },
   {
-    id: "ALW0028",
+    id: "FPP0028",
     question:
       " Calculated take-off mass = 2300 lbs, calculated CG = 95.75 in, fuel burn = 170 lbs on station 87.00 in. Where is the CG situated after the landing? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0028001",
+        id: "FPP0028001",
         answer: "96.45 in",
       },
       {
-        id: "FPPALW0028002",
+        id: "FPP0028002",
         answer: "94.11 in",
       },
       {
-        id: "FPPALW0028003",
+        id: "FPP0028003",
         answer: "96.57 in",
       },
       {
-        id: "FPPALW0028004",
+        id: "FPP0028004",
         answer: "97.39 in",
       },
     ],
-    correct: "FPPALW0028001",
+    correct: "FPP0028001",
   },
   {
-    id: "ALW0029",
+    id: "FPP0029",
     question:
       " Given values: Calculated take-off mass = 746 kg calculated CG = 37.1 cm fuel burn = 30.5 l on station 45 cm. Where is the CG situated after the landing? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0029001",
+        id: "FPP0029001",
         answer: "36.9 cm",
       },
       {
-        id: "FPPALW0029002",
+        id: "FPP0029002",
         answer: "37.5 cm",
       },
       {
-        id: "FPPALW0029003",
+        id: "FPP0029003",
         answer: "36.3 cm",
       },
       {
-        id: "FPPALW0029004",
+        id: "FPP0029004",
         answer: "37.2 cm\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0029001",
+    correct: "FPP0029001",
   },
   {
-    id: "ALW0030",
+    id: "FPP0030",
     question:
       " Calculated take-off mass = 1082 kg, calculated CG = 0.254 m, fuel burn = 55 l on station 0.40 m. Where is the CG situated after the landing? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0030001",
+        id: "FPP0030001",
         answer: "24.8 cm",
       },
       {
-        id: "FPPALW0030002",
+        id: "FPP0030002",
         answer: "24.6 cm",
       },
       {
-        id: "FPPALW0030003",
+        id: "FPP0030003",
         answer: "25.4 cm",
       },
       {
-        id: "FPPALW0030004",
+        id: "FPP0030004",
         answer: "25.2 cm",
       },
     ],
-    correct: "FPPALW0030001",
+    correct: "FPP0030001",
   },
   {
-    id: "ALW0031",
+    id: "FPP0031",
     question:
       " The position of the center of gravity (including fuel) equals... See figure(PFP-053e) (1,00 P.) Siehe Anlage 2",
     answers: [
       {
-        id: "FPPALW0031001",
+        id: "FPP0031001",
         answer: "0.403 m.",
       },
       {
-        id: "FPPALW0031002",
+        id: "FPP0031002",
         answer: "0.401 m.",
       },
       {
-        id: "FPPALW0031003",
+        id: "FPP0031003",
         answer: "37.3 cm.",
       },
       {
-        id: "FPPALW0031004",
+        id: "FPP0031004",
         answer: "37.1 cm.",
       },
     ],
-    correct: "FPPALW0031004",
+    correct: "FPP0031004",
   },
   {
-    id: "ALW0032",
+    id: "FPP0032",
     question:
       " For the purpose of a flight preparation, the pilot calculates a total take-off mass of 750 kg and a total moment of 625 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-003) (1,00 P.) Siehe Anlage 3",
     answers: [
       {
-        id: "FPPALW0032001",
+        id: "FPP0032001",
         answer: "1",
       },
       {
-        id: "FPPALW0032002",
+        id: "FPP0032002",
         answer: "2",
       },
       {
-        id: "FPPALW0032003",
+        id: "FPP0032003",
         answer: "4",
       },
       {
-        id: "FPPALW0032004",
+        id: "FPP0032004",
         answer: "3\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0032001",
+    correct: "FPP0032001",
   },
   {
-    id: "ALW0033",
+    id: "FPP0033",
     question:
       " For the purpose of a flight preparation the pilot calculates a total take-off mass of 725 kg and a total moment of 650 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-004) (1,00 P.) Siehe Anlage 4",
     answers: [
       {
-        id: "FPPALW0033001",
+        id: "FPP0033001",
         answer: "2",
       },
       {
-        id: "FPPALW0033002",
+        id: "FPP0033002",
         answer: "1",
       },
       {
-        id: "FPPALW0033003",
+        id: "FPP0033003",
         answer: "4",
       },
       {
-        id: "FPPALW0033004",
+        id: "FPP0033004",
         answer: "3",
       },
     ],
-    correct: "FPPALW0033004",
+    correct: "FPP0033004",
   },
   {
-    id: "ALW0034",
+    id: "FPP0034",
     question:
       " For the purpose of a flight preparation the pilot calculates a total take-off mass of 775 kg and a total moment of 700 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-005) (1,00 P.) Siehe Anlage 5",
     answers: [
       {
-        id: "FPPALW0034001",
+        id: "FPP0034001",
         answer: "2",
       },
       {
-        id: "FPPALW0034002",
+        id: "FPP0034002",
         answer: "1",
       },
       {
-        id: "FPPALW0034003",
+        id: "FPP0034003",
         answer: "4",
       },
       {
-        id: "FPPALW0034004",
+        id: "FPP0034004",
         answer: "3",
       },
     ],
-    correct: "FPPALW0034003",
+    correct: "FPP0034003",
   },
   {
-    id: "ALW0035",
+    id: "FPP0035",
     question:
       " Which is the most recently determined empty mass and the associated center of gravity (CG) arm from the aircraft documentation? See annex (PFP-006) (1,00 P.) Siehe Anlage 6",
     answers: [
       {
-        id: "FPPALW0035001",
+        id: "FPP0035001",
         answer: "498 kg; 280.59 m",
       },
       {
-        id: "FPPALW0035002",
+        id: "FPP0035002",
         answer: "4 kg; 1.1 m",
       },
       {
-        id: "FPPALW0035003",
+        id: "FPP0035003",
         answer: "512 kg; 285.39 m",
       },
       {
-        id: "FPPALW0035004",
+        id: "FPP0035004",
         answer: "5 kg; 1.3 m",
       },
     ],
-    correct: "FPPALW0035001",
+    correct: "FPP0035001",
   },
   {
-    id: "ALW0036",
+    id: "FPP0036",
     question:
       " How does the aircraft configuration influence take-off performance while all other parameters remaining constant? See figure (PFP-007) (1,00 P.) Siehe Anlage 7",
     answers: [
       {
-        id: "FPPALW0036001",
+        id: "FPP0036001",
         answer: "Aircraft B has a higher flap setting than aircraft A",
       },
       {
-        id: "FPPALW0036002",
+        id: "FPP0036002",
         answer: "Aircraft A has a higher flap setting than aircraft B",
       },
       {
-        id: "FPPALW0036003",
+        id: "FPP0036003",
         answer: "Aircraft A has a higher tyre pressure than aircraft B",
       },
       {
-        id: "FPPALW0036004",
+        id: "FPP0036004",
         answer:
           "Aircraft B has a higher tyre pressure than aircraft A\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0036002",
+    correct: "FPP0036002",
   },
   {
-    id: "ALW0037",
+    id: "FPP0037",
     question:
       " How does aircraft flap configuration influence the take-off performance? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0037001",
+        id: "FPP0037001",
         answer:
           "A higher flap setting decreases ground roll and lift-off speed and increases climb performance",
       },
       {
-        id: "FPPALW0037002",
+        id: "FPP0037002",
         answer:
           "A higher flap setting decreases ground roll and increases lift-off speed and climb performance",
       },
       {
-        id: "FPPALW0037003",
+        id: "FPP0037003",
         answer:
           "A higher flap setting increases ground roll, lift-off speed, and climb performance",
       },
       {
-        id: "FPPALW0037004",
+        id: "FPP0037004",
         answer:
           "A higher flap setting decreases ground roll and lift-off speed, but also climb performance",
       },
     ],
-    correct: "FPPALW0037004",
+    correct: "FPP0037004",
   },
   {
-    id: "ALW0038",
+    id: "FPP0038",
     question: " How does wind affect the take-off performance? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0038001",
+        id: "FPP0038001",
         answer:
           "Tailwind reduces the relative wind on the airfoil. The take-off distance will increase",
       },
       {
-        id: "FPPALW0038002",
+        id: "FPP0038002",
         answer:
           "Headwind imposes an increased drag on the aircraft. The take-off distance will increase",
       },
       {
-        id: "FPPALW0038003",
+        id: "FPP0038003",
         answer:
           "Tailwind aids the aircraft in overcoming the initial drag at the commencement of the take-off roll.\nThe take-off distance will decrease",
       },
       {
-        id: "FPPALW0038004",
+        id: "FPP0038004",
         answer:
           "Headwind causes an increased airflow around the wing. The take-off distance will increase",
       },
     ],
-    correct: "FPPALW0038001",
+    correct: "FPP0038001",
   },
   {
-    id: "ALW0039",
+    id: "FPP0039",
     question:
       " It is possible that the surface wind speed at an airport is reduced due to friction. When a surface area with a minor tailwind condition is left during the initial climb, the pilot might expect... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0039001",
+        id: "FPP0039001",
         answer:
           "a deacrease in airspeed and climb performance due to decreasing tailwind.",
       },
       {
-        id: "FPPALW0039002",
+        id: "FPP0039002",
         answer:
           "a decrease in airspeed and rate of climb due to increasing tailwind.",
       },
       {
-        id: "FPPALW0039003",
+        id: "FPP0039003",
         answer:
           "an increase in airspeed and rate of climb due to increasing tailwind.",
       },
       {
-        id: "FPPALW0039004",
+        id: "FPP0039004",
         answer:
           "an increase in airspeed and rate of climb due to decreasing tailwind.",
       },
     ],
-    correct: "FPPALW0039002",
+    correct: "FPP0039002",
   },
   {
-    id: "ALW0040",
+    id: "FPP0040",
     question: " Which factor shortens landing distance? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0040001",
+        id: "FPP0040001",
         answer: "High pressure altitude",
       },
       {
-        id: "FPPALW0040002",
+        id: "FPP0040002",
         answer: "Strong head wind",
       },
       {
-        id: "FPPALW0040003",
+        id: "FPP0040003",
         answer: "High density altitude",
       },
       {
-        id: "FPPALW0040004",
+        id: "FPP0040004",
         answer: "Heavy rain\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0040002",
+    correct: "FPP0040002",
   },
   {
-    id: "ALW0041",
+    id: "FPP0041",
     question:
       " Unless the aircraft is equipped and certified accordingly... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0041001",
+        id: "FPP0041001",
         answer:
           "flight into known or forecast icing conditions is prohibited. Should the aircraft enter an area of\nicing conditions inadvertantly, it should be left without delay.",
       },
       {
-        id: "FPPALW0041002",
+        id: "FPP0041002",
         answer:
           "flight into forecast icing conditions is prohibited. Should the aircraft enter an area of icing\nconditions inadvertantly, the flight may be continued as long as visual meteorological conditions\nare maintained.",
       },
       {
-        id: "FPPALW0041003",
+        id: "FPP0041003",
         answer:
           "flight into known or forecast icing conditions is only allowed as long as it is ensured that the\naircraft can still be operated without performance degradation.",
       },
       {
-        id: "FPPALW0041004",
+        id: "FPP0041004",
         answer: "flight into areas of precipitation is prohibited.",
       },
     ],
-    correct: "FPPALW0041001",
+    correct: "FPP0041001",
   },
   {
-    id: "ALW0042",
+    id: "FPP0042",
     question: " The speed Vx means... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0042001",
+        id: "FPP0042001",
         answer: "that a given altitude is reached within minimum distance.",
       },
       {
-        id: "FPPALW0042002",
+        id: "FPP0042002",
         answer: "maximum altitude gain per 10 % power.",
       },
       {
-        id: "FPPALW0042003",
+        id: "FPP0042003",
         answer:
           "that a given altitude is reached with minimum fuel consumption.",
       },
       {
-        id: "FPPALW0042004",
+        id: "FPP0042004",
         answer: "that a given altitude is reached within minimum flight time.",
       },
     ],
-    correct: "FPPALW0042001",
+    correct: "FPP0042001",
   },
   {
-    id: "ALW0043",
+    id: "FPP0043",
     question: " The angle of descent is defined as... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0043001",
+        id: "FPP0043001",
         answer:
           "the angle between a horizontal plane and the actual flight path, expressed in degrees [°].",
       },
       {
-        id: "FPPALW0043002",
+        id: "FPP0043002",
         answer:
           "the angle between a horizontal plane and the actual flight path, expressed in percent [%].",
       },
       {
-        id: "FPPALW0043003",
+        id: "FPP0043003",
         answer:
           "the ratio between the change in height and the horizontal distance distance travelled within the\nsame time, expressed in degrees [°].",
       },
       {
-        id: "FPPALW0043004",
+        id: "FPP0043004",
         answer:
           "the ratio between the change in height and the horizontal distance travelled within the same\ntime, expressed in percent [%].",
       },
     ],
-    correct: "FPPALW0043001",
+    correct: "FPP0043001",
   },
   {
-    id: "ALW0044",
+    id: "FPP0044",
     question: ' The term "steady flight" is defined as... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0044001",
+        id: "FPP0044001",
         answer:
           "flight in smooth air without turbulence and a perfectly trimmed aircraft.",
       },
       {
-        id: "FPPALW0044002",
+        id: "FPP0044002",
         answer:
           "unaccelerated flight. The four forces thrust, drag, lift, and weight are in equilibrium.",
       },
       {
-        id: "FPPALW0044003",
+        id: "FPP0044003",
         answer:
           "climb or descent with a constant climb or descent rate in calm weather conditions.",
       },
       {
-        id: "FPPALW0044004",
+        id: "FPP0044004",
         answer: "flight with a steady power setting without changing course.",
       },
     ],
-    correct: "FPPALW0044002",
+    correct: "FPP0044002",
   },
   {
-    id: "ALW0045",
+    id: "FPP0045",
     question: " The speed Vy is defined as... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0045001",
+        id: "FPP0045001",
         answer: "best angle of climb.",
       },
       {
-        id: "FPPALW0045002",
+        id: "FPP0045002",
         answer: "best distance of climb.",
       },
       {
-        id: "FPPALW0045003",
+        id: "FPP0045003",
         answer: "best speed of climb.",
       },
       {
-        id: "FPPALW0045004",
+        id: "FPP0045004",
         answer: "best rate of climb.",
       },
     ],
-    correct: "FPPALW0045004",
+    correct: "FPP0045004",
   },
   {
-    id: "ALW0046",
+    id: "FPP0046",
     question: " The speed VFE is defined as... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0046001",
+        id: "FPP0046001",
         answer: "maximum flap extended speed.",
       },
       {
-        id: "FPPALW0046002",
+        id: "FPP0046002",
         answer:
           "stalling or minimum steady flight speed with the flaps extended.",
       },
       {
-        id: "FPPALW0046003",
+        id: "FPP0046003",
         answer:
           "stalling or minimum steady flight speed with the flaps retracted.",
       },
       {
-        id: "FPPALW0046004",
+        id: "FPP0046004",
         answer:
           "maximum landing gear extended speed.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0046001",
+    correct: "FPP0046001",
   },
   {
-    id: "ALW0047",
+    id: "FPP0047",
     question: " The speed VS0 is defined as... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0047001",
+        id: "FPP0047001",
         answer: "maximum landing gear extended speed.",
       },
       {
-        id: "FPPALW0047002",
+        id: "FPP0047002",
         answer:
           "stalling speed or minimum steady flight speed obtained in a specific configuration.",
       },
       {
-        id: "FPPALW0047003",
+        id: "FPP0047003",
         answer: "never-exceed speed.",
       },
       {
-        id: "FPPALW0047004",
+        id: "FPP0047004",
         answer:
           "stalling speed or minimum steady flight speed in landing configuration.",
       },
     ],
-    correct: "FPPALW0047004",
+    correct: "FPP0047004",
   },
   {
-    id: "ALW0048",
+    id: "FPP0048",
     question:
       " The beginning of the green arc (2) indicates which airspeed? See figure (PFP-008) (1,00 P.) Siehe Anlage 8",
     answers: [
       {
-        id: "FPPALW0048001",
+        id: "FPP0048001",
         answer: "VNO: Maximum speed for normal operations",
       },
       {
-        id: "FPPALW0048002",
+        id: "FPP0048002",
         answer: "VS1: Stall speed with flaps up",
       },
       {
-        id: "FPPALW0048003",
+        id: "FPP0048003",
         answer: "VS0: Stall speed in landing configuration",
       },
       {
-        id: "FPPALW0048004",
+        id: "FPP0048004",
         answer: "VFE: Maximum flap extended speed",
       },
     ],
-    correct: "FPPALW0048002",
+    correct: "FPP0048002",
   },
   {
-    id: "ALW0049",
+    id: "FPP0049",
     question:
       " The end of the green arc (4) indicates which airspeed? See figure (PFP-008) (1,00 P.) Siehe Anlage 8",
     answers: [
       {
-        id: "FPPALW0049001",
+        id: "FPP0049001",
         answer: "VNE: Never-exceed speed",
       },
       {
-        id: "FPPALW0049002",
+        id: "FPP0049002",
         answer: "VS1: Stall speed with flaps up",
       },
       {
-        id: "FPPALW0049003",
+        id: "FPP0049003",
         answer: "VFE: Maximum flap extended speed",
       },
       {
-        id: "FPPALW0049004",
+        id: "FPP0049004",
         answer:
           "VNO: Maximum speed for normal operations\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0049004",
+    correct: "FPP0049004",
   },
   {
-    id: "ALW0050",
+    id: "FPP0050",
     question:
       " The red marking at the end of the yellow arc (5) indicates which airspeed? See figure (PFP-008) (1,00 P.) Siehe Anlage 8",
     answers: [
       {
-        id: "FPPALW0050001",
+        id: "FPP0050001",
         answer: "VNO: Maximum speed for normal operations",
       },
       {
-        id: "FPPALW0050002",
+        id: "FPP0050002",
         answer: "VFE: Maximum flap extended speed",
       },
       {
-        id: "FPPALW0050003",
+        id: "FPP0050003",
         answer: "VS1: Stall speed with flaps up",
       },
       {
-        id: "FPPALW0050004",
+        id: "FPP0050004",
         answer:
           "VNE: Never-exceed speed\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0050004",
+    correct: "FPP0050004",
   },
   {
-    id: "ALW0051",
+    id: "FPP0051",
     question:
       " Which climb speed may be used to optimize the rate of climb (e.g. to reach a desired altitude within minimum time)? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0051001",
+        id: "FPP0051001",
         answer: "Vy, the best rate of climb speed",
       },
       {
-        id: "FPPALW0051002",
+        id: "FPP0051002",
         answer: "Vx, the best angle of climb speed",
       },
       {
-        id: "FPPALW0051003",
+        id: "FPP0051003",
         answer: "Vx, the best rate of climb speed",
       },
       {
-        id: "FPPALW0051004",
+        id: "FPP0051004",
         answer: "Vy, the best angle of climb speed",
       },
     ],
-    correct: "FPPALW0051001",
+    correct: "FPP0051001",
   },
   {
-    id: "ALW0052",
+    id: "FPP0052",
     question:
       " For a take-off from runway 22 and a reported wind of 250°/10 kt, the longitudinal wind component equals... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0052001",
+        id: "FPP0052001",
         answer: "9 kt headwind.",
       },
       {
-        id: "FPPALW0052002",
+        id: "FPP0052002",
         answer: "9 kt tailwind.",
       },
       {
-        id: "FPPALW0052003",
+        id: "FPP0052003",
         answer: "5 kt headwind.",
       },
       {
-        id: "FPPALW0052004",
+        id: "FPP0052004",
         answer: "5 kt tailwind.",
       },
     ],
-    correct: "FPPALW0052001",
+    correct: "FPP0052001",
   },
   {
-    id: "ALW0053",
+    id: "FPP0053",
     question:
       " Given the following conditions, the take-off distance equals... Outside air temperature: -20° C Pressure Altitude: 5000 ft Aeroplane mass: 750 kg Headwind: 10 kt See annex (PFP-009) (1,00 P.) Siehe Anlage 9",
     answers: [
       {
-        id: "FPPALW0053001",
+        id: "FPP0053001",
         answer: "450 m.",
       },
       {
-        id: "FPPALW0053002",
+        id: "FPP0053002",
         answer: "410 m.",
       },
       {
-        id: "FPPALW0053003",
+        id: "FPP0053003",
         answer: "310 m.",
       },
       {
-        id: "FPPALW0053004",
+        id: "FPP0053004",
         answer: "380 m.",
       },
     ],
-    correct: "FPPALW0053004",
+    correct: "FPP0053004",
   },
   {
-    id: "ALW0054",
+    id: "FPP0054",
     question:
       " A pilot wants to take off on runway 36, the reported wind is 240 degrees, 12 knots. What is the value of the wind components acting on the aircraft on take-off and landing? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0054001",
+        id: "FPP0054001",
         answer: "Crosswind from the right 10.4 kt.\nTailwind 6 kt.",
       },
       {
-        id: "FPPALW0054002",
+        id: "FPP0054002",
         answer: "Crosswind from the left 10.4 kt.\nTailwind 6 kt.",
       },
       {
-        id: "FPPALW0054003",
+        id: "FPP0054003",
         answer: "Crosswind from the left 6 kt.\nTailwind 10.4 kt.",
       },
       {
-        id: "FPPALW0054004",
+        id: "FPP0054004",
         answer:
           "Crosswind from the right 6 kt.\nHeadwind 10.4 kt.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0054002",
+    correct: "FPP0054002",
   },
   {
-    id: "ALW0055",
+    id: "FPP0055",
     question:
       " What is the take-off distance at 750 kg take-off mass, standard (ISA) conditions at an elevation of 4000 ft with 5 kt tailwind? See annex (PFP-009) (1,00 P.) Siehe Anlage 9",
     answers: [
       {
-        id: "FPPALW0055001",
+        id: "FPP0055001",
         answer: "900 m",
       },
       {
-        id: "FPPALW0055002",
+        id: "FPP0055002",
         answer: "320 m",
       },
       {
-        id: "FPPALW0055003",
+        id: "FPP0055003",
         answer: "480 m",
       },
       {
-        id: "FPPALW0055004",
+        id: "FPP0055004",
         answer: "630 m",
       },
     ],
-    correct: "FPPALW0055001",
+    correct: "FPP0055001",
   },
   {
-    id: "ALW0056",
+    id: "FPP0056",
     question:
       " What is the take-off distance at 705 kg take-off mass, OAT 20° C, QNH 1013 hPa at an elevation of 3500 ft with 5 kt tailwind? See annex (PFP-009) (1,00 P.) Siehe Anlage 9",
     answers: [
       {
-        id: "FPPALW0056001",
+        id: "FPP0056001",
         answer: "720 m",
       },
       {
-        id: "FPPALW0056002",
+        id: "FPP0056002",
         answer: "820 m",
       },
       {
-        id: "FPPALW0056003",
+        id: "FPP0056003",
         answer: "790 m",
       },
       {
-        id: "FPPALW0056004",
+        id: "FPP0056004",
         answer: "880 m",
       },
     ],
-    correct: "FPPALW0056004",
+    correct: "FPP0056004",
   },
   {
-    id: "ALW0057",
+    id: "FPP0057",
     question:
       " A pilot wants to take off on runway 36, the reported wind is 240 degrees 12 knots. What are the wind components acting on the aircraft on take-off and landing? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0057001",
+        id: "FPP0057001",
         answer: "Crosswind from the left 10.4 kt.\nTailwind 6 kt.",
       },
       {
-        id: "FPPALW0057002",
+        id: "FPP0057002",
         answer: "Crosswind from the left 6 kt.\nTailwind 10.4 kt.",
       },
       {
-        id: "FPPALW0057003",
+        id: "FPP0057003",
         answer: "Crosswind from the right 6 kt.\nHeadwind 10.4 kt.",
       },
       {
-        id: "FPPALW0057004",
+        id: "FPP0057004",
         answer: "Crosswind from the right 10.4 kt.\nTailwind 6 kt.",
       },
     ],
-    correct: "FPPALW0057001",
+    correct: "FPP0057001",
   },
   {
-    id: "ALW0058",
+    id: "FPP0058",
     question:
       " Given the following conditions, the fuel consumption equals... Pressure altitude: 2000 ft Temperature: 31° C RPM: 2400 See annex (PFP-012) (1,00 P.) Siehe Anlage 10",
     answers: [
       {
-        id: "FPPALW0058001",
+        id: "FPP0058001",
         answer: "21.7 l/h.",
       },
       {
-        id: "FPPALW0058002",
+        id: "FPP0058002",
         answer: "22.8 l/h.",
       },
       {
-        id: "FPPALW0058003",
+        id: "FPP0058003",
         answer: "19.1 l/h.",
       },
       {
-        id: "FPPALW0058004",
+        id: "FPP0058004",
         answer: "19.5 l/h.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0058004",
+    correct: "FPP0058004",
   },
   {
-    id: "ALW0059",
+    id: "FPP0059",
     question:
       " Given the following conditions, the climb speed equals... Outside air temperature: -20° C Pressure altitude: 10000 ft See annex (PFP-011) (1,00 P.) Siehe Anlage 11",
     answers: [
       {
-        id: "FPPALW0059001",
+        id: "FPP0059001",
         answer: "200 ft/min.",
       },
       {
-        id: "FPPALW0059002",
+        id: "FPP0059002",
         answer: "390 ft/min.",
       },
       {
-        id: "FPPALW0059003",
+        id: "FPP0059003",
         answer: "350 ft/min.",
       },
       {
-        id: "FPPALW0059004",
+        id: "FPP0059004",
         answer: "450 ft/min.",
       },
     ],
-    correct: "FPPALW0059002",
+    correct: "FPP0059002",
   },
   {
-    id: "ALW0060",
+    id: "FPP0060",
     question:
       " What range can be achieved at the following conditions? Outside air temperature: 6° C Pressure Altitude: 6000 ft Power: 65 % See annex (PFP-013) (1,00 P.) Siehe Anlage 12",
     answers: [
       {
-        id: "FPPALW0060001",
+        id: "FPP0060001",
         answer: "457 NM",
       },
       {
-        id: "FPPALW0060002",
+        id: "FPP0060002",
         answer: "444 NM",
       },
       {
-        id: "FPPALW0060003",
+        id: "FPP0060003",
         answer: "503 NM",
       },
       {
-        id: "FPPALW0060004",
+        id: "FPP0060004",
         answer: "482 NM",
       },
     ],
-    correct: "FPPALW0060004",
+    correct: "FPP0060004",
   },
   {
-    id: "ALW0061",
+    id: "FPP0061",
     question:
       " Given the following information, what range can be achieved? Outside air temperature: 22° C Pressure altitude: 2000 ft Power: 55 % See annex (PFP-013) (1,00 P.) Siehe Anlage 12",
     answers: [
       {
-        id: "FPPALW0061001",
+        id: "FPP0061001",
         answer: "550 NM",
       },
       {
-        id: "FPPALW0061002",
+        id: "FPP0061002",
         answer: "480 NM",
       },
       {
-        id: "FPPALW0061003",
+        id: "FPP0061003",
         answer: "450 NM",
       },
       {
-        id: "FPPALW0061004",
+        id: "FPP0061004",
         answer: "500 NM\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0061004",
+    correct: "FPP0061004",
   },
   {
-    id: "ALW0062",
+    id: "FPP0062",
     question:
       " Given the following conditions, the TAS equals... Outside air temperature: 10° C Pressure altitude: 6000 ft Power: 65 % See annex (PFP-014) (1,00 P.) Siehe Anlage 13",
     answers: [
       {
-        id: "FPPALW0062001",
+        id: "FPP0062001",
         answer: "92 kt.",
       },
       {
-        id: "FPPALW0062002",
+        id: "FPP0062002",
         answer: "96 kt.",
       },
       {
-        id: "FPPALW0062003",
+        id: "FPP0062003",
         answer: "88 kt.",
       },
       {
-        id: "FPPALW0062004",
+        id: "FPP0062004",
         answer: "100 kt.",
       },
     ],
-    correct: "FPPALW0062001",
+    correct: "FPP0062001",
   },
   {
-    id: "ALW0063",
+    id: "FPP0063",
     question:
       " Given the following conditions, the TAS equals... Outside air temperature: -2° C Pressure altitude: 8000 ft Power: 75 % See annex (PFP-014) (1,00 P.) Siehe Anlage 13",
     answers: [
       {
-        id: "FPPALW0063001",
+        id: "FPP0063001",
         answer: "95 kt.",
       },
       {
-        id: "FPPALW0063002",
+        id: "FPP0063002",
         answer: "104 kt.",
       },
       {
-        id: "FPPALW0063003",
+        id: "FPP0063003",
         answer: "110 kt.",
       },
       {
-        id: "FPPALW0063004",
+        id: "FPP0063004",
         answer: "100 kt.",
       },
     ],
-    correct: "FPPALW0063002",
+    correct: "FPP0063002",
   },
   {
-    id: "ALW0064",
+    id: "FPP0064",
     question:
       " Which maximum rate of climb can the aircraft reach at 9000 ft pressure altitude and OAT 12° C? See annex (PFP-011) (1,00 P.) Siehe Anlage 11",
     answers: [
       {
-        id: "FPPALW0064001",
+        id: "FPP0064001",
         answer: "300 ft/min",
       },
       {
-        id: "FPPALW0064002",
+        id: "FPP0064002",
         answer: "250 ft/min",
       },
       {
-        id: "FPPALW0064003",
+        id: "FPP0064003",
         answer: "350 ft/min",
       },
       {
-        id: "FPPALW0064004",
+        id: "FPP0064004",
         answer: "200 ft/min\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0064004",
+    correct: "FPP0064004",
   },
   {
-    id: "ALW0065",
+    id: "FPP0065",
     question:
       " Which is the maximum rate of climb for the aircraft at 6500 ft pressure altitude and an OAT of 0° C? See annex (PFP-011) (1,00 P.) Siehe Anlage 11",
     answers: [
       {
-        id: "FPPALW0065001",
+        id: "FPP0065001",
         answer: "520 ft / min",
       },
       {
-        id: "FPPALW0065002",
+        id: "FPP0065002",
         answer: "800 ft / min",
       },
       {
-        id: "FPPALW0065003",
+        id: "FPP0065003",
         answer: "480 ft / min",
       },
       {
-        id: "FPPALW0065004",
+        id: "FPP0065004",
         answer: "400 ft / min",
       },
     ],
-    correct: "FPPALW0065003",
+    correct: "FPP0065003",
   },
   {
-    id: "ALW0066",
+    id: "FPP0066",
     question:
       " What is the true airspeed (TAS) [kt] and fuel consumption [l/h] for cruise flight with 60 % power in flight level 60 under the following conditions? Temperature: ISA - 20° C QNH: 980 hPa See annex (PFP-012) (2,00 P.) Siehe Anlage 10",
     answers: [
       {
-        id: "FPPALW0066001",
+        id: "FPP0066001",
         answer: "95 kt.\n19.6 l/h.",
       },
       {
-        id: "FPPALW0066002",
+        id: "FPP0066002",
         answer: "95,75 kt.\n19.8 l/h.",
       },
       {
-        id: "FPPALW0066003",
+        id: "FPP0066003",
         answer: "110 kt.\n25.1 l/h.",
       },
       {
-        id: "FPPALW0066004",
+        id: "FPP0066004",
         answer: "96 kt.\n19.1 l/h.",
       },
     ],
-    correct: "FPPALW0066001",
+    correct: "FPP0066001",
   },
   {
-    id: "ALW0067",
+    id: "FPP0067",
     question:
       " What is the true airspeed (TAS) [kt] and fuel consumption [l/h] for cruise flight with 70 % power in flight level 60 under the following conditions? Temperature: ISA - 20° C QNH: 980 hPa See annex (PFP-012) (2,00 P.) Siehe Anlage 10",
     answers: [
       {
-        id: "FPPALW0067001",
+        id: "FPP0067001",
         answer: "110 kt.\n23.9 l/h.",
       },
       {
-        id: "FPPALW0067002",
+        id: "FPP0067002",
         answer: "95 kt.\n19.6 l/h.",
       },
       {
-        id: "FPPALW0067003",
+        id: "FPP0067003",
         answer: "100 kt.\n19.3 l/h.",
       },
       {
-        id: "FPPALW0067004",
+        id: "FPP0067004",
         answer:
           "105 kt.\n21.5 l/h.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0067001",
+    correct: "FPP0067001",
   },
   {
-    id: "ALW0068",
+    id: "FPP0068",
     question:
       " What is the fuel flow and the true airspeed for cruise flight with 60 % power in flight level 85 at an OAT of -25° C? See annex (PFP-014) (1,00 P.) Siehe Anlage 13",
     answers: [
       {
-        id: "FPPALW0068001",
+        id: "FPP0068001",
         answer: "Fuel flow: 17.5 l.\nTAS: 83 kt.",
       },
       {
-        id: "FPPALW0068002",
+        id: "FPP0068002",
         answer: "Fuel flow: 17 l.\nTAS: 81 kt.",
       },
       {
-        id: "FPPALW0068003",
+        id: "FPP0068003",
         answer: "Fuel flow: 20 l.\nTAS: 89 kt.",
       },
       {
-        id: "FPPALW0068004",
+        id: "FPP0068004",
         answer: "Fuel flow: 18.5 l.\nTAS: 85 kt.",
       },
     ],
-    correct: "FPPALW0068004",
+    correct: "FPP0068004",
   },
   {
-    id: "ALW0069",
+    id: "FPP0069",
     question:
       " At which airspeed do you climb to flight level (FL) 75 after a departure from an airfield which is located at a pressure altitude of 3000 ft with an initial mass of 3000 lbs? OAT at airfield: 25° C OAT in FL 75: 0° C See annex (PFP-023) (1,00 P.) Siehe Anlage 14",
     answers: [
       {
-        id: "FPPALW0069001",
+        id: "FPP0069001",
         answer: "100 kt",
       },
       {
-        id: "FPPALW0069002",
+        id: "FPP0069002",
         answer: "90 kt",
       },
       {
-        id: "FPPALW0069003",
+        id: "FPP0069003",
         answer: "110 kt",
       },
       {
-        id: "FPPALW0069004",
+        id: "FPP0069004",
         answer: "120 kt\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0069003",
+    correct: "FPP0069003",
   },
   {
-    id: "ALW0070",
+    id: "FPP0070",
     question:
       " What is the required fuel to climb from FL 65 to FL 95 under the following conditions? Aircraft mass: 3000 lb. OAT in FL 65: -5° C OAT in FL 95: -15° C See annex (PFP-023) (1,00 P.) Siehe Anlage 14",
     answers: [
       {
-        id: "FPPALW0070001",
+        id: "FPP0070001",
         answer: "1 GAL",
       },
       {
-        id: "FPPALW0070002",
+        id: "FPP0070002",
         answer: "3 GAL",
       },
       {
-        id: "FPPALW0070003",
+        id: "FPP0070003",
         answer: "2 GAL",
       },
       {
-        id: "FPPALW0070004",
+        id: "FPP0070004",
         answer: "6 GAL",
       },
     ],
-    correct: "FPPALW0070001",
+    correct: "FPP0070001",
   },
   {
-    id: "ALW0071",
+    id: "FPP0071",
     question:
       " What is the required distance to climb from FL 65 to FL 95 under the following conditions: Aircraft mass: 3000 lb. OAT in FL 65: -5° C OAT in FL 95: -15° C See annex (PFP-023) (1,00 P.) Siehe Anlage 14",
     answers: [
       {
-        id: "FPPALW0071001",
+        id: "FPP0071001",
         answer: "3 NM",
       },
       {
-        id: "FPPALW0071002",
+        id: "FPP0071002",
         answer: "16 NM",
       },
       {
-        id: "FPPALW0071003",
+        id: "FPP0071003",
         answer: "6 NM",
       },
       {
-        id: "FPPALW0071004",
+        id: "FPP0071004",
         answer: "10 NM",
       },
     ],
-    correct: "FPPALW0071003",
+    correct: "FPP0071003",
   },
   {
-    id: "ALW0072",
+    id: "FPP0072",
     question:
       " What is the required distance to climb to flight level (FL) 75 after a departure from an airfield which is located at a pressure altitude of 3000 ft with an initial mass of 3000 lbs? OAT at airfield: 25° C OAT in FL 75: 0° C See annex (PFP-023) (1,00 P.) Siehe Anlage 14",
     answers: [
       {
-        id: "FPPALW0072001",
+        id: "FPP0072001",
         answer: "10 NM",
       },
       {
-        id: "FPPALW0072002",
+        id: "FPP0072002",
         answer: "4 NM",
       },
       {
-        id: "FPPALW0072003",
+        id: "FPP0072003",
         answer: "7 NM",
       },
       {
-        id: "FPPALW0072004",
+        id: "FPP0072004",
         answer: "6 NM\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0072003",
+    correct: "FPP0072003",
   },
   {
-    id: "ALW0073",
+    id: "FPP0073",
     question:
       ' The term "maximum elevation figure" (MEF) is defined as... (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0073001",
+        id: "FPP0073001",
         answer:
           "the highest elevation within an area covering 1 degree of latitude and 1 degree of longitude plus\na safety margin, rounded to the next lower 100 ft.",
       },
       {
-        id: "FPPALW0073002",
+        id: "FPP0073002",
         answer:
           "the highest elevation within an area covering 30 minutes of latitude and 30 minutes of longitude\nplus a safety margin of 1000 ft (305 m), rounded to the next higher 100 ft.",
       },
       {
-        id: "FPPALW0073003",
+        id: "FPP0073003",
         answer:
           "the highest elevation within an area covering 30 minutes of latitude and 30 minutes of longitude\nplus a safety margin, rounded to the next higher 100 ft.",
       },
       {
-        id: "FPPALW0073004",
+        id: "FPP0073004",
         answer:
           "the highest elevation within an area covering 30 minutes of latitude and 30 minutes of longitude.",
       },
     ],
-    correct: "FPPALW0073003",
+    correct: "FPP0073003",
   },
   {
-    id: "ALW0074",
+    id: "FPP0074",
     question:
       ' What is the purpose of "interception lines" in visual navigation? (1,00 P.)',
     answers: [
       {
-        id: "FPPALW0074001",
+        id: "FPP0074001",
         answer:
           "They help to continue the flight when flight visibility drops below VFR minima",
       },
       {
-        id: "FPPALW0074002",
+        id: "FPP0074002",
         answer:
           "To visualize the range limitation from the departure aerodrome",
       },
       {
-        id: "FPPALW0074003",
+        id: "FPP0074003",
         answer:
           "They are used as easily recognizable guidance upon a possible loss of orientation",
       },
       {
-        id: "FPPALW0074004",
+        id: "FPP0074004",
         answer: "To mark the next available en-route airport during the flight",
       },
     ],
-    correct: "FPPALW0074003",
+    correct: "FPP0074003",
   },
   {
-    id: "ALW0075",
+    id: "FPP0075",
     question: " The VFR semicircular rules are based on the... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0075001",
+        id: "FPP0075001",
         answer: "magnetic course (MC).",
       },
       {
-        id: "FPPALW0075002",
+        id: "FPP0075002",
         answer: "true course (TC).",
       },
       {
-        id: "FPPALW0075003",
+        id: "FPP0075003",
         answer: "magnetic heading (MH).",
       },
       {
-        id: "FPPALW0075004",
+        id: "FPP0075004",
         answer: "true heading (TH).",
       },
     ],
-    correct: "FPPALW0075001",
+    correct: "FPP0075001",
   },
   {
-    id: "ALW0076",
+    id: "FPP0076",
     question:
       " What is the lowest possible VFR flight level if a true course of 181° is selected and a variation of 3° east exists? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0076001",
+        id: "FPP0076001",
         answer: "FL 060",
       },
       {
-        id: "FPPALW0076002",
+        id: "FPP0076002",
         answer: "FL 065",
       },
       {
-        id: "FPPALW0076003",
+        id: "FPP0076003",
         answer: "FL 055",
       },
       {
-        id: "FPPALW0076004",
+        id: "FPP0076004",
         answer: "FL 050",
       },
     ],
-    correct: "FPPALW0076003",
+    correct: "FPP0076003",
   },
   {
-    id: "ALW0077",
+    id: "FPP0077",
     question:
       " The upper limit of LO R 16 equals... See annex (PFP-056) (1,00 P.) Siehe Anlage 15",
     answers: [
       {
-        id: "FPPALW0077001",
+        id: "FPP0077001",
         answer: "FL150.",
       },
       {
-        id: "FPPALW0077002",
+        id: "FPP0077002",
         answer: "1.500 ft GND.",
       },
       {
-        id: "FPPALW0077003",
+        id: "FPP0077003",
         answer: "1 500 m MSL.",
       },
       {
-        id: "FPPALW0077004",
+        id: "FPP0077004",
         answer: "1 500 ft MSL.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0077004",
+    correct: "FPP0077004",
   },
   {
-    id: "ALW0078",
+    id: "FPP0078",
     question:
       " The upper limit of LO R 4 equals... See annex (PFP-030) (1,00 P.) Siehe Anlage 16",
     answers: [
       {
-        id: "FPPALW0078001",
+        id: "FPP0078001",
         answer: "1.500 ft MSL.",
       },
       {
-        id: "FPPALW0078002",
+        id: "FPP0078002",
         answer: "4.500 ft AGL.",
       },
       {
-        id: "FPPALW0078003",
+        id: "FPP0078003",
         answer: "1.500 ft AGL.",
       },
       {
-        id: "FPPALW0078004",
+        id: "FPP0078004",
         answer: "4.500 ft MSL.",
       },
     ],
-    correct: "FPPALW0078004",
+    correct: "FPP0078004",
   },
   {
-    id: "ALW0079",
+    id: "FPP0079",
     question:
       " How much taxi fuel must be consumed before take-off to reduce the aircraft mass to the maximum take-off mass? Maximum ramp mass (MRM): 1150 kg Actual ramp mass: 1148 kg Maximum take-off mass (MTOM): 1145 kg (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0079001",
+        id: "FPP0079001",
         answer: "4 L",
       },
       {
-        id: "FPPALW0079002",
+        id: "FPP0079002",
         answer: "5 L",
       },
       {
-        id: "FPPALW0079003",
+        id: "FPP0079003",
         answer: "2 L",
       },
       {
-        id: "FPPALW0079004",
+        id: "FPP0079004",
         answer: "3 L",
       },
     ],
-    correct: "FPPALW0079001",
+    correct: "FPP0079001",
   },
   {
-    id: "ALW0080",
+    id: "FPP0080",
     question:
       " Considering the following fuel data, how much trip fuel is required? Fuel for start-up and taxi: 5 L Fuel for take-off and climb: 12 L Fuel for cruise flight: 25 L Fuel for descent, approach and landing: 7 L Fuel for taxi and parking: 3 L Fuel to alternate: 13 L Final reserve fuel: 10 L (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0080001",
+        id: "FPP0080001",
         answer: "44 L",
       },
       {
-        id: "FPPALW0080002",
+        id: "FPP0080002",
         answer: "75 L",
       },
       {
-        id: "FPPALW0080003",
+        id: "FPP0080003",
         answer: "49 L",
       },
       {
-        id: "FPPALW0080004",
+        id: "FPP0080004",
         answer: "52 L",
       },
     ],
-    correct: "FPPALW0080001",
+    correct: "FPP0080001",
   },
   {
-    id: "ALW0081",
+    id: "FPP0081",
     question:
       " Up to which altitude is an overflight prohibited according to the NOTAM? See figure (PFP-024) (1,00 P.) Siehe Anlage 17",
     answers: [
       {
-        id: "FPPALW0081001",
+        id: "FPP0081001",
         answer: "Altitude 9500 ft MSL",
       },
       {
-        id: "FPPALW0081002",
+        id: "FPP0081002",
         answer: "Flight Level 95",
       },
       {
-        id: "FPPALW0081003",
+        id: "FPP0081003",
         answer: "Height 9500 ft",
       },
       {
-        id: "FPPALW0081004",
+        id: "FPP0081004",
         answer:
           "Altitude 9500 m MSL\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0081001",
+    correct: "FPP0081001",
   },
   {
-    id: "ALW0082",
+    id: "FPP0082",
     question:
       " On a VFR-fligth, before reaching a compulsatory reporting point, the received ATIS states 4000m visibility. What is nessessary to enter the CTR? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0082001",
+        id: "FPP0082001",
         answer: "A Special VFR clearance.",
       },
       {
-        id: "FPPALW0082002",
+        id: "FPP0082002",
         answer: "A visual IFR clearance.",
       },
       {
-        id: "FPPALW0082003",
+        id: "FPP0082003",
         answer: "A Minimum VFR clearance.",
       },
       {
-        id: "FPPALW0082004",
+        id: "FPP0082004",
         answer: "A Controlled VFR clearance.",
       },
     ],
-    correct: "FPPALW0082001",
+    correct: "FPP0082001",
   },
   {
-    id: "ALW0083",
+    id: "FPP0083",
     question:
       " The EOBT (estimated off-block time) is specified in the ATS flight plan as... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0083001",
+        id: "FPP0083001",
         answer: "Coordinated Universal Time (UTC).",
       },
       {
-        id: "FPPALW0083002",
+        id: "FPP0083002",
         answer: "Central European Time (CET).",
       },
       {
-        id: "FPPALW0083003",
+        id: "FPP0083003",
         answer: "Standard Time (ST).",
       },
       {
-        id: "FPPALW0083004",
+        id: "FPP0083004",
         answer: "Local Mean Time (LMT).",
       },
     ],
-    correct: "FPPALW0083001",
+    correct: "FPP0083001",
   },
   {
-    id: "ALW0084",
+    id: "FPP0084",
     question:
       " What is the nature of the flight shown in the given ATC flight plan? See annex (PFP-051a) (1,00 P.) Siehe Anlage 18",
     answers: [
       {
-        id: "FPPALW0084001",
+        id: "FPP0084001",
         answer: "Flight under instrument flight rules.",
       },
       {
-        id: "FPPALW0084002",
+        id: "FPP0084002",
         answer: "Traffic pattern under visual flight rules.",
       },
       {
-        id: "FPPALW0084003",
+        id: "FPP0084003",
         answer: "Border crossing flight.",
       },
       {
-        id: "FPPALW0084004",
+        id: "FPP0084004",
         answer:
           "Night flight under visual flight rules.\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0084004",
+    correct: "FPP0084004",
   },
   {
-    id: "ALW0085",
+    id: "FPP0085",
     question:
       " The specified speed in the ATS flight plan equals: See annex (PFP-051) (1,00 P.) Siehe Anlage 19",
     answers: [
       {
-        id: "FPPALW0085001",
+        id: "FPP0085001",
         answer: "100 kt.",
       },
       {
-        id: "FPPALW0085002",
+        id: "FPP0085002",
         answer: "100 m/h.",
       },
       {
-        id: "FPPALW0085003",
+        id: "FPP0085003",
         answer: "1000 kt.",
       },
       {
-        id: "FPPALW0085004",
+        id: "FPP0085004",
         answer: "100 km/h.",
       },
     ],
-    correct: "FPPALW0085001",
+    correct: "FPP0085001",
   },
   {
-    id: "ALW0086",
+    id: "FPP0086",
     question: " What must be considered for cross-border flights? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0086001",
+        id: "FPP0086001",
         answer: "Requires flight plans",
       },
       {
-        id: "FPPALW0086002",
+        id: "FPP0086002",
         answer: "Regular location messages",
       },
       {
-        id: "FPPALW0086003",
+        id: "FPP0086003",
         answer: "Approved exceptions",
       },
       {
-        id: "FPPALW0086004",
+        id: "FPP0086004",
         answer: "Transmission of hazard reports",
       },
     ],
-    correct: "FPPALW0086001",
+    correct: "FPP0086001",
   },
   {
-    id: "ALW0087",
+    id: "FPP0087",
     question:
       " During a flight, a flight plan can be filed at the... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0087001",
+        id: "FPP0087001",
         answer: "Flight Information Service (FIS).",
       },
       {
-        id: "FPPALW0087002",
+        id: "FPP0087002",
         answer: "Aeronautical Information Service (AIS).",
       },
       {
-        id: "FPPALW0087003",
+        id: "FPP0087003",
         answer: "Search and Rescue Service (SAR).",
       },
       {
-        id: "FPPALW0087004",
+        id: "FPP0087004",
         answer: "next airport operator en-route.",
       },
     ],
-    correct: "FPPALW0087001",
+    correct: "FPP0087001",
   },
   {
-    id: "ALW0088",
+    id: "FPP0088",
     question:
       " In comparison to the true airspeed in still air conditions, the TAS in a strong tailwind will be... (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0088001",
+        id: "FPP0088001",
         answer: "slightly lower for maximum range.",
       },
       {
-        id: "FPPALW0088002",
+        id: "FPP0088002",
         answer: "the same for maximum range.",
       },
       {
-        id: "FPPALW0088003",
+        id: "FPP0088003",
         answer: "slightly higher for maximum endurance.",
       },
       {
-        id: "FPPALW0088004",
+        id: "FPP0088004",
         answer: "significantly lower for maximum endurance.",
       },
     ],
-    correct: "FPPALW0088001",
+    correct: "FPP0088001",
   },
   {
-    id: "ALW0089",
+    id: "FPP0089",
     question:
       " What happens to the true airspeed at a constant indicated airspeed during a climb? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0089001",
+        id: "FPP0089001",
         answer: "It decreases",
       },
       {
-        id: "FPPALW0089002",
+        id: "FPP0089002",
         answer: "It remains constant above 5000 ft",
       },
       {
-        id: "FPPALW0089003",
+        id: "FPP0089003",
         answer: "It remains constant below 5000 ft",
       },
       {
-        id: "FPPALW0089004",
+        id: "FPP0089004",
         answer: "It increases",
       },
     ],
-    correct: "FPPALW0089004",
+    correct: "FPP0089004",
   },
   {
-    id: "ALW0090",
+    id: "FPP0090",
     question:
       " Given the following data: Take-Off fuel = 200 lbs Alternate fuel = 40 lbs Final reserve fuel = 30 lbs After 25 minutes the remaining fuel is 120 lbs. Assuming that fuel flow will remain unchanged, the remaining time to the destination should not exceed: (2,00 P.)",
     answers: [
       {
-        id: "FPPALW0090001",
+        id: "FPP0090001",
         answer: "59.4 min",
       },
       {
-        id: "FPPALW0090002",
+        id: "FPP0090002",
         answer: "15.6 min",
       },
       {
-        id: "FPPALW0090003",
+        id: "FPP0090003",
         answer: "37.5 min",
       },
       {
-        id: "FPPALW0090004",
+        id: "FPP0090004",
         answer: "20.0 min",
       },
     ],
-    correct: "FPPALW0090002",
+    correct: "FPP0090002",
   },
   {
-    id: "ALW0091",
+    id: "FPP0091",
     question:
       " Given the following data for a VFR flight: Take-off fuel: 180 kg including reserve fuel, which is 30% of take off fuel. After half of the distance the remaining fuel is 100 kg. Assume that cruise conditions will remain unchanged. Determine the remaining fuel at the destination: (2,00 P.)",
     answers: [
       {
-        id: "FPPALW0091001",
+        id: "FPP0091001",
         answer: "10 kg",
       },
       {
-        id: "FPPALW0091002",
+        id: "FPP0091002",
         answer: "20 kg",
       },
       {
-        id: "FPPALW0091003",
+        id: "FPP0091003",
         answer: "40 kg",
       },
       {
-        id: "FPPALW0091004",
+        id: "FPP0091004",
         answer: "80 kg",
       },
     ],
-    correct: "FPPALW0091002",
+    correct: "FPP0091002",
   },
   {
-    id: "ALW0092",
+    id: "FPP0092",
     question:
       " During a VFR flight the remaining usable fuel at a checkpoint is 80 USG. Reserve fuel is 20 USG, remaining flight time according to flight plan is 2h 20min. What is the highest acceptable fuel flow (FF) for the rest of the trip? (2,00 P.)",
     answers: [
       {
-        id: "FPPALW0092001",
+        id: "FPP0092001",
         answer: "FF = 34.3 USG/h",
       },
       {
-        id: "FPPALW0092002",
+        id: "FPP0092002",
         answer: "FF = 25.7 USG/h",
       },
       {
-        id: "FPPALW0092003",
+        id: "FPP0092003",
         answer: "FF = 8.6 USG/h",
       },
       {
-        id: "FPPALW0092004",
+        id: "FPP0092004",
         answer:
           "FF = 42.9 USG/h\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0092002",
+    correct: "FPP0092002",
   },
   {
-    id: "ALW0093",
+    id: "FPP0093",
     question:
       " (For this questions, use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) Planning a flight from EDWF (Leer Papenburg) to EDWH (Oldenburg Hatten), the following conditions apply: Cruise level = FL 75 Temperature = ISA Cruise weight = 3400 lbs Power setting = 23.0 in. HG @ 2300 RPM Determine True Airspeed (TAS) and Fuel Flow (FF): (2,00 P.) Siehe Anlage 20",
     answers: [
       {
-        id: "FPPALW0093001",
+        id: "FPP0093001",
         answer: "TAS = 145 kt\nFF = 71.1 GPH",
       },
       {
-        id: "FPPALW0093002",
+        id: "FPP0093002",
         answer: "TAS = 160 kt\nFF = 11.9 GPH",
       },
       {
-        id: "FPPALW0093003",
+        id: "FPP0093003",
         answer: "TAS = 145 kt\nFF = 11.9 GPH",
       },
       {
-        id: "FPPALW0093004",
+        id: "FPP0093004",
         answer: "TAS = 160 kt\nFF = 12.3 GPH",
       },
     ],
-    correct: "FPPALW0093002",
+    correct: "FPP0093002",
   },
   {
-    id: "ALW0094",
+    id: "FPP0094",
     question:
       " (For this questions, use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) Planning a flight from EDWH (Oldenburg Hatten) to EDWF (Leer Papenburg), the following conditions apply: Cruise level = FL 65 Temperature = ISA+20 Cruise weight = 3400 lbs Power setting = 23.0 in. HG @ 2300 RPM What Indicated Airspeed (IAS) and Fuel Flow (FF) can be expected? (2,00 P.) Siehe Anlage 20",
     answers: [
       {
-        id: "FPPALW0094001",
+        id: "FPP0094001",
         answer: "IAS = 158kt\nFF = 11.5 GPH",
       },
       {
-        id: "FPPALW0094002",
+        id: "FPP0094002",
         answer: "IAS = 145 kt\nFF = 11.9 GPH",
       },
       {
-        id: "FPPALW0094003",
+        id: "FPP0094003",
         answer: "IAS = 150 kt\nFF = 12.3 GPH",
       },
       {
-        id: "FPPALW0094004",
+        id: "FPP0094004",
         answer:
           "IAS = 142 kt\nFF = 11.5 GPH\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0094004",
+    correct: "FPP0094004",
   },
   {
-    id: "ALW0095",
+    id: "FPP0095",
     question:
       ' (For this questions use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) For planning a VFR flight, the following data are given: Flight time with planning "overhead-overhead" = 2h 43min Pressure Altitude = 6.500 ft Temperature = ISA- 20 Power setting = 2300 RPM Taxi Fuel = 2 USG Additional time for climb = 7 min, Additional time for approach and landing = 10 min The reserve fuel has to be 30% of trip fuel. Determine the minimum block fuel: (2,00 P.) Siehe Anlage 20',
     answers: [
       {
-        id: "FPPALW0095001",
+        id: "FPP0095001",
         answer: "50.4 USG",
       },
       {
-        id: "FPPALW0095002",
+        id: "FPP0095002",
         answer: "47.3 USG",
       },
       {
-        id: "FPPALW0095003",
+        id: "FPP0095003",
         answer: "39.2 USG",
       },
       {
-        id: "FPPALW0095004",
+        id: "FPP0095004",
         answer: "43.8 USG",
       },
     ],
-    correct: "FPPALW0095001",
+    correct: "FPP0095001",
   },
   {
-    id: "ALW0096",
+    id: "FPP0096",
     question:
       ' (For this questions use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) For planning a VFR flight, the following data are given: Flight time with planning "overhead-overhead" = 2h 42min Pressure Altitude = 7.500 ft Temperature = ISA Power setting = 2300 RPM Taxi Fuel = 2 USG Additional time for climb = 8 min, Additional time for approach and landing = 10 min The reserve fuel has to be 30% of trip fuel. Determine the minimum block fuel: (2,00 P.) Siehe Anlage 20',
     answers: [
       {
-        id: "FPPALW0096001",
+        id: "FPP0096001",
         answer: "51.8 USG",
       },
       {
-        id: "FPPALW0096002",
+        id: "FPP0096002",
         answer: "48.4 USG",
       },
       {
-        id: "FPPALW0096003",
+        id: "FPP0096003",
         answer: "46.4 USG",
       },
       {
-        id: "FPPALW0096004",
+        id: "FPP0096004",
         answer: "37.7 USG\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0096002",
+    correct: "FPP0096002",
   },
   {
-    id: "ALW0097",
+    id: "FPP0097",
     question:
       " Given the following data for a VFR flight: Trip fuel = 70 US gallons Contingency fuel = 5% of ktrip fuel Alternate and final reserve fuel = 20 US gallons Usable fuel at take-off = 95 US gallons After half of the distance you read that you have consumed 40 US gallons. Assume that fuel flow remains unchanged. Which statement is correct? (2,00 P.)",
     answers: [
       {
-        id: "FPPALW0097001",
+        id: "FPP0097001",
         answer:
           "Upon landing 5.0 US gallons will remain in addition to alternate and final reserve fuel.",
       },
       {
-        id: "FPPALW0097002",
+        id: "FPP0097002",
         answer:
           "Upon landing 15.0 US gallons will remain in addition to alternate and final reserve fuel.",
       },
       {
-        id: "FPPALW0097003",
+        id: "FPP0097003",
         answer:
           "The remaining fuel is insufficient for a landing at destination with alternate and final reserve fuel\nremaining.",
       },
       {
-        id: "FPPALW0097004",
+        id: "FPP0097004",
         answer: "Upon landing, a total of 40.0 US gallons will remain.",
       },
     ],
-    correct: "FPPALW0097003",
+    correct: "FPP0097003",
   },
   {
-    id: "ALW0098",
+    id: "FPP0098",
     question:
       " Given the following data for a VFR flight: Trip fuel = 70 US gallons Contingency fuel = 5% of trip fuel. Alternate and final reserve fuel = 20 US gallons Usable fuel at take-off = 90 US gallons After half of the distance you read that you have consumed 30 US gallons. Assume that fuel flow remains unchanged. Which statement is correct? (2,00 P.)",
     answers: [
       {
-        id: "FPPALW0098001",
+        id: "FPP0098001",
         answer:
           "Upon landing 10.0 US gallons will remain in addition to alternate and final reserve fuel.",
       },
       {
-        id: "FPPALW0098002",
+        id: "FPP0098002",
         answer:
           "The remaining fuel is insufficient for a landing at destination with alternate and final reserve fuel\nremaining.",
       },
       {
-        id: "FPPALW0098003",
+        id: "FPP0098003",
         answer: "Upon landing a total of 10.0 US gallons will remain.",
       },
       {
-        id: "FPPALW0098004",
+        id: "FPP0098004",
         answer:
           "Upon landing 30.0 US gallons will remain in addition to alternate and final reserve fuel.",
       },
     ],
-    correct: "FPPALW0098001",
+    correct: "FPP0098001",
   },
   {
-    id: "ALW0099",
+    id: "FPP0099",
     question:
       " (For this question, please use annex PFP-061) According ICAO, what symbol indicates a group of unlighted obstacles? (2,00 P.) Siehe Anlage 21",
     answers: [
       {
-        id: "FPPALW0099001",
+        id: "FPP0099001",
         answer: "C",
       },
       {
-        id: "FPPALW0099002",
+        id: "FPP0099002",
         answer: "B",
       },
       {
-        id: "FPPALW0099003",
+        id: "FPP0099003",
         answer: "D",
       },
       {
-        id: "FPPALW0099004",
+        id: "FPP0099004",
         answer: "A\n70 Flight Performance and Planning ECQB-PPL(A)",
       },
     ],
-    correct: "FPPALW0099001",
+    correct: "FPP0099001",
   },
   {
-    id: "ALW0100",
+    id: "FPP0100",
     question:
       " (For this question, please use annex PFP-062) According ICAO, what symbol indicates a civil airport (not international airport) with paved runway? (2,00 P.) Siehe Anlage 22",
     answers: [
       {
-        id: "FPPALW0100001",
+        id: "FPP0100001",
         answer: "B",
       },
       {
-        id: "FPPALW0100002",
+        id: "FPP0100002",
         answer: "C",
       },
       {
-        id: "FPPALW0100003",
+        id: "FPP0100003",
         answer: "A",
       },
       {
-        id: "FPPALW0100004",
+        id: "FPP0100004",
         answer: "D",
       },
     ],
-    correct: "FPPALW0100003",
+    correct: "FPP0100003",
   },
   {
-    id: "ALW0101",
+    id: "FPP0101",
     question:
       " (For this question, please use annex PFP-063) According ICAO, what symbol indicates a general spot elevation? (2,00 P.) Siehe Anlage 23",
     answers: [
       {
-        id: "FPPALW0101001",
+        id: "FPP0101001",
         answer: "A",
       },
       {
-        id: "FPPALW0101002",
+        id: "FPP0101002",
         answer: "B",
       },
       {
-        id: "FPPALW0101003",
+        id: "FPP0101003",
         answer: "C",
       },
       {
-        id: "FPPALW0101004",
+        id: "FPP0101004",
         answer: "D",
       },
     ],
-    correct: "FPPALW0101003",
+    correct: "FPP0101003",
   },
   {
-    id: "ALW0102",
+    id: "FPP0102",
     question:
       " Wie beeinflusst die Lufttemperatur die Leistung eines Kolbenmotors? (1,00 P.)",
     answers: [
       {
-        id: "FPPALW0102001",
+        id: "FPP0102001",
         answer:
           "Höhere Temperatur entspricht höherer Luftdichte,\ndies führt zu höherer Motorleistung",
       },
       {
-        id: "FPPALW0102002",
+        id: "FPP0102002",
         answer:
           "Geringere Temperatur entspricht geringerer Luftdichte,\ndies führt zu höherer Motorleistung",
       },
       {
-        id: "FPPALW0102003",
+        id: "FPP0102003",
         answer:
           "Höhere Temperatur entspricht geringerer Luftdichte,\ndies führt zu geringerer Motorleistung",
       },
       {
-        id: "FPPALW0102004",
+        id: "FPP0102004",
         answer:
           "Geringere Temperatur entspricht höherer Luftdichte,\ndies führt zu geringerer Motorleistung",
       },
     ],
-    correct: "FPPALW0102003",
+    correct: "FPP0102003",
   },
 ];
 

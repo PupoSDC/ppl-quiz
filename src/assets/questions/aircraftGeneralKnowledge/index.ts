@@ -2509,16 +2509,50 @@ const questions: Question[] = [
   {
     id: "AGK0102",
     question:
-      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 270° to a heading of 360°. At approximately which indication of the magnetic compass should the turn be terminated? # 330° # 360° # 270° # 030°",
-    answers: [],
-    correct: "",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 270° to a heading of 360°. At approximately which indication of the magnetic compass should the turn be terminated?",
+    answers: [
+      {
+        id: "AGK0102001",
+        answer: "330°",
+      },
+      {
+        id: "AGK0102002",
+        answer: "360°",
+      },
+      {
+        id: "AGK0102003",
+        answer: "270°",
+      },
+      {
+        id: "AGK0102004",
+        answer: "30°",
+      },
+    ],
+    correct: "AGK0102001",
   },
   {
     id: "AGK0103",
     question:
-      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 360° to a heading of 270°. At approximately which indication of the magnetic compass should the turn be terminated? # 300° # 360° # 240° # 270°",
-    answers: [],
-    correct: "",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 360° to a heading of 270°. At approximately which indication of the magnetic compass should the turn be terminated?",
+    answers: [
+      {
+        id: "AGK0103001",
+        answer: "300°",
+      },
+      {
+        id: "AGK0103002",
+        answer: "360°",
+      },
+      {
+        id: "AGK0103003",
+        answer: "240°",
+      },
+      {
+        id: "AGK0103004",
+        answer: "270°",
+      },
+    ],
+    correct: "AGK0103004",
   },
   {
     id: "AGK0104",
@@ -2546,9 +2580,26 @@ const questions: Question[] = [
   {
     id: "AGK0105",
     question:
-      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 030° to a heading of 180°. At approximately which indicated magnetic heading should the turn be terminated? # 360°. # 150°. # 210°. # 180°.",
-    answers: [],
-    correct: "",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 030° to a heading of 180°. At approximately which indicated magnetic heading should the turn be terminated?",
+    answers: [
+      {
+        id: "AGK0105001",
+        answer: "360°",
+      },
+      {
+        id: "AGK0105002",
+        answer: "150°",
+      },
+      {
+        id: "AGK0105003",
+        answer: "210°",
+      },
+      {
+        id: "AGK0105004",
+        answer: "180°",
+      },
+    ],
+    correct: "AGK0105003",
   },
   {
     id: "AGK0106",
@@ -2646,16 +2697,23 @@ const questions: Question[] = [
   },
   {
     id: "AGK0110",
-    question:
-      "The bank angle of a 2-minutes circle depends on the... # CAS. # IAS.",
+    question: "The bank angle of a 2-minutes circle depends on the...",
     answers: [
       {
         id: "AGK0110001",
-        answer: "Ground speed.",
+        answer: "Ground speed",
       },
       {
         id: "AGK0110002",
-        answer: "TAS.",
+        answer: "TAS",
+      },
+      {
+        id: "AGK0110002",
+        answer: "CAS",
+      },
+      {
+        id: "AGK0110002",
+        answer: "TAS",
       },
     ],
     correct: "AGK0110002",

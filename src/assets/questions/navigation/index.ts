@@ -3,7 +3,7 @@ import { Question } from "types/Questionnaire";
 const questions: Question[] = [
   {
     id: "NAV0001",
-    question: " The rotational axis of the Earth runs through the... (1,00 P.)",
+    question: " The rotational axis of the Earth runs through the...",
     answers: [
       {
         id: "NAV0001001",
@@ -27,7 +27,7 @@ const questions: Question[] = [
   {
     id: "NAV0002",
     question:
-      " Which statement is correct with regard to the polar axis of the Earth? (1,00 P.)",
+      "Which statement is correct with regard to the polar axis of the Earth?",
     answers: [
       {
         id: "NAV0002001",
@@ -55,7 +55,7 @@ const questions: Question[] = [
   {
     id: "NAV0003",
     question:
-      " Which approximate, geometrical form describes the shape of the Earth best for navigation systems? (1,00 P.)",
+      "Which approximate, geometrical form describes the shape of the Earth best for navigation systems?",
     answers: [
       {
         id: "NAV0003001",
@@ -78,7 +78,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0004",
-    question: " Which statement about a rhumb line is correct? (1,00 P.)",
+    question: " Which statement about a rhumb line is correct?",
     answers: [
       {
         id: "NAV0004001",
@@ -105,7 +105,7 @@ const questions: Question[] = [
   {
     id: "NAV0005",
     question:
-      " The shortest distance between two points on Earth is represented by a part of... (1, P.)",
+      "The shortest distance between two points on Earth is represented by a part of... (1, P.)",
     answers: [
       {
         id: "NAV0005001",
@@ -129,7 +129,7 @@ const questions: Question[] = [
   {
     id: "NAV0006",
     question:
-      " The circumference of the Earth at the equator is approximately... See figure (NAV-002) (1,00 P.) Siehe Anlage 1",
+      "The circumference of the Earth at the equator is approximately... See figure (NAV-002) Siehe Anlage 1",
     answers: [
       {
         id: "NAV0006001",
@@ -153,7 +153,7 @@ const questions: Question[] = [
   {
     id: "NAV0007",
     question:
-      " What is the difference in latitude between A (12°53'30''N) and B (07°34'30''S)? (1,00 P.)",
+      "What is the difference in latitude between A (12°53'30''N) and B (07°34'30''S)?",
     answers: [
       {
         id: "NAV0007001",
@@ -176,7 +176,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0008",
-    question: " Where are the two polar circles? (1,00 P.)",
+    question: " Where are the two polar circles?",
     answers: [
       {
         id: "NAV0008001",
@@ -200,7 +200,7 @@ const questions: Question[] = [
   {
     id: "NAV0009",
     question:
-      " What is the distance between the parallels of latitude 48°N and 49°N along a meridian line? (1,00 P.)",
+      "What is the distance between the parallels of latitude 48°N and 49°N along a meridian line?",
     answers: [
       {
         id: "NAV0009001",
@@ -224,7 +224,7 @@ const questions: Question[] = [
   {
     id: "NAV0010",
     question:
-      " What distance corresponds to one degree difference in latitude along any degree of longitude? (1,00 P.)",
+      "What distance corresponds to one degree difference in latitude along any degree of longitude?",
     answers: [
       {
         id: "NAV0010001",
@@ -248,7 +248,7 @@ const questions: Question[] = [
   {
     id: "NAV0011",
     question:
-      " Point A on the Earth's surface lies exactly on the parallel of latitude of 47°50'27''N. Which point is exactly 240 NM north of A? (1,00 P.)",
+      "Point A on the Earth's surface lies exactly on the parallel of latitude of 47°50'27''N. Which point is exactly 240 NM north of A?",
     answers: [
       {
         id: "NAV0011001",
@@ -272,7 +272,7 @@ const questions: Question[] = [
   {
     id: "NAV0012",
     question:
-      " What is the distance between the two parallels of longitude 150°E and 151°E along the equator? (1,00 P.)",
+      "What is the distance between the two parallels of longitude 150°E and 151°E along the equator?",
     answers: [
       {
         id: "NAV0012001",
@@ -296,7 +296,7 @@ const questions: Question[] = [
   {
     id: "NAV0013",
     question:
-      " What is the great circle distance between two points A and B on the equator when the difference between the two associated meridians is exactly one degree of longitude? (1,00 P.)",
+      "What is the great circle distance between two points A and B on the equator when the difference between the two associated meridians is exactly one degree of longitude?",
     answers: [
       {
         id: "NAV0013001",
@@ -320,7 +320,7 @@ const questions: Question[] = [
   {
     id: "NAV0014",
     question:
-      " Assume two arbitrary points A and B on the same parallel of latitude, but not on the equator. Point A is located on 010°E and point B on 020°E. The rumb line distance between A and B is always... (1,00 P.)",
+      "Assume two arbitrary points A and B on the same parallel of latitude, but not on the equator. Point A is located on 010°E and point B on 020°E. The rumb line distance between A and B is always...",
     answers: [
       {
         id: "NAV0014001",
@@ -344,7 +344,7 @@ const questions: Question[] = [
   {
     id: "NAV0015",
     question:
-      " What is the difference in time when the sun moves 20° of longitude? (1,00 P.)",
+      "What is the difference in time when the sun moves 20° of longitude?",
     answers: [
       {
         id: "NAV0015001",
@@ -368,7 +368,7 @@ const questions: Question[] = [
   {
     id: "NAV0016",
     question:
-      " What is the difference in time when the sun moves 10° of longitude? (1,00 P.)",
+      "What is the difference in time when the sun moves 10° of longitude?",
     answers: [
       {
         id: "NAV0016001",
@@ -391,8 +391,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0017",
-    question:
-      " The sun moves 10° of longitude. What is the difference in time? (1,00 P.)",
+    question: "The sun moves 10° of longitude. What is the difference in time?",
     answers: [
       {
         id: "NAV0017001",
@@ -416,7 +415,7 @@ const questions: Question[] = [
   {
     id: "NAV0018",
     question:
-      " With Central European Summer Time (CEST) given as UTC+2, what UTC time corresponds to 1600 CEST? (1,00 P.)",
+      "With Central European Summer Time (CEST) given as UTC+2, what UTC time corresponds to 1600 CEST?",
     answers: [
       {
         id: "NAV0018001",
@@ -439,7 +438,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0019",
-    question: " UTC is... (1,00 P.)",
+    question: " UTC is...",
     answers: [
       {
         id: "NAV0019001",
@@ -463,37 +462,31 @@ const questions: Question[] = [
   {
     id: "NAV0020",
     question:
-      " With Central European Time (CET) given as UTC+1, what UTC time corresponds to",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV1700",
-    question: " CET? (1,00 P.)",
+      "With Central European Time (CET) given as UTC+1, what UTC time corresponds to 1700 CET?",
     answers: [
       {
-        id: "NAV1700001",
+        id: "NAV0020001",
         answer: "1800 UTC.",
       },
       {
-        id: "NAV1700002",
+        id: "NAV0020002",
         answer: "1500 UTC.",
       },
       {
-        id: "NAV1700003",
+        id: "NAV0020003",
         answer: "1700 UTC.",
       },
       {
-        id: "NAV1700004",
+        id: "NAV0020004",
         answer: "1600 UTC.",
       },
     ],
-    correct: "NAV1700004",
+    correct: "NAV0020004",
   },
   {
     id: "NAV0021",
     question:
-      " Vienna (LOWW) is located at 016° 34'E, Salzburg (LOWS) at 013° 00'E. The latitude of both positions can be considered as equal. What is the difference of sunrise and sunset times, expressed in UTC, between Wien and Salzburg? (2,00 P.)",
+      "Vienna (LOWW) is located at 016° 34'E, Salzburg (LOWS) at 013° 00'E. The latitude of both positions can be considered as equal. What is the difference of sunrise and sunset times, expressed in UTC, between Wien and Salzburg? (2,00 P.)",
     answers: [
       {
         id: "NAV0021001",
@@ -520,7 +513,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0022",
-    question: " The term 'civil twilight' is defined as... (1,00 P.)",
+    question: " The term 'civil twilight' is defined as...",
     answers: [
       {
         id: "NAV0022001",
@@ -548,7 +541,7 @@ const questions: Question[] = [
   {
     id: "NAV0023",
     question:
-      " Given: WCA: -012°; TH: 125°; MC: 139°; DEV: 002°E What are: TC, MH und CH? (2,00 P.) #MH: 127°. #CH: 129°. #MH: 127°. #CH: 125°. #MH: 139°. #CH: 129°. #MH: 139°. #CH: 125°.",
+      "Given: WCA: -012°; TH: 125°; MC: 139°; DEV: 002°E What are: TC, MH und CH? (2,00 P.) #MH: 127°. #CH: 129°. #MH: 127°. #CH: 125°. #MH: 139°. #CH: 129°. #MH: 139°. #CH: 125°.",
     answers: [
       {
         id: "NAV0023001",
@@ -572,7 +565,7 @@ const questions: Question[] = [
   {
     id: "NAV0024",
     question:
-      " Given: TC: 179°; WCA: -12°; VAR: 004° E; DEV: +002° What are MH and MC? (1,00 P.) #MC: 161°. #MC: 175°. #MC: 161°. #MC: 175°.",
+      "Given: TC: 179°; WCA: -12°; VAR: 004° E; DEV: +002° What are MH and MC? #MC: 161°. #MC: 175°. #MC: 161°. #MC: 175°.",
     answers: [
       {
         id: "NAV0024001",
@@ -596,7 +589,7 @@ const questions: Question[] = [
   {
     id: "NAV0025",
     question:
-      " The angle between the true course and the true heading is called... (1,00 P.)",
+      "The angle between the true course and the true heading is called...",
     answers: [
       {
         id: "NAV0025001",
@@ -620,7 +613,7 @@ const questions: Question[] = [
   {
     id: "NAV0026",
     question:
-      " The angle between the magnetic course and the true course is called... (1,00 P.)",
+      "The angle between the magnetic course and the true course is called...",
     answers: [
       {
         id: "NAV0026001",
@@ -643,7 +636,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0027",
-    question: " The term ‚magnetic course' (MC) is defined as... (1,00 P.)",
+    question: " The term ‚magnetic course' (MC) is defined as...",
     answers: [
       {
         id: "NAV0027001",
@@ -668,7 +661,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0028",
-    question: " The term 'True Course' (TC) is defined as... (1,00 P.)",
+    question: " The term 'True Course' (TC) is defined as...",
     answers: [
       {
         id: "NAV0028001",
@@ -694,7 +687,7 @@ const questions: Question[] = [
   {
     id: "NAV0029",
     question:
-      " Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are TH and VAR? (2,00 P.)",
+      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are TH and VAR? (2,00 P.)",
     answers: [
       {
         id: "NAV0029001",
@@ -718,7 +711,7 @@ const questions: Question[] = [
   {
     id: "NAV0030",
     question:
-      " Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the TH and the DEV? (2,00 P.)",
+      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the TH and the DEV? (2,00 P.)",
     answers: [
       {
         id: "NAV0030001",
@@ -742,7 +735,7 @@ const questions: Question[] = [
   {
     id: "NAV0031",
     question:
-      " Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the VAR and the DEV? (2,00 P.)",
+      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the VAR and the DEV? (2,00 P.)",
     answers: [
       {
         id: "NAV0031001",
@@ -765,7 +758,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0032",
-    question: " Where does the inclination reach its lowest value? (1,00 P.)",
+    question: " Where does the inclination reach its lowest value?",
     answers: [
       {
         id: "NAV0032001",
@@ -788,8 +781,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0033",
-    question:
-      " The angle between compass north and magnetic north is called... (1,00 P.)",
+    question: "The angle between compass north and magnetic north is called...",
     answers: [
       {
         id: "NAV0033001",
@@ -812,7 +804,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0034",
-    question: " Which direction corresponds to 'compass north' (CN)? (1,00 P.)",
+    question: " Which direction corresponds to 'compass north' (CN)?",
     answers: [
       {
         id: "NAV0034001",
@@ -839,7 +831,7 @@ const questions: Question[] = [
   {
     id: "NAV0035",
     question:
-      " The term 'isogonal' or 'isogonic line' is defined as a line on an aeronautical chart, connecting all points with the same value of... (1,00 P.)",
+      "The term 'isogonal' or 'isogonic line' is defined as a line on an aeronautical chart, connecting all points with the same value of...",
     answers: [
       {
         id: "NAV0035001",
@@ -863,7 +855,7 @@ const questions: Question[] = [
   {
     id: "NAV0036",
     question:
-      " The term 'agonic line' is defined as a line on Earth or an aeronautical chart, connecting all points with the... (1,00 P.)",
+      "The term 'agonic line' is defined as a line on Earth or an aeronautical chart, connecting all points with the...",
     answers: [
       {
         id: "NAV0036001",
@@ -887,7 +879,7 @@ const questions: Question[] = [
   {
     id: "NAV0037",
     question:
-      " Which are the official basic units for horizontal distances used in aeronautical navigation and their abbreviations? (1,00 P.)",
+      "Which are the official basic units for horizontal distances used in aeronautical navigation and their abbreviations?",
     answers: [
       {
         id: "NAV0037001",
@@ -910,7 +902,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0038",
-    question: " 1000 ft equal... (1,00 P.)",
+    question: " 1000 ft equal...",
     answers: [
       {
         id: "NAV0038001",
@@ -933,7 +925,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0039",
-    question: " 5500 m equal... (1,00 P.)",
+    question: " 5500 m equal...",
     answers: [
       {
         id: "NAV0039001",
@@ -957,7 +949,7 @@ const questions: Question[] = [
   {
     id: "NAV0040",
     question:
-      " Which of the items on the attached checklist are related to the direct reading compass? See annex (NAV-004) (1,00 P.) Siehe Anlage 2",
+      "Which of the items on the attached checklist are related to the direct reading compass? See annex (NAV-004) Siehe Anlage 2",
     answers: [
       {
         id: "NAV0040001",
@@ -981,7 +973,7 @@ const questions: Question[] = [
   {
     id: "NAV0041",
     question:
-      " What could be a reason for changing the runway indicators at aerodromes (e.g. from runway 06 to runway 07)? (1,00 P.)",
+      "What could be a reason for changing the runway indicators at aerodromes (e.g. from runway 06 to runway 07)?",
     answers: [
       {
         id: "NAV0041001",
@@ -1005,7 +997,7 @@ const questions: Question[] = [
   {
     id: "NAV0042",
     question:
-      " Electronic devices on board of an aeroplane have influence on the... (1,00 P.)",
+      "Electronic devices on board of an aeroplane have influence on the...",
     answers: [
       {
         id: "NAV0042001",
@@ -1028,7 +1020,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0043",
-    question: " Which are the properties of a Mercator chart? (1,00 P.)",
+    question: " Which are the properties of a Mercator chart?",
     answers: [
       {
         id: "NAV0043001",
@@ -1056,7 +1048,7 @@ const questions: Question[] = [
   {
     id: "NAV0044",
     question:
-      " How are rhumb lines and great circles depicted on a direct Mercator chart? (1,00 P.)",
+      "How are rhumb lines and great circles depicted on a direct Mercator chart?",
     answers: [
       {
         id: "NAV0044001",
@@ -1079,8 +1071,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0045",
-    question:
-      " Which are the properties of a Lambert conformal chart? (1,00 P.)",
+    question: "Which are the properties of a Lambert conformal chart?",
     answers: [
       {
         id: "NAV0045001",
@@ -1106,7 +1097,7 @@ const questions: Question[] = [
   {
     id: "NAV0046",
     question:
-      " Which lines have to be used by the pilot to determine the aircraft's position? (1,00 P.)",
+      "Which lines have to be used by the pilot to determine the aircraft's position?",
     answers: [
       {
         id: "NAV0046001",
@@ -1130,7 +1121,7 @@ const questions: Question[] = [
   {
     id: "NAV0047",
     question:
-      " What is the radial from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) (1,00 P.) Siehe Anlage 3",
+      "What is the radial from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) Siehe Anlage 3",
     answers: [
       {
         id: "NAV0047001",
@@ -1154,7 +1145,7 @@ const questions: Question[] = [
   {
     id: "NAV0048",
     question:
-      " The distance between two airports is 220 NM. On an aeronautical navigation chart the pilot measures 40.7 cm for this distance. The chart scale is... (1,00 P.)",
+      "The distance between two airports is 220 NM. On an aeronautical navigation chart the pilot measures 40.7 cm for this distance. The chart scale is...",
     answers: [
       {
         id: "NAV0048001",
@@ -1178,7 +1169,7 @@ const questions: Question[] = [
   {
     id: "NAV0049",
     question:
-      " Given the following information, what is the aircraft position at the cross bearing? VOR Hamburg (HAM) (53°41?N, 010°12?E): Radial 119° VOR Brünkendorf (BKD) (53°02?N, 011°33?E): Radial 320° See annex (NAV-031) (1,00 P.) Siehe Anlage 3",
+      "Given the following information, what is the aircraft position at the cross bearing? VOR Hamburg (HAM) (53°41?N, 010°12?E): Radial 119° VOR Brünkendorf (BKD) (53°02?N, 011°33?E): Radial 320° See annex (NAV-031) Siehe Anlage 3",
     answers: [
       {
         id: "NAV0049001",
@@ -1202,7 +1193,7 @@ const questions: Question[] = [
   {
     id: "NAV0050",
     question:
-      " What is the distance from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) (1,00 P.) Siehe Anlage 3",
+      "What is the distance from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) Siehe Anlage 3",
     answers: [
       {
         id: "NAV0050001",
@@ -1226,37 +1217,31 @@ const questions: Question[] = [
   {
     id: "NAV0051",
     question:
-      " A distance of 7.5 cm on an aeronautical chart represents a distance of",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV60.745",
-    question: " NM in reality. What is the chart scale? (1,00 P.)",
+      "A distance of 7.5 cm on an aeronautical chart represents a distance of 60.745 NM in reality. What is the chart scale?",
     answers: [
       {
-        id: "NAV60.745001",
+        id: "NAV0051001",
         answer: "1 : 1500000",
       },
       {
-        id: "NAV60.745002",
+        id: "NAV0051002",
         answer: "1 : 1 000000",
       },
       {
-        id: "NAV60.745003",
+        id: "NAV0051003",
         answer: "1 : 500000",
       },
       {
-        id: "NAV60.745004",
+        id: "NAV0051004",
         answer: "1 : 150000",
       },
     ],
-    correct: "NAV60.745001",
+    correct: "NAV0051001",
   },
   {
     id: "NAV0052",
     question:
-      " For a short flight from A to B the pilot extracts the following information from an aeronautical chart: True course: 245°. Magnetic variation: 7° W The magnetic course (MC) equals... (1,00 P.)",
+      "For a short flight from A to B the pilot extracts the following information from an aeronautical chart: True course: 245°. Magnetic variation: 7° W The magnetic course (MC) equals...",
     answers: [
       {
         id: "NAV0052001",
@@ -1280,7 +1265,7 @@ const questions: Question[] = [
   {
     id: "NAV0053",
     question:
-      " An aircraft is flying with an indicated airspeed (IAS) of 150 kt at 8000 ft MSL. According to the rule of thumb, the true airspeed (TAS) equals... (1,00 P.)",
+      "An aircraft is flying with an indicated airspeed (IAS) of 150 kt at 8000 ft MSL. According to the rule of thumb, the true airspeed (TAS) equals...",
     answers: [
       {
         id: "NAV0053001",
@@ -1304,7 +1289,7 @@ const questions: Question[] = [
   {
     id: "NAV0054",
     question:
-      " Given: True course from A to B: 250°. Ground distance: 210 NM. TAS: 130 kt. Headwind component: 15 kt. Estimated time of departure (ETD): 0915 UTC. The estimated time of arrival (ETA) is... (2,00 P.)",
+      "Given: True course from A to B: 250°. Ground distance: 210 NM. TAS: 130 kt. Headwind component: 15 kt. Estimated time of departure (ETD): 0915 UTC. The estimated time of arrival (ETA) is... (2,00 P.)",
     answers: [
       {
         id: "NAV0054001",
@@ -1328,7 +1313,7 @@ const questions: Question[] = [
   {
     id: "NAV0055",
     question:
-      " Given: True course from A to B: 283°. Ground distance: 75 NM. TAS: 105 kt. Headwind component: 12 kt. Estimated time of departure (ETD): 1242 UTC. The estimated time of arrival (ETA) is... (1,00 P.)",
+      "Given: True course from A to B: 283°. Ground distance: 75 NM. TAS: 105 kt. Headwind component: 12 kt. Estimated time of departure (ETD): 1242 UTC. The estimated time of arrival (ETA) is...",
     answers: [
       {
         id: "NAV0055001",
@@ -1352,7 +1337,7 @@ const questions: Question[] = [
   {
     id: "NAV0056",
     question:
-      " Given: True course from A to B: 352°. Ground distance: 100 NM. GS: 107 kt. Estimated time of departure (ETD): 0933 UTC. The estimated time of arrival (ETA) is... (1,00 P.)",
+      "Given: True course from A to B: 352°. Ground distance: 100 NM. GS: 107 kt. Estimated time of departure (ETD): 0933 UTC. The estimated time of arrival (ETA) is...",
     answers: [
       {
         id: "NAV0056001",
@@ -1376,7 +1361,7 @@ const questions: Question[] = [
   {
     id: "NAV0057",
     question:
-      " An aircraft travels 100 km in 56 minutes. The ground speed (GS) equals... (1,00 P.)",
+      "An aircraft travels 100 km in 56 minutes. The ground speed (GS) equals...",
     answers: [
       {
         id: "NAV0057001",
@@ -1400,7 +1385,7 @@ const questions: Question[] = [
   {
     id: "NAV0058",
     question:
-      " An aircraft travels 110 NM within 01:25. The ground speed (GS) equals... (1,00 P.)",
+      "An aircraft travels 110 NM within 01:25. The ground speed (GS) equals...",
     answers: [
       {
         id: "NAV0058001",
@@ -1424,7 +1409,7 @@ const questions: Question[] = [
   {
     id: "NAV0059",
     question:
-      " What is the required flight time for a distance of 236 NM with a ground speed of 134 kt? (1,00 P.)",
+      "What is the required flight time for a distance of 236 NM with a ground speed of 134 kt?",
     answers: [
       {
         id: "NAV0059001",
@@ -1448,7 +1433,7 @@ const questions: Question[] = [
   {
     id: "NAV0060",
     question:
-      " An aircraft is flying with a true airspeed (TAS) of 120 kt and experiences 35 kt tailwind. How much time is needed for a distance of 185 NM? (1,00 P.)",
+      "An aircraft is flying with a true airspeed (TAS) of 120 kt and experiences 35 kt tailwind. How much time is needed for a distance of 185 NM?",
     answers: [
       {
         id: "NAV0060001",
@@ -1472,14 +1457,7 @@ const questions: Question[] = [
   {
     id: "NAV0061",
     question:
-      " An aircraft is flying with a true airspeed (TAS) of 180 kt and a headwind component of",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV0025",
-    question:
-      " kt for 2 hours and 25 minutes. The distance flown equals... (1,00 P.)",
+      "An aircraft is flying with a true airspeed (TAS) of 180 kt and a headwind component of 25kt for 2 hours and 25 minutes. The distance flown equals...",
     answers: [
       {
         id: "NAV0025001",
@@ -1503,7 +1481,7 @@ const questions: Question[] = [
   {
     id: "NAV0062",
     question:
-      " Given: Calibrated airspeed (CAS): 155 kt. Flight level (FL) 80. Outside air temperature (OAT): +15° C. The true airspeed (TAS) equals... (1,00 P.)",
+      "Given: Calibrated airspeed (CAS): 155 kt. Flight level (FL) 80. Outside air temperature (OAT): +15° C. The true airspeed (TAS) equals...",
     answers: [
       {
         id: "NAV0062001",
@@ -1527,7 +1505,7 @@ const questions: Question[] = [
   {
     id: "NAV0063",
     question:
-      " What is the true course (TC) from Uelzen (EDVU) (52°59?N, 10°28?E) to Neustadt (EDAN) (53°22'N, 011°37'E)? See annex (NAV-031) (1,00 P.) Siehe Anlage 3",
+      "What is the true course (TC) from Uelzen (EDVU) (52°59?N, 10°28?E) to Neustadt (EDAN) (53°22'N, 011°37'E)? See annex (NAV-031) Siehe Anlage 3",
     answers: [
       {
         id: "NAV0063001",
@@ -1551,7 +1529,7 @@ const questions: Question[] = [
   {
     id: "NAV0064",
     question:
-      " An aircraft is flying at aFL 75 with an outside air temperature (OAT) of -9°C. The QNH altitude is 6500 ft. The true altitude equals... (1,00 P.)",
+      "An aircraft is flying at aFL 75 with an outside air temperature (OAT) of -9°C. The QNH altitude is 6500 ft. The true altitude equals...",
     answers: [
       {
         id: "NAV0064001",
@@ -1575,7 +1553,7 @@ const questions: Question[] = [
   {
     id: "NAV0065",
     question:
-      " What is the distance from Neustadt (EDAN) (53°22'N, 011°37'E) to Uelzen (EDVU) (52°59?N, 10°28?E)? See annex (NAV-031) (1,00 P.) Siehe Anlage 3",
+      "What is the distance from Neustadt (EDAN) (53°22'N, 011°37'E) to Uelzen (EDVU) (52°59?N, 10°28?E)? See annex (NAV-031) Siehe Anlage 3",
     answers: [
       {
         id: "NAV0065001",
@@ -1599,7 +1577,7 @@ const questions: Question[] = [
   {
     id: "NAV0066",
     question:
-      " An aircraft is flying at a pressure altitude of 7000 feet with an outside air temperature (OAT) of +11°C. The QNH altitude is 6500 ft. The true altitude equals... (1,00 P.)",
+      "An aircraft is flying at a pressure altitude of 7000 feet with an outside air temperature (OAT) of +11°C. The QNH altitude is 6500 ft. The true altitude equals...",
     answers: [
       {
         id: "NAV0066001",
@@ -1623,7 +1601,7 @@ const questions: Question[] = [
   {
     id: "NAV0067",
     question:
-      " An aircraft is flying at a pressure altitude of 7000 feet with an outside air temperature (OAT) of +21°C. The QNH altitude is 6500 ft. The true altitude equals... (1,00 P.)",
+      "An aircraft is flying at a pressure altitude of 7000 feet with an outside air temperature (OAT) of +21°C. The QNH altitude is 6500 ft. The true altitude equals...",
     answers: [
       {
         id: "NAV0067001",
@@ -1647,7 +1625,7 @@ const questions: Question[] = [
   {
     id: "NAV0068",
     question:
-      " Given: True course: 255°. TAS: 100 kt. Wind: 200°/10 kt. The true heading equals... (1,00 P.)",
+      "Given: True course: 255°. TAS: 100 kt. Wind: 200°/10 kt. The true heading equals...",
     answers: [
       {
         id: "NAV0068001",
@@ -1671,7 +1649,7 @@ const questions: Question[] = [
   {
     id: "NAV0069",
     question:
-      " Given: True course: 165°. TAS: 90 kt. Wind: 130°/20 kt. Distance: 153 NM. The true heading equals... (1,00 P.)",
+      "Given: True course: 165°. TAS: 90 kt. Wind: 130°/20 kt. Distance: 153 NM. The true heading equals...",
     answers: [
       {
         id: "NAV0069001",
@@ -1695,7 +1673,7 @@ const questions: Question[] = [
   {
     id: "NAV0070",
     question:
-      " Given: Ground speed (GS): 160 kt. True course (TC): 177°. Wind vector (W/WS): 140°/20 kt. The true heading (TH) equals... (1,00 P.)",
+      "Given: Ground speed (GS): 160 kt. True course (TC): 177°. Wind vector (W/WS): 140°/20 kt. The true heading (TH) equals...",
     answers: [
       {
         id: "NAV0070001",
@@ -1719,7 +1697,7 @@ const questions: Question[] = [
   {
     id: "NAV0071",
     question:
-      " An aircraft is following a true course (TC) of 220° at a constant TAS of 220 kt. The wind vector is 270°/50 kt. The ground speed (GS) equals... (1,00 P.)",
+      "An aircraft is following a true course (TC) of 220° at a constant TAS of 220 kt. The wind vector is 270°/50 kt. The ground speed (GS) equals...",
     answers: [
       {
         id: "NAV0071001",
@@ -1743,14 +1721,7 @@ const questions: Question[] = [
   {
     id: "NAV0072",
     question:
-      " An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV0180",
-    question:
-      " kt. The wind vector is 350°/30 kt. The groundspeed (GS) equals... (1,00 P.)",
+      "An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of 180kt. The wind vector is 350°/30 kt. The groundspeed (GS) equals...",
     answers: [
       {
         id: "NAV0180001",
@@ -1774,14 +1745,7 @@ const questions: Question[] = [
   {
     id: "NAV0073",
     question:
-      " An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV0180",
-    question:
-      " kt. The wind vector is 350°/30 kt. The wind correction angle (WCA) equals... (1,00 P.)",
+      "An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of 180 kt. The wind vector is 350°/30 kt. The wind correction angle (WCA) equals...",
     answers: [
       {
         id: "NAV0180001",
@@ -1805,7 +1769,7 @@ const questions: Question[] = [
   {
     id: "NAV0074",
     question:
-      " Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The ground speed (GS) equals... (1,00 P.)",
+      "Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The ground speed (GS) equals...",
     answers: [
       {
         id: "NAV0074001",
@@ -1829,7 +1793,7 @@ const questions: Question[] = [
   {
     id: "NAV0075",
     question:
-      " Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The flight time equals... (1,00 P.)",
+      "Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The flight time equals...",
     answers: [
       {
         id: "NAV0075001",
@@ -1853,14 +1817,7 @@ const questions: Question[] = [
   {
     id: "NAV0076",
     question:
-      " An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of",
-    answers: [],
-    correct: "",
-  },
-  {
-    id: "NAV0180",
-    question:
-      " kt. The wind vector is 350°/30 kt. The wind correction angle (WCA) equals... (1,00 P.)",
+      "An aircraft is following a true course (TC) of 040° at a constant true airspeed (TAS) of 180 kt. The wind vector is 350°/30 kt. The wind correction angle (WCA) equals...",
     answers: [
       {
         id: "NAV0180001",
@@ -1884,7 +1841,7 @@ const questions: Question[] = [
   {
     id: "NAV0077",
     question:
-      " Given: True course: 120°. TAS: 120 kt. Wind: 150°/12 kt. The WCA equals... (1,00 P.)",
+      "Given: True course: 120°. TAS: 120 kt. Wind: 150°/12 kt. The WCA equals...",
     answers: [
       {
         id: "NAV0077001",
@@ -1908,7 +1865,7 @@ const questions: Question[] = [
   {
     id: "NAV0078",
     question:
-      " The distance from 'A' to 'B' measures 120 NM. At a distance of 55 NM from 'A' the pilot realizes a deviation of 7 NM to the right. What approximate course change must be made to reach 'B' directly? (1,00 P.)",
+      "The distance from 'A' to 'B' measures 120 NM. At a distance of 55 NM from 'A' the pilot realizes a deviation of 7 NM to the right. What approximate course change must be made to reach 'B' directly?",
     answers: [
       {
         id: "NAV0078001",
@@ -1932,7 +1889,7 @@ const questions: Question[] = [
   {
     id: "NAV0079",
     question:
-      " An aeroplane has a heading of 090°. The distance which has to be flown is 90 NM. After 45 NM the aeroplane is 4.5 NM north of the planned flight path. What is the corrected heading to reach the arrival aerodrome directly? (1,00 P.)",
+      "An aeroplane has a heading of 090°. The distance which has to be flown is 90 NM. After 45 NM the aeroplane is 4.5 NM north of the planned flight path. What is the corrected heading to reach the arrival aerodrome directly?",
     answers: [
       {
         id: "NAV0079001",
@@ -1955,7 +1912,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0080",
-    question: " What is the meaning of the 1:60 rule? (1,00 P.)",
+    question: " What is the meaning of the 1:60 rule?",
     answers: [
       {
         id: "NAV0080001",
@@ -1979,7 +1936,7 @@ const questions: Question[] = [
   {
     id: "NAV0081",
     question:
-      " An aircraft is flying from 'A' to 'B' (distance 220 NM) at an average ground speed (GS) of 120 kt. It departs 'A' at 1200 UTC. After 70 NM along the course from 'A', the aircraft is 5 min ahead of the planned schedule. Using the actual GS, what is the revised estimated time of arrival (ETA) at B? (1,00 P.)",
+      "An aircraft is flying from 'A' to 'B' (distance 220 NM) at an average ground speed (GS) of 120 kt. It departs 'A' at 1200 UTC. After 70 NM along the course from 'A', the aircraft is 5 min ahead of the planned schedule. Using the actual GS, what is the revised estimated time of arrival (ETA) at B?",
     answers: [
       {
         id: "NAV0081001",
@@ -2003,7 +1960,7 @@ const questions: Question[] = [
   {
     id: "NAV0082",
     question:
-      " Assume calm wind and an aircraft descending from 9000 ft to 1500 ft. The rate of descent (ROD) equals 1200 ft/min. The elapsed time will be... (1,00 P.)",
+      "Assume calm wind and an aircraft descending from 9000 ft to 1500 ft. The rate of descent (ROD) equals 1200 ft/min. The elapsed time will be...",
     answers: [
       {
         id: "NAV0082001",
@@ -2027,7 +1984,7 @@ const questions: Question[] = [
   {
     id: "NAV0083",
     question:
-      " Assume zero wind and an aircraft descending from 7500 ft to 1200 ft with an average true airspeed (TAS) during the descent of 105 kt. The rate of descent (ROD) equals 800 ft/min. The elapsed time will be... (1,00 P.)",
+      "Assume zero wind and an aircraft descending from 7500 ft to 1200 ft with an average true airspeed (TAS) during the descent of 105 kt. The rate of descent (ROD) equals 800 ft/min. The elapsed time will be...",
     answers: [
       {
         id: "NAV0083001",
@@ -2051,7 +2008,7 @@ const questions: Question[] = [
   {
     id: "NAV0084",
     question:
-      " Which answer completes the flight plan (marked cells)? See annex (NAV-014) (3,00 P.) Siehe Anlage 4 #MH: 174°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 185°. #MC: 180°.",
+      "Which answer completes the flight plan (marked cells)? See annex (NAV-014) (3,00 P.) Siehe Anlage 4 #MH: 174°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 185°. #MC: 180°.",
     answers: [
       {
         id: "NAV0084001",
@@ -2075,7 +2032,7 @@ const questions: Question[] = [
   {
     id: "NAV0085",
     question:
-      " What radio navigation aid can be received with the attached aerial? See figure (NAV-017) (1,00 P.) Siehe Anlage 5",
+      "What radio navigation aid can be received with the attached aerial? See figure (NAV-017) Siehe Anlage 5",
     answers: [
       {
         id: "NAV0085001",
@@ -2099,7 +2056,7 @@ const questions: Question[] = [
   {
     id: "NAV0086",
     question:
-      " The approximate propagation speed of electromagnetic waves is... (1,00 P.)",
+      "The approximate propagation speed of electromagnetic waves is...",
     answers: [
       {
         id: "NAV0086001",
@@ -2122,8 +2079,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0087",
-    question:
-      " Radio waves within the LF and MF range (e.g. NDB) travel as... (1,00 P.)",
+    question: "Radio waves within the LF and MF range (e.g. NDB) travel as...",
     answers: [
       {
         id: "NAV0087001",
@@ -2146,8 +2102,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0088",
-    question:
-      " Radio waves within the VHF range (e.g. VOR) travel as... (1,00 P.)",
+    question: "Radio waves within the VHF range (e.g. VOR) travel as...",
     answers: [
       {
         id: "NAV0088001",
@@ -2170,7 +2125,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0089",
-    question: " Quasi-optical waves travel... (1,00 P.)",
+    question: " Quasi-optical waves travel...",
     answers: [
       {
         id: "NAV0089001",
@@ -2195,7 +2150,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0090",
-    question: " A VHF direction finder (VDF) can determine... (1,00 P.)",
+    question: " A VHF direction finder (VDF) can determine...",
     answers: [
       {
         id: "NAV0090001",
@@ -2219,7 +2174,7 @@ const questions: Question[] = [
   {
     id: "NAV0091",
     question:
-      " Which equipment is needed on board of an aircraft to use a VHF direction finder (VDF)? (1,00 P.)",
+      "Which equipment is needed on board of an aircraft to use a VHF direction finder (VDF)?",
     answers: [
       {
         id: "NAV0091001",
@@ -2242,7 +2197,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0092",
-    question: " Given: QDM: 138° VAR: 10° E The QUJ equals... (1,00 P.)",
+    question: " Given: QDM: 138° VAR: 10° E The QUJ equals...",
     answers: [
       {
         id: "NAV0092001",
@@ -2265,7 +2220,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0093",
-    question: " Given: QTE: 229° VAR: 10° W The QDM equals... (1,00 P.)",
+    question: " Given: QTE: 229° VAR: 10° W The QDM equals...",
     answers: [
       {
         id: "NAV0093001",
@@ -2288,7 +2243,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0094",
-    question: " Given: QDR: 022° VAR: 10° E The QTE equals... (1,00 P.)",
+    question: " Given: QDR: 022° VAR: 10° E The QTE equals...",
     answers: [
       {
         id: "NAV0094001",
@@ -2311,7 +2266,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0095",
-    question: " Given: QDM: 248° VAR: 10° W The QTE is... (1,00 P.)",
+    question: " Given: QDM: 248° VAR: 10° W The QTE is...",
     answers: [
       {
         id: "NAV0095001",
@@ -2334,7 +2289,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0096",
-    question: " Given: QDR: 067° VAR: 5° E The QDM equals... (1,00 P.)",
+    question: " Given: QDR: 067° VAR: 5° E The QDM equals...",
     answers: [
       {
         id: "NAV0096001",
@@ -2357,8 +2312,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0097",
-    question:
-      " Given: QDR: 152° VAR: 5° W DEV: 5° E The QUJ equals... (1,00 P.)",
+    question: "Given: QDR: 152° VAR: 5° W DEV: 5° E The QUJ equals...",
     answers: [
       {
         id: "NAV0097001",
@@ -2381,7 +2335,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0098",
-    question: " Given: QTE: 203° VAR: 10° E The QDR equals... (1,00 P.)",
+    question: " Given: QTE: 203° VAR: 10° E The QDR equals...",
     answers: [
       {
         id: "NAV0098001",
@@ -2404,7 +2358,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0099",
-    question: " Given: QTE: 248° VAR: 10° W The QDR equals... (1,00 P.)",
+    question: " Given: QTE: 248° VAR: 10° W The QDR equals...",
     answers: [
       {
         id: "NAV0099001",
@@ -2427,7 +2381,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0100",
-    question: " Given: QDM: 134° VAR: 5° W The QTE equals... (1,00 P.)",
+    question: " Given: QDM: 134° VAR: 5° W The QTE equals...",
     answers: [
       {
         id: "NAV0100001",
@@ -2451,7 +2405,7 @@ const questions: Question[] = [
   {
     id: "NAV0101",
     question:
-      " The pilot receives a QDR of 225° from the VDF ground station. Where is the aircraft located in relation to the ground station? (1,00 P.)",
+      "The pilot receives a QDR of 225° from the VDF ground station. Where is the aircraft located in relation to the ground station?",
     answers: [
       {
         id: "NAV0101001",
@@ -2474,7 +2428,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0102",
-    question: " The term QDR means... (1,00 P.)",
+    question: " The term QDR means...",
     answers: [
       {
         id: "NAV0102001",
@@ -2497,7 +2451,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0103",
-    question: " The term QTE means... (1,00 P.)",
+    question: " The term QTE means...",
     answers: [
       {
         id: "NAV0103001",
@@ -2521,7 +2475,7 @@ const questions: Question[] = [
   {
     id: "NAV0104",
     question:
-      " A pilot receives a QDR of 135° from the VDF ground station. Where is the aircraft located in relation to the ground station? (1,00 P.)",
+      "A pilot receives a QDR of 135° from the VDF ground station. Where is the aircraft located in relation to the ground station?",
     answers: [
       {
         id: "NAV0104001",
@@ -2545,7 +2499,7 @@ const questions: Question[] = [
   {
     id: "NAV0105",
     question:
-      " A pilot receives a QDR of 315° from the VDF ground station. Where is the aircraft located in relation to the ground station? (1,00 P.)",
+      "A pilot receives a QDR of 315° from the VDF ground station. Where is the aircraft located in relation to the ground station?",
     answers: [
       {
         id: "NAV0105001",
@@ -2568,7 +2522,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0106",
-    question: " The VDF range depends on... (1,00 P.)",
+    question: " The VDF range depends on...",
     answers: [
       {
         id: "NAV0106001",
@@ -2592,7 +2546,7 @@ const questions: Question[] = [
   {
     id: "NAV0107",
     question:
-      " Which equipment is needed on board of an aircraft to receive signals from a non- directional beacon (NDB)? (1,00 P.)",
+      "Which equipment is needed on board of an aircraft to receive signals from a non- directional beacon (NDB)?",
     answers: [
       {
         id: "NAV0107001",
@@ -2616,7 +2570,7 @@ const questions: Question[] = [
   {
     id: "NAV0108",
     question:
-      " Non-directional beacons (NDBs) transmit within which frequency band? (1,00 P.)",
+      "Non-directional beacons (NDBs) transmit within which frequency band?",
     answers: [
       {
         id: "NAV0108001",
@@ -2640,7 +2594,7 @@ const questions: Question[] = [
   {
     id: "NAV0109",
     question:
-      " A pilot wants to approach an NDB on QDM 090°. The aircraft flies for about 5 minutes with a magnetic heading (MH) of 095° and the RBI indication of 355°. After 6 minutes the RBI indicates 358°. Which statement is correct? (1,00 P.)",
+      "A pilot wants to approach an NDB on QDM 090°. The aircraft flies for about 5 minutes with a magnetic heading (MH) of 095° and the RBI indication of 355°. After 6 minutes the RBI indicates 358°. Which statement is correct?",
     answers: [
       {
         id: "NAV0109001",
@@ -2668,7 +2622,7 @@ const questions: Question[] = [
   {
     id: "NAV0110",
     question:
-      " The pilot wants to proceed directly to the beacon. The wind is calm. The pilot should follow a QDM of... See figure (NAV-019) (1,00 P.) Siehe Anlage 6",
+      "The pilot wants to proceed directly to the beacon. The wind is calm. The pilot should follow a QDM of... See figure (NAV-019) Siehe Anlage 6",
     answers: [
       {
         id: "NAV0110001",
@@ -2692,7 +2646,7 @@ const questions: Question[] = [
   {
     id: "NAV0111",
     question:
-      " What is the difference between a locator beacon and a non-directional beacon (NDB)? (1,00 P.)",
+      "What is the difference between a locator beacon and a non-directional beacon (NDB)?",
     answers: [
       {
         id: "NAV0111001",
@@ -2716,7 +2670,7 @@ const questions: Question[] = [
   {
     id: "NAV0112",
     question:
-      " The range of NDBs transmitting in the medium frequency range is greatest... (1,00 P.)",
+      "The range of NDBs transmitting in the medium frequency range is greatest...",
     answers: [
       {
         id: "NAV0112001",
@@ -2739,8 +2693,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0113",
-    question:
-      " The shoreline effect is greatest with radio wave propagation... (1,00 P.)",
+    question: "The shoreline effect is greatest with radio wave propagation...",
     answers: [
       {
         id: "NAV0113001",
@@ -2763,7 +2716,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0114",
-    question: " Fading in LF/MF frequency range occurs mainly... (1,00 P.)",
+    question: " Fading in LF/MF frequency range occurs mainly...",
     answers: [
       {
         id: "NAV0114001",
@@ -2787,7 +2740,7 @@ const questions: Question[] = [
   {
     id: "NAV0115",
     question:
-      " The progress of an electromagnetic oscillation can be described by the... (1,00 P.)",
+      "The progress of an electromagnetic oscillation can be described by the...",
     answers: [
       {
         id: "NAV0115001",
@@ -2810,8 +2763,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0116",
-    question:
-      " When transmitter and receiver are moving towards each other... (1,00 P.)",
+    question: "When transmitter and receiver are moving towards each other...",
     answers: [
       {
         id: "NAV0116001",
@@ -2835,7 +2787,7 @@ const questions: Question[] = [
   {
     id: "NAV0117",
     question:
-      " When transmitter and receiver are moving away from each other... (1,00 P.)",
+      "When transmitter and receiver are moving away from each other...",
     answers: [
       {
         id: "NAV0117001",
@@ -2858,7 +2810,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0118",
-    question: " VOR radials are defined based on the principle of... (1,00 P.)",
+    question: " VOR radials are defined based on the principle of...",
     answers: [
       {
         id: "NAV0118001",
@@ -2881,7 +2833,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0119",
-    question: " A VOR radial corresponds to the... (1,00 P.)",
+    question: " A VOR radial corresponds to the...",
     answers: [
       {
         id: "NAV0119001",
@@ -2905,7 +2857,7 @@ const questions: Question[] = [
   {
     id: "NAV0120",
     question:
-      " Full deflection of the course deviation indicator (CDI) means that the aircraft is located at least... (1,00 P.)",
+      "Full deflection of the course deviation indicator (CDI) means that the aircraft is located at least...",
     answers: [
       {
         id: "NAV0120001",
@@ -2929,7 +2881,7 @@ const questions: Question[] = [
   {
     id: "NAV0121",
     question:
-      " Where is the aircraft located in relation to the VOR? See annex (NAV-022) (1,00 P.) Siehe Anlage 7",
+      "Where is the aircraft located in relation to the VOR? See annex (NAV-022) Siehe Anlage 7",
     answers: [
       {
         id: "NAV0121001",
@@ -2952,8 +2904,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0122",
-    question:
-      " The aircraft is on radial... See annex (NAV-024) (1,00 P.) Siehe Anlage 8",
+    question: "The aircraft is on radial... See annex (NAV-024) Siehe Anlage 8",
     answers: [
       {
         id: "NAV0122001",
@@ -2976,7 +2927,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0123",
-    question: " The range of a VOR is affected by... (1,00 P.)",
+    question: " The range of a VOR is affected by...",
     answers: [
       {
         id: "NAV0123001",
@@ -3000,7 +2951,7 @@ const questions: Question[] = [
   {
     id: "NAV0124",
     question:
-      " The distance measuring equipment (DME) determines the distance based on the principle of... (1,00 P.)",
+      "The distance measuring equipment (DME) determines the distance based on the principle of...",
     answers: [
       {
         id: "NAV0124001",
@@ -3023,7 +2974,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0125",
-    question: " The DME reading is a... (1,00 P.)",
+    question: " The DME reading is a...",
     answers: [
       {
         id: "NAV0125001",
@@ -3047,7 +2998,7 @@ const questions: Question[] = [
   {
     id: "NAV0126",
     question:
-      " The differenz between indicated DME slant range and horizontal distance from the DME station increases... (1,00 P.)",
+      "The differenz between indicated DME slant range and horizontal distance from the DME station increases...",
     answers: [
       {
         id: "NAV0126001",
@@ -3071,7 +3022,7 @@ const questions: Question[] = [
   {
     id: "NAV0127",
     question:
-      " Using primary ground radar, the direction of the aeroplane in relation to the antenna is determined by... (1,00 P.)",
+      "Using primary ground radar, the direction of the aeroplane in relation to the antenna is determined by...",
     answers: [
       {
         id: "NAV0127001",
@@ -3095,7 +3046,7 @@ const questions: Question[] = [
   {
     id: "NAV0128",
     question:
-      " Which instantaneous information can be obtained from ground radar equipment? (1,00 P.)",
+      "Which instantaneous information can be obtained from ground radar equipment?",
     answers: [
       {
         id: "NAV0128001",
@@ -3119,7 +3070,7 @@ const questions: Question[] = [
   {
     id: "NAV0129",
     question:
-      " The on-board equipment of the secondary surveillance radar (SSR) is called... (1,00 P.)",
+      "The on-board equipment of the secondary surveillance radar (SSR) is called...",
     answers: [
       {
         id: "NAV0129001",
@@ -3142,8 +3093,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0130",
-    question:
-      " What is the difference between primary and secondary radar? (1,00 P.)",
+    question: "What is the difference between primary and secondary radar?",
     answers: [
       {
         id: "NAV0130001",
@@ -3170,7 +3120,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0131",
-    question: " The transponder code in case of hi-jacking is... (1,00 P.)",
+    question: " The transponder code in case of hi-jacking is...",
     answers: [
       {
         id: "NAV0131001",
@@ -3194,7 +3144,7 @@ const questions: Question[] = [
   {
     id: "NAV0132",
     question:
-      " The transponder code in case of a radio communication failure is... (1,00 P.)",
+      "The transponder code in case of a radio communication failure is...",
     answers: [
       {
         id: "NAV0132001",
@@ -3217,8 +3167,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0133",
-    question:
-      " Which altitude is transmitted by the transponder in mode C? (1,00 P.)",
+    question: "Which altitude is transmitted by the transponder in mode C?",
     answers: [
       {
         id: "NAV0133001",
@@ -3242,7 +3191,7 @@ const questions: Question[] = [
   {
     id: "NAV0134",
     question:
-      " How many satellites are necessary for a precise and verified three-dimensional determination of the position? (1,00 P.)",
+      "How many satellites are necessary for a precise and verified three-dimensional determination of the position?",
     answers: [
       {
         id: "NAV0134001",
@@ -3266,7 +3215,7 @@ const questions: Question[] = [
   {
     id: "NAV0135",
     question:
-      " When using a GPS for tracking to the next waypoint, a deviation indication is shown by a vertical bar and dots to the left and to the right of the bar. What statement describes the correct interpretation of the display? (1,00 P.)",
+      "When using a GPS for tracking to the next waypoint, a deviation indication is shown by a vertical bar and dots to the left and to the right of the bar. What statement describes the correct interpretation of the display?",
     answers: [
       {
         id: "NAV0135001",
@@ -3293,7 +3242,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0136",
-    question: ' What is meant by the term "terrestrial navigation"? (1,00 P.)',
+    question: ' What is meant by the term "terrestrial navigation"?',
     answers: [
       {
         id: "NAV0136001",
@@ -3317,7 +3266,7 @@ const questions: Question[] = [
   {
     id: "NAV0137",
     question:
-      " What ground features should preferrably be used for orientation during visual flight? (1,00 P.)",
+      "What ground features should preferrably be used for orientation during visual flight?",
     answers: [
       {
         id: "NAV0137001",
