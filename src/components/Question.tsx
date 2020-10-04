@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet, View, Image, Dimensions } from "react-native";
 import { Button, Text } from "native-base";
+import Markdown from "react-native-markdown-display";
 import {
   Question as QuestionType,
   QuestionId,
@@ -22,7 +23,7 @@ const Question: FunctionComponent<QuestionProps> = ({
 }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
+      <Markdown>{`## ${index + 1}) ${question}`}</Markdown>
       {image && (
         <View style={styles.imageContainer}>
           <Image source={image} style={styles.image} resizeMode={"contain"} />
@@ -39,7 +40,7 @@ const Question: FunctionComponent<QuestionProps> = ({
             primary={selected === answerId}
             onPress={() => answerQuestion(questionId, answerId)}
           >
-            <Text>{answer}</Text>
+            <Markdown>{answer}</Markdown>
           </Button>
         </View>
       ))}

@@ -4,7 +4,7 @@ const questions: Question[] = [
   {
     id: "AGK0001",
     question:
-      " The thickness of the wing is defined as the distance between the lower and the upper side of the wing at the...",
+      "The thickness of the wing is defined as the distance between the lower and the upper side of the wing at the...",
     answers: [
       {
         id: "AGK0001001",
@@ -28,7 +28,7 @@ const questions: Question[] = [
   {
     id: "AGK0002",
     question:
-      " How is referred to a tubular steel construction with a non self-supporting skin? (1, P.)",
+      "How is referred to a tubular steel construction with a non self-supporting skin? (1, P.)",
     answers: [
       {
         id: "AGK0002001",
@@ -52,7 +52,7 @@ const questions: Question[] = [
   {
     id: "AGK0003",
     question:
-      " Primary fuselage structures of wood or metal planes are usually made up by what components?",
+      "Primary fuselage structures of wood or metal planes are usually made up by what components?",
     answers: [
       {
         id: "AGK0003001",
@@ -100,7 +100,7 @@ const questions: Question[] = [
   {
     id: "AGK0005",
     question:
-      " A construction made of frames and stringer with a supporting skin is called...",
+      "A construction made of frames and stringer with a supporting skin is called...",
     answers: [
       {
         id: "AGK0005001",
@@ -286,7 +286,7 @@ const questions: Question[] = [
   {
     id: "AGK0013",
     question:
-      " What needs to be considered if permissible limitations were exceeded?",
+      "What needs to be considered if permissible limitations were exceeded?",
     answers: [
       {
         id: "AGK0013001",
@@ -431,7 +431,7 @@ const questions: Question[] = [
   {
     id: "AGK0019",
     question:
-      " How is the nose or tail wheel usually controlled on small aircraft and motor gliders?",
+      "How is the nose or tail wheel usually controlled on small aircraft and motor gliders?",
     answers: [
       {
         id: "AGK0019001",
@@ -455,7 +455,7 @@ const questions: Question[] = [
   {
     id: "AGK0020",
     question:
-      " Where is the brake system installed to slow the aircraft on ground?",
+      "Where is the brake system installed to slow the aircraft on ground?",
     answers: [
       {
         id: "AGK0020001",
@@ -526,7 +526,7 @@ const questions: Question[] = [
   {
     id: "AGK0023",
     question:
-      " About how many axes does an aircraft move and how are these axes called?",
+      "About how many axes does an aircraft move and how are these axes called?",
     answers: [
       {
         id: "AGK0023001",
@@ -551,7 +551,7 @@ const questions: Question[] = [
   {
     id: "AGK0024",
     question:
-      " A movement around the longitudinal axis is primarily initiated by the...",
+      "A movement around the longitudinal axis is primarily initiated by the...",
     answers: [
       {
         id: "AGK0024001",
@@ -575,7 +575,7 @@ const questions: Question[] = [
   {
     id: "AGK0025",
     question:
-      " How are the flight controls on a small single-engine piston aircraft normally controlled and actuated?",
+      "How are the flight controls on a small single-engine piston aircraft normally controlled and actuated?",
     answers: [
       {
         id: "AGK0025001",
@@ -599,7 +599,7 @@ const questions: Question[] = [
   {
     id: "AGK0026",
     question:
-      " What are the primary and the secondary effects of a rudder input to the left?",
+      "What are the primary and the secondary effects of a rudder input to the left?",
     answers: [
       {
         id: "AGK0026001",
@@ -623,7 +623,7 @@ const questions: Question[] = [
   {
     id: "AGK0027",
     question:
-      " What is the effect of pulling the control yoke or stick backwards?",
+      "What is the effect of pulling the control yoke or stick backwards?",
     answers: [
       {
         id: "AGK0027001",
@@ -651,7 +651,7 @@ const questions: Question[] = [
   {
     id: "AGK0028",
     question:
-      " What happens to a helicopter during cruise when the stick is moved forward without other corrections?",
+      "What happens to a helicopter during cruise when the stick is moved forward without other corrections?",
     answers: [
       {
         id: "AGK0028001",
@@ -675,7 +675,7 @@ const questions: Question[] = [
   {
     id: "AGK0029",
     question:
-      " Which of the following options states all primary flight controls of an aircraft?",
+      "Which of the following options states all primary flight controls of an aircraft?",
     answers: [
       {
         id: "AGK0029001",
@@ -754,7 +754,7 @@ const questions: Question[] = [
   {
     id: "AGK0032",
     question:
-      " The trim wheel or lever in the cockpit is moved aft by the pilot. What effect does this action have on the trim tab and on the elevator?",
+      "The trim wheel or lever in the cockpit is moved aft by the pilot. What effect does this action have on the trim tab and on the elevator?",
     answers: [
       {
         id: "AGK0032001",
@@ -778,7 +778,7 @@ const questions: Question[] = [
   {
     id: "AGK0033",
     question:
-      " When trimming an aircraft nose up, in which direction does the trim tab move? (1, P.)",
+      "When trimming an aircraft nose up, in which direction does the trim tab move? (1, P.)",
     answers: [
       {
         id: "AGK0033001",
@@ -802,7 +802,7 @@ const questions: Question[] = [
   {
     id: "AGK0034",
     question:
-      " How does a balance tab move in relation to the flight control surface that it is coupled with?",
+      "How does a balance tab move in relation to the flight control surface that it is coupled with?",
     answers: [
       {
         id: "AGK0034001",
@@ -849,7 +849,7 @@ const questions: Question[] = [
   {
     id: "AGK0036",
     question:
-      " Which of the following are an aircraft's secondary flight controls?",
+      "Which of the following are an aircraft's secondary flight controls?",
     answers: [
       {
         id: "AGK0036001",
@@ -1054,7 +1054,7 @@ const questions: Question[] = [
   {
     id: "AGK0044",
     question:
-      " What must be considered if the alternator fails in a helicopter?",
+      "What must be considered if the alternator fails in an Aeroplane?",
     answers: [
       {
         id: "AGK0044001",
@@ -1078,14 +1078,31 @@ const questions: Question[] = [
   {
     id: "AGK0045",
     question:
-      ' When using direct current, electrically driven flight instruments are marked with... # "EL". # "DC". # "AL". # "CO".',
-    answers: [],
-    correct: "",
+      "When using direct current, electrically driven flight instruments are marked with...",
+    answers: [
+      {
+        id: "AGK0045001",
+        answer: "EL",
+      },
+      {
+        id: "AGK0045002",
+        answer: "DC",
+      },
+      {
+        id: "AGK0045003",
+        answer: "AL",
+      },
+      {
+        id: "AGK0045004",
+        answer: "CO",
+      },
+    ],
+    correct: "AGK0045002",
   },
   {
     id: "AGK0046",
     question:
-      " What devices can be affected by a failure of the electrical system in a helicopter? (1, P.)",
+      "What devices can be affected by a failure of the electrical system in an Aeroplane?",
     answers: [
       {
         id: "AGK0046001",
@@ -1109,7 +1126,7 @@ const questions: Question[] = [
   {
     id: "AGK0047",
     question:
-      " Which cylinder arragement is commonly used on small aircrafts and motor gliders?",
+      "Which cylinder arragement is commonly used on small aircrafts and motor gliders?",
     answers: [
       {
         id: "AGK0047001",
@@ -1133,7 +1150,7 @@ const questions: Question[] = [
   {
     id: "AGK0048",
     question:
-      " Which part of the cycle of a four-stroke Otto engine can be seen in the attachment?",
+      "Which part of the cycle of a four-stroke Otto engine can be seen in the attachment?",
     answers: [
       {
         id: "AGK0048001",
@@ -1158,7 +1175,7 @@ const questions: Question[] = [
   {
     id: "AGK0049",
     question:
-      " Which part of the cycle of a four-stroke Otto engine can be seen in the attachment?",
+      "Which part of the cycle of a four-stroke Otto engine can be seen in the attachment?",
     answers: [
       {
         id: "AGK0049001",
@@ -1183,7 +1200,7 @@ const questions: Question[] = [
   {
     id: "AGK0050",
     question:
-      " What is likely to be the cause if the engine runs unusually rough while checking the magnetos?",
+      "What is likely to be the cause if the engine runs unusually rough while checking the magnetos?",
     answers: [
       {
         id: "AGK0050001",
@@ -1207,7 +1224,7 @@ const questions: Question[] = [
   {
     id: "AGK0051",
     question:
-      " The highest absorbtion of humidity in fuel can be observed in which situation? (1, P.)",
+      "The highest absorbtion of humidity in fuel can be observed in which situation? (1, P.)",
     answers: [
       {
         id: "AGK0051001",
@@ -1300,7 +1317,7 @@ const questions: Question[] = [
   {
     id: "AGK0055",
     question:
-      " What is the direct influence by switching on the carburettor heating on fixed propeller engines during engine run-up?",
+      "What is the direct influence by switching on the carburettor heating on fixed propeller engines during engine run-up?",
     answers: [
       {
         id: "AGK0055001",
@@ -1347,7 +1364,7 @@ const questions: Question[] = [
   {
     id: "AGK0057",
     question:
-      " In which phase of flight must the carburettor heating be switched off although carburettor icing might be expected?",
+      "In which phase of flight must the carburettor heating be switched off although carburettor icing might be expected?",
     answers: [
       {
         id: "AGK0057001",
@@ -1394,7 +1411,7 @@ const questions: Question[] = [
   {
     id: "AGK0059",
     question:
-      " What is the task of cooling fins on air-cooled engine cylinders?",
+      "What is the task of cooling fins on air-cooled engine cylinders?",
     answers: [
       {
         id: "AGK0059001",
@@ -1594,7 +1611,7 @@ const questions: Question[] = [
   {
     id: "AGK0066",
     question:
-      " How should a power increase be executed on a constant-speed propeller, provided that no other procedure is described in the flight manual?",
+      "How should a power increase be executed on a constant-speed propeller, provided that no other procedure is described in the flight manual?",
     answers: [
       {
         id: "AGK0066001",
@@ -1618,7 +1635,7 @@ const questions: Question[] = [
   {
     id: "AGK0067",
     question:
-      " How should a power decrease be executed on a constant-speed propeller, provided that no other procedure is described in the flight manual?",
+      "How should a power decrease be executed on a constant-speed propeller, provided that no other procedure is described in the flight manual?",
     answers: [
       {
         id: "AGK0067001",
@@ -1642,7 +1659,7 @@ const questions: Question[] = [
   {
     id: "AGK0068",
     question:
-      " With increasing altitude and unchanged mixture setting, the air/fuel mixture...",
+      "With increasing altitude and unchanged mixture setting, the air/fuel mixture...",
     answers: [
       {
         id: "AGK0068001",
@@ -1689,7 +1706,7 @@ const questions: Question[] = [
   {
     id: "AGK0070",
     question:
-      " During ignition check the ignition is switched to OFF for a short moment and subsequently back to BOTH. What happens to the RPM if the ignition system is properly grounded?",
+      "During ignition check the ignition is switched to OFF for a short moment and subsequently back to BOTH. What happens to the RPM if the ignition system is properly grounded?",
     answers: [
       {
         id: "AGK0070001",
@@ -1744,7 +1761,7 @@ const questions: Question[] = [
   {
     id: "AGK0072",
     question:
-      " Fuel quantity in small aircraft is most commonly measured through a level sensor. The European Certification Specifications CS 23 require that...",
+      "Fuel quantity in small aircraft is most commonly measured through a level sensor. The European Certification Specifications CS 23 require that...",
     answers: [
       {
         id: "AGK0072001",
@@ -1772,7 +1789,7 @@ const questions: Question[] = [
   {
     id: "AGK0073",
     question:
-      " Which of the instruments listed below obtain their readings through pressure measurement?",
+      "Which of the instruments listed below obtain their readings through pressure measurement?",
     answers: [
       {
         id: "AGK0073001",
@@ -1922,7 +1939,7 @@ const questions: Question[] = [
   {
     id: "AGK0079",
     question:
-      " In which way may an altimeter subscale which is set to an incorrect QNH lead to an incorrect altimeter reading?",
+      "In which way may an altimeter subscale which is set to an incorrect QNH lead to an incorrect altimeter reading?",
     answers: [
       {
         id: "AGK0079001",
@@ -2024,7 +2041,7 @@ const questions: Question[] = [
   {
     id: "AGK0083",
     question:
-      " During a flight in colder-than-ISA air the indicated altitude is...",
+      "During a flight in colder-than-ISA air the indicated altitude is...",
     answers: [
       {
         id: "AGK0083001",
@@ -2048,7 +2065,7 @@ const questions: Question[] = [
   {
     id: "AGK0084",
     question:
-      " During a flight in an air mass with a temperature equal to ISA and the QNH set correctly, the indicated altitude is...",
+      "During a flight in an air mass with a temperature equal to ISA and the QNH set correctly, the indicated altitude is...",
     answers: [
       {
         id: "AGK0084001",
@@ -2118,7 +2135,7 @@ const questions: Question[] = [
   {
     id: "AGK0087",
     question:
-      " Which of the following options states the working principle of a vertical speed indicator?",
+      "Which of the following options states the working principle of a vertical speed indicator?",
     answers: [
       {
         id: "AGK0087001",
@@ -2145,7 +2162,7 @@ const questions: Question[] = [
   {
     id: "AGK0088",
     question:
-      " The vertical speed indicator measures the difference of pressure between...",
+      "The vertical speed indicator measures the difference of pressure between...",
     answers: [
       {
         id: "AGK0088001",
@@ -2198,7 +2215,7 @@ const questions: Question[] = [
   {
     id: "AGK0090",
     question:
-      " At higher altitudes, true airspeed (TAS) tends to be higher than calibrated airspeed (CAS). A rough estimate of the TAS can be obtained by...",
+      "At higher altitudes, true airspeed (TAS) tends to be higher than calibrated airspeed (CAS). A rough estimate of the TAS can be obtained by...",
     answers: [
       {
         id: "AGK0090001",
@@ -2222,7 +2239,7 @@ const questions: Question[] = [
   {
     id: "AGK0091",
     question:
-      " An aircraft cruises on a heading of 180° with a true airspeed of 100 kt. The wind comes from 180° with 30 kt. Neglecting instrument and position errors, which will be the approximate reading of the airspeed indicator?",
+      "An aircraft cruises on a heading of 180° with a true airspeed of 100 kt. The wind comes from 180° with 30 kt. Neglecting instrument and position errors, which will be the approximate reading of the airspeed indicator?",
     answers: [
       {
         id: "AGK0091001",
@@ -2246,7 +2263,7 @@ const questions: Question[] = [
   {
     id: "AGK0092",
     question:
-      " Which of the following factors could cause an erroneous airspeed indication?",
+      "Which of the following factors could cause an erroneous airspeed indication?",
     answers: [
       {
         id: "AGK0092001",
@@ -2270,7 +2287,7 @@ const questions: Question[] = [
   {
     id: "AGK0093",
     question:
-      " Which of the following states the working principle of an airspeed indicator?",
+      "Which of the following states the working principle of an airspeed indicator?",
     answers: [
       {
         id: "AGK0093001",
@@ -2298,7 +2315,7 @@ const questions: Question[] = [
   {
     id: "AGK0094",
     question:
-      " What values are usually marked with a red line on instrument displays?",
+      "What values are usually marked with a red line on instrument displays?",
     answers: [
       {
         id: "AGK0094001",
@@ -2322,7 +2339,7 @@ const questions: Question[] = [
   {
     id: "AGK0095",
     question:
-      " What is necessary for the determination of speed (IAS) by the airspeed indicator?",
+      "What is necessary for the determination of speed (IAS) by the airspeed indicator?",
     answers: [
       {
         id: "AGK0095001",
@@ -2349,8 +2366,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0096",
-    question:
-      " What is the meaning of the white arc on the airspeed indicator?",
+    question: "What is the meaning of the white arc on the airspeed indicator?",
     answers: [
       {
         id: "AGK0096001",
@@ -2373,8 +2389,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0097",
-    question:
-      " What is the meaning of the red range on the airspeed indicator?",
+    question: "What is the meaning of the red range on the airspeed indicator?",
     answers: [
       {
         id: "AGK0097001",
@@ -2399,7 +2414,7 @@ const questions: Question[] = [
   {
     id: "AGK0098",
     question:
-      " The compass error caused by the aircraft's magnetic field is called...",
+      "The compass error caused by the aircraft's magnetic field is called...",
     answers: [
       {
         id: "AGK0098001",
@@ -2423,7 +2438,7 @@ const questions: Question[] = [
   {
     id: "AGK0099",
     question:
-      " The indication of a magnetic compass deviates from magnetic north direction due to what errors?",
+      "The indication of a magnetic compass deviates from magnetic north direction due to what errors?",
     answers: [
       {
         id: "AGK0099001",
@@ -2447,7 +2462,7 @@ const questions: Question[] = [
   {
     id: "AGK0100",
     question:
-      " Which of the mentioned cockpit instruments is connected to the pitot tube?",
+      "Which of the mentioned cockpit instruments is connected to the pitot tube?",
     answers: [
       {
         id: "AGK0100001",
@@ -2494,14 +2509,14 @@ const questions: Question[] = [
   {
     id: "AGK0102",
     question:
-      " An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 270° to a heading of 360°. At approximately which indication of the magnetic compass should the turn be terminated? # 330° # 360° # 270° # 030°",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 270° to a heading of 360°. At approximately which indication of the magnetic compass should the turn be terminated? # 330° # 360° # 270° # 030°",
     answers: [],
     correct: "",
   },
   {
     id: "AGK0103",
     question:
-      " An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 360° to a heading of 270°. At approximately which indication of the magnetic compass should the turn be terminated? # 300° # 360° # 240° # 270°",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 360° to a heading of 270°. At approximately which indication of the magnetic compass should the turn be terminated? # 300° # 360° # 240° # 270°",
     answers: [],
     correct: "",
   },
@@ -2531,7 +2546,7 @@ const questions: Question[] = [
   {
     id: "AGK0105",
     question:
-      " An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 030° to a heading of 180°. At approximately which indicated magnetic heading should the turn be terminated? # 360°. # 150°. # 210°. # 180°.",
+      "An aircraft in the northern hemisphere intends to turn on the shortest way from a heading of 030° to a heading of 180°. At approximately which indicated magnetic heading should the turn be terminated? # 360°. # 150°. # 210°. # 180°.",
     answers: [],
     correct: "",
   },
@@ -2561,7 +2576,7 @@ const questions: Question[] = [
   {
     id: "AGK0107",
     question:
-      " What is a cause for the dip error on the direct-reading compass?",
+      "What is a cause for the dip error on the direct-reading compass?",
     answers: [
       {
         id: "AGK0107001",
@@ -2608,7 +2623,7 @@ const questions: Question[] = [
   {
     id: "AGK0109",
     question:
-      " A gyro which is rotating in space responds to forces being applied to it by an evasive movement...",
+      "A gyro which is rotating in space responds to forces being applied to it by an evasive movement...",
     answers: [
       {
         id: "AGK0109001",
@@ -2632,7 +2647,7 @@ const questions: Question[] = [
   {
     id: "AGK0110",
     question:
-      " The bank angle of a 2-minutes circle depends on the... # CAS. # IAS.",
+      "The bank angle of a 2-minutes circle depends on the... # CAS. # IAS.",
     answers: [
       {
         id: "AGK0110001",
@@ -2648,7 +2663,7 @@ const questions: Question[] = [
   {
     id: "AGK0111",
     question:
-      " A turn and bank (or turn and slip) coordinator provides information regarding...",
+      "A turn and bank (or turn and slip) coordinator provides information regarding...",
     answers: [
       {
         id: "AGK0111001",
@@ -2673,7 +2688,7 @@ const questions: Question[] = [
   {
     id: "AGK0112",
     question:
-      " The airspeed indicator is unservicable. The airplane may only be operated...",
+      "The airspeed indicator is unservicable. The airplane may only be operated...",
     answers: [
       {
         id: "AGK0112001",
@@ -2697,7 +2712,7 @@ const questions: Question[] = [
   {
     id: "AGK0113",
     question:
-      ' Which light colour advises the pilot to the condition "corrective action may be required in the future"?',
+      'Which light colour advises the pilot to the condition "corrective action may be required in the future"?',
     answers: [
       {
         id: "AGK0113001",
@@ -2721,7 +2736,7 @@ const questions: Question[] = [
   {
     id: "AGK0114",
     question:
-      " The Caution Area is marked on an airspeed indicator by what color?",
+      "The Caution Area is marked on an airspeed indicator by what color?",
     answers: [
       {
         id: "AGK0114001",
@@ -2745,7 +2760,7 @@ const questions: Question[] = [
   {
     id: "AGK0115",
     question:
-      " An attitude director indicator (ADI) combines the information provided by...",
+      "An attitude director indicator (ADI) combines the information provided by...",
     answers: [
       {
         id: "AGK0115001",
@@ -2792,7 +2807,7 @@ const questions: Question[] = [
   {
     id: "AGK0117",
     question:
-      " A horizontal situation indicator (HSI) combines the information provided by...",
+      "A horizontal situation indicator (HSI) combines the information provided by...",
     answers: [
       {
         id: "AGK0117001",
@@ -2816,7 +2831,7 @@ const questions: Question[] = [
   {
     id: "AGK0118",
     question:
-      " What difference in altitude is shown by an altimeter, if the reference pressure scale setting is changed from 1000 hPa to 1010 hPa?",
+      "What difference in altitude is shown by an altimeter, if the reference pressure scale setting is changed from 1000 hPa to 1010 hPa?",
     answers: [
       {
         id: "AGK0118001",
@@ -2840,7 +2855,7 @@ const questions: Question[] = [
   {
     id: "AGK0119",
     question:
-      " When is it necessary to adjust the pressure in the reference scale of an alitimeter?",
+      "When is it necessary to adjust the pressure in the reference scale of an alitimeter?",
     answers: [
       {
         id: "AGK0119001",
@@ -2864,7 +2879,7 @@ const questions: Question[] = [
   {
     id: "AGK0120",
     question:
-      " The altimeter's reference scale is set to airfield pressure (QFE). What indication is shown during the flight?",
+      "The altimeter's reference scale is set to airfield pressure (QFE). What indication is shown during the flight?",
     answers: [
       {
         id: "AGK0120001",
@@ -2888,7 +2903,7 @@ const questions: Question[] = [
   {
     id: "AGK0121",
     question:
-      " A vertical speed indicator connected to a too big equalizing tank results in...",
+      "A vertical speed indicator connected to a too big equalizing tank results in...",
     answers: [
       {
         id: "AGK0121001",
@@ -2982,7 +2997,7 @@ const questions: Question[] = [
   {
     id: "AGK0125",
     question:
-      " The slip indicator's ball (apparent vertical) has moved to the right during a right turn. By what actions may the ball led back to middle position?",
+      "The slip indicator's ball (apparent vertical) has moved to the right during a right turn. By what actions may the ball led back to middle position?",
     answers: [
       {
         id: "AGK0125001",
@@ -3029,7 +3044,7 @@ const questions: Question[] = [
   {
     id: "AGK0127",
     question:
-      " What engines are commonly used with Touring Motor Gliders (TMG)?",
+      "What engines are commonly used with Touring Motor Gliders (TMG)?",
     answers: [
       {
         id: "AGK0127001",
