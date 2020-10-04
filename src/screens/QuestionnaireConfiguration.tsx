@@ -22,10 +22,14 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
   const dispatch = useDispatch();
   const { push } = useHistory();
 
+  const goToTest = () => {
+    push(QUESTIONNAIRE);
+  };
+
   const onTestSelected = (moduleQuestions: Question[]) => {
     const questions = getQuestionnaire(moduleQuestions);
     dispatch(createQuestionnaire({ questions }));
-    push(QUESTIONNAIRE);
+    goToTest();
   };
 
   return (
@@ -35,6 +39,9 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
           <Text>{name}</Text>
         </Button>
       ))}
+      <Button onPress={() => goToTest()} key={name}>
+        <Text>Continue test</Text>
+      </Button>
     </View>
   );
 };
