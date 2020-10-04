@@ -2202,7 +2202,7 @@ const questions: Question[] = [
       },
       {
         id: "FPPALW0089004",
-        answer: "It increases\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "It increases",
       },
     ],
     correct: "FPPALW0089004",
