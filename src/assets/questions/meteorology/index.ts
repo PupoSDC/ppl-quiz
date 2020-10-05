@@ -4,7 +4,7 @@ const questions: Question[] = [
   {
     id: "MET0001",
     question:
-      " What clouds and weather may result from an humid and instable air mass, that is pushed against a chain of mountains by the predominant wind and forced to rise? (1,00 P.)",
+      "What clouds and weather may result from an humid and instable air mass, that is pushed against a chain of mountains by the predominant wind and forced to rise?",
     answers: [
       {
         id: "MET0001001",
@@ -31,7 +31,7 @@ const questions: Question[] = [
   {
     id: "MET0002",
     question:
-      " What type of fog emerges if humid and almost saturated air, is forced to rise upslope of hills or shallow mountains by the prevailling wind? (1,00 P.)",
+      "What type of fog emerges if humid and almost saturated air, is forced to rise upslope of hills or shallow mountains by the prevailling wind?",
     answers: [
       {
         id: "MET0002001",
@@ -55,7 +55,7 @@ const questions: Question[] = [
   {
     id: "MET0003",
     question:
-      ' What situation is called "over-development" in a weather report? (1,00 P.)',
+      'What situation is called "over-development" in a weather report?',
     answers: [
       {
         id: "MET0003001",
@@ -79,7 +79,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0004",
-    question: ' What is the gas composition of "air"? (1,00 P.)',
+    question: 'What is the gas composition of "air"?',
     answers: [
       {
         id: "MET0004001",
@@ -104,7 +104,7 @@ const questions: Question[] = [
   {
     id: "MET0005",
     question:
-      " Weather phenomena are most common to be found in which atmospheric layer? (1, P.)",
+      "Weather phenomena are most common to be found in which atmospheric layer? (1, P.)",
     answers: [
       {
         id: "MET0005001",
@@ -128,7 +128,7 @@ const questions: Question[] = [
   {
     id: "MET0006",
     question:
-      ' What is the mass of a "cube of air" with the edges 1 m long, at MSL according ISA? (1,00 P.)',
+      'What is the mass of a "cube of air" with the edges 1 m long, at MSL according ISA?',
     answers: [
       {
         id: "MET0006001",
@@ -152,7 +152,7 @@ const questions: Question[] = [
   {
     id: "MET0007",
     question:
-      " At what rate does the temperature change with increasing height according to ISA (ICAO Standard Atmosphere) within the troposphere? (1,00 P.)",
+      "At what rate does the temperature change with increasing height according to ISA (ICAO Standard Atmosphere) within the troposphere?",
     answers: [
       {
         id: "MET0007001",
@@ -176,7 +176,7 @@ const questions: Question[] = [
   {
     id: "MET0008",
     question:
-      " What is the mean height of the tropopause according to ISA (ICAO Standard Atmosphere)? (1,00 P.)",
+      "What is the mean height of the tropopause according to ISA (ICAO Standard Atmosphere)?",
     answers: [
       {
         id: "MET0008001",
@@ -199,7 +199,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0009",
-    question: ' The term "tropopause" is defined as... (1,00 P.)',
+    question: 'The term "tropopause" is defined as...',
     answers: [
       {
         id: "MET0009001",
@@ -226,7 +226,7 @@ const questions: Question[] = [
   {
     id: "MET0010",
     question:
-      " Temperatures will be given by meteorological aviation services in Europe in which unit? (1,00 P.)",
+      "Temperatures will be given by meteorological aviation services in Europe in which unit?",
     answers: [
       {
         id: "MET0010001",
@@ -249,7 +249,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0011",
-    question: ' What is meant by "inversion layer"? (1,00 P.)',
+    question: 'What is meant by "inversion layer"?',
     answers: [
       {
         id: "MET0011001",
@@ -276,7 +276,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0012",
-    question: ' What is meant by "isothermal layer"? (1,00 P.)',
+    question: 'What is meant by "isothermal layer"?',
     answers: [
       {
         id: "MET0012001",
@@ -304,7 +304,7 @@ const questions: Question[] = [
   {
     id: "MET0013",
     question:
-      " The temperature lapse rate with increasing height within the troposphere according ISA is... (1,00 P.)",
+      "The temperature lapse rate with increasing height within the troposphere according ISA is...",
     answers: [
       {
         id: "MET0013001",
@@ -328,7 +328,7 @@ const questions: Question[] = [
   {
     id: "MET0014",
     question:
-      " Which process may result in an inversion layer at about 5000 ft (1500 m) height? (1, P.)",
+      "Which process may result in an inversion layer at about 5000 ft (1500 m) height? (1, P.)",
     answers: [
       {
         id: "MET0014001",
@@ -351,8 +351,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0015",
-    question:
-      " An inversion layer close to the ground can be caused by... (1,00 P.)",
+    question: "An inversion layer close to the ground can be caused by...",
     answers: [
       {
         id: "MET0015001",
@@ -375,8 +374,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0016",
-    question:
-      " What is the ISA standard pressure at FL 180 (5500 m)? (1,00 P.)",
+    question: "What is the ISA standard pressure at FL 180 (5500 m)?",
     answers: [
       {
         id: "MET0016001",
@@ -400,7 +398,7 @@ const questions: Question[] = [
   {
     id: "MET0017",
     question:
-      " The pressure which is measured at a ground station and reduced to mean sea level (MSL) by means of the actual atmospheric conditions is called... (1,00 P.)",
+      "The pressure which is measured at a ground station and reduced to mean sea level (MSL) by means of the actual atmospheric conditions is called...",
     answers: [
       {
         id: "MET0017001",
@@ -423,7 +421,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0018",
-    question: " Which processes result in decreasing air density? (1,00 P.)",
+    question: "Which processes result in decreasing air density?",
     answers: [
       {
         id: "MET0018001",
@@ -446,7 +444,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0019",
-    question: " The pressure at MSL in ISA conditions is... (1,00 P.)",
+    question: "The pressure at MSL in ISA conditions is...",
     answers: [
       {
         id: "MET0019001",
@@ -470,7 +468,7 @@ const questions: Question[] = [
   {
     id: "MET0020",
     question:
-      " The height of the tropopause of the International Standard Atmosphere (ISA) is at... (1,00 P.)",
+      "The height of the tropopause of the International Standard Atmosphere (ISA) is at...",
     answers: [
       {
         id: "MET0020001",
@@ -493,7 +491,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0021",
-    question: " The barometric altimeter indicates height above... (1,00 P.)",
+    question: "The barometric altimeter indicates height above...",
     answers: [
       {
         id: "MET0021001",
@@ -516,8 +514,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0022",
-    question:
-      " The altimeter can be checked on the ground by setting... (1,00 P.)",
+    question: "The altimeter can be checked on the ground by setting...",
     answers: [
       {
         id: "MET0022001",
@@ -541,8 +538,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0023",
-    question:
-      " The barometric altimeter with QFE setting indicates... (1,00 P.)",
+    question: "The barometric altimeter with QFE setting indicates...",
     answers: [
       {
         id: "MET0023001",
@@ -565,8 +561,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0024",
-    question:
-      " The barometric altimeter with QNH setting indicates... (1,00 P.)",
+    question: "The barometric altimeter with QNH setting indicates...",
     answers: [
       {
         id: "MET0024001",
@@ -589,8 +584,10 @@ const questions: Question[] = [
   },
   {
     id: "MET0025",
-    question:
-      " Given the following information, what is the true altitude? (rounded to the nearest 50 ft) QNH: 983 hPa Altitude: FL 85 Outside Air Temperature: ISA - 10° (1,00 P.)",
+    question: `Given the following information, what is the true altitude? (rounded to the nearest 50 ft)  
+      - QNH: 983 hPa 
+      - Altitude: FL 85 
+      - Outside Air Temperature: ISA - 10°`,
     answers: [
       {
         id: "MET0025001",
@@ -614,7 +611,7 @@ const questions: Question[] = [
   {
     id: "MET0026",
     question:
-      " How can wind speed and wind direction be derived from surface weather charts? (1, P.)",
+      "How can wind speed and wind direction be derived from surface weather charts? (1, P.)",
     answers: [
       {
         id: "MET0026001",
@@ -637,7 +634,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0027",
-    question: ' Which force causes "wind"? (1,00 P.)',
+    question: 'Which force causes "wind"?',
     answers: [
       {
         id: "MET0027001",
@@ -661,7 +658,7 @@ const questions: Question[] = [
   {
     id: "MET0028",
     question:
-      " Above the friction layer, with a prevailing pressure gradient, the wind direction is... (1,00 P.)",
+      "Above the friction layer, with a prevailing pressure gradient, the wind direction is...",
     answers: [
       {
         id: "MET0028001",
@@ -685,7 +682,7 @@ const questions: Question[] = [
   {
     id: "MET0029",
     question:
-      " Which of the stated surfaces will reduce the wind speed most due to ground friction? (1,00 P.)",
+      "Which of the stated surfaces will reduce the wind speed most due to ground friction?",
     answers: [
       {
         id: "MET0029001",
@@ -708,7 +705,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0030",
-    question: " The movement of air flowing together is called... (1,00 P.)",
+    question: "The movement of air flowing together is called...",
     answers: [
       {
         id: "MET0030001",
@@ -731,7 +728,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0031",
-    question: " The movement of air flowing apart is called... (1,00 P.)",
+    question: "The movement of air flowing apart is called...",
     answers: [
       {
         id: "MET0031001",
@@ -755,7 +752,7 @@ const questions: Question[] = [
   {
     id: "MET0032",
     question:
-      " What weather development will result from convergence at ground level? (1,00 P.)",
+      "What weather development will result from convergence at ground level?",
     answers: [
       {
         id: "MET0032001",
@@ -779,7 +776,7 @@ const questions: Question[] = [
   {
     id: "MET0033",
     question:
-      " When air masses meet each other head on, how is this referred to and what air movements will follow? (1,00 P.)",
+      "When air masses meet each other head on, how is this referred to and what air movements will follow?",
     answers: [
       {
         id: "MET0033001",
@@ -803,7 +800,7 @@ const questions: Question[] = [
   {
     id: "MET0034",
     question:
-      " What are the air masses that Central Europe is mainly influenced by? (1,00 P.)",
+      "What are the air masses that Central Europe is mainly influenced by?",
     answers: [
       {
         id: "MET0034001",
@@ -827,7 +824,7 @@ const questions: Question[] = [
   {
     id: "MET0035",
     question:
-      " With regard to global circulation within the atmosphere, where does polar cold air meets subtropical warm air? (1,00 P.)",
+      "With regard to global circulation within the atmosphere, where does polar cold air meets subtropical warm air?",
     answers: [
       {
         id: "MET0035001",
@@ -850,7 +847,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0036",
-    question: " Winds blowing uphill are defined as... (1,00 P.)",
+    question: "Winds blowing uphill are defined as...",
     answers: [
       {
         id: "MET0036001",
@@ -873,7 +870,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0037",
-    question: " Winds blowing downhill are defined as... (1,00 P.)",
+    question: "Winds blowing downhill are defined as...",
     answers: [
       {
         id: "MET0037001",
@@ -896,8 +893,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0038",
-    question:
-      " Air descending behind a mountain range is defined as... (1,00 P.)",
+    question: "Air descending behind a mountain range is defined as...",
     answers: [
       {
         id: "MET0038001",
@@ -920,7 +916,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0039",
-    question: ' "Foehn" conditions usually develop with... (1,00 P.)',
+    question: '"Foehn" conditions usually develop with...',
     answers: [
       {
         id: "MET0039001",
@@ -944,7 +940,7 @@ const questions: Question[] = [
   {
     id: "MET0040",
     question:
-      " What type of turbulence is typically found close to the ground on the lee side during Foehn conditions? (1,00 P.)",
+      "What type of turbulence is typically found close to the ground on the lee side during Foehn conditions?",
     answers: [
       {
         id: "MET0040001",
@@ -967,7 +963,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0041",
-    question: " Light turbulence METays has to be expected... (1,00 P.)",
+    question: "Light turbulence METays has to be expected...",
     answers: [
       {
         id: "MET0041001",
@@ -990,7 +986,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0042",
-    question: " Moderate to severe turbulence has to be expected... (1,00 P.)",
+    question: "Moderate to severe turbulence has to be expected...",
     answers: [
       {
         id: "MET0042001",
@@ -1017,7 +1013,7 @@ const questions: Question[] = [
   {
     id: "MET0043",
     question:
-      " Which answer contains every state of water found in the atmosphere? (1,00 P.)",
+      "Which answer contains every state of water found in the atmosphere?",
     answers: [
       {
         id: "MET0043001",
@@ -1041,7 +1037,7 @@ const questions: Question[] = [
   {
     id: "MET0044",
     question:
-      " How do dew point and relative humidity change with decreasing temperature? (1, P.)",
+      "How do dew point and relative humidity change with decreasing temperature? (1, P.)",
     answers: [
       {
         id: "MET0044001",
@@ -1065,7 +1061,7 @@ const questions: Question[] = [
   {
     id: "MET0045",
     question:
-      " How do spread and relative humidity change with increasing temperature? (1,00 P.)",
+      "How do spread and relative humidity change with increasing temperature?",
     answers: [
       {
         id: "MET0045001",
@@ -1088,7 +1084,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0046",
-    question: ' The "spread" is defined as... (1,00 P.)',
+    question: 'The "spread" is defined as...',
     answers: [
       {
         id: "MET0046001",
@@ -1112,7 +1108,7 @@ const questions: Question[] = [
   {
     id: "MET0047",
     question:
-      " With other factors remaining constant, decreasing temperature results in... (1,00 P.)",
+      "With other factors remaining constant, decreasing temperature results in...",
     answers: [
       {
         id: "MET0047001",
@@ -1136,7 +1132,7 @@ const questions: Question[] = [
   {
     id: "MET0048",
     question:
-      " What process causes latent heat being released into the upper troposphere? (1,00 P.)",
+      "What process causes latent heat being released into the upper troposphere?",
     answers: [
       {
         id: "MET0048001",
@@ -1159,7 +1155,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0049",
-    question: " The saturated adiabatic lapse rate is... (1,00 P.)",
+    question: "The saturated adiabatic lapse rate is...",
     answers: [
       {
         id: "MET0049001",
@@ -1182,7 +1178,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0050",
-    question: " The dry adiabatic lapse rate has a value of... (1,00 P.)",
+    question: "The dry adiabatic lapse rate has a value of...",
     answers: [
       {
         id: "MET0050001",
@@ -1206,7 +1202,7 @@ const questions: Question[] = [
   {
     id: "MET0051",
     question:
-      " The saturated adiabatic lapse rate should be assumed with a mean value of: (1,00 P.)",
+      "The saturated adiabatic lapse rate should be assumed with a mean value of:",
     answers: [
       {
         id: "MET0051001",
@@ -1230,7 +1226,7 @@ const questions: Question[] = [
   {
     id: "MET0052",
     question:
-      " What weather conditions may be expected during conditionally unstable conditions? (1,00 P.)",
+      "What weather conditions may be expected during conditionally unstable conditions?",
     answers: [
       {
         id: "MET0052001",
@@ -1253,8 +1249,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0053",
-    question:
-      " Which conditions are likely for the formation of advection fog? (1,00 P.)",
+    question: "Which conditions are likely for the formation of advection fog?",
     answers: [
       {
         id: "MET0053001",
@@ -1277,7 +1272,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0054",
-    question: " Clouds are basically distinguished by what types? (1,00 P.)",
+    question: "Clouds are basically distinguished by what types?",
     answers: [
       {
         id: "MET0054001",
@@ -1300,7 +1295,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0055",
-    question: " Clouds in high layers are referred to as... (1,00 P.)",
+    question: "Clouds in high layers are referred to as...",
     answers: [
       {
         id: "MET0055001",
@@ -1324,7 +1319,7 @@ const questions: Question[] = [
   {
     id: "MET0056",
     question:
-      ' What weather phenomenon designated by "2" has to be expected on the lee side during "Foehn" conditions? See figure (MET-001).',
+      'What weather phenomenon designated by "2" has to be expected on the lee side during "Foehn" conditions? See figure (MET-001).',
     answers: [
       {
         id: "MET0056001",
@@ -1348,7 +1343,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0057",
-    question: " What cloud type does the picture show?",
+    question: "What cloud type does the picture show?",
     image: require("./images/MET2.png"),
     answers: [
       {
@@ -1372,7 +1367,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0058",
-    question: " What cloud type does the picture show?",
+    question: "What cloud type does the picture show?",
     image: require("./images/MET3.png"),
     answers: [
       {
@@ -1396,7 +1391,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0059",
-    question: " What factor may affect the top of cumulus clouds? (1,00 P.)",
+    question: "What factor may affect the top of cumulus clouds?",
     answers: [
       {
         id: "MET0059001",
@@ -1419,8 +1414,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0060",
-    question:
-      " What factors may indicate a tendency to fog formation? (1,00 P.)",
+    question: "What factors may indicate a tendency to fog formation?",
     answers: [
       {
         id: "MET0060001",
@@ -1443,8 +1437,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0061",
-    question:
-      ' What condition may prevent the formation of "radiation fog"? (1,00 P.)',
+    question: 'What condition may prevent the formation of "radiation fog"?',
     answers: [
       {
         id: "MET0061001",
@@ -1467,8 +1460,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0062",
-    question:
-      ' What process results in the formation of "advection fog"? (1,00 P.)',
+    question: 'What process results in the formation of "advection fog"?',
     answers: [
       {
         id: "MET0062001",
@@ -1492,7 +1484,7 @@ const questions: Question[] = [
   {
     id: "MET0063",
     question:
-      ' What process results in the formation of "orographic fog" ("hill fog")? (1,00 P.)',
+      'What process results in the formation of "orographic fog" ("hill fog")?',
     answers: [
       {
         id: "MET0063001",
@@ -1516,7 +1508,7 @@ const questions: Question[] = [
   {
     id: "MET0064",
     question:
-      " What factors are required for the formation of precipitation in clouds? (1,00 P.)",
+      "What factors are required for the formation of precipitation in clouds?",
     answers: [
       {
         id: "MET0064001",
@@ -1540,7 +1532,7 @@ const questions: Question[] = [
   {
     id: "MET0065",
     question:
-      " The formation of medium to large precipitation particles requires... (1,00 P.)",
+      "The formation of medium to large precipitation particles requires...",
     answers: [
       {
         id: "MET0065001",
@@ -1563,8 +1555,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0066",
-    question:
-      " Which type of cloud is associated with prolonged rain? (1,00 P.)",
+    question: "Which type of cloud is associated with prolonged rain?",
     answers: [
       {
         id: "MET0066001",
@@ -1587,8 +1578,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0067",
-    question:
-      " Regarding the type of cloud, precipitation is classified as... (1,00 P.)",
+    question: "Regarding the type of cloud, precipitation is classified as...",
     answers: [
       {
         id: "MET0067001",
@@ -1612,7 +1602,7 @@ const questions: Question[] = [
   {
     id: "MET0068",
     question:
-      " How is an air mass described when moving to Central Europe via the Russian continent during winter? (1,00 P.)",
+      "How is an air mass described when moving to Central Europe via the Russian continent during winter?",
     answers: [
       {
         id: "MET0068001",
@@ -1635,8 +1625,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0069",
-    question:
-      " The character of an air mass is given by what properties? (1,00 P.)",
+    question: "The character of an air mass is given by what properties?",
     answers: [
       {
         id: "MET0069001",
@@ -1659,7 +1648,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0070",
-    question: " The symbol labeled (1) as shown in the picture is a / an...",
+    question: "The symbol labeled (1) as shown in the picture is a / an...",
     image: require("./images/MET4.png"),
     answers: [
       {
@@ -1683,7 +1672,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0071",
-    question: " The symbol labeled (2) as shown in the picture is a / an...",
+    question: "The symbol labeled (2) as shown in the picture is a / an...",
     image: require("./images/MET4.png"),
     answers: [
       {
@@ -1707,7 +1696,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0072",
-    question: " The symbol labeled (3) as shown in the picture is a / an...",
+    question: "The symbol labeled (3) as shown in the picture is a / an...",
     image: require("./images/MET4.png"),
     answers: [
       {
@@ -1732,7 +1721,7 @@ const questions: Question[] = [
   {
     id: "MET0073",
     question:
-      " What cloud sequence can typically be observed during the passage of a warm front? (1,00 P.)",
+      "What cloud sequence can typically be observed during the passage of a warm front?",
     answers: [
       {
         id: "MET0073001",
@@ -1760,7 +1749,7 @@ const questions: Question[] = [
   {
     id: "MET0074",
     question:
-      " What clouds and weather can typically be observed during the passage of a cold front? (1,00 P.)",
+      "What clouds and weather can typically be observed during the passage of a cold front?",
     answers: [
       {
         id: "MET0074001",
@@ -1788,7 +1777,7 @@ const questions: Question[] = [
   {
     id: "MET0075",
     question:
-      " What visual flight conditions can be expected within the warm sector of a polar front low during summer time? (1,00 P.)",
+      "What visual flight conditions can be expected within the warm sector of a polar front low during summer time?",
     answers: [
       {
         id: "MET0075001",
@@ -1812,7 +1801,7 @@ const questions: Question[] = [
   {
     id: "MET0076",
     question:
-      " What visual flight conditions can be expected after the passage of a cold front? (1, P.)",
+      "What visual flight conditions can be expected after the passage of a cold front? (1, P.)",
     answers: [
       {
         id: "MET0076001",
@@ -1840,7 +1829,7 @@ const questions: Question[] = [
   {
     id: "MET0077",
     question:
-      " A boundary between a cold polar air mass and a warm subtropical air mass showing no horizontal displacement is called... (1,00 P.)",
+      "A boundary between a cold polar air mass and a warm subtropical air mass showing no horizontal displacement is called...",
     answers: [
       {
         id: "MET0077001",
@@ -1863,8 +1852,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0078",
-    question:
-      " What is the usual direction of movement of a polar front low? (1,00 P.)",
+    question: "What is the usual direction of movement of a polar front low?",
     answers: [
       {
         id: "MET0078001",
@@ -1890,7 +1878,7 @@ const questions: Question[] = [
   {
     id: "MET0079",
     question:
-      " What pressure pattern can be observed during the passage of a polar front low? (1, P.)",
+      "What pressure pattern can be observed during the passage of a polar front low? (1, P.)",
     answers: [
       {
         id: "MET0079001",
@@ -1918,7 +1906,7 @@ const questions: Question[] = [
   {
     id: "MET0080",
     question:
-      " What pressure pattern can be observed when a cold front is passing? (1,00 P.)",
+      "What pressure pattern can be observed when a cold front is passing?",
     answers: [
       {
         id: "MET0080001",
@@ -1942,7 +1930,7 @@ const questions: Question[] = [
   {
     id: "MET0081",
     question:
-      " What change of wind direction can be expected during the passage of a polar front low in Central Europe? (1,00 P.)",
+      "What change of wind direction can be expected during the passage of a polar front low in Central Europe?",
     answers: [
       {
         id: "MET0081001",
@@ -1970,7 +1958,7 @@ const questions: Question[] = [
   {
     id: "MET0082",
     question:
-      " Extensive high pressure areas can be found throughout the year ... (1,00 P.)",
+      "Extensive high pressure areas can be found throughout the year ...",
     answers: [
       {
         id: "MET0082001",
@@ -1994,7 +1982,7 @@ const questions: Question[] = [
   {
     id: "MET0083",
     question:
-      " What cloud type can typically be observed across widespread high pressure areas during summer? (1,00 P.)",
+      "What cloud type can typically be observed across widespread high pressure areas during summer?",
     answers: [
       {
         id: "MET0083001",
@@ -2018,7 +2006,7 @@ const questions: Question[] = [
   {
     id: "MET0084",
     question:
-      " What pressure pattern may result from cold-air inflow in high tropospheric layers? (1,00 P.)",
+      "What pressure pattern may result from cold-air inflow in high tropospheric layers?",
     answers: [
       {
         id: "MET0084001",
@@ -2041,8 +2029,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0085",
-    question:
-      " Cold air inflow in high tropospheric layers may result in... (1,00 P.)",
+    question: "Cold air inflow in high tropospheric layers may result in...",
     answers: [
       {
         id: "MET0085001",
@@ -2066,7 +2053,7 @@ const questions: Question[] = [
   {
     id: "MET0086",
     question:
-      " How does inflowing cold air affect the shape and vertical distance between pressure layers? (1,00 P.)",
+      "How does inflowing cold air affect the shape and vertical distance between pressure layers?",
     answers: [
       {
         id: "MET0086001",
@@ -2092,7 +2079,7 @@ const questions: Question[] = [
   {
     id: "MET0087",
     question:
-      " What weather phenomena have to be expected around an upper-level trough? (1,00 P.)",
+      "What weather phenomena have to be expected around an upper-level trough?",
     answers: [
       {
         id: "MET0087001",
@@ -2116,7 +2103,7 @@ const questions: Question[] = [
   {
     id: "MET0088",
     question:
-      " What frontal line divides subtropical air from polar cold air, in particular across Central Europe? (1,00 P.)",
+      "What frontal line divides subtropical air from polar cold air, in particular across Central Europe?",
     answers: [
       {
         id: "MET0088001",
@@ -2140,7 +2127,7 @@ const questions: Question[] = [
   {
     id: "MET0089",
     question:
-      " What weather conditions can be expected in high pressure areas during summer? (1,00 P.)",
+      "What weather conditions can be expected in high pressure areas during summer?",
     answers: [
       {
         id: "MET0089001",
@@ -2164,7 +2151,7 @@ const questions: Question[] = [
   {
     id: "MET0090",
     question:
-      " What weather conditions in Central Europe are typically found in high pressure areas during summer? (1,00 P.)",
+      "What weather conditions in Central Europe are typically found in high pressure areas during summer?",
     answers: [
       {
         id: "MET0090001",
@@ -2190,7 +2177,7 @@ const questions: Question[] = [
   {
     id: "MET0091",
     question:
-      " What weather conditions can be expected in high pressure areas during winter? (1, P.)",
+      "What weather conditions can be expected in high pressure areas during winter? (1, P.)",
     answers: [
       {
         id: "MET0091001",
@@ -2214,7 +2201,7 @@ const questions: Question[] = [
   {
     id: "MET0092",
     question:
-      " What wind conditions can be expected in areas showing large distances between isobars? (1,00 P.)",
+      "What wind conditions can be expected in areas showing large distances between isobars?",
     answers: [
       {
         id: "MET0092001",
@@ -2239,7 +2226,7 @@ const questions: Question[] = [
   {
     id: "MET0093",
     question:
-      ' What weather conditions can be expected during "Foehn" on the windward side of a mountain range? (1,00 P.)',
+      'What weather conditions can be expected during "Foehn" on the windward side of a mountain range?',
     answers: [
       {
         id: "MET0093001",
@@ -2265,7 +2252,7 @@ const questions: Question[] = [
   {
     id: "MET0094",
     question:
-      " Which of the stated wind phenomena will increase in speed since its path is narrowed by mountains? (1,00 P.)",
+      "Which of the stated wind phenomena will increase in speed since its path is narrowed by mountains?",
     answers: [
       {
         id: "MET0094001",
@@ -2289,7 +2276,7 @@ const questions: Question[] = [
   {
     id: "MET0095",
     question:
-      " What is the name of the the cold, katabatic wind phenomena blowing from northeast into the Adriatic Sea? (1,00 P.)",
+      "What is the name of the the cold, katabatic wind phenomena blowing from northeast into the Adriatic Sea?",
     answers: [
       {
         id: "MET0095001",
@@ -2313,7 +2300,7 @@ const questions: Question[] = [
   {
     id: "MET0096",
     question:
-      " Which of the following conditions are most favourable for ice accretion? (1,00 P.)",
+      "Which of the following conditions are most favourable for ice accretion?",
     answers: [
       {
         id: "MET0096001",
@@ -2340,7 +2327,7 @@ const questions: Question[] = [
   {
     id: "MET0097",
     question:
-      " What temperatures are most dangerous with respect to airframe icing? (1,00 P.)",
+      "What temperatures are most dangerous with respect to airframe icing?",
     answers: [
       {
         id: "MET0097001",
@@ -2364,7 +2351,7 @@ const questions: Question[] = [
   {
     id: "MET0098",
     question:
-      " Which type of ice forms by very small water droplets and ice crystals hitting the front surfaces of an aircraft? (1,00 P.)",
+      "Which type of ice forms by very small water droplets and ice crystals hitting the front surfaces of an aircraft?",
     answers: [
       {
         id: "MET0098001",
@@ -2388,7 +2375,7 @@ const questions: Question[] = [
   {
     id: "MET0099",
     question:
-      " Which type of ice forms by large, supercooled droplets hitting the front surfaces of an aircraft? (1,00 P.)",
+      "Which type of ice forms by large, supercooled droplets hitting the front surfaces of an aircraft?",
     answers: [
       {
         id: "MET0099001",
@@ -2412,7 +2399,7 @@ const questions: Question[] = [
   {
     id: "MET0100",
     question:
-      " What situation may result in the occurrence of severe wind shear? (1,00 P.)",
+      "What situation may result in the occurrence of severe wind shear?",
     answers: [
       {
         id: "MET0100001",
@@ -2438,7 +2425,7 @@ const questions: Question[] = [
   {
     id: "MET0101",
     question:
-      " What conditions are favourable for the formation of thunderstorms? (1,00 P.)",
+      "What conditions are favourable for the formation of thunderstorms?",
     answers: [
       {
         id: "MET0101001",
@@ -2463,7 +2450,7 @@ const questions: Question[] = [
   {
     id: "MET0102",
     question:
-      " What conditions are mandatory for the formation of thermal thunderstorms? (1,00 P.)",
+      "What conditions are mandatory for the formation of thermal thunderstorms?",
     answers: [
       {
         id: "MET0102001",
@@ -2491,7 +2478,7 @@ const questions: Question[] = [
   {
     id: "MET0103",
     question:
-      " With regard to thunderstorms, strong up- and downdrafts appear during the... (1,00 P.)",
+      "With regard to thunderstorms, strong up- and downdrafts appear during the...",
     answers: [
       {
         id: "MET0103001",
@@ -2514,8 +2501,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0104",
-    question:
-      " Which stage of a thunderstorm is dominated by updrafts? (1,00 P.)",
+    question: "Which stage of a thunderstorm is dominated by updrafts?",
     answers: [
       {
         id: "MET0104001",
@@ -2539,7 +2525,7 @@ const questions: Question[] = [
   {
     id: "MET0105",
     question:
-      " What danger is most immenent when an aircraft is hit by lightning? (1,00 P.)",
+      "What danger is most immenent when an aircraft is hit by lightning?",
     answers: [
       {
         id: "MET0105001",
@@ -2563,7 +2549,7 @@ const questions: Question[] = [
   {
     id: "MET0106",
     question:
-      " Heavy downdrafts and strong wind shear close to the ground can be expected... (1,00 P.)",
+      "Heavy downdrafts and strong wind shear close to the ground can be expected...",
     answers: [
       {
         id: "MET0106001",
@@ -2589,7 +2575,7 @@ const questions: Question[] = [
   {
     id: "MET0107",
     question:
-      " What phenomenon is caused by cold air downdrafts with precipitation from a fully developed thunderstorm cloud? (1,00 P.)",
+      "What phenomenon is caused by cold air downdrafts with precipitation from a fully developed thunderstorm cloud?",
     answers: [
       {
         id: "MET0107001",
@@ -2613,7 +2599,7 @@ const questions: Question[] = [
   {
     id: "MET0108",
     question:
-      " What has to be considered when taking off in a ground inversion? (1,00 P.)",
+      "What has to be considered when taking off in a ground inversion?",
     answers: [
       {
         id: "MET0108001",
@@ -2641,7 +2627,7 @@ const questions: Question[] = [
   {
     id: "MET0109",
     question:
-      " What danger is most imminent during an approach to an airfield situated in a valley, with strong wind aloft blowing perpendicular to the mountain ridge? (1,00 P.)",
+      "What danger is most imminent during an approach to an airfield situated in a valley, with strong wind aloft blowing perpendicular to the mountain ridge?",
     answers: [
       {
         id: "MET0109001",
@@ -2668,7 +2654,7 @@ const questions: Question[] = [
   {
     id: "MET0110",
     question:
-      " What kind of reduction in visibility is not very sensitive to changes in temperature? (1,00 P.)",
+      "What kind of reduction in visibility is not very sensitive to changes in temperature?",
     answers: [
       {
         id: "MET0110001",
@@ -2692,7 +2678,7 @@ const questions: Question[] = [
   {
     id: "MET0111",
     question:
-      " Information about pressure patterns and frontal situation can be found in which chart? (1,00 P.)",
+      "Information about pressure patterns and frontal situation can be found in which chart?",
     answers: [
       {
         id: "MET0111001",
@@ -2716,7 +2702,7 @@ const questions: Question[] = [
   {
     id: "MET0112",
     question:
-      " Which weather chart shows the actual air pressure as in MSL along with pressure centers and fronts? (1,00 P.)",
+      "Which weather chart shows the actual air pressure as in MSL along with pressure centers and fronts?",
     answers: [
       {
         id: "MET0112001",
@@ -2739,8 +2725,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0113",
-    question:
-      " What information can be obtained from satallite images? (1,00 P.)",
+    question: "What information can be obtained from satallite images?",
     answers: [
       {
         id: "MET0113001",
@@ -2763,7 +2748,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0114",
-    question: " What chart shows areas of precipitation? (1,00 P.)",
+    question: "What chart shows areas of precipitation?",
     answers: [
       {
         id: "MET0114001",
@@ -2787,7 +2772,7 @@ const questions: Question[] = [
   {
     id: "MET0115",
     question:
-      " What information is NOT found on Low-Level Significant Weather Charts (LLSWC)? (1,00 P.)",
+      "What information is NOT found on Low-Level Significant Weather Charts (LLSWC)?",
     answers: [
       {
         id: "MET0115001",
@@ -2811,7 +2796,7 @@ const questions: Question[] = [
   {
     id: "MET0116",
     question:
-      " Measured pressure distribution in MSL and corresponding frontal systems are displayed by the... (1,00 P.)",
+      "Measured pressure distribution in MSL and corresponding frontal systems are displayed by the...",
     answers: [
       {
         id: "MET0116001",
@@ -2834,8 +2819,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0117",
-    question:
-      ' In a METAR, "heavy rain" is designated by the identifier... (1,00 P.)',
+    question: 'In a METAR, "heavy rain" is designated by the identifier...',
     answers: [
       {
         id: "MET0117001",
@@ -2859,7 +2843,7 @@ const questions: Question[] = [
   {
     id: "MET0118",
     question:
-      ' In a METAR, "(moderate) showers of rain" are designated by the identifier... (1,00 P.)',
+      'In a METAR, "(moderate) showers of rain" are designated by the identifier...',
     answers: [
       {
         id: "MET0118001",
@@ -2882,8 +2866,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0119",
-    question:
-      " What information can be found in the ATIS, but not in a METAR? (1,00 P.)",
+    question: "What information can be found in the ATIS, but not in a METAR?",
     answers: [
       {
         id: "MET0119001",
@@ -2911,7 +2894,7 @@ const questions: Question[] = [
   {
     id: "MET0120",
     question:
-      " Weather and operational information about the destination aerodrome can be obtained during the flight by... (1,00 P.)",
+      "Weather and operational information about the destination aerodrome can be obtained during the flight by...",
     answers: [
       {
         id: "MET0120001",
@@ -2934,7 +2917,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0121",
-    question: " SIGMET warnings are issued for... (1,00 P.)",
+    question: "SIGMET warnings are issued for...",
     answers: [
       {
         id: "MET0121001",
@@ -2957,7 +2940,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0122",
-    question: " An inversion is a layer ... (1,00 P.)",
+    question: "An inversion is a layer ...",
     answers: [
       {
         id: "MET0122001",
@@ -2981,7 +2964,7 @@ const questions: Question[] = [
   {
     id: "MET0123",
     question:
-      " What can be expected for the prevailling wind with isobars on a surface weather chart showing large distances? (1,00 P.)",
+      "What can be expected for the prevailling wind with isobars on a surface weather chart showing large distances?",
     answers: [
       {
         id: "MET0123001",
@@ -3005,7 +2988,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0124",
-    question: " What is referred to as mountain wind? (1,00 P.)",
+    question: "What is referred to as mountain wind?",
     answers: [
       {
         id: "MET0124001",
@@ -3029,7 +3012,7 @@ const questions: Question[] = [
   {
     id: "MET0125",
     question:
-      ' Under which conditions "back side weather" ("Rückseitenwetter") can be expected? (1,00 P.)',
+      'Under which conditions "back side weather" ("Rückseitenwetter") can be expected?',
     answers: [
       {
         id: "MET0125001",
@@ -3052,7 +3035,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0126",
-    question: " What wind is reportet as 225/15? (1,00 P.)",
+    question: "What wind is reportet as 225/15?",
     answers: [
       {
         id: "MET0126001",
@@ -3076,7 +3059,7 @@ const questions: Question[] = [
   {
     id: "MET0127",
     question:
-      " How does air temperatur change in ISA from MSL to approx. 10.000 m height? (1,00 P.)",
+      "How does air temperatur change in ISA from MSL to approx. 10.000 m height?",
     answers: [
       {
         id: "MET0127001",
@@ -3100,7 +3083,7 @@ const questions: Question[] = [
   {
     id: "MET0128",
     question:
-      ' What weather is likely to be experienced during "Foehn" in the Bavarian area close to the alps? (1,00 P.)',
+      'What weather is likely to be experienced during "Foehn" in the Bavarian area close to the alps?',
     answers: [
       {
         id: "MET0128001",
@@ -3127,7 +3110,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0129",
-    question: " Mountain side updrafts can be intensified by ... (1,00 P.)",
+    question: "Mountain side updrafts can be intensified by ...",
     answers: [
       {
         id: "MET0129001",
