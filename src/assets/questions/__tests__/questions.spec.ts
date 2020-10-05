@@ -2,10 +2,9 @@ import { Question } from "types/Questionnaire";
 import questions from "../index";
 
 describe("questions", () => {
-  const questionsForTest: Array<[string, Question]> = questions.all.map((q) => [
-    q.id,
-    q,
-  ]);
+  const questionsForTest: Array<[string, Question]> = questions
+    .reduce<Question[]>((sum, { questions }) => [...sum, ...questions], [])
+    .map((q) => [q.id, q]);
 
   test.each(questionsForTest)(
     "question %s has correct number of answers and ONE correct answer",
@@ -16,11 +15,11 @@ describe("questions", () => {
   );
 
   test("there are no duplicate question or answer IDs", () => {
-    const setQuestions = new Set(questions.all);
+    const setQuestions = new Set(questionsForTest);
     const setAnswers = new Set(
-      questions.all.map(({ answers }) => answers).flat()
+      questionsForTest.map(([id, { answers }]) => answers).flat()
     );
-    expect(setQuestions.size).toBe(questions.all.length);
-    expect(setAnswers.size).toBe(questions.all.length * 4);
+    expect(setQuestions.size).toBe(questionsForTest.length);
+    expect(setAnswers.size).toBe(questionsForTest.length * 4);
   });
 });

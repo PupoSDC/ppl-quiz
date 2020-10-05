@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 export type AnswerId = string;
 export type QuestionId = string;
+export type QuestionBlockId = string;
 
 export type Answer = {
   id: AnswerId;
@@ -21,4 +22,10 @@ export type Question = {
   index?: number;
 
   explanation?: string;
+};
+
+export type QuestionBlock = {
+  id: QuestionBlockId;
+  name: string;
+  questions: Question[];
 };

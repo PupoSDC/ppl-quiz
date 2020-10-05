@@ -1,19 +1,17 @@
 import React, { FunctionComponent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Text, View } from "native-base";
-import questions from "assets/questions";
 import { useHistory } from "react-router-native";
 import { QUESTIONNAIRE } from "constants/Routes";
 import { createQuestionnaire } from "constants/Actions";
 import { Question } from "types/Questionnaire";
+import { QuestionsHeatMap } from "types/Statistics";
+import questionBanks from "assets/questions";
 import {
   shuffleAnswers,
   shuffleQuestions,
   ShuffleMode,
 } from "utils/questionnaireShufle";
-import { QuestionsHeatMap } from "types/Statistics";
-
-const questionBanks = Object.entries(questions);
 
 const getQuestionnaire = (
   questions: Question[],
@@ -43,8 +41,8 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
 
   return (
     <View>
-      {questionBanks.map(([name, questions]) => (
-        <Button onPress={() => onTestSelected(questions)} key={name}>
+      {questionBanks.map(({ name, id, questions }) => (
+        <Button onPress={() => onTestSelected(questions)} key={id}>
           <Text>{name}</Text>
         </Button>
       ))}

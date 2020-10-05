@@ -1,4 +1,11 @@
+import { QuestionBlock } from "types/Questionnaire";
 import flightAcademy from "./flightAcademy";
 import other from "./other";
 
-export default [...flightAcademy, ...other];
+const flight: QuestionBlock = {
+  id: "AL",
+  name: "Air Law",
+  questions: [...flightAcademy, ...other],
+};
+
+export default flight;
