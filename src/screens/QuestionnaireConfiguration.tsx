@@ -12,6 +12,7 @@ import {
   shuffleQuestions,
   ShuffleMode,
 } from "utils/questionnaireShufle";
+import useProgressStatistics from "hooks/useProgressStatistics";
 
 const getQuestionnaire = (
   questions: Question[],
@@ -28,6 +29,7 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
   const dispatch = useDispatch();
   const { push } = useHistory();
   const questionsHeatMap = useSelector((state) => state.statistics.questions);
+  const progressStatistics = useProgressStatistics();
 
   const goToTest = () => {
     push(QUESTIONNAIRE);

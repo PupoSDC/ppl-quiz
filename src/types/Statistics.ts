@@ -14,3 +14,9 @@ export type QuestionsHeatMap = {
 export type GlobalTestStatistics = {
   questions: QuestionsHeatMap;
 };
+
+export type QuestionBankStatistics = {
+  totalQuestions: number;
+  answeredQuestions: number;
+  correctlyAnsweredQuestions: number;
+};
