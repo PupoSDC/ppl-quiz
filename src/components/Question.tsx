@@ -1,12 +1,13 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet, View, Image, Dimensions } from "react-native";
-import { Button, Text } from "native-base";
+import { Button } from "react-native-paper";
 import Markdown from "react-native-markdown-display";
 import {
   Question as QuestionType,
   QuestionId,
   AnswerId,
 } from "types/Questionnaire";
+import Answer from "./Answer";
 
 type QuestionProps = QuestionType & {
   answerQuestion: (questionId: QuestionId, answerId: AnswerId) => void;
@@ -31,18 +32,13 @@ const Question: FunctionComponent<QuestionProps> = ({
       )}
 
       {answers.map(({ answer, id: answerId }) => (
-        <View style={styles.answer} key={answerId}>
-          <Button
-            block
-            vertical
-            style={styles.answer}
-            light={selected !== answerId}
-            primary={selected === answerId}
-            onPress={() => answerQuestion(questionId, answerId)}
-          >
-            <Markdown>{answer}</Markdown>
-          </Button>
-        </View>
+        <Answer
+          key={answerId}
+          onPress={() => answerQuestion(questionId, answerId)}
+          selected={answerId === selected}
+        >
+          {answer}
+        </Answer>
       ))}
     </View>
   );
@@ -65,6 +61,9 @@ const styles = StyleSheet.create({
     width: "100%",
     margin: 5,
     padding: 3,
+  },
+  answerContent: {
+    height: 60,
   },
   imageContainer: {
     flexDirection: "row",

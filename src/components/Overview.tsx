@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet, View } from "react-native";
-import { Button, Text } from "native-base";
+import { Button, Text } from "react-native-paper";
 import { Question } from "types/Questionnaire";
+import { GOOD, BAD } from "constants/Colors";
 
 type OverviewProps = {
   correctAnswers: Question[];
@@ -24,10 +25,9 @@ const Overview: FunctionComponent<OverviewProps> = ({
       {questions.map(({ selected, correct, id }, i) => (
         <Button
           key={id}
+          mode={selected ? "contained" : "outlined"}
+          color={selected ? (correct === selected ? GOOD : BAD) : undefined}
           style={styles.questionButton}
-          light={!selected}
-          primary={selected ? selected === correct : undefined}
-          danger={selected ? selected !== correct : undefined}
           onPress={() => goToQuestion(id)}
         >
           <Text>{i + 1}</Text>

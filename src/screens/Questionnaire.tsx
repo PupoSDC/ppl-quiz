@@ -1,5 +1,5 @@
 import React, { useState, FunctionComponent } from "react";
-import { Button, Text } from "native-base";
+import { Button, Text } from "react-native-paper";
 import { useDispatch, useSelector } from "react-redux";
 import { StyleSheet } from "react-native";
 import { useHistory } from "react-router-native";

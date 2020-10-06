@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Text, View } from "native-base";
+import { Button, Text, ProgressBar } from "react-native-paper";
+import { View } from "react-native";
 import { useHistory } from "react-router-native";
 import { QUESTIONNAIRE } from "constants/Routes";
 import { createQuestionnaire } from "constants/Actions";
@@ -13,6 +14,7 @@ import {
   ShuffleMode,
 } from "utils/questionnaireShufle";
 import useProgressStatistics from "hooks/useProgressStatistics";
+import { GOOD } from "constants/Colors";
 
 const getQuestionnaire = (
   questions: Question[],
@@ -43,12 +45,25 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
 
   return (
     <View>
-      {questionBanks.map(({ name, id, questions }) => (
-        <Button onPress={() => onTestSelected(questions)} key={id}>
-          <Text>{name}</Text>
-        </Button>
+      {questionBanks.map(({ name, id, questions }, index) => (
+        <View>
+          <Button
+            mode="outlined"
+            onPress={() => onTestSelected(questions)}
+            key={id}
+          >
+            <Text>{name}</Text>
+          </Button>
+          <ProgressBar
+            progress={
+              progressStatistics[index].correctlyAnsweredQuestions /
+              progressStatistics[index].totalQuestions
+            }
+            color={GOOD}
+          />
+        </View>
       ))}
-      <Button onPress={() => goToTest()} key={name}>
+      <Button mode="contained" onPress={() => goToTest()} key={name}>
         <Text>Continue test</Text>
       </Button>
     </View>
