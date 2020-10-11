@@ -114,8 +114,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0005004",
-        answer:
-          "a decrease of stability.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "a decrease of stability",
       },
     ],
     correct: "FPP0005004",
@@ -243,7 +242,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0010004",
-        answer: "0.72 kg/l.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "0.72 kg/l",
       },
     ],
     correct: "FPP0010004",
@@ -392,7 +391,7 @@ const questions: Question[] = [
       {
         id: "FPP0016004",
         answer:
-          "the point on the longitudinal axis or its extension from which the centers of gravity of all masses\nare referenced.\n70 Flight Performance and Planning ECQB-PPL(A)",
+          "the point on the longitudinal axis or its extension from which the centers of gravity of all masses\nare referenced",
       },
     ],
     correct: "FPP0016001",
@@ -517,7 +516,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0021004",
-        answer: "torque.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "torque",
       },
     ],
     correct: "FPP0021001",
@@ -639,7 +638,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0026004",
-        answer: "142 in.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "142 in",
       },
     ],
     correct: "FPP0026004",
@@ -1137,8 +1136,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0046004",
-        answer:
-          "maximum landing gear extended speed.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "maximum landing gear extended speed",
       },
     ],
     correct: "FPP0046001",
@@ -1333,8 +1331,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0054004",
-        answer:
-          "Crosswind from the right 6 kt.\nHeadwind 10.4 kt.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "Crosswind from the right 6 kt.\nHeadwind 10.4 kt",
       },
     ],
     correct: "FPP0054002",
@@ -1430,7 +1427,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0058004",
-        answer: "19.5 l/h.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "19.5 l/h",
       },
     ],
     correct: "FPP0058004",
@@ -1646,8 +1643,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0067004",
-        answer:
-          "105 kt.\n21.5 l/h.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "105 kt.\n21.5 l/h",
       },
     ],
     correct: "FPP0067001",
@@ -1893,7 +1889,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0077004",
-        answer: "1 500 ft MSL.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "1 500 ft MSL",
       },
     ],
     correct: "FPP0077004",
@@ -2062,8 +2058,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0084004",
-        answer:
-          "Night flight under visual flight rules.\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "Night flight under visual flight rules",
       },
     ],
     correct: "FPP0084004",

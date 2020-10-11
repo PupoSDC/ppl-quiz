@@ -2,9 +2,8 @@ import React, { FunctionComponent } from "react";
 import { Provider } from "react-redux";
 import { Provider as PaperProvider } from "react-native-paper";
 import { registerRootComponent } from "expo";
-import { useFonts } from "expo-font";
+import { Text } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
 import { NativeRouter, Route } from "react-router-native";
 import { PersistGate } from "redux-persist/integration/react";
 import Questionnaire from "screens/Questionnaire";
@@ -16,7 +15,7 @@ const App: FunctionComponent<{}> = () => {
   return (
     <SafeAreaProvider>
       <Provider store={store}>
-        <PersistGate persistor={persistor} loading={<h1>Loading!!!</h1>}>
+        <PersistGate persistor={persistor} loading={<Text>Loading!!!</Text>}>
           <PaperProvider>
             <NativeRouter>
               <Route exact path={HOME} component={QuestionnaireConfiguration} />

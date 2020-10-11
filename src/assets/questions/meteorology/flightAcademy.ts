@@ -2339,7 +2339,7 @@ const questions: Question[] = [
       },
       {
         id: "MET0097003",
-        answer: "- 20° to -40° C",
+        answer: "-20° to -40° C",
       },
       {
         id: "MET0097004",

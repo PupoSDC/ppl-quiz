@@ -1,18 +1,6 @@
 import React, { FunctionComponent } from "react";
-import {
-  Animated,
-  View,
-  ViewStyle,
-  StyleSheet,
-  StyleProp,
-  TextStyle,
-} from "react-native";
-import {
-  Colors,
-  Surface,
-  TouchableRipple,
-  withTheme,
-} from "react-native-paper";
+import { View, StyleSheet } from "react-native";
+import { Surface, TouchableRipple, withTheme } from "react-native-paper";
 import color from "color";
 import { GOOD, BAD, PRIMARY } from "constants/Colors";
 import Markdown from "react-native-markdown-display";

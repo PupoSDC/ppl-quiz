@@ -20,7 +20,11 @@ const getQuestionnaire = (
   questions: Question[],
   statistics: QuestionsHeatMap
 ) =>
-  shuffleQuestions(questions, statistics, ShuffleMode.BIASED_ALL)
+  shuffleQuestions(
+    questions,
+    statistics,
+    ShuffleMode.NEVER_SEEN_BEFORE_AND_WRONG
+  )
     .slice(0, 12)
     .map(({ answers, ...question }) => ({
       answers: shuffleAnswers(answers),
@@ -46,12 +50,8 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
   return (
     <View>
       {questionBanks.map(({ name, id, questions }, index) => (
-        <View>
-          <Button
-            mode="outlined"
-            onPress={() => onTestSelected(questions)}
-            key={id}
-          >
+        <View key={id}>
+          <Button mode="outlined" onPress={() => onTestSelected(questions)}>
             <Text>{name}</Text>
           </Button>
           <ProgressBar
@@ -63,7 +63,7 @@ const QuestionnaireContainer: FunctionComponent<{}> = () => {
           />
         </View>
       ))}
-      <Button mode="contained" onPress={() => goToTest()} key={name}>
+      <Button mode="contained" onPress={() => goToTest()}>
         <Text>Continue test</Text>
       </Button>
     </View>
