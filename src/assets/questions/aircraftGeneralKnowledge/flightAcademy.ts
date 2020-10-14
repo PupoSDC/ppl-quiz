@@ -291,29 +291,29 @@ const questions: Question[] = [
       {
         id: "AGK0013001",
         answer:
-          "The helicopter must be inspected by the pilot in command and if no defect is found, no\nappropriate entry in the aircraft technical log is necessary",
+          "The aircraft must be inspected by the pilot in command and if no defect is found, no\nappropriate entry in the aircraft technical log is necessary",
       },
       {
         id: "AGK0013002",
         answer:
-          "The helicopter must be inspected by at least two pilots licensed on the type, one of whom must\nbe the pilot in command",
+          "The aircraft must be inspected by at least two pilots licensed on the type, one of whom must\nbe the pilot in command",
       },
       {
         id: "AGK0013003",
         answer:
-          "The helicopter must be inspected by a qualified engineer before the next flight",
+          "The aircraft must be inspected by a qualified engineer before the next flight",
       },
       {
         id: "AGK0013004",
         answer:
-          "The helicopter must be subjected to a duplicate inspected by two engineers",
+          "The aircraft must be subjected to a duplicate inspected by two engineers",
       },
     ],
     correct: "AGK0013003",
   },
   {
     id: "AGK0014",
-    question: " Reasons for dents in the helicopter structure are...",
+    question: " Reasons for dents in the aircraft structure are...",
     answers: [
       {
         id: "AGK0014001",
@@ -651,7 +651,7 @@ const questions: Question[] = [
   {
     id: "AGK0028",
     question:
-      "What happens to a helicopter during cruise when the stick is moved forward without other corrections?",
+      "What happens to a aircraft during cruise when the stick is moved forward without other corrections?",
     answers: [
       {
         id: "AGK0028001",
@@ -1510,7 +1510,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0063",
-    question: " Piston engines of helicopters have...",
+    question: " Piston engines of aircrafts have...",
     answers: [
       {
         id: "AGK0063001",
