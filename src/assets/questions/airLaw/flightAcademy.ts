@@ -738,7 +738,7 @@ const questions: Question[] = [
         answer: "Take-off or landing at an aerodrome",
       },
     ],
-    correct: "ALWALW0030003", // whyyyyyyyy
+    correct: "ALWALW0030003",
   },
   {
     id: "ALW0031",

@@ -14,14 +14,14 @@ export type Question = {
   correct: AnswerId;
   question: string;
   answers: Answer[];
-  selected?: AnswerId;
-
   image?: ImageSourcePropType;
-
-  /** Index of the question in a test. */
-  index?: number;
-
   explanation?: string;
+};
+
+export type QuestionReference = {
+  questionId: QuestionId;
+  selected?: AnswerId;
+  answers: AnswerId[];
 };
 
 export type QuestionBlock = {

@@ -13,7 +13,7 @@ const questions: Question[] = [
       },
       {
         id: "ALW1001002",
-        answer: "The aerodrome shall be provided with a Control Tower.g",
+        answer: "The aerodrome shall be provided with a Control Tower.  ",
       },
       {
         id: "ALW1001003",

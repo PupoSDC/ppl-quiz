@@ -56,8 +56,14 @@ const questions: Question[] = [
   },
   {
     id: "OPR0003",
-    question:
-      " Which of the items below may have an influence on the noise perceived by a person on the ground? 1) Engine power setting 2) Propeller revolutions per minute 3) Position of the landing gear 4) Flap position 5) Flight track 6) Height above ground 7) Flight rules (1,00 P.)",
+    question: `Which of the items below may have an influence on the noise perceived by a person on the ground? 
+       1) Engine power setting 
+       2) Propeller revolutions per minute 
+       3) Position of the landing gear 
+       4) Flap position 
+       5) Flight track 
+       6) Height above ground 
+       7) Flight rules`,
     answers: [
       {
         id: "OPR0003001",

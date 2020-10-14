@@ -9,22 +9,22 @@ const questions: Question[] = [
       {
         id: "COM0001001",
         answer:
-          "When no radio communication can be established with the appropriate aeronautical station, but\nwhen evidence exists that transmissions are received at that ground unit",
+          "When no radio communication can be established with the appropriate aeronautical station, but when evidence exists that transmissions are received at that ground unit",
       },
       {
         id: "COM0001002",
         answer:
-          "When a pilot has flown into cloud or fog unintentionally and therefore would like to request\nnavigational assistance from a ground unit",
+          "When a pilot has flown into cloud or fog unintentionally and therefore would like to request navigational assistance from a ground unit",
       },
       {
         id: "COM0001003",
         answer:
-          "When a transmission containing important navigational or technical information is to be sent to\nseveral stations at the same time",
+          "When a transmission containing important navigational or technical information is to be sent to several stations at the same time",
       },
       {
         id: "COM0001004",
         answer:
-          "When the traffic situation at an airport allows the transmission of information which does not\nneed to be acknowledged by the ground station",
+          "When the traffic situation at an airport allows the transmission of information which does not need to be acknowledged by the ground station",
       },
     ],
     correct: "COM0001001",
@@ -263,6 +263,7 @@ const questions: Question[] = [
       },
     ],
     correct: "COM0011002",
+    explanation: "WTF....",
   },
   {
     id: "COM0012",
@@ -490,17 +491,17 @@ const questions: Question[] = [
       {
         id: "COM0021002",
         answer:
-          "sent by a pilot or an aircraft operating agency which have an imminent meaning for aircraft in\nflight.",
+          "sent by a pilot or an aircraft operating agency which have an imminent meaning for aircraft in flight.",
       },
       {
         id: "COM0021003",
         answer:
-          "concerning aircraft and their passengers which face a grave and imminent threat and require\nimmediate assistance.",
+          "concerning aircraft and their passengers which face a grave and imminent threat and require immediate assistance.",
       },
       {
         id: "COM0021004",
         answer:
-          "concerning the operation or maintenance of facilities which are important for the safety and\nregularity of flight operations.",
+          "concerning the operation or maintenance of facilities which are important for the safety and regularity of flight operations.",
       },
     ],
     correct: "COM0021003",
@@ -512,7 +513,7 @@ const questions: Question[] = [
       {
         id: "COM0022001",
         answer:
-          "concerning aircraft and their passengers which face a grave and imminent threat and require\nimmediate assistance.",
+          "concerning aircraft and their passengers which face a grave and imminent threat and require immediate assistance.",
       },
       {
         id: "COM0022002",
@@ -522,12 +523,12 @@ const questions: Question[] = [
       {
         id: "COM0022003",
         answer:
-          "concerning the operation or maintenance of facilities essential for the safety or regularity of\naircraft operation.",
+          "concerning the operation or maintenance of facilities essential for the safety or regularity of aircraft operation.",
       },
       {
         id: "COM0022004",
         answer:
-          "sent by a pilot or an aircraft operating agency which have an imminent meaning for aircraft in\nflight.",
+          "sent by a pilot or an aircraft operating agency which have an imminent meaning for aircraft in flight.",
       },
     ],
     correct: "COM0022002",
@@ -544,7 +545,7 @@ const questions: Question[] = [
       {
         id: "COM0023002",
         answer:
-          "concerning aircraft and their passengers which face a grave and imminent threat and require\nimmediate assistance.",
+          "concerning aircraft and their passengers which face a grave and imminent threat and require immediate assistance.",
       },
       {
         id: "COM0023003",
@@ -554,7 +555,7 @@ const questions: Question[] = [
       {
         id: "COM0023004",
         answer:
-          "concerning the operation or maintenance of facilities essential for the safety or regularity of\naircraft operation.",
+          "concerning the operation or maintenance of facilities essential for the safety or regularity of aircraft operation.",
       },
     ],
     correct: "COM0023004",
@@ -1163,7 +1164,7 @@ const questions: Question[] = [
     answers: [
       {
         id: "COM0049001",
-        answer: "Call 121.",
+        answer: "Call 121.275",
       },
       {
         id: "COM0049002",
@@ -1171,11 +1172,11 @@ const questions: Question[] = [
       },
       {
         id: "COM0049003",
-        answer: "121.",
+        answer: "121.275",
       },
       {
         id: "COM0049004",
-        answer: "Call tower on 121.",
+        answer: "Call tower on 121.275",
       },
     ],
     correct: "COM0049003",
@@ -1328,22 +1329,22 @@ const questions: Question[] = [
       {
         id: "COM0056001",
         answer:
-          "DZF after lift-off climb straight ahead 2500 feet, wilco, heading 220 degrees, 090 degrees, 5\nknots, cleared for take-off",
+          "DZF after lift-off climb straight ahead 2500 feet, wilco, heading 220 degrees, 090 degrees, 5 knots, cleared for take-off",
       },
       {
         id: "COM0056002",
         answer:
-          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, runway 12, cleared\nfor take-off",
+          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, runway 12, cleared for take-off",
       },
       {
         id: "COM0056003",
         answer:
-          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5\nknots",
+          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5 knots",
       },
       {
         id: "COM0056004",
         answer:
-          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5\nknots, cleared for take-off",
+          "DZF after lift-off climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5 knots, cleared for take-off",
       },
     ],
     correct: "COM0056002",
@@ -1761,22 +1762,22 @@ const questions: Question[] = [
       {
         id: "COM0074001",
         answer:
-          "The flight has to be continued above 5000 feet complying with VFR flight rules or the airspace\nhas to be left by the shortest route",
+          "The flight has to be continued above 5000 feet complying with VFR flight rules or the airspace has to be left by the shortest route",
       },
       {
         id: "COM0074002",
         answer:
-          "The flight has to be continued according to the last clearance complying with VFR rules or the\nairspace has to be left by the shortest route",
+          "The flight has to be continued according to the last clearance complying with VFR rules or the airspace has to be left by the shortest route",
       },
       {
         id: "COM0074003",
         answer:
-          "The flight has to be continued above 5000 feet complying with VFR flight rules or the airspace\nhas to be left using a standard routing",
+          "The flight has to be continued above 5000 feet complying with VFR flight rules or the airspace has to be left using a standard routing",
       },
       {
         id: "COM0074004",
         answer:
-          "The flight has to be continued according to the last clearance complying with VFR flight rules or\nthe airspace has to be left using a standard routing",
+          "The flight has to be continued according to the last clearance complying with VFR flight rules or the airspace has to be left using a standard routing",
       },
     ],
     correct: "COM0074002",
@@ -1836,22 +1837,22 @@ const questions: Question[] = [
       {
         id: "COM0077001",
         answer:
-          "messages concerning urgent spare parts which are needed for a continuation of flight and\nwhich need to be ordered in advance.",
+          "messages concerning urgent spare parts which are needed for a continuation of flight and which need to be ordered in advance.",
       },
       {
         id: "COM0077002",
         answer:
-          "messages concerning the safety of an aircraft, a watercraft or some other vehicle or person in\nsight.",
+          "messages concerning the safety of an aircraft, a watercraft or some other vehicle or person in sight.",
       },
       {
         id: "COM0077003",
         answer:
-          "information concerning the apron personell and which imply an imminent danger to landing\naircraft.",
+          "information concerning the apron personell and which imply an imminent danger to landing aircraft.",
       },
       {
         id: "COM0077004",
         answer:
-          "messages concerning aircraft and their passengers which face a grave and imminent threat and\nrequire immediate assistance.",
+          "messages concerning aircraft and their passengers which face a grave and imminent threat and require immediate assistance.",
       },
     ],
     correct: "COM0077002",
@@ -1863,22 +1864,22 @@ const questions: Question[] = [
       {
         id: "COM0078001",
         answer:
-          "information concerning urgent spare parts which are required for a continuation of flight and\nwhich have to be ordered in advance.",
+          "information concerning urgent spare parts which are required for a continuation of flight and which have to be ordered in advance.",
       },
       {
         id: "COM0078002",
         answer:
-          "information concerning the apron personell and which imply an imminent danger to landing\naircraft.",
+          "information concerning the apron personell and which imply an imminent danger to landing aircraft.",
       },
       {
         id: "COM0078003",
         answer:
-          "information concerning the safety of an aircraft, a watercraft or some other vehicle or person in\nsight.",
+          "information concerning the safety of an aircraft, a watercraft or some other vehicle or person in sight.",
       },
       {
         id: "COM0078004",
         answer:
-          "information concerning aircraft and their passengers which face a grave and imminent threat\nand require immediate assistance.",
+          "information concerning aircraft and their passengers which face a grave and imminent threat and require immediate assistance.",
       },
     ],
     correct: "COM0078004",
@@ -1915,22 +1916,22 @@ const questions: Question[] = [
       {
         id: "COM0080001",
         answer:
-          "Nature of problem or observation, important information for support, departure aerodrome,\ninformation about position, heading and altitude",
+          "Nature of problem or observation, important information for support, departure aerodrome, information about position, heading and altitude",
       },
       {
         id: "COM0080002",
         answer:
-          "Intended routing, important information for support, intentions of the pilot, information about\nposition, departure aerodrome, heading and altitude",
+          "Intended routing, important information for support, intentions of the pilot, information about position, departure aerodrome, heading and altitude",
       },
       {
         id: "COM0080003",
         answer:
-          "Nature of problem or observation, important information for support, intentions of the pilot,\ninformation about position, heading and altitude",
+          "Nature of problem or observation, important information for support, intentions of the pilot, information about position, heading and altitude",
       },
       {
         id: "COM0080004",
         answer:
-          "Intended routing, important information for support, intentions of the pilot, departure aerodrome,\ndestination aerodrome, heading and altitude",
+          "Intended routing, important information for support, intentions of the pilot, departure aerodrome, destination aerodrome, heading and altitude",
       },
     ],
     correct: "COM0080003",

@@ -3,7 +3,7 @@ import { Question } from "types/Questionnaire";
 const questions: Question[] = [
   {
     id: "NAV0001",
-    question: " The rotational axis of the Earth runs through the...",
+    question: "The rotational axis of the Earth runs through the...",
     answers: [
       {
         id: "NAV0001001",
@@ -78,7 +78,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0004",
-    question: " Which statement about a rhumb line is correct?",
+    question: "Which statement about a rhumb line is correct?",
     answers: [
       {
         id: "NAV0004001",
@@ -105,7 +105,7 @@ const questions: Question[] = [
   {
     id: "NAV0005",
     question:
-      "The shortest distance between two points on Earth is represented by a part of... (1, P.)",
+      "The shortest distance between two points on Earth is represented by a part of...",
     answers: [
       {
         id: "NAV0005001",
@@ -129,7 +129,7 @@ const questions: Question[] = [
   {
     id: "NAV0006",
     question:
-      "The circumference of the Earth at the equator is approximately... See figure (NAV-002) Siehe Anlage 1",
+      "The circumference of the Earth at the equator is approximately...",
     answers: [
       {
         id: "NAV0006001",
@@ -176,7 +176,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0008",
-    question: " Where are the two polar circles?",
+    question: "Where are the two polar circles?",
     answers: [
       {
         id: "NAV0008001",
@@ -438,7 +438,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0019",
-    question: " UTC is...",
+    question: "UTC is...",
     answers: [
       {
         id: "NAV0019001",
@@ -513,7 +513,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0022",
-    question: " The term 'civil twilight' is defined as...",
+    question: "The term 'civil twilight' is defined as...",
     answers: [
       {
         id: "NAV0022001",
@@ -636,7 +636,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0027",
-    question: " The term ‚magnetic course' (MC) is defined as...",
+    question: "The term ‚magnetic course' (MC) is defined as...",
     answers: [
       {
         id: "NAV0027001",
@@ -661,7 +661,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0028",
-    question: " The term 'True Course' (TC) is defined as...",
+    question: "The term 'True Course' (TC) is defined as...",
     answers: [
       {
         id: "NAV0028001",
@@ -758,7 +758,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0032",
-    question: " Where does the inclination reach its lowest value?",
+    question: "Where does the inclination reach its lowest value?",
     answers: [
       {
         id: "NAV0032001",
@@ -804,7 +804,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0034",
-    question: " Which direction corresponds to 'compass north' (CN)?",
+    question: "Which direction corresponds to 'compass north' (CN)?",
     answers: [
       {
         id: "NAV0034001",
@@ -902,7 +902,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0038",
-    question: " 1000 ft equal...",
+    question: "1000 ft equal...",
     answers: [
       {
         id: "NAV0038001",
@@ -925,7 +925,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0039",
-    question: " 5500 m equal...",
+    question: "5500 m equal...",
     answers: [
       {
         id: "NAV0039001",
@@ -1020,7 +1020,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0043",
-    question: " Which are the properties of a Mercator chart?",
+    question: "Which are the properties of a Mercator chart?",
     answers: [
       {
         id: "NAV0043001",
@@ -1912,7 +1912,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0080",
-    question: " What is the meaning of the 1:60 rule?",
+    question: "What is the meaning of the 1:60 rule?",
     answers: [
       {
         id: "NAV0080001",
@@ -2125,7 +2125,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0089",
-    question: " Quasi-optical waves travel...",
+    question: "Quasi-optical waves travel...",
     answers: [
       {
         id: "NAV0089001",
@@ -2150,7 +2150,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0090",
-    question: " A VHF direction finder (VDF) can determine...",
+    question: "A VHF direction finder (VDF) can determine...",
     answers: [
       {
         id: "NAV0090001",
@@ -2197,7 +2197,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0092",
-    question: " Given: QDM: 138° VAR: 10° E The QUJ equals...",
+    question: "Given: QDM: 138° VAR: 10° E The QUJ equals...",
     answers: [
       {
         id: "NAV0092001",
@@ -2220,7 +2220,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0093",
-    question: " Given: QTE: 229° VAR: 10° W The QDM equals...",
+    question: "Given: QTE: 229° VAR: 10° W The QDM equals...",
     answers: [
       {
         id: "NAV0093001",
@@ -2243,7 +2243,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0094",
-    question: " Given: QDR: 022° VAR: 10° E The QTE equals...",
+    question: "Given: QDR: 022° VAR: 10° E The QTE equals...",
     answers: [
       {
         id: "NAV0094001",
@@ -2266,7 +2266,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0095",
-    question: " Given: QDM: 248° VAR: 10° W The QTE is...",
+    question: "Given: QDM: 248° VAR: 10° W The QTE is...",
     answers: [
       {
         id: "NAV0095001",
@@ -2289,7 +2289,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0096",
-    question: " Given: QDR: 067° VAR: 5° E The QDM equals...",
+    question: "Given: QDR: 067° VAR: 5° E The QDM equals...",
     answers: [
       {
         id: "NAV0096001",
@@ -2335,7 +2335,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0098",
-    question: " Given: QTE: 203° VAR: 10° E The QDR equals...",
+    question: "Given: QTE: 203° VAR: 10° E The QDR equals...",
     answers: [
       {
         id: "NAV0098001",
@@ -2358,7 +2358,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0099",
-    question: " Given: QTE: 248° VAR: 10° W The QDR equals...",
+    question: "Given: QTE: 248° VAR: 10° W The QDR equals...",
     answers: [
       {
         id: "NAV0099001",
@@ -2381,7 +2381,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0100",
-    question: " Given: QDM: 134° VAR: 5° W The QTE equals...",
+    question: "Given: QDM: 134° VAR: 5° W The QTE equals...",
     answers: [
       {
         id: "NAV0100001",
@@ -2428,7 +2428,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0102",
-    question: " The term QDR means...",
+    question: "The term QDR means...",
     answers: [
       {
         id: "NAV0102001",
@@ -2451,7 +2451,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0103",
-    question: " The term QTE means...",
+    question: "The term QTE means...",
     answers: [
       {
         id: "NAV0103001",
@@ -2522,7 +2522,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0106",
-    question: " The VDF range depends on...",
+    question: "The VDF range depends on...",
     answers: [
       {
         id: "NAV0106001",
@@ -2546,7 +2546,7 @@ const questions: Question[] = [
   {
     id: "NAV0107",
     question:
-      "Which equipment is needed on board of an aircraft to receive signals from a non- directional beacon (NDB)?",
+      "Which equipment is needed on board of an aircraft to receive signals from a non-directional beacon (NDB)?",
     answers: [
       {
         id: "NAV0107001",
@@ -2622,7 +2622,7 @@ const questions: Question[] = [
   {
     id: "NAV0110",
     question:
-      "The pilot wants to proceed directly to the beacon. The wind is calm. The pilot should follow a QDM of... See figure (NAV-019) Siehe Anlage 6",
+      "The pilot wants to proceed directly to the beacon. The wind is calm. The pilot should follow a QDM of...",
     answers: [
       {
         id: "NAV0110001",
@@ -2642,6 +2642,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0110003",
+    image: require("./images/NAV6.png"),
   },
   {
     id: "NAV0111",
@@ -2716,7 +2717,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0114",
-    question: " Fading in LF/MF frequency range occurs mainly...",
+    question: "Fading in LF/MF frequency range occurs mainly...",
     answers: [
       {
         id: "NAV0114001",
@@ -2810,7 +2811,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0118",
-    question: " VOR radials are defined based on the principle of...",
+    question: "VOR radials are defined based on the principle of...",
     answers: [
       {
         id: "NAV0118001",
@@ -2833,7 +2834,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0119",
-    question: " A VOR radial corresponds to the...",
+    question: "A VOR radial corresponds to the...",
     answers: [
       {
         id: "NAV0119001",
@@ -2927,7 +2928,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0123",
-    question: " The range of a VOR is affected by...",
+    question: "The range of a VOR is affected by...",
     answers: [
       {
         id: "NAV0123001",
@@ -2974,7 +2975,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0125",
-    question: " The DME reading is a...",
+    question: "The DME reading is a...",
     answers: [
       {
         id: "NAV0125001",
@@ -3120,7 +3121,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0131",
-    question: " The transponder code in case of hi-jacking is...",
+    question: "The transponder code in case of hi-jacking is...",
     answers: [
       {
         id: "NAV0131001",

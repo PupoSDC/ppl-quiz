@@ -4,7 +4,7 @@ const questions: Question[] = [
   {
     id: "POF0001",
     question:
-      " Compared to trailing edge flaps, leading edge devices like Slots...",
+      "Compared to trailing edge flaps, leading edge devices like Slots...",
     answers: [
       {
         id: "POF0001001",
@@ -28,7 +28,7 @@ const questions: Question[] = [
   {
     id: "POF0002",
     question:
-      " Stabilization around the lateral axis during cruise is achieved by the...",
+      "Stabilization around the lateral axis during cruise is achieved by the...",
     answers: [
       {
         id: "POF0002001",
@@ -52,7 +52,7 @@ const questions: Question[] = [
   {
     id: "POF0003",
     question:
-      " Flying with speeds higher than the never-exceed-speed (vNE) may result in...",
+      "Flying with speeds higher than the never-exceed-speed (vNE) may result in...",
     answers: [
       {
         id: "POF0003001",
@@ -100,7 +100,7 @@ const questions: Question[] = [
   {
     id: "POF0005",
     question:
-      " During a straight and steady climb, which force acts addionally, and in the same direction as the drag force, resulting in more power required for climb than for horizontal flight?",
+      "During a straight and steady climb, which force acts addionally, and in the same direction as the drag force, resulting in more power required for climb than for horizontal flight?",
     answers: [
       {
         id: "POF0005001",
@@ -148,7 +148,7 @@ const questions: Question[] = [
   {
     id: "POF0007",
     question:
-      " Bernoulli's equation for frictionless, incompressible gases states that...",
+      "Bernoulli's equation for frictionless, incompressible gases states that...",
     answers: [
       {
         id: "POF0007001",
@@ -172,7 +172,7 @@ const questions: Question[] = [
   {
     id: "POF0008",
     question:
-      " If surrounded by airflow (v>0), any arbitrarily shaped body produces...",
+      "If surrounded by airflow (v>0), any arbitrarily shaped body produces...",
     answers: [
       {
         id: "POF0008001",
@@ -196,7 +196,7 @@ const questions: Question[] = [
   {
     id: "POF0009",
     question:
-      " All aerodynamic forces can be considered to act on a single point. This point is called...",
+      "All aerodynamic forces can be considered to act on a single point. This point is called...",
     answers: [
       {
         id: "POF0009001",
@@ -219,8 +219,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0010",
-    question:
-      " The center of pressure is the theoretical point of origin of...",
+    question: "The center of pressure is the theoretical point of origin of...",
     answers: [
       {
         id: "POF0010001",
@@ -243,8 +242,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0011",
-    question:
-      " Number 2 in the drawing corresponds to the... See figure (PFA-010) Siehe Anlage 1",
+    question: "Number 2 in the drawing corresponds to the...",
     answers: [
       {
         id: "POF0011001",
@@ -264,11 +262,11 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0011002",
+    image: require("./images/PF1.png"),
   },
   {
     id: "POF0012",
-    question:
-      " Number 3 in the drawing corresponds to the... See figure (PFA-010) Siehe Anlage 1",
+    question: "Number 3 in the drawing corresponds to the...",
     answers: [
       {
         id: "POF0012001",
@@ -288,6 +286,7 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0012003",
+    image: require("./images/PF1.png"),
   },
   {
     id: "POF0013",
@@ -338,8 +337,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0015",
-    question:
-      " Which point on the aerofoil is represented by number 3? See figure (PFA-009) Siehe Anlage 2",
+    question: "Which point on the aerofoil is represented by number 3?",
     answers: [
       {
         id: "POF0015001",
@@ -359,11 +357,11 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0015004",
+    image: require("./images/PF2.png"),
   },
   {
     id: "POF0016",
-    question:
-      " Which point on the aerofoil is represented by number 4? See figure (PFA-009) Siehe Anlage 2",
+    question: "Which point on the aerofoil is represented by number 4?",
     answers: [
       {
         id: "POF0016001",
@@ -383,11 +381,12 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0016002",
+    image: require("./images/PF2.png"),
   },
   {
     id: "POF0017",
     question:
-      " Wing tip vortex development begins during which phase of flight?",
+      "Wing tip vortex development begins during which phase of flight?",
     answers: [
       {
         id: "POF0017001",
@@ -410,8 +409,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0018",
-    question:
-      " Which point on the aerofoil is represented by number 1? See figure (PFA-009) Siehe Anlage 2",
+    question: "Which point on the aerofoil is represented by number 1?",
     answers: [
       {
         id: "POF0018001",
@@ -431,6 +429,7 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0018002",
+    image: require("./images/PF2.png"),
   },
   {
     id: "POF0019",
@@ -462,7 +461,7 @@ const questions: Question[] = [
   {
     id: "POF0020",
     question:
-      " What pressure pattern can be observed at a lift-generating wing profile at positive angle of attack?",
+      "What pressure pattern can be observed at a lift-generating wing profile at positive angle of attack?",
     answers: [
       {
         id: "POF0020001",
@@ -490,7 +489,7 @@ const questions: Question[] = [
   {
     id: "POF0021",
     question:
-      " The position of the the center of pressure at a positively shaped profile...",
+      "The position of the the center of pressure at a positively shaped profile...",
     answers: [
       {
         id: "POF0021001",
@@ -517,7 +516,7 @@ const questions: Question[] = [
   {
     id: "POF0022",
     question:
-      " In which way does the position of the center of pressure move at a positively shaped profile with increasing angle of attack?",
+      "In which way does the position of the center of pressure move at a positively shaped profile with increasing angle of attack?",
     answers: [
       {
         id: "POF0022001",
@@ -568,7 +567,7 @@ const questions: Question[] = [
   {
     id: "POF0024",
     question:
-      " Which statement about the airflow around an aerofoil is correct if the angle of attack increases?",
+      "Which statement about the airflow around an aerofoil is correct if the angle of attack increases?",
     answers: [
       {
         id: "POF0024001",
@@ -592,7 +591,7 @@ const questions: Question[] = [
   {
     id: "POF0025",
     question:
-      " Which statement about the airflow around an aerofoil is correct if the angle of attack decreases?",
+      "Which statement about the airflow around an aerofoil is correct if the angle of attack decreases?",
     answers: [
       {
         id: "POF0025001",
@@ -615,8 +614,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0026",
-    question:
-      " The angle (alpha) shown in the figure is referred to as... See figure (PFA-003) DoF: direction of airflow Siehe Anlage 3",
+    question: "The angle (alpha) shown in the figure is referred to as...",
     answers: [
       {
         id: "POF0026001",
@@ -636,11 +634,12 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0026004",
+    image: require("./images/PF3.png"),
   },
   {
     id: "POF0027",
     question:
-      " In order to improve the stall characteristics of an aircraft, the wing is twisted outwards (the angle of incidence varies spanwise). This is known as...",
+      "In order to improve the stall characteristics of an aircraft, the wing is twisted outwards (the angle of incidence varies spanwise). This is known as...",
     answers: [
       {
         id: "POF0027001",
@@ -712,7 +711,7 @@ const questions: Question[] = [
   {
     id: "POF0030",
     question:
-      " When increasing the airflow speed by a factor of 2 while keeping all other parameters constant, how does the parasite drag change approximately?",
+      "When increasing the airflow speed by a factor of 2 while keeping all other parameters constant, how does the parasite drag change approximately?",
     answers: [
       {
         id: "POF0030001",
@@ -782,7 +781,7 @@ const questions: Question[] = [
   {
     id: "POF0033",
     question:
-      " Which of the following options is likely to produce large induced drag?",
+      "Which of the following options is likely to produce large induced drag?",
     answers: [
       {
         id: "POF0033001",
@@ -806,7 +805,7 @@ const questions: Question[] = [
   {
     id: "POF0034",
     question:
-      " Which parts of an aircraft mainly affect the generation of induced drag?",
+      "Which parts of an aircraft mainly affect the generation of induced drag?",
     answers: [
       {
         id: "POF0034001",
@@ -852,8 +851,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0036",
-    question:
-      " Which curve represents the induced drag? See Appendix (PFA-011)",
+    question: "Which curve represents the induced drag? See Appendix (PFA-011)",
     answers: [
       {
         id: "POF0037001",
@@ -877,7 +875,7 @@ const questions: Question[] = [
   {
     id: "POF0037",
     question:
-      " Pressure drag, interference drag and friction drag belong to the group of the... (1, P.)",
+      "Pressure drag, interference drag and friction drag belong to the group of the... (1, P.)",
     answers: [
       {
         id: "POF0037001",
@@ -924,7 +922,7 @@ const questions: Question[] = [
   {
     id: "POF0039",
     question:
-      " How do induced drag and parasite drag change with increasing airspeed during a horizontal and stable cruise flight?",
+      "How do induced drag and parasite drag change with increasing airspeed during a horizontal and stable cruise flight?",
     answers: [
       {
         id: "POF0039001",
@@ -971,7 +969,7 @@ const questions: Question[] = [
   {
     id: "POF0041",
     question:
-      " Which effect does a decreasing airspeed have on the induced drag during a horizontal and stable cruise flight?",
+      "Which effect does a decreasing airspeed have on the induced drag during a horizontal and stable cruise flight?",
     answers: [
       {
         id: "POF0041001",
@@ -995,7 +993,7 @@ const questions: Question[] = [
   {
     id: "POF0042",
     question:
-      " Which statement about induced drag during the horizontal cruise flight is correct?",
+      "Which statement about induced drag during the horizontal cruise flight is correct?",
     answers: [
       {
         id: "POF0042001",
@@ -1066,8 +1064,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0045",
-    question:
-      " How do lift and drag change when approaching a stall condition?",
+    question: "How do lift and drag change when approaching a stall condition?",
     answers: [
       {
         id: "POF0045001",
@@ -1183,7 +1180,7 @@ const questions: Question[] = [
   {
     id: "POF0050",
     question:
-      " The stall warning will be activated just before reaching which speed?",
+      "The stall warning will be activated just before reaching which speed?",
     answers: [
       {
         id: "POF0050001",
@@ -1207,7 +1204,7 @@ const questions: Question[] = [
   {
     id: "POF0051",
     question:
-      " In motorplanes the stall warning is usually activated by a change of...",
+      "In motorplanes the stall warning is usually activated by a change of...",
     answers: [
       {
         id: "POF0051001",
@@ -1277,7 +1274,7 @@ const questions: Question[] = [
   {
     id: "POF0054",
     question:
-      " When extending the flaps for landing at constant angle of attack, in which way does the lift coefficient change far before reaching the maximum lift coefficient?",
+      "When extending the flaps for landing at constant angle of attack, in which way does the lift coefficient change far before reaching the maximum lift coefficient?",
     answers: [
       {
         id: "POF0054001",
@@ -1301,7 +1298,7 @@ const questions: Question[] = [
   {
     id: "POF0055",
     question:
-      " With regard to flaps, which of the following options provides a lift-increasing effect?",
+      "With regard to flaps, which of the following options provides a lift-increasing effect?",
     answers: [
       {
         id: "POF0055001",
@@ -1395,7 +1392,7 @@ const questions: Question[] = [
   {
     id: "POF0059",
     question:
-      " Provided that no other procedure is described in the Aircraft Operating Handbook, after increasing the engine power in a go-around, the flaps may...",
+      "Provided that no other procedure is described in the Aircraft Operating Handbook, after increasing the engine power in a go-around, the flaps may...",
     answers: [
       {
         id: "POF0059001",
@@ -1419,7 +1416,7 @@ const questions: Question[] = [
   {
     id: "POF0060",
     question:
-      " How do lift and drag change when setting flaps to a lower position?",
+      "How do lift and drag change when setting flaps to a lower position?",
     answers: [
       {
         id: "POF0060001",
@@ -1443,7 +1440,7 @@ const questions: Question[] = [
   {
     id: "POF0061",
     question:
-      " The laminar boundary layer on the aerofoil is located between...",
+      "The laminar boundary layer on the aerofoil is located between...",
     answers: [
       {
         id: "POF0061001",
@@ -1494,7 +1491,7 @@ const questions: Question[] = [
   {
     id: "POF0063",
     question:
-      " How does a laminar boundary layer differ from a turbulent boundary layer?",
+      "How does a laminar boundary layer differ from a turbulent boundary layer?",
     answers: [
       {
         id: "POF0063001",
@@ -1521,8 +1518,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0064",
-    question:
-      " What structural item provides lateral stability to an airplane?",
+    question: "What structural item provides lateral stability to an airplane?",
     answers: [
       {
         id: "POF0064001",
@@ -1573,7 +1569,7 @@ const questions: Question[] = [
   {
     id: "POF0066",
     question:
-      " Which constructive feature is shown in the figure? See figure (PFA-006) L: Lift Siehe Anlage 4",
+      "Which constructive feature is shown in the figure? See figure (PFA-006) L: Lift Siehe Anlage 4",
     answers: [
       {
         id: "POF0066001",
@@ -1621,7 +1617,7 @@ const questions: Question[] = [
   {
     id: "POF0068",
     question:
-      " Stability around which axis is mainly influenced by the center of gravity's longitudinal position?",
+      "Stability around which axis is mainly influenced by the center of gravity's longitudinal position?",
     answers: [
       {
         id: "POF0068001",
@@ -1645,7 +1641,7 @@ const questions: Question[] = [
   {
     id: "POF0069",
     question:
-      " What structural item provides directional stability to an airplane?",
+      "What structural item provides directional stability to an airplane?",
     answers: [
       {
         id: "POF0069001",
@@ -1738,7 +1734,7 @@ const questions: Question[] = [
   {
     id: "POF0073",
     question:
-      " In straight and level flight with constant performance of the engine, the angle of attack at the wing is...",
+      "In straight and level flight with constant performance of the engine, the angle of attack at the wing is...",
     answers: [
       {
         id: "POF0073001",
@@ -1762,7 +1758,7 @@ const questions: Question[] = [
   {
     id: "POF0074",
     question:
-      " What is the function of the horizontal tail (among other things)?",
+      "What is the function of the horizontal tail (among other things)?",
     answers: [
       {
         id: "POF0074001",
@@ -1832,7 +1828,7 @@ const questions: Question[] = [
   {
     id: "POF0077",
     question:
-      " What has to be considered with regard to the center of gravity position?",
+      "What has to be considered with regard to the center of gravity position?",
     answers: [
       {
         id: "POF0077001",
@@ -1860,7 +1856,7 @@ const questions: Question[] = [
   {
     id: "POF0078",
     question:
-      " Rudder deflections result in a turn of the aeroplane around the...",
+      "Rudder deflections result in a turn of the aeroplane around the...",
     answers: [
       {
         id: "POF0078001",
@@ -1978,7 +1974,7 @@ const questions: Question[] = [
   {
     id: "POF0083",
     question:
-      " The right aileron deflects upwards, the left downwards. How does the aircraft react?",
+      "The right aileron deflects upwards, the left downwards. How does the aircraft react?",
     answers: [
       {
         id: "POF0083001",
@@ -2025,7 +2021,7 @@ const questions: Question[] = [
   {
     id: "POF0085",
     question:
-      " Which constructive feature has the purpose to reduce stearing forces?",
+      "Which constructive feature has the purpose to reduce stearing forces?",
     answers: [
       {
         id: "POF0085001",
@@ -2072,7 +2068,7 @@ const questions: Question[] = [
   {
     id: "POF0087",
     question:
-      " During cruise flight with constant power setting, an aircraft shows a permanent tendency to raise the nose. How can this tendency be eliminated?",
+      "During cruise flight with constant power setting, an aircraft shows a permanent tendency to raise the nose. How can this tendency be eliminated?",
     answers: [
       {
         id: "POF0087001",
@@ -2096,7 +2092,7 @@ const questions: Question[] = [
   {
     id: "POF0088",
     question:
-      " The trim tab at the elevator is defelected upwards. In which position is the corresponding indicator?",
+      "The trim tab at the elevator is defelected upwards. In which position is the corresponding indicator?",
     answers: [
       {
         id: "POF0088001",
@@ -2143,7 +2139,7 @@ const questions: Question[] = [
   {
     id: "POF0090",
     question:
-      " Through which factor listed below does the load factor increase during cruise flight?",
+      "Through which factor listed below does the load factor increase during cruise flight?",
     answers: [
       {
         id: "POF0090001",
@@ -2191,7 +2187,7 @@ const questions: Question[] = [
   {
     id: "POF0092",
     question:
-      " The change in pitch at a propeller blade from the root to the tip ensures...",
+      "The change in pitch at a propeller blade from the root to the tip ensures...",
     answers: [
       {
         id: "POF0092001",
@@ -2239,7 +2235,7 @@ const questions: Question[] = [
   {
     id: "POF0094",
     question:
-      " During a descent at idle power with constant speed, the propeller lever is moved backwards. How do the propeller pitch and sink rate change?",
+      "During a descent at idle power with constant speed, the propeller lever is moved backwards. How do the propeller pitch and sink rate change?",
     answers: [
       {
         id: "POF0094001",
@@ -2263,7 +2259,7 @@ const questions: Question[] = [
   {
     id: "POF0095",
     question:
-      " Point number 1 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
+      "Point number 1 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
     answers: [
       {
         id: "POF0095001",
@@ -2287,7 +2283,7 @@ const questions: Question[] = [
   {
     id: "POF0096",
     question:
-      " Point number 5 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
+      "Point number 5 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
     answers: [
       {
         id: "POF0096001",
@@ -2310,8 +2306,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0097",
-    question:
-      " The bank in a two-minute turn (rate one turn) depends on the...",
+    question: "The bank in a two-minute turn (rate one turn) depends on the...",
     answers: [
       {
         id: "POF0097001",
@@ -2335,7 +2330,7 @@ const questions: Question[] = [
   {
     id: "POF0098",
     question:
-      " In a co-ordinated turn, how is the relation between the load factor (n) and the stall speed (Vs)?",
+      "In a co-ordinated turn, how is the relation between the load factor (n) and the stall speed (Vs)?",
     answers: [
       {
         id: "POF0098001",
@@ -2390,7 +2385,7 @@ const questions: Question[] = [
   {
     id: "POF0100",
     question:
-      " The pressure compensation between wind upper and lower surface results in ...",
+      "The pressure compensation between wind upper and lower surface results in ...",
     answers: [
       {
         id: "POF0100001",
