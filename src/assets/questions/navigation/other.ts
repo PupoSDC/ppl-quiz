@@ -22,7 +22,7 @@ const questions: Question[] = [
         answer: "Aircraft Heading",
       },
     ],
-    correct: "NAV1001002",
+    correct: "NAV1001004",
   },
   {
     id: "NAV1002",

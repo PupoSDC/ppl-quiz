@@ -1039,7 +1039,7 @@ const questions: Question[] = [
       {
         id: "HPL0044002",
         answer:
-          "The preference to find arguments to proof the own mental model",
+          "The preference to find arguments to proove one's own mental model",
       },
       {
         id: "HPL0044003",
@@ -1345,8 +1345,7 @@ const questions: Question[] = [
       - Attention
       - Concentration
       - Responsiveness
-      - Memory
-    
+      - Memory  
     `,
     answers: [
       {

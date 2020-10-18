@@ -1288,8 +1288,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0054",
-    question:
-      "Given: True course from A to B: 250°. Ground distance: 210 NM. TAS: 130 kt. Headwind component: 15 kt. Estimated time of departure (ETD): 0915 UTC. The estimated time of arrival (ETA) is... (2,00 P.)",
+    question: `Given: 
+        - True course from A to B: 250°. 
+        - Ground distance: 210 NM. TAS: 130 kt. 
+        - Headwind component: 15 kt. 
+        - Estimated time of departure (ETD): 0915 UTC. 
+      The estimated time of arrival (ETA) is...`,
     answers: [
       {
         id: "NAV0054001",
@@ -1312,8 +1316,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0055",
-    question:
-      "Given: True course from A to B: 283°. Ground distance: 75 NM. TAS: 105 kt. Headwind component: 12 kt. Estimated time of departure (ETD): 1242 UTC. The estimated time of arrival (ETA) is...",
+    question: `Given: 
+        - True course from A to B: 283°. 
+        - Ground distance: 75 NM. TAS: 105 kt. 
+        - Headwind component: 12 kt. 
+        - Estimated time of departure (ETD): 1242 UTC. 
+      The estimated time of arrival (ETA) is...`,
     answers: [
       {
         id: "NAV0055001",
@@ -1336,8 +1344,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0056",
-    question:
-      "Given: True course from A to B: 352°. Ground distance: 100 NM. GS: 107 kt. Estimated time of departure (ETD): 0933 UTC. The estimated time of arrival (ETA) is...",
+    question: `Given: 
+        - True course from A to B: 352°. 
+        - Ground distance: 100 NM. GS: 107 kt. 
+        - Estimated time of departure (ETD): 0933 UTC. 
+      The estimated time of arrival (ETA) is...`,
     answers: [
       {
         id: "NAV0056001",
@@ -1480,8 +1491,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0062",
-    question:
-      "Given: Calibrated airspeed (CAS): 155 kt. Flight level (FL) 80. Outside air temperature (OAT): +15° C. The true airspeed (TAS) equals...",
+    question: `Given: 
+        - Calibrated airspeed (CAS): 155 kt. 
+        - Flight level (FL) 80. 
+        - Outside air temperature (OAT): +15° C. 
+        - The true airspeed (TAS) equals...`,
     answers: [
       {
         id: "NAV0062001",
@@ -1624,8 +1638,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0068",
-    question:
-      "Given: True course: 255°. TAS: 100 kt. Wind: 200°/10 kt. The true heading equals...",
+    question: `Given: 
+        - True course: 255°. TAS: 100 kt. 
+        - Wind: 200°/10 kt. 
+      The true heading equals...`,
     answers: [
       {
         id: "NAV0068001",
@@ -1648,8 +1664,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0069",
-    question:
-      "Given: True course: 165°. TAS: 90 kt. Wind: 130°/20 kt. Distance: 153 NM. The true heading equals...",
+    question: `Given: 
+        - True course: 165°. 
+        - TAS: 90 kt. Wind: 130°/20 kt. 
+        - Distance: 153 NM. 
+        - The true heading equals...`,
     answers: [
       {
         id: "NAV0069001",
@@ -1672,8 +1691,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0070",
-    question:
-      "Given: Ground speed (GS): 160 kt. True course (TC): 177°. Wind vector (W/WS): 140°/20 kt. The true heading (TH) equals...",
+    question: `Given: 
+        - Ground speed (GS): 160 kt. 
+        - True course (TC): 177°. 
+        - Wind vector (W/WS): 140°/20 kt. 
+        - The true heading (TH) equals...`,
     answers: [
       {
         id: "NAV0070001",
@@ -1768,8 +1790,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0074",
-    question:
-      "Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The ground speed (GS) equals...",
+    question: `Given: 
+        - True course: 270°. 
+        - TAS: 100 kt. 
+        - Wind: 090°/25 kt. 
+        - Distance: 100 NM. 
+        - The ground speed (GS) equals...`,
     answers: [
       {
         id: "NAV0074001",
@@ -1792,8 +1818,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0075",
-    question:
-      "Given: True course: 270°. TAS: 100 kt. Wind: 090°/25 kt. Distance: 100 NM. The flight time equals...",
+    question: `Given: 
+      - True course: 270°. 
+      - TAS: 100 kt. 
+      - Wind: 090°/25 kt. 
+      - Distance: 100 NM. 
+      - The flight time equals...`,
     answers: [
       {
         id: "NAV0075001",
@@ -1840,8 +1870,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0077",
-    question:
-      "Given: True course: 120°. TAS: 120 kt. Wind: 150°/12 kt. The WCA equals...",
+    question: `Given: 
+      - True course: 120°. 
+      - TAS: 120 kt. 
+      - Wind: 150°/12 kt. 
+      - The WCA equals...`,
     answers: [
       {
         id: "NAV0077001",
@@ -2197,7 +2230,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0092",
-    question: "Given: QDM: 138° VAR: 10° E The QUJ equals...",
+    question: `Given: 
+    - QDM: 138° 
+    - VAR: 10° E 
+    The QUJ equals...`,
     answers: [
       {
         id: "NAV0092001",
@@ -2220,7 +2256,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0093",
-    question: "Given: QTE: 229° VAR: 10° W The QDM equals...",
+    question: `Given: 
+    - QTE: 229° 
+    - VAR: 10° W 
+    The QDM equals...`,
     answers: [
       {
         id: "NAV0093001",
@@ -2243,7 +2282,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0094",
-    question: "Given: QDR: 022° VAR: 10° E The QTE equals...",
+    question: `Given: 
+    - QDR: 022° 
+    - VAR: 10° E 
+    The QTE equals...`,
     answers: [
       {
         id: "NAV0094001",
@@ -2266,7 +2308,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0095",
-    question: "Given: QDM: 248° VAR: 10° W The QTE is...",
+    question: `Given: 
+    - QDM: 248° 
+    - VAR: 10° W 
+    The QTE is...`,
     answers: [
       {
         id: "NAV0095001",
@@ -2289,7 +2334,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0096",
-    question: "Given: QDR: 067° VAR: 5° E The QDM equals...",
+    question: `Given: 
+    - QDR: 067° 
+    - VAR: 5° E 
+    The QDM equals...`,
     answers: [
       {
         id: "NAV0096001",
@@ -2312,7 +2360,11 @@ const questions: Question[] = [
   },
   {
     id: "NAV0097",
-    question: "Given: QDR: 152° VAR: 5° W DEV: 5° E The QUJ equals...",
+    question: `Given: 
+      - QDR: 152° 
+      - VAR: 5° W 
+      - DEV: 5° E 
+    The QUJ equals...`,
     answers: [
       {
         id: "NAV0097001",
@@ -2335,7 +2387,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0098",
-    question: "Given: QTE: 203° VAR: 10° E The QDR equals...",
+    question: `Given: 
+    - QTE: 203° 
+    - VAR: 10° E 
+    - The QDR equals...`,
     answers: [
       {
         id: "NAV0098001",
@@ -2358,7 +2413,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0099",
-    question: "Given: QTE: 248° VAR: 10° W The QDR equals...",
+    question: `Given: 
+    - QTE: 248° 
+    - VAR: 10° W 
+    The QDR equals...`,
     answers: [
       {
         id: "NAV0099001",
@@ -2381,7 +2439,10 @@ const questions: Question[] = [
   },
   {
     id: "NAV0100",
-    question: "Given: QDM: 134° VAR: 5° W The QTE equals...",
+    question: `Given: 
+    - QDM: 134° 
+    - VAR: 5° W 
+    The QTE equals...`,
     answers: [
       {
         id: "NAV0100001",
