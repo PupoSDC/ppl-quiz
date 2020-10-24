@@ -540,48 +540,83 @@ const questions: Question[] = [
   },
   {
     id: "NAV0023",
-    question:
-      "Given: WCA: -012°; TH: 125°; MC: 139°; DEV: 002°E What are: TC, MH und CH? (2,00 P.) #MH: 127°. #CH: 129°. #MH: 127°. #CH: 125°. #MH: 139°. #CH: 129°. #MH: 139°. #CH: 125°.",
+    question: `Given: 
+      - WCA: -012°; 
+      - TH: 125°; 
+      - MC: 139°; 
+      - DEV: 002°E 
+      What are: TC, MH und CH?`,
     answers: [
       {
         id: "NAV0023001",
-        answer: "TC: 113°.",
+        answer: `
+          - TC: 113°. 
+          - MH: 127°. 
+          - CH: 129°.`,
       },
       {
         id: "NAV0023002",
-        answer: "TC: 137°.",
+        answer: `
+          - TC: 137°. 
+          - MH: 127°. 
+          - CH: 125°.
+        `,
       },
       {
         id: "NAV0023003",
-        answer: "TC: 113°.",
+        answer: `
+          - TC: 113°. 
+          - MH: 139°. 
+          - CH: 129°.
+        `,
       },
       {
         id: "NAV0023004",
-        answer: "TC: 137°.",
+        answer: `
+          - TC: 137°. 
+          - MH: 139°. 
+          - CH: 125°.
+        `,
       },
     ],
     correct: "NAV0023002",
   },
   {
     id: "NAV0024",
-    question:
-      "Given: TC: 179°; WCA: -12°; VAR: 004° E; DEV: +002° What are MH and MC? #MC: 161°. #MC: 175°. #MC: 161°. #MC: 175°.",
+    question: `Given: 
+      - TC: 179°; 
+      - WCA: -12°; 
+      - VAR: 004° E; 
+      - DEV: +002° 
+      What are MH and MC?`,
     answers: [
       {
         id: "NAV0024001",
-        answer: "MH: 163°.",
+        answer: `
+        - MH: 163°. 
+        - MC: 161°.
+        `,
       },
       {
         id: "NAV0024002",
-        answer: "MH: 163°.",
+        answer: `
+        - MH: 163°. 
+        - MC: 175°.
+        `,
       },
       {
         id: "NAV0024003",
-        answer: "MH: 167°.",
+        answer: `
+        - MH: 167°. 
+        - MC: 161°.
+        `,
       },
       {
         id: "NAV0024004",
-        answer: "MH: 167°.",
+        answer: `
+        - MH: 167°. 
+        - MC: 175°.
+        `,
       },
     ],
     correct: "NAV0024002",
@@ -2040,32 +2075,48 @@ const questions: Question[] = [
   },
   {
     id: "NAV0084",
-    question:
-      "Which answer completes the flight plan (marked cells)? See annex (NAV-014) (3,00 P.) Siehe Anlage 4 #MH: 174°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 184°. #MC: 178°. #MH: 185°. #MC: 180°.",
+    question: "Which answer completes the flight plan (marked cells)?",
     answers: [
       {
         id: "NAV0084001",
-        answer: "TH: 173°.",
+        answer: `
+        - TH: 173°. 
+        - MH: 174°. 
+        - MC: 178°.
+        `,
       },
       {
         id: "NAV0084002",
-        answer: "TH: 185°.",
+        answer: `
+        - TH: 185°. 
+        - MH: 184°. 
+        - MC: 178°.
+        `,
       },
       {
         id: "NAV0084003",
-        answer: "TH: 173°.",
+        answer: `
+        - TH: 173°. 
+        - MH: 184°. 
+        - MC: 178°.
+        `,
       },
       {
         id: "NAV0084004",
-        answer: "TH: 185°.",
+        answer: `
+        - TH: 185°. 
+        - MH: 185°. 
+        - MC: 180°.
+        `,
       },
     ],
     correct: "NAV0084002",
+    image: require("./images/NAV14.png"),
   },
   {
     id: "NAV0085",
     question:
-      "What radio navigation aid can be received with the attached aerial? See figure (NAV-017) Siehe Anlage 5",
+      "What radio navigation aid can be received with the attached aerial?",
     answers: [
       {
         id: "NAV0085001",
@@ -2085,6 +2136,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0085003",
+    image: require("./images/NAV17.png"),
   },
   {
     id: "NAV0086",
