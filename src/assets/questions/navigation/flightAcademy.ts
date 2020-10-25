@@ -721,8 +721,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0029",
-    question:
-      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are TH and VAR? (2,00 P.)",
+    question: `Given: 
+      - TC: 183°; 
+      - WCA: +011°; 
+      - MH: 198°; 
+      - CH: 200° 
+      What are TH and VAR?`,
     answers: [
       {
         id: "NAV0029001",
@@ -745,8 +749,12 @@ const questions: Question[] = [
   },
   {
     id: "NAV0030",
-    question:
-      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the TH and the DEV? (2,00 P.)",
+    question: `Given: 
+      - TC: 183°; 
+      - WCA: +011°; 
+      - MH: 198°; 
+      - CH: 200° 
+      What are the TH and the DEV?`,
     answers: [
       {
         id: "NAV0030001",
@@ -769,24 +777,36 @@ const questions: Question[] = [
   },
   {
     id: "NAV0031",
-    question:
-      "Given: TC: 183°; WCA: +011°; MH: 198°; CH: 200° What are the VAR and the DEV? (2,00 P.)",
+    question: `Given: 
+      - TC: 183°; 
+      - WCA: +011°; 
+      - MH: 198°; 
+      - CH: 200° 
+      What are the VAR and the DEV?`,
     answers: [
       {
         id: "NAV0031001",
-        answer: "VAR: 004° E. DEV: -002°.",
+        answer: `
+        - VAR: 004° E. 
+        - DEV: -002°.`,
       },
       {
         id: "NAV0031002",
-        answer: "VAR: 004° E. DEV: +002°.",
+        answer: `
+        - VAR: 004° E. 
+        - DEV: +002°.`,
       },
       {
         id: "NAV0031003",
-        answer: "VAR: 004° W. DEV: -002°.",
+        answer: `
+        - VAR: 004° W. 
+        - DEV: -002°.`,
       },
       {
         id: "NAV0031004",
-        answer: "VAR: 004° W. DEV: +002°.",
+        answer: `
+        - VAR: 004° W. 
+        - DEV: +002°.`,
       },
     ],
     correct: "NAV0031003",
@@ -984,7 +1004,7 @@ const questions: Question[] = [
   {
     id: "NAV0040",
     question:
-      "Which of the items on the attached checklist are related to the direct reading compass? See annex (NAV-004) Siehe Anlage 2",
+      "Which of the items on the attached checklist are related to the direct reading compass?",
     answers: [
       {
         id: "NAV0040001",
@@ -1004,6 +1024,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0040004",
+    image: require("./images/NAV04.png"),
   },
   {
     id: "NAV0041",
@@ -1156,7 +1177,7 @@ const questions: Question[] = [
   {
     id: "NAV0047",
     question:
-      "What is the radial from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) Siehe Anlage 3",
+      "What is the radial from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)?",
     answers: [
       {
         id: "NAV0047001",
@@ -1176,6 +1197,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0047001",
+    image: require("./images/NAV03.png"),
   },
   {
     id: "NAV0048",
@@ -1204,7 +1226,7 @@ const questions: Question[] = [
   {
     id: "NAV0049",
     question:
-      "Given the following information, what is the aircraft position at the cross bearing? VOR Hamburg (HAM) (53°41?N, 010°12?E): Radial 119° VOR Brünkendorf (BKD) (53°02?N, 011°33?E): Radial 320° See annex (NAV-031) Siehe Anlage 3",
+      "Given the following information, what is the aircraft position at the cross bearing? VOR Hamburg (HAM) (53°41?N, 010°12?E): Radial 119° VOR Brünkendorf (BKD) (53°02?N, 011°33?E): Radial 320°",
     answers: [
       {
         id: "NAV0049001",
@@ -1224,11 +1246,12 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0049003",
+    image: require("./images/NAV03.png"),
   },
   {
     id: "NAV0050",
     question:
-      "What is the distance from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)? See annex (NAV-031) Siehe Anlage 3",
+      "What is the distance from VOR Brünkendorf (BKD) (53°02?N, 011°33?E) to Pritzwalk (EDBU) (53°11'N, 12°11'E)?",
     answers: [
       {
         id: "NAV0050001",
@@ -1248,6 +1271,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0050003",
+    image: require("./images/NAV03.png"),
   },
   {
     id: "NAV0051",
@@ -1554,7 +1578,7 @@ const questions: Question[] = [
   {
     id: "NAV0063",
     question:
-      "What is the true course (TC) from Uelzen (EDVU) (52°59?N, 10°28?E) to Neustadt (EDAN) (53°22'N, 011°37'E)? See annex (NAV-031) Siehe Anlage 3",
+      "What is the true course (TC) from Uelzen (EDVU) (52°59?N, 10°28?E) to Neustadt (EDAN) (53°22'N, 011°37'E)?",
     answers: [
       {
         id: "NAV0063001",
@@ -1574,6 +1598,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0063003",
+    image: require("./images/NAV03.png"),
   },
   {
     id: "NAV0064",
@@ -1602,7 +1627,7 @@ const questions: Question[] = [
   {
     id: "NAV0065",
     question:
-      "What is the distance from Neustadt (EDAN) (53°22'N, 011°37'E) to Uelzen (EDVU) (52°59?N, 10°28?E)? See annex (NAV-031) Siehe Anlage 3",
+      "What is the distance from Neustadt (EDAN) (53°22'N, 011°37'E) to Uelzen (EDVU) (52°59?N, 10°28?E)?",
     answers: [
       {
         id: "NAV0065001",
@@ -1622,6 +1647,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0065003",
+    image: require("./images/NAV03.png"),
   },
   {
     id: "NAV0066",
@@ -1674,7 +1700,8 @@ const questions: Question[] = [
   {
     id: "NAV0068",
     question: `Given: 
-        - True course: 255°. TAS: 100 kt. 
+        - True course: 255°. 
+        - TAS: 100 kt. 
         - Wind: 200°/10 kt. 
       The true heading equals...`,
     answers: [
@@ -3018,7 +3045,7 @@ const questions: Question[] = [
   },
   {
     id: "NAV0122",
-    question: "The aircraft is on radial... See annex (NAV-024) Siehe Anlage 8",
+    question: "The aircraft is on radial...",
     answers: [
       {
         id: "NAV0122001",
@@ -3038,6 +3065,7 @@ const questions: Question[] = [
       },
     ],
     correct: "NAV0122003",
+    image: require("./images/NAV08.png"),
   },
   {
     id: "NAV0123",
