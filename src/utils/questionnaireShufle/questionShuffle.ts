@@ -1,4 +1,3 @@
-import questions from "assets/questions/airLaw/flightAcademy";
 import { Question } from "types/Questionnaire";
 import { QuestionsHeatMap, QuestionsHeatMapEntry } from "types/Statistics";
 import perfectShuffle from "./perfectShuffle";

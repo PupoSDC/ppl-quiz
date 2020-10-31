@@ -709,7 +709,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0029004",
-        answer: "37.2 cm\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "37.2 cm",
       },
     ],
     correct: "FPP0029001",
@@ -781,7 +781,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0032004",
-        answer: "3\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "3",
       },
     ],
     correct: "FPP0032001",
@@ -877,8 +877,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0036004",
-        answer:
-          "Aircraft B has a higher tyre pressure than aircraft A\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "Aircraft B has a higher tyre pressure than aircraft A",
       },
     ],
     correct: "FPP0036002",
@@ -984,7 +983,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0040004",
-        answer: "Heavy rain\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "Heavy rain",
       },
     ],
     correct: "FPP0040002",
@@ -1209,8 +1208,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0049004",
-        answer:
-          "VNO: Maximum speed for normal operations\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "VNO: Maximum speed for normal operations",
       },
     ],
     correct: "FPP0049004",
@@ -1234,8 +1232,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0050004",
-        answer:
-          "VNE: Never-exceed speed\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "VNE: Never-exceed speed",
       },
     ],
     correct: "FPP0050004",
@@ -1499,7 +1496,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0061004",
-        answer: "500 NM\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "500 NM",
       },
     ],
     correct: "FPP0061004",
@@ -1571,7 +1568,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0064004",
-        answer: "200 ft/min\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "200 ft/min",
       },
     ],
     correct: "FPP0064004",
@@ -1691,7 +1688,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0069004",
-        answer: "120 kt\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "120 kt",
       },
     ],
     correct: "FPP0069003",
@@ -1763,7 +1760,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0072004",
-        answer: "6 NM\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "6 NM",
       },
     ],
     correct: "FPP0072003",
@@ -1985,8 +1982,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0081004",
-        answer:
-          "Altitude 9500 m MSL\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "Altitude 9500 m MSL",
       },
     ],
     correct: "FPP0081001",
@@ -2249,8 +2245,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0092004",
-        answer:
-          "FF = 42.9 USG/h\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "FF = 42.9 USG/h",
       },
     ],
     correct: "FPP0092002",
@@ -2298,8 +2293,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0094004",
-        answer:
-          "IAS = 142 kt\nFF = 11.5 GPH\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "IAS = 142 kt\nFF = 11.5 GPH",
       },
     ],
     correct: "FPP0094004",
@@ -2347,7 +2341,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0096004",
-        answer: "37.7 USG\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "37.7 USG",
       },
     ],
     correct: "FPP0096002",
@@ -2425,7 +2419,7 @@ const questions: Question[] = [
       },
       {
         id: "FPP0099004",
-        answer: "A\n70 Flight Performance and Planning ECQB-PPL(A)",
+        answer: "A",
       },
     ],
     correct: "FPP0099001",

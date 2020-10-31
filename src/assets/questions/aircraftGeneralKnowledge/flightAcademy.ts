@@ -2708,12 +2708,12 @@ const questions: Question[] = [
         answer: "TAS",
       },
       {
-        id: "AGK0110002",
+        id: "AGK0110003",
         answer: "CAS",
       },
       {
-        id: "AGK0110002",
-        answer: "TAS",
+        id: "AGK0110004",
+        answer: "IAS",
       },
     ],
     correct: "AGK0110002",
@@ -3075,6 +3075,8 @@ const questions: Question[] = [
       },
     ],
     correct: "AGK0125001",
+    explanation:
+      "you are in an overbank. Either reduce the bank to bring the ball to the left, or increase the rate of turn (by kicking the ball).",
   },
   {
     id: "AGK0126",

@@ -20,11 +20,7 @@ const getQuestionnaire = (
   questions: Question[],
   statistics: QuestionsHeatMap
 ) =>
-  shuffleQuestions(
-    questions,
-    statistics,
-    ShuffleMode.NEVER_SEEN_BEFORE_AND_WRONG
-  )
+  shuffleQuestions(questions, statistics, ShuffleMode.ALL)
     .slice(0, 12)
     .map(({ answers, ...question }) => ({
       answers: shuffleAnswers(answers),

@@ -963,7 +963,7 @@ const questions: Question[] = [
   },
   {
     id: "MET0041",
-    question: "Light turbulence METays has to be expected...",
+    question: "Light turbulence always has to be expected...",
     answers: [
       {
         id: "MET0041001",
