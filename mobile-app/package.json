@@ -1,0 +1,54 @@
+{
+  "main": "src/index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "expo start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.6",
+    "@eva-design/eva": "^2.0.0",
+    "@ui-kitten/components": "^5.0.0",
+    "@ui-kitten/eva-icons": "^5.0.0",
+    "expo": "~40.0.0",
+    "expo-splash-screen": "~0.8.0",
+    "expo-updates": "~0.4.0",
+    "graphql": "^15.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "~0.63.4",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-screens": "~2.15.0",
+    "react-native-svg": "12.1.0",
+    "react-native-unimodules": "~0.12.0",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@expo/webpack-config": "^0.12.51",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.2",
+    "babel-preset-expo": "~8.3.0",
+    "husky": "^4.3.5",
+    "jest-expo": "~40.0.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "2.2.1",
+    "typescript": "~4.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*{ts,tsx,js,jsx,mdx,md,json,css, html}": "prettier --write"
+  },
+  "private": true
+}
