@@ -1,55 +1,44 @@
-import React, { useState } from "react";
-import { ListRenderItem, StyleSheet, View } from "react-native";
-import { Button, List, Text } from "@ui-kitten/components";
-import { useQuery, gql } from "@apollo/client";
+import React from "react";
+import { StyleSheet } from "react-native";
+import { Button, List, Layout } from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
+import useQuestionBank from "hooks/useQuestionBank";
+import { useDispatch } from "react-redux";
+import { startNewTest } from "constants/actions";
 
-interface Questionnaire {
-  id: string;
-  name: string;
-  numberOfQuestions: number;
-}
-
-interface QuestionnaireData {
-  questionnaires: Questionnaire[];
-}
-
-const GET_QUESTIONNAIRES = gql`
-  query getQuestionnaires {
-    questionnaires {
-      id
-      name
-      numberOfQuestions
-    }
-  }
-`;
-
-const SubjectButton: ListRenderItem<Questionnaire> = ({
-  item: { id, name, numberOfQuestions, ...props },
-}) => {
-  console.log(id, name, numberOfQuestions, props);
-  return (
-    <ListItem
-      key={id}
-      title={name}
-      description={`total questions: ${numberOfQuestions}`}
-      accessoryRight={() => <Button size="small">Start</Button>}
-    />
-  );
-};
-
-const HelloWorld = () => {
-  const { loading, error, data } = useQuery<QuestionnaireData>(
-    GET_QUESTIONNAIRES
-  );
-
-  if (loading) return <Text>Loading...</Text>;
-  if (error || !data) return <Text>Error :(</Text>;
+const TestMakerScreen = () => {
+  const [
+    questionBank,
+    { updateQuestionBankEntry, createNewTest },
+  ] = useQuestionBank();
+  const dispatch = useDispatch();
+  const data = Object.values(questionBank);
+  const onTestSelected = async (questionBankId: string) => {
+    await updateQuestionBankEntry(questionBankId);
+    const test = await createNewTest({ questionBankId, numberOfQuestions: 20 });
+    dispatch(startNewTest(test));
+  };
 
   return (
-    <View style={styles.container}>
-      <List data={data.questionnaires} renderItem={SubjectButton} />
-    </View>
+    <Layout style={styles.container}>
+      <List
+        data={data}
+        renderItem={({ item: { id, name, numberOfQuestions } }) => (
+          <ListItem
+            key={id}
+            title={name}
+            description={`total questions: ${numberOfQuestions}`}
+            accessoryRight={() => (
+              <Button
+                size="small"
+                onPress={() => onTestSelected(id)}
+                children={"Start"}
+              />
+            )}
+          />
+        )}
+      />
+    </Layout>
   );
 };
 
@@ -61,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HelloWorld;
+export default TestMakerScreen;
