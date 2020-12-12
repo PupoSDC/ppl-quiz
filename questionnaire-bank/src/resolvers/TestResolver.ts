@@ -1,7 +1,6 @@
 import { Args, Query, Resolver } from "type-graphql";
 import {
-  Questionnaire,
-  testGeneratorArgs,
+  TestGeneratorArgs,
   Test,
   QuestionId,
 } from "../types/Questionnaire";
@@ -30,17 +29,8 @@ class QuestionnaireResolver {
     };
   }
 
-  @Query((returns) => [Questionnaire])
-  questionnaires(): Questionnaire[] {
-    return this.questionsMap.map(({ name, questions, id }) => ({
-      name,
-      numberOfQuestions: questions.length,
-      id,
-    }));
-  }
-
   @Query((returns) => Test)
-  test(@Args() { moduleIds, numberOfQuestions, questionIds }: testGeneratorArgs): Test {
+  test(@Args() { moduleIds, numberOfQuestions, questionIds }: TestGeneratorArgs): Test {
     if (questionIds) return this.getTestFromQuestionIds(questionIds);
     if (moduleIds && numberOfQuestions) return this.generateNewTest(moduleIds, numberOfQuestions);
 

@@ -36,20 +36,6 @@ export class Question {
 }
 
 @ObjectType({
-  description: "Metadata about a question subject",
-})
-export class Questionnaire {
-  @Field((type) => ID)
-  id: QuestionBlockId;
-
-  @Field()
-  name: string;
-
-  @Field((type) => Int, { nullable: true })
-  numberOfQuestions?: number;
-}
-
-@ObjectType({
   description: "test",
 })
 export class Test {
@@ -58,7 +44,7 @@ export class Test {
 }
 
 @ArgsType()
-export class testGeneratorArgs {
+export class TestGeneratorArgs {
   @ValidateIf(o => !o.questionIds)
   @IsNumber()
   @Min(1)
@@ -88,13 +74,10 @@ export class testGeneratorArgs {
 }
 
 @ArgsType()
-export class getTestArguments {
+export class GetTestArguments {
   @MinLength(1)
   @MaxLength(250)
   @Field((type) => [ID])
   questionIds: QuestionId[];
 }
 
-export type QuestionBlock = Pick<Questionnaire, "id" | "name"> & {
-  questions: Question[];
-};

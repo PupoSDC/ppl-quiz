@@ -1,7 +1,7 @@
-import { QuestionBlock } from "../../types/Questionnaire";
+import { QuestionBankEntry } from "../../types/QuestionBank";
 import flightAcademy from "./flightAcademy";
 
-const flight: QuestionBlock = {
+const flight: QuestionBankEntry = {
   id: "COM",
   name: "Communications",
   questions: flightAcademy,
