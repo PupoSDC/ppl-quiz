@@ -6,11 +6,12 @@ import {
   AnswerId,
 } from "types/questionnaire";
 import { useSelector, useDispatch } from "react-redux";
-import { setQuestionnaireAnswer } from "constants/Actions";
+import { setTestAnswer } from "constants/actions";
+import { TRANSITION_DELAY } from "constants/animation";
 
 export type OngoingQuestionnaire = {
   /** Undefined if the user has reached the end of the test */
-  currentQuestion?: Question;
+  currentQuestion?: Question & { index: number };
   isCompleted: boolean;
   correctAnswers: number;
   totalAnswers: number;
@@ -24,7 +25,7 @@ export type OngoingQuestionnaireActions = {
 
 export default (): [OngoingQuestionnaire, OngoingQuestionnaireActions] => {
   const dispatch = useDispatch();
-  const questions = useSelector((state) => state.questionnaire.questions);
+  const questions = useSelector((state) => state.currentTest.questions);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const currentQuestion = questions[currentQuestionIndex] && {
@@ -50,7 +51,7 @@ export default (): [OngoingQuestionnaire, OngoingQuestionnaireActions] => {
     {
       answerQuestion: (questionId, answerId) => {
         dispatch(
-          setQuestionnaireAnswer({
+          setTestAnswer({
             questionId,
             answerId,
           })

@@ -16,6 +16,7 @@ export type Question = {
   answers: Answer[];
   image?: ImageSourcePropType;
   explanation?: string;
+  selected?: AnswerId;
 };
 
 export type QuestionReference = {

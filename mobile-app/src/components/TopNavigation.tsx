@@ -21,27 +21,6 @@ const TopNavigation = () => {
           <Text {...props}>PPL QUIZZ</Text>
         </View>
       )}
-      accessoryRight={() => (
-        <OverflowMenu
-          anchor={() => (
-            <TopNavigationAction
-              icon={(props) => <Icon {...props} name="more-vertical" />}
-              onPress={() => setMenuVisible(!menuVisible)}
-            />
-          )}
-          visible={menuVisible}
-          onBackdropPress={() => setMenuVisible(!menuVisible)}
-        >
-          <MenuItem
-            accessoryLeft={(props) => <Icon {...props} name="more-vertical" />}
-            title="About"
-          />
-          <MenuItem
-            accessoryLeft={(props) => <Icon {...props} name="log-out" />}
-            title="Logout"
-          />
-        </OverflowMenu>
-      )}
     />
   );
 };

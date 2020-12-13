@@ -29,6 +29,7 @@ const GET_QUESTION_BANK_ENTRY = gql`
       name
       numberOfQuestions
       questions {
+        id
         correct
         explanation
         image
