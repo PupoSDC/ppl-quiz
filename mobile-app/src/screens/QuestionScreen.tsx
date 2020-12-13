@@ -16,7 +16,6 @@ const QuestionScreen = () => {
   const [state, actions] = useOngoingQuestionnaire();
   const { currentQuestion } = state;
   const { answerQuestion, goToNextQuestion } = actions;
-  console.log(currentQuestion?.id);
   return (
     <Layout style={styles.container}>
       <Text style={styles.question}>

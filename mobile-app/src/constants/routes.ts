@@ -1,3 +1,3 @@
-export const ROUTE_HOME = "/";
-export const ROUTE_TEST_MAKER = "/test-maker";
-export const ROUTE_QUESTIONNAIRE = "/questionnaire";
+export const ROUTE_HOME = "Home";
+export const ROUTE_TEST_MAKER = "Test Maker";
+export const ROUTE_TEST = "Test";

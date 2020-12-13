@@ -2,6 +2,7 @@ import React from "react";
 import { ImageProps, StyleSheet, View } from "react-native";
 import {
   Avatar,
+  Divider,
   Icon,
   MenuItem,
   OverflowMenu,
@@ -9,19 +10,29 @@ import {
   TopNavigation as BaseTopNavigation,
   TopNavigationAction,
 } from "@ui-kitten/components";
+import { StackHeaderProps } from "@react-navigation/stack";
 
-const TopNavigation = () => {
+const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
+  scene,
+  previous,
+}) => {
   const [menuVisible, setMenuVisible] = React.useState(false);
 
   return (
-    <BaseTopNavigation
-      title={(props) => (
-        <View style={styles.titleContainer}>
-          <Avatar style={styles.logo} source={require("../assets/icon.png")} />
-          <Text {...props}>PPL QUIZZ</Text>
-        </View>
-      )}
-    />
+    <>
+      <BaseTopNavigation
+        title={(props) => (
+          <View style={styles.titleContainer}>
+            <Avatar
+              style={styles.logo}
+              source={require("../assets/icon.png")}
+            />
+            <Text {...props}>{scene.route.name}</Text>
+          </View>
+        )}
+      />
+      <Divider />
+    </>
   );
 };
 

@@ -5,15 +5,17 @@ import { ListItem } from "@ui-kitten/components";
 import useQuestionBank from "hooks/useQuestionBank";
 import { useDispatch } from "react-redux";
 import { startNewTest } from "constants/actions";
-import { ROUTE_QUESTIONNAIRE } from "constants/routes";
-import { useHistory } from "react-router-native";
+import { StackScreenProps } from "@react-navigation/stack";
+import { ROUTE_TEST } from "constants/routes";
 
-const TestMakerScreen = () => {
+const TestMakerScreen: React.FunctionComponent<StackScreenProps<{}>> = ({
+  navigation,
+}) => {
   const [
     questionBank,
     { updateQuestionBankEntry, createNewTest },
   ] = useQuestionBank();
-  const { push } = useHistory();
+  const { navigate } = navigation;
   const dispatch = useDispatch();
   const data = Object.values(questionBank);
 
@@ -21,7 +23,7 @@ const TestMakerScreen = () => {
     await updateQuestionBankEntry(questionBankId);
     const test = await createNewTest({ questionBankId, numberOfQuestions: 20 });
     dispatch(startNewTest(test));
-    push(ROUTE_QUESTIONNAIRE);
+    navigate(ROUTE_TEST);
   };
 
   return (
