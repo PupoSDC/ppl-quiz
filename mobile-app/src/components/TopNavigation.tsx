@@ -21,13 +21,13 @@ const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
   return (
     <>
       <BaseTopNavigation
-        title={(props) => (
+        title={() => (
           <View style={styles.titleContainer}>
             <Avatar
               style={styles.logo}
               source={require("../assets/icon.png")}
             />
-            <Text {...props}>{scene.route.name}</Text>
+            <Text>{scene.route.name}</Text>
           </View>
         )}
       />

@@ -1,5 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import { useDispatch } from "react-redux";
+import { Question as QuestionProps } from "types/Questionnaire";
 import {
   Button,
   Drawer,
@@ -7,29 +9,41 @@ import {
   Layout,
   Text,
 } from "@ui-kitten/components";
-import useOngoingQuestionnaire from "hooks/useOngoingQuestionnaire";
-import { useDispatch } from "react-redux";
+import { DrawerScreenProps } from "@react-navigation/drawer";
 import { setTestAnswer } from "constants/actions";
 
-const QuestionScreen = () => {
+type QuestionComponentProps = DrawerScreenProps<{}> & {
+  question: QuestionProps;
+  next?: string;
+  index: number;
+};
+
+const Question: React.FunctionComponent<QuestionComponentProps> = ({
+  navigation,
+  question,
+  index,
+  next,
+}) => {
   const dispatch = useDispatch();
-  const [state, actions] = useOngoingQuestionnaire();
-  const { currentQuestion } = state;
-  const { answerQuestion, goToNextQuestion } = actions;
   return (
     <Layout style={styles.container}>
       <Text style={styles.question}>
-        {`${(currentQuestion?.index ?? 0) + 1}) ${currentQuestion?.question}`}
+        {`${(index ?? 0) + 1}) ${question.question}`}
       </Text>
-      {currentQuestion?.answers.map(({ answer, id }) => (
+      {question.answers.map(({ answer, id }) => (
         <Button
           key={id}
           style={styles.answer}
           appearance="outline"
           status="basic"
           onPress={() => {
-            answerQuestion(currentQuestion.id, id);
-            goToNextQuestion();
+            dispatch(
+              setTestAnswer({
+                questionId: question.id,
+                answerId: id,
+              })
+            );
+            next && navigation.navigate(next);
           }}
           children={answer}
         />
@@ -58,4 +72,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default QuestionScreen;
+export default Question;

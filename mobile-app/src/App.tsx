@@ -20,7 +20,7 @@ import TestMakerScreen from "screens/TestMakerScreen";
 import HomeScreen from "screens/HomeScreen";
 import TopNavigation from "components/TopNavigation";
 import store, { persistor } from "./store";
-import QuestionScreen from "screens/QuestionScreen";
+import QuestionScreen from "screens/CurrentTestScreen";
 
 const Stack = createStackNavigator();
 
