@@ -85,7 +85,7 @@ const useQuestionBank = (): [QuestionBank, QuestionBankActions] => {
         throw error;
       }
       if (data) {
-        const lastUpdated = new Date();
+        const lastUpdated = new Date(Date.now()).toString();
         const questionBank = {
           ...data.questionBankEntry,
           lastUpdated,
@@ -129,7 +129,7 @@ const useQuestionBank = (): [QuestionBank, QuestionBankActions] => {
 
   if (!questionBank || !Object.keys(questionBank).length) {
     if (result.data) {
-      const lastUpdated = new Date();
+      const lastUpdated = new Date(Date.now()).toString();
       const newQuestionBankMetaData = result.data.questionBankMetaData.reduce<QuestionBank>(
         (sum, questionBank) => ({
           ...sum,

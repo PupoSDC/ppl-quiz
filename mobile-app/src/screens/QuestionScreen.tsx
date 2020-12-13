@@ -40,10 +40,7 @@ const QuestionScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: "column",
-    flexWrap: "wrap",
-  },
+  container: {},
   question: {
     margin: 5,
     marginBottom: 20,

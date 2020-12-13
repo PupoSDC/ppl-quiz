@@ -3,7 +3,7 @@ import { Question } from "./Questionnaire";
 export type QuestionBankEntry = {
   id: string;
   name: string;
-  lastUpdated?: Date;
+  lastUpdated?: string;
   numberOfQuestions: number;
   questions?: {
     [id: string]: Question;
