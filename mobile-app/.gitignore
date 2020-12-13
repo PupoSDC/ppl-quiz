@@ -62,3 +62,7 @@ buck-out/
 # Expo
 .expo/*
 web-build/
+
+# things that should not be necessary because of expo
+android
+ios
