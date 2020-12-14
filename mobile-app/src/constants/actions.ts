@@ -24,4 +24,6 @@ export const setTestAnswer = createAction<{
 export const finishCurrentTest = createAction<Questionnaire>(
   FINISH_CURRENT_TEST
 );
-export const setQuestionBank = createAction<QuestionBank>(SET_QUESTION_BANK);
+export const setQuestionBank = createAction<Record<string, QuestionBankEntry>>(
+  SET_QUESTION_BANK
+);

@@ -19,8 +19,8 @@ import graphql from "services/graphql";
 import TestMakerScreen from "screens/TestMakerScreen";
 import HomeScreen from "screens/HomeScreen";
 import TopNavigation from "components/TopNavigation";
-import store, { persistor } from "./store";
 import QuestionScreen from "screens/CurrentTestScreen";
+import { store, persistor } from "reducers";
 
 const Stack = createStackNavigator();
 

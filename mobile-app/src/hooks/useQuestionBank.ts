@@ -63,9 +63,12 @@ type QuestionBankActions = {
  * Actions allow to update question bank data and create new tests.
  *
  */
-const useQuestionBank = (): [QuestionBank, QuestionBankActions] => {
+const useQuestionBank = (): [
+  Record<string, QuestionBankEntry>,
+  QuestionBankActions
+] => {
   const dispatch = useDispatch();
-  const questionBank = useSelector((state) => state.questionBank);
+  const questionBank = useSelector((state) => state.questionBank.entries);
   const store = useStore();
   const client = useApolloClient();
   const [getQuestionBankMetaData, result] = useLazyQuery<{
@@ -104,7 +107,7 @@ const useQuestionBank = (): [QuestionBank, QuestionBankActions] => {
 
   const createNewTest: CreateNewTest = useCallback(
     async ({ numberOfQuestions, questionBankId }) => {
-      const data = store.getState().questionBank[questionBankId];
+      const data = store.getState().questionBank.entries[questionBankId];
       if (!data?.questions || !data.questions.length) {
         throw new Error(
           `Missing questions for Question bank "${questionBankId}"`
@@ -130,7 +133,9 @@ const useQuestionBank = (): [QuestionBank, QuestionBankActions] => {
   if (!questionBank || !Object.keys(questionBank).length) {
     if (result.data) {
       const lastUpdated = new Date(Date.now()).toString();
-      const newQuestionBankMetaData = result.data.questionBankMetaData.reduce<QuestionBank>(
+      const newQuestionBankMetaData = result.data.questionBankMetaData.reduce<
+        Record<string, QuestionBankEntry>
+      >(
         (sum, questionBank) => ({
           ...sum,
           [questionBank.id]: {

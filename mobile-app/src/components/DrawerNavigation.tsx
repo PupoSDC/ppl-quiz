@@ -5,7 +5,6 @@ import { DrawerContentComponentProps } from "@react-navigation/drawer";
 const DrawerNavigation: React.FunctionComponent<
   DrawerContentComponentProps<{}>
 > = ({ navigation, state }) => {
-  console.log(state);
   return (
     <Drawer
       selectedIndex={new IndexPath(state.index)}

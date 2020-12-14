@@ -11,7 +11,7 @@ export type QuestionBankEntry = {
 };
 
 export type QuestionBank = {
-  [id: string]: QuestionBankEntry | undefined;
+  entries: Record<string, QuestionBankEntry>;
 };
 
 export type QuestionBankMetaData = Pick<
