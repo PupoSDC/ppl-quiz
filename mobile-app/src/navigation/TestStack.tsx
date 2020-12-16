@@ -9,24 +9,25 @@ export type TestStackParameterList = {
   Question: {
     index: number;
   };
-  TestSummary: {
-    questions: Question[];
-  };
 };
 
 const Drawer = createDrawerNavigator<TestStackParameterList>();
 
 const TestStack: React.FunctionComponent<{}> = () => {
   const { questions } = useCurrentTest();
-  const firstUnsweredQuestion = questions.findIndex(
-    ({ selected }) => selected === undefined
+  const firstUnsweredQuestion = Math.max(
+    questions.findIndex(({ selected }) => selected === undefined),
+    0
   );
   return (
     <Drawer.Navigator
-      initialRouteName={firstUnsweredQuestion > 0 ? "Question" : "TestSummary"}
+      initialRouteName={"Question"}
       drawerContent={(props) => <QuestionNavigationDrawerScreen {...props} />}
     >
       <Drawer.Screen
+        options={{
+          swipeEnabled: true,
+        }}
         name="Question"
         component={QuestionScreen}
         initialParams={{

@@ -9,16 +9,24 @@ import {
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import useCurrentTest from "hooks/useCurrentTest";
 import { TestStackParameterList } from "navigation/TestStack";
+import {
+  DrawerContentOptions,
+  DrawerHeaderOptions,
+} from "@react-navigation/drawer/lib/typescript/src/types";
 
 const QuestionNavigationDrawerScreen: React.FunctionComponent<
-  DrawerContentComponentProps<TestStackParameterList>
+  DrawerContentComponentProps<DrawerContentOptions>
 > = ({ navigation, state }) => {
   const { questions } = useCurrentTest();
   const theme = useTheme();
-  const indexPath = state.routes[state.routes.length - 1].params?.index ?? 0;
+  // @ts-ignore
+  const indexPath =
+    (state.routes[state.routes.length - 1].params as Optional<
+      TestStackParameterList["Question"]
+    >)?.index ?? 0;
 
   return (
-    <Drawer selectedIndex={new IndexPath(indexPath)}>
+    <Drawer selectedIndex={new IndexPath(indexPath)} on>
       {questions.map(({ id, correct, selected }, index) => {
         const iconName =
           selected !== undefined
