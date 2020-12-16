@@ -1,43 +1,58 @@
 import React from "react";
 import { StyleSheet } from "react-native";
-import { useDispatch } from "react-redux";
-import { Question as QuestionProps } from "types/Questionnaire";
 import { Button, Layout, Text } from "@ui-kitten/components";
-import { DrawerScreenProps } from "@react-navigation/drawer";
+import { TestStackParameterList } from "navigation/TestStack";
+import { AnswerId, Question, QuestionId } from "types/Questionnaire";
+import { DrawerNavigationProp } from "@react-navigation/drawer";
+import { RouteProp, useNavigation } from "@react-navigation/native";
+import { useDispatch } from "react-redux";
+import useCurrentTest from "hooks/useCurrentTest";
 import { setTestAnswer } from "constants/actions";
+import { TRANSITION_DELAY } from "constants/animation";
 
-type QuestionComponentProps = DrawerScreenProps<{}> & {
-  question: QuestionProps;
-  next?: string;
-  index: number;
+export type QuestionScreenProps = {
+  route: RouteProp<TestStackParameterList, "Question">;
+  navigation: DrawerNavigationProp<TestStackParameterList, "Question">;
 };
 
-const QuestionScreen: React.FunctionComponent<QuestionComponentProps> = ({
+const QuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
+  route,
   navigation,
-  question,
-  index,
-  next,
 }) => {
   const dispatch = useDispatch();
+  const { questions } = useCurrentTest();
+  const { index } = route.params;
+  const { question, id: questionId, answers, selected, correct } = questions[
+    index
+  ];
+
   return (
     <Layout style={styles.container}>
-      <Text style={styles.question}>
-        {`${(index ?? 0) + 1}) ${question.question}`}
-      </Text>
-      {question.answers.map(({ answer, id }) => (
+      <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
+      {answers.map(({ answer, id: answerId }) => (
         <Button
-          key={id}
+          key={answerId}
           style={styles.answer}
           appearance="outline"
-          status="basic"
+          status={
+            selected === answerId
+              ? selected === correct
+                ? "succes"
+                : "danger"
+              : "basic"
+          }
           onPress={() => {
             dispatch(
               setTestAnswer({
-                questionId: question.id,
-                answerId: id,
+                questionId,
+                answerId,
               })
             );
-            next && navigation.navigate(next);
+            if (correct === answerId) {
+              setTimeout(() => {
+                navigation.navigate("Question", { index: index + 1 });
+              }, TRANSITION_DELAY);
+            }
           }}
           children={answer}
         />
@@ -56,13 +71,6 @@ const styles = StyleSheet.create({
   answer: {
     margin: 5,
     marginBottom: 10,
-  },
-  controlContainer: {
-    borderRadius: 4,
-    margin: 5,
-    padding: 6,
-    justifyContent: "center",
-    backgroundColor: "#3366FF",
   },
 });
 
