@@ -8,40 +8,30 @@ import questionBank from "./questionBank";
 import { Questionnaire } from "types/Questionnaire";
 import { QuestionBank } from "types/QuestionBank";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {
-  persistStore,
-  persistReducer,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-} from "redux-persist";
+import { persistStore, persistReducer } from "redux-persist";
 
 type EnhancedRootState = {
   currentTest: Questionnaire;
   questionBank: QuestionBank;
 };
 
+const persistConfig = {
+  key: "confi",
+  version: 1,
+  storage: AsyncStorage,
+};
+
 export const rootReducer = combineReducers({
   currentTest,
-  questionBank: persistReducer(
-    {
-      key: "questionBank",
-      version: 1,
-      storage: AsyncStorage,
-    },
-    questionBank
-  ),
+  questionBank,
 });
 
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer: persistedReducer,
   middleware: getDefaultMiddleware({
-    serializableCheck: {
-      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-    },
+    serializableCheck: false,
   }),
 });
 

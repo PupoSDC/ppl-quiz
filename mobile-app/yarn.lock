@@ -2325,6 +2325,11 @@
   dependencies:
     react-native-eva-icons "^1.3.1"
 
+"@ui-kitten/metro-config@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ui-kitten/metro-config/-/metro-config-5.0.0.tgz#28d60d781def017e6def3b96ce0d1594d44efb2e"
+  integrity sha512-ImnpqdzNzZOgOHbrK27RgObzhMKT5iw2ZSqAZmEHUaVQexOwHlA1yBCHI2TnhuwtqiRsgYOW0zQywr05CnCPpQ==
+
 "@ungap/global-this@^0.4.2":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@ungap/global-this/-/global-this-0.4.3.tgz#44cb668b03e7c4bc88cb6e6f9329d381131878ee"

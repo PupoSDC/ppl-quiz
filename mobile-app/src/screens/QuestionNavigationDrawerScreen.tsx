@@ -15,7 +15,6 @@ const QuestionNavigationDrawerScreen: React.FunctionComponent<
 > = ({ navigation, state }) => {
   const { questions } = useCurrentTest();
   const theme = useTheme();
-
   const indexPath = state.routes[state.routes.length - 1].params?.index ?? 0;
 
   return (
