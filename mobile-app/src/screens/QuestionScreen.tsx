@@ -37,7 +37,7 @@ const QuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
           status={
             selected === answerId
               ? selected === correct
-                ? "succes"
+                ? "success"
                 : "danger"
               : "basic"
           }
