@@ -8,15 +8,18 @@ import {
 } from "@ui-kitten/components";
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import useCurrentTest from "hooks/useCurrentTest";
+import { TestStackParameterList } from "navigation/TestStack";
 
 const QuestionNavigationDrawerScreen: React.FunctionComponent<
-  DrawerContentComponentProps<{}>
+  DrawerContentComponentProps<TestStackParameterList>
 > = ({ navigation, state }) => {
   const { questions } = useCurrentTest();
   const theme = useTheme();
 
+  const indexPath = state.routes[state.routes.length - 1].params?.index ?? 0;
+
   return (
-    <Drawer selectedIndex={new IndexPath(state.index)}>
+    <Drawer selectedIndex={new IndexPath(indexPath)}>
       {questions.map(({ id, correct, selected }, index) => {
         const iconName =
           selected !== undefined
