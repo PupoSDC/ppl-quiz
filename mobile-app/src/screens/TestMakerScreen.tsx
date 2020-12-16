@@ -6,11 +6,11 @@ import useQuestionBank from "hooks/useQuestionBank";
 import { useDispatch } from "react-redux";
 import { startNewTest } from "constants/actions";
 import { StackScreenProps } from "@react-navigation/stack";
-import { ROUTE_TEST } from "constants/routes";
+import { RootStackParamList } from "navigation/RootStack";
 
-const TestMakerScreen: React.FunctionComponent<StackScreenProps<{}>> = ({
-  navigation,
-}) => {
+const TestMakerScreen: React.FunctionComponent<
+  StackScreenProps<RootStackParamList>
+> = ({ navigation }) => {
   const [
     questionBank,
     { updateQuestionBankEntry, createNewTest },
@@ -23,7 +23,7 @@ const TestMakerScreen: React.FunctionComponent<StackScreenProps<{}>> = ({
     await updateQuestionBankEntry(questionBankId);
     const test = await createNewTest({ questionBankId, numberOfQuestions: 20 });
     dispatch(startNewTest(test));
-    navigate(ROUTE_TEST);
+    navigate("Test");
   };
 
   return (

@@ -2,13 +2,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { useDispatch } from "react-redux";
 import { Question as QuestionProps } from "types/Questionnaire";
-import {
-  Button,
-  Drawer,
-  DrawerItem,
-  Layout,
-  Text,
-} from "@ui-kitten/components";
+import { Button, Layout, Text } from "@ui-kitten/components";
 import { DrawerScreenProps } from "@react-navigation/drawer";
 import { setTestAnswer } from "constants/actions";
 
@@ -18,7 +12,7 @@ type QuestionComponentProps = DrawerScreenProps<{}> & {
   index: number;
 };
 
-const Question: React.FunctionComponent<QuestionComponentProps> = ({
+const QuestionScreen: React.FunctionComponent<QuestionComponentProps> = ({
   navigation,
   question,
   index,
@@ -72,4 +66,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Question;
+export default QuestionScreen;

@@ -2,27 +2,18 @@ import React, { Suspense } from "react";
 import * as eva from "@eva-design/eva";
 import {
   ApplicationProvider,
-  Divider,
   IconRegistry,
   Spinner,
 } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
 import { ApolloProvider } from "@apollo/client";
 import { StatusBar } from "react-native";
-
 import { PersistGate } from "redux-persist/integration/react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { ROUTE_HOME, ROUTE_TEST, ROUTE_TEST_MAKER } from "constants/routes";
 import { Provider } from "react-redux";
-import graphql from "services/graphql";
-import TestMakerScreen from "screens/TestMakerScreen";
-import HomeScreen from "screens/HomeScreen";
-import TopNavigation from "components/TopNavigation";
-import QuestionScreen from "screens/CurrentTestScreen";
 import { store, persistor } from "reducers";
-
-const Stack = createStackNavigator();
+import graphql from "services/graphql";
+import RootStack from "navigation/RootStack";
 
 export default function App() {
   return (
@@ -34,18 +25,7 @@ export default function App() {
           <Provider store={store}>
             <PersistGate persistor={persistor} loading={<Spinner />}>
               <Suspense fallback={<Spinner />}>
-                <Stack.Navigator
-                  screenOptions={{
-                    header: (props) => <TopNavigation {...props} />,
-                  }}
-                >
-                  <Stack.Screen name={ROUTE_HOME} component={HomeScreen} />
-                  <Stack.Screen
-                    name={ROUTE_TEST_MAKER}
-                    component={TestMakerScreen}
-                  />
-                  <Stack.Screen name={ROUTE_TEST} component={QuestionScreen} />
-                </Stack.Navigator>
+                <RootStack />
               </Suspense>
             </PersistGate>
           </Provider>

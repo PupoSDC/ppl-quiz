@@ -8,12 +8,12 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 
 export type CurrentTestData = {
-  /** Undefined if the user has reached the end of the test */
+  questions: Question[];
   currentQuestion?: Question & { index: number };
   isCompleted: boolean;
   correctAnswers: number;
   totalAnswers: number;
-} & Questionnaire;
+};
 
 export default (): CurrentTestData => {
   const questions = useSelector((state) => state.currentTest.questions);
