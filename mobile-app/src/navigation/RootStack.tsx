@@ -2,6 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import TopNavigation from "components/TopNavigation";
 import HomeScreen from "screens/HomeScreen";
+import TestMakerScreen from "screens/TestMakerScreen";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -18,6 +19,7 @@ const RootStack: React.FunctionComponent<{}> = () => (
     }}
   >
     <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="TestMaker" component={TestMakerScreen} />
   </Stack.Navigator>
 );
 

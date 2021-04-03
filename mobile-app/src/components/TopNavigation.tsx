@@ -3,6 +3,7 @@ import { ImageProps, StatusBar, StyleSheet, View } from "react-native";
 import {
   Avatar,
   Divider,
+  Icon,
   Text,
   TopNavigation as BaseTopNavigation,
 } from "@ui-kitten/components";
@@ -11,8 +12,6 @@ import { StackHeaderProps } from "@react-navigation/stack";
 const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
   scene,
 }) => {
-  const [menuVisible, setMenuVisible] = React.useState(false);
-
   return (
     <>
       <BaseTopNavigation
