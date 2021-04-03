@@ -1,6 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { createQuestionnaire, setQuestionnaireAnswer } from "constants/Actions";
-import { Question } from "types/Questionnaire";
+import { Question } from "types/questionBank";
 
 export type QuestionnaireState = {
   questions: Question[];

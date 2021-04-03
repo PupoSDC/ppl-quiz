@@ -1,4 +1,4 @@
-import { QuestionId, AnswerId } from "./Questionnaire";
+import { QuestionId, AnswerId } from "./questionBank";
 
 export type QuestionsHeatMapEntry = {
   answers: Array<AnswerId>;

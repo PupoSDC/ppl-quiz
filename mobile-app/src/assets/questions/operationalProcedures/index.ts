@@ -1,4 +1,4 @@
-import { QuestionBlock } from "types/Questionnaire";
+import { QuestionBlock } from "types/questionBank";
 import flightAcademy from "./flightAcademy";
 
 const flight: QuestionBlock = {

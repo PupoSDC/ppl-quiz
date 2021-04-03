@@ -16,24 +16,22 @@ import { store, persistor } from "store";
 import RootStack from "navigation/RootStack";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const App: FunctionComponent<{}> = () => {
-  return (
-    <NavigationContainer>
-      <IconRegistry icons={EvaIconsPack} />
-      <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar backgroundColor="#61dafb" barStyle="default" />
-        <ApplicationProvider {...eva} theme={eva.light}>
-          <Provider store={store}>
-            <PersistGate persistor={persistor} loading={<Spinner />}>
-              <Suspense fallback={<Spinner />}>
-                <RootStack />
-              </Suspense>
-            </PersistGate>
-          </Provider>
-        </ApplicationProvider>
-      </SafeAreaView>
-    </NavigationContainer>
-  );
-};
+const App: FunctionComponent = () => (
+  <NavigationContainer>
+    <IconRegistry icons={EvaIconsPack} />
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar backgroundColor="#61dafb" barStyle="default" />
+      <ApplicationProvider {...eva} theme={eva.light}>
+        <Provider store={store}>
+          <PersistGate persistor={persistor} loading={<Spinner />}>
+            <Suspense fallback={<Spinner />}>
+              <RootStack />
+            </Suspense>
+          </PersistGate>
+        </Provider>
+      </ApplicationProvider>
+    </SafeAreaView>
+  </NavigationContainer>
+);
 
 registerRootComponent(App);

@@ -1,6 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { finishQuestionnaire } from "constants/Actions";
-import { GlobalTestStatistics } from "types/Statistics";
+import { GlobalTestStatistics } from "types/statistics";
 
 export { GlobalTestStatistics };
 

@@ -1,35 +1,39 @@
-import React, { useEffect, useState } from "react";
-import { Text, StyleSheet } from "react-native";
-import { Button, List, Layout, useTheme } from "@ui-kitten/components";
+import React, { useState } from "react";
+import { StatusBar, StyleSheet } from "react-native";
+import {
+  Button,
+  List,
+  Layout,
+  useTheme,
+  CheckBox,
+  Select,
+  SelectItem,
+} from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
 import { useDispatch } from "react-redux";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "navigation/RootStack";
 import SliderWithInput from "components/SliderWithInput";
 import questionBank from "assets/questions";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { TestMode } from "types/test";
+import perfectShuffle from "utils/questionnaireShufle/perfectShuffle";
+
+const TEMP_TEST = perfectShuffle(questionBank[0].questions)
+  .slice(0, 20)
+  .map((q, index) => ({ ...q, index, selected: undefined }));
 
 const TestMakerScreen: React.FunctionComponent<
   StackScreenProps<RootStackParamList>
 > = ({ navigation }) => {
-  const theme = useTheme();
-  const [keyboardSize, setKeyboardSize] = useState(0);
   const { navigate } = navigation;
-  const dispatch = useDispatch();
   const data = Object.values(questionBank);
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
 
-  const onTestSelected = async (questionBankId: string) => {
-    //await updateQuestionBankEntry(questionBankId);
-    //const test = await createNewTest({ questionBankId, numberOfQuestions });
-    // dispatch(startNewTest(test));
-    navigate("Test");
-  };
-
   return (
-    <Layout style={[styles.container, { marginBottom: keyboardSize }]}>
+    <Layout style={styles.container}>
       <ListItem
         disabled
+        style={styles.section}
         title={"Number of Questions: "}
         description={() => (
           <SliderWithInput
@@ -39,23 +43,45 @@ const TestMakerScreen: React.FunctionComponent<
           />
         )}
       />
-
+      <ListItem
+        disabled
+        style={styles.section}
+        title={"Questions to show: "}
+        description={() => (
+          <Select value="All">
+            <SelectItem title="All" />
+            <SelectItem title="Never seen before" />
+            <SelectItem title="Never seen and wrong" />
+            <SelectItem title="Wrong only" />
+          </Select>
+        )}
+      />
       <List
         style={styles.section}
         data={data}
         renderItem={({ item: { id, name, questions } }) => (
           <ListItem
-            disabled
             key={id}
             title={name}
             description={`total questions: ${questions.length}`}
             accessoryRight={() => (
-              <Button
-                size="small"
-                onPress={() => onTestSelected(id)}
-                children={"Start"}
-              />
+              <CheckBox checked={false} onChange={(nextChecked) => {}} />
             )}
+          />
+        )}
+      />
+      <ListItem
+        disabled
+        style={styles.section}
+        description={() => (
+          <Button
+            onPress={() =>
+              navigate("Test", {
+                questions: TEMP_TEST,
+                currentQuestion: TEMP_TEST[0].id,
+              })
+            }
+            children={"Start"}
           />
         )}
       />
@@ -65,12 +91,13 @@ const TestMakerScreen: React.FunctionComponent<
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: StatusBar.currentHeight,
     display: "flex",
     flex: 1,
     marginBottom: 0,
   },
   section: {
-    marginVertical: 30,
+    marginVertical: 10,
     marginHorizontal: 5,
     margin: "auto",
   },

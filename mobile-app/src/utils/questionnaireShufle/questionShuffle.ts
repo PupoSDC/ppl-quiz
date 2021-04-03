@@ -1,5 +1,5 @@
-import { Question } from "types/Questionnaire";
-import { QuestionsHeatMap, QuestionsHeatMapEntry } from "types/Statistics";
+import { Question } from "types/questionBank";
+import { QuestionsHeatMap, QuestionsHeatMapEntry } from "types/statistics";
 import perfectShuffle from "./perfectShuffle";
 import biasedShuffle from "./biasedShuffle";
 
@@ -18,10 +18,9 @@ export default (
 ): Question[] => {
   if (mode === ShuffleMode.ALL) return perfectShuffle(questions);
 
-  const mappedQuestions: Array<[
-    Question,
-    QuestionsHeatMapEntry
-  ]> = questions.map((question) => [
+  const mappedQuestions: Array<
+    [Question, QuestionsHeatMapEntry]
+  > = questions.map((question) => [
     question,
     questionsHeatMap[question.id] || {
       answers: [],

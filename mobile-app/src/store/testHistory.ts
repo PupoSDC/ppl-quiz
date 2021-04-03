@@ -1,6 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { finishQuestionnaire } from "constants/Actions";
-import { TestHistory } from "types/TestHistory";
+import { TestHistory } from "types/testHistory";
 
 export { TestHistory };
 

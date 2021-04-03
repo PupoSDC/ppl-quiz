@@ -1,4 +1,4 @@
-import { Question } from "types/Questionnaire";
+import { Question } from "types/questionBank";
 import questions from "../index";
 
 describe("questions", () => {

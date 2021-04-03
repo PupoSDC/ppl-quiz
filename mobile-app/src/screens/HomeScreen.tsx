@@ -3,12 +3,6 @@ import { StyleSheet } from "react-native";
 import { Button, Layout } from "@ui-kitten/components";
 import { StackScreenProps } from "@react-navigation/stack";
 
-export type RootStackParamList = {
-  Home: undefined;
-  Test: undefined;
-  TestMaker: undefined;
-};
-
 const HomeScreen: React.FunctionComponent<
   StackScreenProps<RootStackParamList>
 > = ({ navigation }) => {
@@ -20,6 +14,11 @@ const HomeScreen: React.FunctionComponent<
         onPress={() => navigate("TestMaker")}
         style={styles.button}
         children={"Start New Test"}
+      />
+      <Button
+        onPress={() => navigate("Test")}
+        style={styles.button}
+        children={"Continue Test"}
       />
     </Layout>
   );

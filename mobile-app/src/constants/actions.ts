@@ -1,5 +1,5 @@
 import { createAction } from "@reduxjs/toolkit";
-import { Question, QuestionId, AnswerId } from "types/Questionnaire";
+import { Question, QuestionId, AnswerId } from "types/questionBank";
 
 const SET_QUESTIONNAIRE = "SET_QUESTIONNAIRE";
 const SET_QUESTIONNAIRE_ANSWER = "SET_QUESTIONNAIRE_ANSWER";

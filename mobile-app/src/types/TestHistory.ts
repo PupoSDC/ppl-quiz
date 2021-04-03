@@ -1,4 +1,4 @@
-import { QuestionId, AnswerId } from "./Questionnaire";
+import { QuestionId, AnswerId } from "./questionBank";
 
 /** Number from 0 to 100 (percentage of score obtained) */
 export type TestGrade = number;

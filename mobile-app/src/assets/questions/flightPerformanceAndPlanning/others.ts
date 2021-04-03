@@ -1,4 +1,4 @@
-import { Question } from "types/Questionnaire";
+import { Question } from "types/questionBank";
 
 const questions: Question[] = [
   {
