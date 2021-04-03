@@ -22,6 +22,7 @@ module.exports = function (api) {
             navigation: "./src/navigation",
             utils: "./src/utils",
             reducers: "./src/reducers",
+            store: "./src/store",
           },
         },
       ],
