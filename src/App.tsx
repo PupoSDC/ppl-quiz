@@ -1,3 +1,5 @@
+import "react-native-gesture-handler";
+import { registerRootComponent } from "expo";
 import React, { FunctionComponent, Suspense } from "react";
 import * as eva from "@eva-design/eva";
 import {
@@ -31,4 +33,4 @@ const App: FunctionComponent<{}> = () => {
   );
 };
 
-export default App;
+registerRootComponent(App);
