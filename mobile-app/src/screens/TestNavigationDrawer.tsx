@@ -10,16 +10,19 @@ import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import { DrawerContentOptions } from "@react-navigation/drawer/lib/typescript/src/types";
 
 import { useSelector } from "react-redux";
+import { TestDrawerParamList } from "types/navigation";
 
 export type TestNavigationDrawerProps = DrawerContentComponentProps<DrawerContentOptions>;
 
 export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerProps> = ({
   navigation: { navigate },
-  ...state
+  state: { routes },
 }) => {
+  console.log(JSON.stringify());
   const theme = useTheme();
   const questions = useSelector((store) => store.currentTest.questions);
-  const currentIndex = 0;
+  const params = routes.slice(-1)[0].params as TestDrawerParamList["Question"];
+  const currentIndex = params.questionIndex ?? 0;
 
   return (
     <Drawer selectedIndex={new IndexPath(currentIndex)}>

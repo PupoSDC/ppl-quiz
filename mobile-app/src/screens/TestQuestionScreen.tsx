@@ -16,9 +16,10 @@ export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
 export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
   route,
-  navigation,
+  navigation: { navigate },
 }) => {
   const dispatch = useDispatch();
+  const questions = useSelector((store) => store.currentTest.questions);
   const {
     id: questionId,
     answers,
@@ -26,50 +27,60 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     correct,
     index,
     question,
-  } = useSelector(
-    (store) => store.currentTest.questions[route.params.questionIndex]
-  );
+  } = questions[route.params.questionIndex];
+
+  const goToNextQuestion = () =>
+    navigate("Question", {
+      questionIndex: Math.min(index + 1, questions.length - 1),
+    });
+
+  const goToPreviousQuestion = () =>
+    navigate("Question", {
+      questionIndex: Math.max(index - 1, 0),
+    });
 
   return (
     <FlingGestureHandler
-      direction={Directions.RIGHT | Directions.LEFT}
+      direction={Directions.RIGHT}
       onHandlerStateChange={({ nativeEvent }) => {
-        if (nativeEvent.state === State.ACTIVE) {
-          if (Directions.RIGHT) {
-            navigation.navigate("Question", { questionIndex: index - 1 });
-          }
-          if (Directions.LEFT) {
-            navigation.navigate("Question", { questionIndex: index + 1 });
-          }
+        if (nativeEvent.state === State.END) {
+          goToPreviousQuestion();
         }
       }}
     >
-      <Layout style={styles.container}>
-        <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
-        <Layout style={styles.answersContainer}>
-          {answers.map(({ answer, id: answerId }) => (
-            <Button
-              key={answerId}
-              style={styles.answer}
-              appearance="outline"
-              status={
-                selected === answerId
-                  ? selected === correct
-                    ? "success"
-                    : "danger"
-                  : "basic"
-              }
-              onPress={() => {
-                dispatch(setCurrentTestAnswer({ questionId, answerId }));
-                setTimeout(() => {
-                  navigation.navigate("Question", { questionIndex: index + 1 });
-                }, TRANSITION_DELAY);
-              }}
-              children={answer}
-            />
-          ))}
+      <FlingGestureHandler
+        direction={Directions.LEFT}
+        onHandlerStateChange={({ nativeEvent }) => {
+          if (nativeEvent.state === State.END) {
+            goToNextQuestion();
+          }
+        }}
+      >
+        <Layout style={styles.container}>
+          <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
+          <Layout style={styles.answersContainer}>
+            {answers.map(({ answer, id: answerId }) => (
+              <Button
+                key={answerId}
+                style={styles.answer}
+                appearance="outline"
+                status={
+                  selected === answerId
+                    ? selected === correct
+                      ? "success"
+                      : "danger"
+                    : "basic"
+                }
+                onPress={() => {
+                  dispatch(setCurrentTestAnswer({ questionId, answerId }));
+                  setTimeout(goToNextQuestion, TRANSITION_DELAY);
+                }}
+                children={answer}
+              />
+            ))}
+          </Layout>
         </Layout>
-      </Layout>
+      </FlingGestureHandler>
     </FlingGestureHandler>
   );
 };

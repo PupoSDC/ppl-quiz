@@ -16,7 +16,11 @@ export const RootStack: React.FunctionComponent = () => (
   >
     <Stack.Screen name="Home" component={HomeScreen} />
     <Stack.Screen name="TestMaker" component={TestMakerScreen} />
-    <Stack.Screen name="Test" component={TestDrawer} />
+    <Stack.Screen
+      name="Test"
+      component={TestDrawer}
+      options={{ gestureEnabled: false }}
+    />
     {/** <Stack.Screen name="TestOverview" component={TestOverviewScreen} /> **/}
   </Stack.Navigator>
 );
