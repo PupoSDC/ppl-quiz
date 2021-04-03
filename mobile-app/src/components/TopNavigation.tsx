@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageProps, StyleSheet, View } from "react-native";
+import { ImageProps, StatusBar, StyleSheet, View } from "react-native";
 import {
   Avatar,
   Divider,
