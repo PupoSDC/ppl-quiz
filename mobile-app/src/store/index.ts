@@ -3,22 +3,20 @@ import {
   configureStore,
   getDefaultMiddleware,
 } from "@reduxjs/toolkit";
-import questionnaire, { QuestionnaireState } from "./questionnaire";
-import statistics, { GlobalTestStatistics } from "./statistics";
-import testHistory, { TestHistory } from "./testHistory";
-import { persistStore, persistReducer } from "redux-persist";
+
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { persistStore, persistReducer } from "redux-persist";
+import { questionBankReducer, QuestionBankStore } from "reducers/questionBank";
+import { currentTestReducer, CurrentTestStore } from "reducers/currentTest";
 
 export type EnhancedRootState = {
-  questionnaire: QuestionnaireState;
-  statistics: GlobalTestStatistics;
-  testHistory: TestHistory;
+  questionBank: QuestionBankStore;
+  currentTest: CurrentTestStore;
 };
 
 export const rootReducer = combineReducers({
-  questionnaire,
-  statistics,
-  testHistory,
+  questionBank: questionBankReducer,
+  currentTest: currentTestReducer,
 });
 
 const persistConfig = {

@@ -13,6 +13,6 @@ export type TestQuestion = Question & {
 };
 
 export type Test = {
-  currentQuestion: QuestionId;
   questions: TestQuestion[];
+  finished: boolean;
 };

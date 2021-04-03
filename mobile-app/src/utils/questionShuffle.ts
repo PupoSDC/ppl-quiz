@@ -1,7 +1,5 @@
 import { Question } from "types/questionBank";
 import { QuestionsHeatMap, QuestionsHeatMapEntry } from "types/statistics";
-import perfectShuffle from "./perfectShuffle";
-import biasedShuffle from "./biasedShuffle";
 
 export enum ShuffleMode {
   NEVER_SEEN_BEFORE = "NEVER_SEEN_BEFORE",
@@ -10,6 +8,23 @@ export enum ShuffleMode {
   BIASED_ALL = "BIASED_ALL",
   ALL = "ALL",
 }
+
+/**
+ * Sorting algorithm that is strongly biased towards keeping the first
+ * entries of an array in  the begining of the array.
+ */
+export const biasedShuffle = <T>(arr: T[]) => {
+  return arr.sort(() => Math.random() - 0.5);
+};
+
+export const perfectShuffle = <T>(arr: T[]) => {
+  const newArr = arr.slice();
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const rand = Math.floor(Math.random() * (i + 1));
+    [newArr[i], newArr[rand]] = [newArr[rand], newArr[i]];
+  }
+  return newArr;
+};
 
 export default (
   questions: Question[],

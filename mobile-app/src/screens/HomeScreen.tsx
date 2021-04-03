@@ -1,13 +1,16 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { StyleSheet } from "react-native";
 import { Button, Layout } from "@ui-kitten/components";
 import { StackScreenProps } from "@react-navigation/stack";
+import { RootStackScreenProps } from "types/navigation";
+import { useSelector } from "react-redux";
 
-const HomeScreen: React.FunctionComponent<
-  StackScreenProps<RootStackParamList>
-> = ({ navigation }) => {
-  const { navigate } = navigation;
-
+export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
+  navigation: { navigate },
+}) => {
+  const testInProgress = useSelector(
+    (store) => store.currentTest.questions.length > 0
+  );
   return (
     <Layout style={styles.container} level="1">
       <Button
@@ -15,11 +18,13 @@ const HomeScreen: React.FunctionComponent<
         style={styles.button}
         children={"Start New Test"}
       />
-      <Button
-        onPress={() => navigate("Test")}
-        style={styles.button}
-        children={"Continue Test"}
-      />
+      {testInProgress && (
+        <Button
+          onPress={() => navigate("Test")}
+          style={styles.button}
+          children={"Continue Test"}
+        />
+      )}
     </Layout>
   );
 };
@@ -34,5 +39,3 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
 });
-
-export default HomeScreen;

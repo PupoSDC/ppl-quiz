@@ -1,11 +1,11 @@
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import { RouteProp } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { Test, TestQuestion } from "./test";
+import { QuestionId } from "./questionBank";
 
 export type RootStackParamList = {
   Home: undefined;
-  Test: Test;
+  Test: undefined;
   TestMaker: undefined;
   TestOverview: undefined;
 };
@@ -15,11 +15,13 @@ export type RootStackScreenProps<T extends keyof RootStackParamList> = {
   navigation: StackNavigationProp<RootStackParamList, T>;
 };
 
-export type TestStackParamList = {
-  Question: TestQuestion;
+export type TestDrawerParamList = {
+  Question: {
+    questionIndex: number;
+  };
 };
 
-export type TestStackScreenProps<T extends keyof TestStackParamList> = {
-  route: RouteProp<TestStackParamList, T>;
-  navigation: DrawerNavigationProp<TestStackParamList, T>;
+export type TestStackScreenProps<T extends keyof TestDrawerParamList> = {
+  route: RouteProp<TestDrawerParamList, T>;
+  navigation: DrawerNavigationProp<TestDrawerParamList, T>;
 };

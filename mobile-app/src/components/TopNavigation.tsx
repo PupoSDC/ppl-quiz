@@ -9,7 +9,7 @@ import {
 } from "@ui-kitten/components";
 import { StackHeaderProps } from "@react-navigation/stack";
 
-const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
+export const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
   scene,
 }) => {
   return (
@@ -39,5 +39,3 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-
-export default TopNavigation;

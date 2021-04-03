@@ -1,19 +1,27 @@
 import { createAction } from "@reduxjs/toolkit";
-import { Question, QuestionId, AnswerId } from "types/questionBank";
+import {
+  Question,
+  QuestionId,
+  AnswerId,
+  QuestionBlock,
+} from "types/questionBank";
 
-const SET_QUESTIONNAIRE = "SET_QUESTIONNAIRE";
-const SET_QUESTIONNAIRE_ANSWER = "SET_QUESTIONNAIRE_ANSWER";
-const FINISH_QUESTIONNAIRE = "FINISH_QUESTIONNAIRE";
+const SET_QUESTION_BANKS = "SET_QUESTION_BANKS";
+const SET_CURRENT_TEST = "SET_CURRENT_TEST";
+const SET_CURRENT_TEST_ANSWER = "SET_CURRENT_TEST_ANSWER";
+const SET_CURRENT_TEST_FINISHED = "SET_CURRENT_TEST_FINISHED";
 
-export const createQuestionnaire = createAction<{ questions: Question[] }>(
-  SET_QUESTIONNAIRE
-);
+export const setQuestionBanks = createAction<{
+  questionBlocks: QuestionBlock[];
+}>(SET_QUESTION_BANKS);
 
-export const setQuestionnaireAnswer = createAction<{
+export const setCurrentTest = createAction<{
+  questions: Question[];
+}>(SET_CURRENT_TEST);
+
+export const setCurrentTestAnswer = createAction<{
   questionId: QuestionId;
   answerId: AnswerId;
-}>(SET_QUESTIONNAIRE_ANSWER);
+}>(SET_CURRENT_TEST_ANSWER);
 
-export const finishQuestionnaire = createAction<{
-  questions: Question[];
-}>(FINISH_QUESTIONNAIRE);
+export const setCurrentTestFinished = createAction(SET_CURRENT_TEST_FINISHED);

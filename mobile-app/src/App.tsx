@@ -13,8 +13,12 @@ import { PersistGate } from "redux-persist/integration/react";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { store, persistor } from "store";
-import RootStack from "navigation/RootStack";
+import { RootStack } from "navigation/RootStack";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { setQuestionBanks } from "constants/Actions";
+import questionBlocks from "assets/questions";
+
+store.dispatch(setQuestionBanks({ questionBlocks }));
 
 const App: FunctionComponent = () => (
   <NavigationContainer>

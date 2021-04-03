@@ -7,31 +7,39 @@ import {
   FlingGestureHandler,
   State,
 } from "react-native-gesture-handler";
-import { QuestionState } from "types/test";
-import { DrawerScreenProps } from "types/navigation";
 import { TRANSITION_DELAY } from "constants/Animations";
+import { TestStackScreenProps } from "types/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentTestAnswer } from "constants/Actions";
 
-export type QuestionScreenParams = Question &
-  QuestionState & {
-    index: number;
-  };
-export type QuestionScreenProps = DrawerScreenProps<QuestionScreenParams>;
+export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
-const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
+export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
   route,
   navigation,
 }) => {
-  const { answers, selected, correct, index, question } = route.params;
+  const dispatch = useDispatch();
+  const {
+    id: questionId,
+    answers,
+    selected,
+    correct,
+    index,
+    question,
+  } = useSelector(
+    (store) => store.currentTest.questions[route.params.questionIndex]
+  );
+
   return (
     <FlingGestureHandler
       direction={Directions.RIGHT | Directions.LEFT}
       onHandlerStateChange={({ nativeEvent }) => {
         if (nativeEvent.state === State.ACTIVE) {
           if (Directions.RIGHT) {
-            navigation.navigate("Question", { index: index - 1 });
+            navigation.navigate("Question", { questionIndex: index - 1 });
           }
           if (Directions.LEFT) {
-            navigation.navigate("Question", { index: index + 1 });
+            navigation.navigate("Question", { questionIndex: index + 1 });
           }
         }
       }}
@@ -52,11 +60,10 @@ const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
                   : "basic"
               }
               onPress={() => {
-                if (correct === answerId) {
-                  setTimeout(() => {
-                    // navigation.navigate("Question", { index: index + 1 });
-                  }, TRANSITION_DELAY);
-                }
+                dispatch(setCurrentTestAnswer({ questionId, answerId }));
+                setTimeout(() => {
+                  navigation.navigate("Question", { questionIndex: index + 1 });
+                }, TRANSITION_DELAY);
               }}
               children={answer}
             />
@@ -88,5 +95,3 @@ const styles = StyleSheet.create({
   controlsContainer: {},
   controlButton: {},
 });
-
-export default TestQuestionScreen;
