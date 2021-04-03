@@ -2,15 +2,18 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { Button, Layout } from "@ui-kitten/components";
 import { StackScreenProps } from "@react-navigation/stack";
-import { useSelector } from "react-redux";
-import { RootStackParamList } from "./types";
+
+export type RootStackParamList = {
+  Home: undefined;
+  Test: undefined;
+  TestMaker: undefined;
+};
 
 const HomeScreen: React.FunctionComponent<
   StackScreenProps<RootStackParamList>
 > = ({ navigation }) => {
   const { navigate } = navigation;
-  const currentTest =
-    useSelector((state) => state.currentTest.questions).length > 0;
+
   return (
     <Layout style={styles.container} level="1">
       <Button
@@ -18,13 +21,6 @@ const HomeScreen: React.FunctionComponent<
         style={styles.button}
         children={"Start New Test"}
       />
-      {currentTest && (
-        <Button
-          onPress={() => navigate("Test")}
-          style={styles.button}
-          children={"Continue test"}
-        />
-      )}
     </Layout>
   );
 };

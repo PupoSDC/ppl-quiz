@@ -3,18 +3,13 @@ import { ImageProps, StyleSheet, View } from "react-native";
 import {
   Avatar,
   Divider,
-  Icon,
-  MenuItem,
-  OverflowMenu,
   Text,
   TopNavigation as BaseTopNavigation,
-  TopNavigationAction,
 } from "@ui-kitten/components";
 import { StackHeaderProps } from "@react-navigation/stack";
 
 const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
   scene,
-  previous,
 }) => {
   const [menuVisible, setMenuVisible] = React.useState(false);
 

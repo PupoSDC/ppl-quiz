@@ -1,4 +1,6 @@
-import React, { Suspense } from "react";
+import "react-native-gesture-handler";
+import { registerRootComponent } from "expo";
+import React, { FunctionComponent, Suspense } from "react";
 import * as eva from "@eva-design/eva";
 import {
   ApplicationProvider,
@@ -6,31 +8,29 @@ import {
   Spinner,
 } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
-import { ApolloProvider } from "@apollo/client";
 import { StatusBar } from "react-native";
 import { PersistGate } from "redux-persist/integration/react";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
-import { store, persistor } from "reducers";
-import graphql from "services/graphql";
+import { store, persistor } from "store";
 import RootStack from "navigation/RootStack";
 
-export default function App() {
+const App: FunctionComponent<{}> = () => {
   return (
     <NavigationContainer>
       <IconRegistry icons={EvaIconsPack} />
       <StatusBar backgroundColor="blue" hidden={true} />
       <ApplicationProvider {...eva} theme={eva.light}>
-        <ApolloProvider client={graphql}>
-          <Provider store={store}>
-            <PersistGate persistor={persistor} loading={<Spinner />}>
-              <Suspense fallback={<Spinner />}>
-                <RootStack />
-              </Suspense>
-            </PersistGate>
-          </Provider>
-        </ApolloProvider>
+        <Provider store={store}>
+          <PersistGate persistor={persistor} loading={<Spinner />}>
+            <Suspense fallback={<Spinner />}>
+              <RootStack />
+            </Suspense>
+          </PersistGate>
+        </Provider>
       </ApplicationProvider>
     </NavigationContainer>
   );
-}
+};
+
+registerRootComponent(App);

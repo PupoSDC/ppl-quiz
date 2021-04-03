@@ -16,7 +16,6 @@ export type Question = {
   answers: Answer[];
   image?: ImageSourcePropType;
   explanation?: string;
-  selected?: AnswerId;
 };
 
 export type QuestionReference = {
@@ -25,6 +24,8 @@ export type QuestionReference = {
   answers: AnswerId[];
 };
 
-export type Questionnaire = {
+export type QuestionBlock = {
+  id: QuestionBlockId;
+  name: string;
   questions: Question[];
 };

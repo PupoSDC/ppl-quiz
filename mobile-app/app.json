@@ -1,12 +1,27 @@
 {
-  "name": "ppl-quizz",
-  "displayName": "ppl-quizz",
   "expo": {
     "name": "ppl-quizz",
     "slug": "ppl-quizz",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "entryPoint": "./src/App.tsx",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    }
   }
 }
