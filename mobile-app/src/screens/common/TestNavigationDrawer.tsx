@@ -20,7 +20,7 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
 }) => {
   const questions = useSelector((store) => store.currentTest.questions);
   const finished = useSelector((store) => store.currentTest.finished);
-  const params = routes.slice(-1)[0].params as
+  const params = routes[0].params as
     | TestDrawerParamList["Question"]
     | undefined;
   const currentIndex = params?.questionIndex ?? 0;
