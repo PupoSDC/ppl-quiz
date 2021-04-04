@@ -1,4 +1,5 @@
-import { QuestionId, AnswerId } from "./questionBank";
+import { AnswerId } from "./questionBank";
+import { Test } from "./test";
 
 export type QuestionsHeatMapEntry = {
   answers: Array<AnswerId>;
@@ -6,14 +7,11 @@ export type QuestionsHeatMapEntry = {
   timesWrong: number;
 };
 
-/** Map with `QuestionId` as key. */
 export type QuestionsHeatMap = {
   [key: string]: QuestionsHeatMapEntry;
 };
 
-export type GlobalTestStatistics = {
-  questions: QuestionsHeatMap;
-};
+export type TestHistory = Pick<Test, "questions">[];
 
 export type QuestionBankStatistics = {
   totalQuestions: number;

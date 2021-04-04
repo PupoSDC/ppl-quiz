@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "@react-native-community/slider";
 import { StyleSheet } from "react-native";
 import { Input, Layout, useTheme } from "@ui-kitten/components";
 import { StyleProp, ViewStyle } from "react-native";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 export type SliderWithInputProps = {
   value?: number;

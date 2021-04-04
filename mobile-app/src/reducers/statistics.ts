@@ -1,29 +1,29 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { finishQuestionnaire } from "constants/Actions";
-import { GlobalTestStatistics } from "types/statistics";
+import { setCurrentTestFinished } from "constants/Actions";
+import { QuestionsHeatMap, TestHistory } from "types/statistics";
 
-export { GlobalTestStatistics };
+export type StatisticsStore = {
+  questions: QuestionsHeatMap;
+  testHistory: TestHistory;
+};
 
-export default createReducer<GlobalTestStatistics>(
+export const statisticsReducer = createReducer<StatisticsStore>(
   {
     questions: {},
+    testHistory: [],
   },
   (builder) =>
     builder.addCase(
-      finishQuestionnaire,
+      setCurrentTestFinished,
       (state, { payload: { questions } }) => {
         questions
           .filter(({ selected }) => Boolean(selected))
           .forEach(({ id, correct, selected }) => {
-            state.questions[id] = state.questions[id] || {
-              answers: [],
-              timesCorrect: 0,
-              timesWrong: 0,
-            };
             state.questions[id].answers.push(selected!);
             state.questions[id].timesCorrect += Number(selected === correct);
             state.questions[id].timesWrong += Number(selected !== correct);
           });
+        state.testHistory.push({ questions });
       }
     )
 );

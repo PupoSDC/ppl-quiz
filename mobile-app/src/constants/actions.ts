@@ -5,6 +5,7 @@ import {
   AnswerId,
   QuestionBlock,
 } from "types/questionBank";
+import { TestQuestion } from "types/test";
 
 const SET_QUESTION_BANKS = "SET_QUESTION_BANKS";
 const SET_CURRENT_TEST = "SET_CURRENT_TEST";
@@ -25,6 +26,8 @@ export const setCurrentTestAnswer = createAction<{
   answerId: AnswerId;
 }>(SET_CURRENT_TEST_ANSWER);
 
-export const setCurrentTestFinished = createAction(SET_CURRENT_TEST_FINISHED);
+export const setCurrentTestFinished = createAction<{
+  questions: TestQuestion[];
+}>(SET_CURRENT_TEST_FINISHED);
 
 export const resetCurrentTest = createAction(RESET_CURRENT_TEST);

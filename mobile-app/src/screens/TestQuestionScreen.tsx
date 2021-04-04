@@ -57,7 +57,9 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
   };
 
   const finishTest = () => {
-    dispatch(setCurrentTestFinished());
+    if (!finished) {
+      dispatch(setCurrentTestFinished({ questions }));
+    }
     navigate("Results");
   };
 
