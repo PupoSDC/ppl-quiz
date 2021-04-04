@@ -38,6 +38,7 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-gesture-handler": "~1.8.0",
+    "react-native-image-viewing": "^0.2.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.3",
     "react-native-markdown-display": "^6.1.6",
     "react-native-reanimated": "~1.13.0",

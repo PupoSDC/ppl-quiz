@@ -1,5 +1,6 @@
-import React from "react";
-import { StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, TouchableOpacity, Image } from "react-native";
+import { default as ImageView } from "react-native-image-viewing";
 import { Button, Layout, Text } from "@ui-kitten/components";
 import { AnswerId, Question } from "types/questionBank";
 import {
@@ -16,6 +17,7 @@ import {
 } from "constants/Actions";
 import { TestCompletedModal } from "./common/TestCompletedModal";
 import { EvaStatus } from "@ui-kitten/components/devsupport";
+import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGestureHandler";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -23,6 +25,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
   route,
   navigation: { navigate },
 }) => {
+  const [imageIsOpen, setImageIsOpen] = useState(false);
   const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
   const finished = useSelector((store) => store.currentTest.finished);
@@ -39,6 +42,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     selected,
     correct,
     index,
+    image,
     question: questionText,
   } = question;
 
@@ -72,55 +76,60 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
   };
 
   return (
-    <FlingGestureHandler
-      direction={Directions.RIGHT}
-      onHandlerStateChange={({ nativeEvent }) => {
-        if (nativeEvent.state === State.END) {
-          goToPreviousQuestion();
-        }
-      }}
+    <LeftAndRightFlingGestureHandler
+      onFlingLeft={goToPreviousQuestion}
+      onFlingRight={goToNextQuestion}
+      style={styles.container}
     >
-      <FlingGestureHandler
-        direction={Directions.LEFT}
-        onHandlerStateChange={({ nativeEvent }) => {
-          if (nativeEvent.state === State.END) {
-            goToNextQuestion();
-          }
-        }}
-      >
-        <Layout style={styles.container}>
-          <TestCompletedModal onTestFinished={finishTest} />
-          <Layout style={styles.questionContainer}>
-            <Text category="h6" children={`${index + 1}) ${questionText}`} />
-          </Layout>
-          <Layout style={styles.answersContainer}>
-            {answers.map(({ answer, id: answerId }) => (
-              <Button
-                key={answerId}
-                style={styles.answer}
-                appearance="outline"
-                status={getStatus(answerId)}
-                onPress={() => {
-                  if (!finished) {
-                    dispatch(setCurrentTestAnswer({ questionId, answerId }));
-                  }
-                  setTimeout(goToNextQuestion, TRANSITION_DELAY);
-                }}
-                children={answer}
-              />
-            ))}
-          </Layout>
-          <Layout style={styles.BottomContainer}>
-            {allQuestionsAnswered && (
-              <Button
-                onPress={finishTest}
-                children={finished ? "Go to Summary" : "Finish Test"}
-              />
-            )}
-          </Layout>
-        </Layout>
-      </FlingGestureHandler>
-    </FlingGestureHandler>
+      <TestCompletedModal onTestFinished={finishTest} />
+      <Layout style={styles.questionContainer}>
+        <Text category="h6" children={`${index + 1}) ${questionText}`} />
+      </Layout>
+      <Layout style={styles.imageContainer}>
+        {image && (
+          <TouchableOpacity onPress={() => setImageIsOpen(true)}>
+            <Image
+              style={{ width: 350, height: 200 }}
+              source={image}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
+        )}
+      </Layout>
+      <Layout style={styles.answersContainer}>
+        {answers.map(({ answer, id: answerId }) => (
+          <Button
+            key={answerId}
+            style={styles.answer}
+            appearance="outline"
+            status={getStatus(answerId)}
+            onPress={() => {
+              if (!finished) {
+                dispatch(setCurrentTestAnswer({ questionId, answerId }));
+              }
+              setTimeout(goToNextQuestion, TRANSITION_DELAY);
+            }}
+            children={answer}
+          />
+        ))}
+      </Layout>
+      <Layout style={styles.BottomContainer}>
+        {allQuestionsAnswered && (
+          <Button
+            onPress={finishTest}
+            children={finished ? "Go to Summary" : "Finish Test"}
+          />
+        )}
+      </Layout>
+      {image && (
+        <ImageView
+          images={[image]}
+          imageIndex={0}
+          visible={imageIsOpen}
+          onRequestClose={() => setImageIsOpen(false)}
+        />
+      )}
+    </LeftAndRightFlingGestureHandler>
   );
 };
 
@@ -134,6 +143,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     marginHorizontal: 10,
+  },
+  imageContainer: {
+    alignItems: "center",
   },
   answersContainer: {
     flex: 20,

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Drawer,
-  DrawerItem,
-  Icon,
-  IndexPath,
-  useTheme,
-} from "@ui-kitten/components";
+import { Drawer, DrawerItem, IndexPath } from "@ui-kitten/components";
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import { DrawerContentOptions } from "@react-navigation/drawer/lib/typescript/src/types";
 import { useSelector } from "react-redux";
