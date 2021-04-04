@@ -65,7 +65,7 @@ export const TestMakerScreen: FunctionComponent<
         style={styles.section}
         title={"Questions to show: "}
         description={() => (
-          <Select value="All">
+          <Select value="All" disabled>
             <SelectItem title="All" />
             <SelectItem title="Never seen before" />
             <SelectItem title="Never seen and wrong" />
