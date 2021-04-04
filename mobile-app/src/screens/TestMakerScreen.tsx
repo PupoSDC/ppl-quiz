@@ -9,8 +9,8 @@ import {
   SelectItem,
 } from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
-import { useDispatch, useSelector, useStore } from "react-redux";
-import SliderWithInput from "components/SliderWithInput";
+import { useDispatch, useSelector } from "react-redux";
+import { SliderWithInput } from "components/SliderWithInput";
 import { RootStackScreenProps } from "types/navigation";
 import { makeTest } from "utils/makeTest";
 import { setCurrentTest } from "constants/Actions";
@@ -40,8 +40,10 @@ export const TestMakerScreen: FunctionComponent<
       questionBanks: questionBank.filter(({ id }) => selectedBlocks[id]),
       numberOfQuestions,
     });
-    dispatch(setCurrentTest({ questions }));
-    navigate("Test");
+    if (questions.length) {
+      dispatch(setCurrentTest({ questions }));
+      navigate("Test");
+    }
   };
 
   return (

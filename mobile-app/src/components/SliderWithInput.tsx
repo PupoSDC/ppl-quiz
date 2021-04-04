@@ -11,7 +11,7 @@ export type SliderWithInputProps = {
   style?: StyleProp<ViewStyle>;
 };
 
-const SliderWithInput: React.FunctionComponent<SliderWithInputProps> = ({
+export const SliderWithInput: React.FunctionComponent<SliderWithInputProps> = ({
   value = 0,
   onValueChange = () => {},
   style,
@@ -68,5 +68,3 @@ const styles = StyleSheet.create({
     minWidth: 60,
   },
 });
-
-export default SliderWithInput;
