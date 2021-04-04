@@ -14,6 +14,7 @@ import SliderWithInput from "components/SliderWithInput";
 import { RootStackScreenProps } from "types/navigation";
 import { makeTest } from "utils/makeTest";
 import { setCurrentTest } from "constants/Actions";
+import { QuestionBlock } from "types/questionBank";
 
 export const TestMakerScreen: FunctionComponent<
   RootStackScreenProps<"Home">
@@ -26,6 +27,13 @@ export const TestMakerScreen: FunctionComponent<
   const [selectedBlocks, setSelectedBlocks] = useState<Record<string, boolean>>(
     {}
   );
+
+  const selectTestBlock = (blockId: string) => {
+    setSelectedBlocks((blocks) => ({
+      ...blocks,
+      [blockId]: blocks[blockId] ? false : true,
+    }));
+  };
 
   const startTest = () => {
     const questions = makeTest({
@@ -66,7 +74,11 @@ export const TestMakerScreen: FunctionComponent<
       <List
         style={styles.section}
         data={questionBank}
-        renderItem={({ item: { id, name, questions } }) => (
+        renderItem={({
+          item: { id, name, questions },
+        }: {
+          item: QuestionBlock;
+        }) => (
           <ListItem
             key={id}
             title={name}
@@ -74,14 +86,10 @@ export const TestMakerScreen: FunctionComponent<
             accessoryRight={() => (
               <CheckBox
                 checked={selectedBlocks[id]}
-                onChange={(checked) =>
-                  setSelectedBlocks((blocks) => ({
-                    ...blocks,
-                    [id]: checked,
-                  }))
-                }
+                onChange={() => selectTestBlock(id)}
               />
             )}
+            onPress={() => selectTestBlock(id)}
           />
         )}
       />

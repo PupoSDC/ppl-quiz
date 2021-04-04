@@ -18,7 +18,6 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
   navigation: { navigate },
   state: { routes },
 }) => {
-  console.log(JSON.stringify());
   const theme = useTheme();
   const questions = useSelector((store) => store.currentTest.questions);
   const params = routes.slice(-1)[0].params as TestDrawerParamList["Question"];

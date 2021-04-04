@@ -10,7 +10,11 @@ import {
 import { TRANSITION_DELAY } from "constants/Animations";
 import { TestStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
-import { setCurrentTestAnswer } from "constants/Actions";
+import {
+  setCurrentTestAnswer,
+  setCurrentTestFinished,
+} from "constants/Actions";
+import { TestCompletedModal } from "./common/TestCompletedModal";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -39,6 +43,10 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
       questionIndex: Math.max(index - 1, 0),
     });
 
+  const finishTest = () => {
+    dispatch(setCurrentTestFinished());
+  };
+
   return (
     <FlingGestureHandler
       direction={Directions.RIGHT}
@@ -57,6 +65,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
         }}
       >
         <Layout style={styles.container}>
+          <TestCompletedModal />
           <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
           <Layout style={styles.answersContainer}>
             {answers.map(({ answer, id: answerId }) => (
@@ -78,6 +87,10 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
                 children={answer}
               />
             ))}
+          </Layout>
+
+          <Layout style={styles.finishButton}>
+            <Button onPress={finishTest}>Finish Test</Button>
           </Layout>
         </Layout>
       </FlingGestureHandler>
@@ -102,6 +115,12 @@ const styles = StyleSheet.create({
   answer: {
     margin: 5,
     marginBottom: 10,
+  },
+  finishButton: {
+    flex: 1,
+    justifyContent: "flex-end",
+    marginBottom: 36,
+    marginHorizontal: 20,
   },
   controlsContainer: {},
   controlButton: {},
