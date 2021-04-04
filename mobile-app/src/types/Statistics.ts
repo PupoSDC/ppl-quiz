@@ -14,6 +14,7 @@ export type QuestionsHeatMap = {
 export type TestHistory = Pick<Test, "questions">[];
 
 export type QuestionBankStatistics = {
+  name: string;
   questionBlockId: QuestionBlockId;
   totalQuestions: number;
   answeredQuestions: number;

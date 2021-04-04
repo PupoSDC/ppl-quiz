@@ -27,7 +27,7 @@ export const TestHistoryScreen: FunctionComponent<TestHistoryScreenProps> = ({
   };
 
   return (
-    <Layout style={styles.container} level="1">
+    <Layout level="1">
       <List
         inverted
         data={testHistory}
@@ -68,7 +68,6 @@ export const TestHistoryScreen: FunctionComponent<TestHistoryScreenProps> = ({
 };
 
 const styles = StyleSheet.create({
-  container: {},
   listItem: {
     minHeight: 80,
   },

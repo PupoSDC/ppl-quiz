@@ -38,7 +38,7 @@ export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
         />
       )}
       <Button
-        onPress={() => navigate("TestMaker")}
+        onPress={() => navigate("TestStatistics")}
         appearance={"outline"}
         style={styles.button}
         children={"Statistics"}

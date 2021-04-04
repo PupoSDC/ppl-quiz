@@ -1,5 +1,6 @@
 import questions from "assets/questions";
-import { QuestionBlockId } from "types/questionBank";
+import { QuestionBlock, QuestionBlockId } from "types/questionBank";
+import { QuestionBankStatistics, QuestionsHeatMap } from "types/statistics";
 import { TestQuestion } from "types/test";
 
 export const getTestScore = (questions: TestQuestion[]) => {
@@ -18,4 +19,32 @@ export const getBlocksInTest = (
       return sum;
     }, {})
   );
+};
+
+export const getQuestionBankStatistics = (
+  questionBank: QuestionBlock[],
+  questionsHeatMap: QuestionsHeatMap
+): QuestionBankStatistics[] => {
+  return questionBank.map(({ questions, name, id }) => {
+    let answeredQuestions = 0;
+    let correctlyAnsweredQuestions = 0;
+
+    questions.forEach(({ id, correct }) => {
+      const entry = questionsHeatMap[id];
+      if (entry) {
+        answeredQuestions += 1;
+        correctlyAnsweredQuestions += Number(
+          entry.answers.slice(-1)[0] === correct
+        );
+      }
+    });
+
+    return {
+      name,
+      questionBlockId: id,
+      totalQuestions: questions.length,
+      answeredQuestions,
+      correctlyAnsweredQuestions,
+    };
+  });
 };

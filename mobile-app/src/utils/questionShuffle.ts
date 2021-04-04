@@ -26,7 +26,7 @@ export const perfectShuffle = <T>(arr: T[]) => {
   return newArr;
 };
 
-export default (
+export const questionnaireShuffle = (
   questions: Question[],
   questionsHeatMap: QuestionsHeatMap = {},
   mode: ShuffleMode = ShuffleMode.ALL
