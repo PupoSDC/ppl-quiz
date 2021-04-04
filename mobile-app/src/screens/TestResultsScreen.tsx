@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TestStackScreenProps } from "types/navigation";
 import { TestQuestion } from "types/test";
 import { ScoreWidget } from "components/ScoreWidget";
+import { getTestScore } from "utils/testStatistics";
 
 export type TestResultsScreenProps = TestStackScreenProps<"Results">;
 
@@ -23,10 +24,7 @@ export const TestResultsScreen: FunctionComponent<TestResultsScreenProps> = ({
   const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
   const finished = useSelector((store) => store.currentTest.finished);
-  const correctAnswers = questions.filter(
-    ({ correct, selected }) => correct === selected
-  );
-  const score = correctAnswers.length / questions.length;
+  const score = getTestScore(questions);
 
   const onFinishTest = () => {
     navigate("Home");
@@ -39,7 +37,7 @@ export const TestResultsScreen: FunctionComponent<TestResultsScreenProps> = ({
         data={questions}
         ListHeaderComponent={() => (
           <Layout style={styles.scoreContainer}>
-            <ScoreWidget score={score * 100} />
+            <ScoreWidget score={score} />
           </Layout>
         )}
         renderItem={({

@@ -14,14 +14,14 @@ export const TestCompletedModal: FunctionComponent<TestCompletedModal> = ({
   const [modalVisible, setModalVisible] = useState(false);
   const [hasShownModal, setHasShownModal] = useState(false);
   const questions = useSelector((store) => store.currentTest.questions);
+  const allQuestionsAnswered = !questions.find(({ selected }) => !selected);
 
   useEffect(() => {
-    const allQuestionsAnsweres = !questions.find(({ selected }) => !selected);
-    if (allQuestionsAnsweres && !hasShownModal) {
+    if (allQuestionsAnswered && !hasShownModal) {
       setHasShownModal(true);
       setModalVisible(true);
     }
-  }, [questions, hasShownModal]);
+  }, [allQuestionsAnswered, hasShownModal]);
 
   const finishTest = () => {
     setModalVisible(false);

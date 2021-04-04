@@ -18,7 +18,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.puposdc.pplquizz",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.puposdc.pplquizz",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./src/assets/images/favicon.png"

@@ -9,6 +9,7 @@ import { TestQuestion } from "types/test";
 
 const SET_QUESTION_BANKS = "SET_QUESTION_BANKS";
 const SET_CURRENT_TEST = "SET_CURRENT_TEST";
+const SET_CURRENT_TEST_REVIEW = "SET_CURRENT_TEST_REVIEW";
 const SET_CURRENT_TEST_ANSWER = "SET_CURRENT_TEST_ANSWER";
 const SET_CURRENT_TEST_FINISHED = "SET_CURRENT_TEST_FINISHED";
 const RESET_CURRENT_TEST = "RESET_CURRENT_TEST";
@@ -20,6 +21,10 @@ export const setQuestionBanks = createAction<{
 export const setCurrentTest = createAction<{
   questions: Question[];
 }>(SET_CURRENT_TEST);
+
+export const setCurrentTestReview = createAction<{
+  questions: TestQuestion[];
+}>(SET_CURRENT_TEST_REVIEW);
 
 export const setCurrentTestAnswer = createAction<{
   questionId: QuestionId;

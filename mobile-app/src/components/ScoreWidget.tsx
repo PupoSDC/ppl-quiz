@@ -1,12 +1,16 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { AnimatedCircularProgress } from "react-native-circular-progress";
 import { useTheme, Text } from "@ui-kitten/components";
 
 export type ScoreWidgetProps = {
   score?: number;
+  small?: boolean;
 };
 
-export const ScoreWidget = ({ score = 0 }) => {
+export const ScoreWidget: FunctionComponent<ScoreWidgetProps> = ({
+  score = 0,
+  small,
+}) => {
   const theme = useTheme();
   const boundedScore = Math.min(Math.max(0, score), 100);
   const passed = boundedScore > 75;
@@ -16,7 +20,7 @@ export const ScoreWidget = ({ score = 0 }) => {
 
   return (
     <AnimatedCircularProgress
-      size={80}
+      size={small ? 40 : 80}
       width={5}
       fill={boundedScore}
       duration={1000}
@@ -24,7 +28,7 @@ export const ScoreWidget = ({ score = 0 }) => {
       backgroundColor={theme["background-basic-color-4"]}
     >
       {(fill) => (
-        <Text category={"h6"} style={{ color }}>
+        <Text category={small ? "p1" : "h6"} style={{ color }}>
           {Math.round(fill)}
         </Text>
       )}

@@ -5,6 +5,7 @@ import { HomeScreen } from "screens/HomeScreen";
 import { TestMakerScreen } from "screens/TestMakerScreen";
 import { TestDrawer } from "./TestDrawer";
 import { RootStackParamList } from "types/navigation";
+import { TestHistoryScreen } from "screens/TestHistoryScreen";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -16,6 +17,7 @@ export const RootStack: React.FunctionComponent = () => (
   >
     <Stack.Screen name="Home" component={HomeScreen} />
     <Stack.Screen name="TestMaker" component={TestMakerScreen} />
+    <Stack.Screen name="TestHistory" component={TestHistoryScreen} />
     <Stack.Screen
       name="Test"
       component={TestDrawer}

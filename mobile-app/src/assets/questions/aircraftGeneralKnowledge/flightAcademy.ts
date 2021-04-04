@@ -3104,7 +3104,7 @@ const questions: Question[] = [
   {
     id: "AGK0127",
     question:
-      "What engines are commonly used with Touring Motor Gliders (TMG)?",
+      "What engines are commonly used in General Aviation small aircraft?",
     answers: [
       {
         id: "AGK0127001",

@@ -1,12 +1,13 @@
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import { RouteProp } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { QuestionId } from "./questionBank";
 
 export type RootStackParamList = {
   Home: undefined;
   Test: undefined;
   TestMaker: undefined;
+  TestHistory: undefined;
+  TestStatistics: undefined;
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> = {
