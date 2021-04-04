@@ -79,8 +79,8 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
 
   return (
     <LeftAndRightFlingGestureHandler
-      onFlingLeft={goToPreviousQuestion}
-      onFlingRight={goToNextQuestion}
+      onFlingLeft={goToNextQuestion}
+      onFlingRight={goToPreviousQuestion}
       style={styles.container}
     >
       <TestCompletedModal onTestFinished={finishTest} />
