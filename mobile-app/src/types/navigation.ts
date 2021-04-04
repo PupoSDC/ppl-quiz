@@ -7,7 +7,6 @@ export type RootStackParamList = {
   Home: undefined;
   Test: undefined;
   TestMaker: undefined;
-  TestOverview: undefined;
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> = {
@@ -19,7 +18,8 @@ export type TestDrawerParamList = {
   Question: {
     questionIndex: number;
   };
-};
+  Results: undefined;
+} & RootStackParamList;
 
 export type TestStackScreenProps<T extends keyof TestDrawerParamList> = {
   route: RouteProp<TestDrawerParamList, T>;

@@ -33,18 +33,19 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     question,
   } = questions[route.params.questionIndex];
 
-  const goToNextQuestion = () =>
-    navigate("Question", {
-      questionIndex: Math.min(index + 1, questions.length - 1),
-    });
+  const goToNextQuestion = () => {
+    const questionIndex = Math.min(index + 1, questions.length + 1);
+    navigate("Question", { questionIndex });
+  };
 
-  const goToPreviousQuestion = () =>
-    navigate("Question", {
-      questionIndex: Math.max(index - 1, 0),
-    });
+  const goToPreviousQuestion = () => {
+    const questionIndex = Math.max(index - 1, 0);
+    navigate("Question", { questionIndex });
+  };
 
   const finishTest = () => {
     dispatch(setCurrentTestFinished());
+    navigate("Results");
   };
 
   return (
@@ -65,7 +66,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
         }}
       >
         <Layout style={styles.container}>
-          <TestCompletedModal />
+          <TestCompletedModal onTestFinished={finishTest} />
           <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
           <Layout style={styles.answersContainer}>
             {answers.map(({ answer, id: answerId }) => (

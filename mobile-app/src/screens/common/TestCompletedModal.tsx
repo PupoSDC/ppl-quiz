@@ -4,8 +4,13 @@ import { Button, Card, Modal } from "@ui-kitten/components";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentTestFinished } from "constants/Actions";
 
-export const TestCompletedModal: FunctionComponent = () => {
-  const dispatch = useDispatch();
+type TestCompletedModal = {
+  onTestFinished: () => void;
+};
+
+export const TestCompletedModal: FunctionComponent<TestCompletedModal> = ({
+  onTestFinished,
+}) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [hasShownModal, setHasShownModal] = useState(false);
   const questions = useSelector((store) => store.currentTest.questions);
@@ -19,8 +24,8 @@ export const TestCompletedModal: FunctionComponent = () => {
   }, [questions, hasShownModal]);
 
   const finishTest = () => {
-    dispatch(setCurrentTestFinished());
     setModalVisible(false);
+    onTestFinished();
   };
 
   return (

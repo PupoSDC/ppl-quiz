@@ -21,6 +21,5 @@ export const RootStack: React.FunctionComponent = () => (
       component={TestDrawer}
       options={{ gestureEnabled: false }}
     />
-    {/** <Stack.Screen name="TestOverview" component={TestOverviewScreen} /> **/}
   </Stack.Navigator>
 );
