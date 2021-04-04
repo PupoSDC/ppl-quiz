@@ -5,7 +5,7 @@ import { RootStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { ScoreWidget } from "components/ScoreWidget";
 import { Test, TestQuestion } from "types/test";
-import { getTestScore } from "utils/testStatistics";
+import { getBlocksInTest, getTestScore } from "utils/testStatistics";
 import { setCurrentTest, setCurrentTestReview } from "constants/actions";
 
 export type TestHistoryScreenProps = RootStackScreenProps<"TestHistory">;
@@ -29,9 +29,11 @@ export const TestHistoryScreen: FunctionComponent<TestHistoryScreenProps> = ({
   return (
     <Layout style={styles.container} level="1">
       <List
+        inverted
         data={testHistory}
         renderItem={({ item: { questions } }: { item: Test }) => {
           const score = getTestScore(questions);
+          const blocks = getBlocksInTest(questions);
           return (
             <ListItem
               disabled
@@ -41,8 +43,8 @@ export const TestHistoryScreen: FunctionComponent<TestHistoryScreenProps> = ({
                   <ScoreWidget score={score} small />
                 </Layout>
               )}
-              title={"potato"}
-              description={"a lot of text"}
+              title={`${questions.length} questions`}
+              description={blocks.join(", ")}
               accessoryRight={() => (
                 <>
                   <Button

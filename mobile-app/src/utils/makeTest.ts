@@ -1,4 +1,5 @@
-import { Question, QuestionBlock } from "types/questionBank";
+import { QuestionBlock } from "types/questionBank";
+import { TestQuestion } from "types/test";
 import { perfectShuffle } from "./questionShuffle";
 
 type MakeTestProps = {
@@ -9,9 +10,16 @@ type MakeTestProps = {
 export const makeTest = ({
   questionBanks,
   numberOfQuestions,
-}: MakeTestProps): Question[] => {
-  const allQuestions = questionBanks.reduce<Question[]>(
-    (sum, bank) => [...sum, ...bank.questions],
+}: MakeTestProps): TestQuestion[] => {
+  const allQuestions = questionBanks.reduce<TestQuestion[]>(
+    (sum, bank) => [
+      ...sum,
+      ...bank.questions.map((q) => ({
+        ...q,
+        questionBlockId: bank.id,
+        index: 0,
+      })),
+    ],
     []
   );
   return perfectShuffle(allQuestions).slice(0, numberOfQuestions);

@@ -19,7 +19,7 @@ export const setQuestionBanks = createAction<{
 }>(SET_QUESTION_BANKS);
 
 export const setCurrentTest = createAction<{
-  questions: Question[];
+  questions: TestQuestion[];
 }>(SET_CURRENT_TEST);
 
 export const setCurrentTestReview = createAction<{

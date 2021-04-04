@@ -1,4 +1,4 @@
-import { AnswerId } from "./questionBank";
+import { AnswerId, QuestionBlockId } from "./questionBank";
 import { Test } from "./test";
 
 export type QuestionsHeatMapEntry = {
@@ -14,6 +14,7 @@ export type QuestionsHeatMap = {
 export type TestHistory = Pick<Test, "questions">[];
 
 export type QuestionBankStatistics = {
+  questionBlockId: QuestionBlockId;
   totalQuestions: number;
   answeredQuestions: number;
   correctlyAnsweredQuestions: number;

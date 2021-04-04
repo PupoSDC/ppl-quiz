@@ -1,4 +1,9 @@
-import { AnswerId, Question, QuestionId } from "./questionBank";
+import {
+  AnswerId,
+  Question,
+  QuestionBlockId,
+  QuestionId,
+} from "./questionBank";
 
 export enum TestMode {
   ALL = "ALL",
@@ -9,6 +14,7 @@ export enum TestMode {
 
 export type TestQuestion = Question & {
   index: number;
+  questionBlockId: QuestionBlockId;
   selected?: AnswerId;
 };
 

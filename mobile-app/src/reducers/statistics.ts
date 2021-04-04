@@ -18,8 +18,9 @@ export const statisticsReducer = createReducer<StatisticsStore>(
       (state, { payload: { questions } }) => {
         questions
           .filter(({ selected }) => Boolean(selected))
-          .forEach(({ id, correct, selected }) => {
+          .forEach(({ id, correct, selected, questionBlockId }) => {
             state.questions[id] = state.questions[id] ?? {
+              questionBlockId: questionBlockId,
               answers: [],
               timesCorrect: 0,
               timesWrong: 0,
