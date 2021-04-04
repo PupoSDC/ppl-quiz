@@ -8,13 +8,13 @@ import {
   FlingGestureHandler,
   State,
 } from "react-native-gesture-handler";
-import { TRANSITION_DELAY } from "constants/Animations";
+import { TRANSITION_DELAY } from "constants/animations";
 import { TestStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setCurrentTestAnswer,
   setCurrentTestFinished,
-} from "constants/Actions";
+} from "constants/actions";
 import { TestCompletedModal } from "./common/TestCompletedModal";
 import { EvaStatus } from "@ui-kitten/components/devsupport";
 import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGestureHandler";

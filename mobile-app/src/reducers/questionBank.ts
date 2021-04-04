@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { setQuestionBanks } from "constants/Actions";
+import { setQuestionBanks } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 
 export type QuestionBankStore = Record<string, QuestionBlock>;

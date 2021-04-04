@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { setCurrentTestFinished } from "constants/Actions";
+import { setCurrentTestFinished } from "constants/actions";
 import { QuestionsHeatMap, TestHistory } from "types/statistics";
 
 export type StatisticsStore = {

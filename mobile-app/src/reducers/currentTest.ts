@@ -5,7 +5,7 @@ import {
   setCurrentTest,
   setCurrentTestAnswer,
   setCurrentTestFinished,
-} from "constants/Actions";
+} from "constants/actions";
 import { Test } from "types/test";
 
 export type CurrentTestStore = Test;

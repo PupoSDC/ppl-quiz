@@ -1,1 +1,1 @@
-export const TRANSITION_DELAY = 250;
+export const TRANSITION_DELAY = 150;

@@ -15,7 +15,7 @@ import { Provider } from "react-redux";
 import { store, persistor } from "store";
 import { RootStack } from "navigation/RootStack";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { setQuestionBanks } from "constants/Actions";
+import { setQuestionBanks } from "constants/actions";
 import questionBlocks from "assets/questions";
 
 store.dispatch(setQuestionBanks({ questionBlocks }));

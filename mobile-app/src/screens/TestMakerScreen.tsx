@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { SliderWithInput } from "components/SliderWithInput";
 import { RootStackScreenProps } from "types/navigation";
 import { makeTest } from "utils/makeTest";
-import { setCurrentTest } from "constants/Actions";
+import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 
 export const TestMakerScreen: FunctionComponent<

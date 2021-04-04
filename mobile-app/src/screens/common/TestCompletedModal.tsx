@@ -2,7 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from "react";
 import { Text, StyleSheet } from "react-native";
 import { Button, Card, Modal } from "@ui-kitten/components";
 import { useDispatch, useSelector } from "react-redux";
-import { setCurrentTestFinished } from "constants/Actions";
+import { setCurrentTestFinished } from "constants/actions";
 
 type TestCompletedModal = {
   onTestFinished: () => void;

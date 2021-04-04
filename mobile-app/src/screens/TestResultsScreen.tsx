@@ -1,6 +1,6 @@
 import { Button, Layout, List, ListItem } from "@ui-kitten/components";
 import { QuestionStateIcon } from "components/QuestionStateIcon";
-import { resetCurrentTest } from "constants/Actions";
+import { resetCurrentTest } from "constants/actions";
 import React, { FunctionComponent } from "react";
 import { StatusBar, StyleSheet } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
