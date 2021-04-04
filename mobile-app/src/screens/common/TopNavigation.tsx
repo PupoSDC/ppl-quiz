@@ -1,27 +1,38 @@
 import React from "react";
-import { ImageProps, StatusBar, StyleSheet, View } from "react-native";
+import { ImageProps, StyleSheet, View } from "react-native";
 import {
   Avatar,
   Divider,
   Icon,
   Text,
   TopNavigation as BaseTopNavigation,
+  TopNavigationAction,
 } from "@ui-kitten/components";
 import { StackHeaderProps } from "@react-navigation/stack";
+import { RenderProp } from "@ui-kitten/components/devsupport";
+
+const BackIcon: RenderProp<Partial<ImageProps>> = (props) => (
+  <Icon {...props} name="arrow-back" />
+);
 
 export const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
-  scene,
+  navigation: { goBack, canGoBack },
 }) => {
   return (
     <>
       <BaseTopNavigation
+        accessoryLeft={
+          canGoBack()
+            ? () => <TopNavigationAction icon={BackIcon} onPress={goBack} />
+            : undefined
+        }
         title={() => (
           <View style={styles.titleContainer}>
             <Avatar
               style={styles.logo}
-              source={require("../assets/icon.png")}
+              source={require("../../assets/icon.png")}
             />
-            <Text>{scene.route.name}</Text>
+            <Text category={"h5"}>{"PPL Quizz"}</Text>
           </View>
         )}
       />

@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { Button, Layout, Text } from "@ui-kitten/components";
-import { Question } from "types/questionBank";
+import { AnswerId, Question } from "types/questionBank";
 import {
   Directions,
   FlingGestureHandler,
@@ -15,10 +15,9 @@ import {
   setCurrentTestFinished,
 } from "constants/Actions";
 import { TestCompletedModal } from "./common/TestCompletedModal";
+import { EvaStatus } from "@ui-kitten/components/devsupport";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
-
-const emptyQ;
 
 export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
   route,
@@ -26,7 +25,9 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
 }) => {
   const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
+  const finished = useSelector((store) => store.currentTest.finished);
   const question = questions[route.params.questionIndex];
+  const allQuestionsAnswered = !questions.find(({ selected }) => !selected);
 
   if (!question) {
     return <></>;
@@ -56,6 +57,20 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     navigate("Results");
   };
 
+  const getStatus = (answerId: AnswerId): EvaStatus => {
+    if (!finished && selected === answerId) {
+      return "info";
+    }
+    if (finished && correct === answerId) {
+      return "success";
+    }
+    if (finished && selected === answerId) {
+      return "danger";
+    }
+
+    return "basic";
+  };
+
   return (
     <FlingGestureHandler
       direction={Directions.RIGHT}
@@ -75,31 +90,33 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
       >
         <Layout style={styles.container}>
           <TestCompletedModal onTestFinished={finishTest} />
-          <Text style={styles.question}>{`${index + 1}) ${questionText}`}</Text>
+          <Layout style={styles.questionContainer}>
+            <Text category="h6" children={`${index + 1}) ${questionText}`} />
+          </Layout>
           <Layout style={styles.answersContainer}>
             {answers.map(({ answer, id: answerId }) => (
               <Button
                 key={answerId}
                 style={styles.answer}
                 appearance="outline"
-                status={
-                  selected === answerId
-                    ? selected === correct
-                      ? "success"
-                      : "danger"
-                    : "basic"
-                }
+                status={getStatus(answerId)}
                 onPress={() => {
-                  dispatch(setCurrentTestAnswer({ questionId, answerId }));
+                  if (!finished) {
+                    dispatch(setCurrentTestAnswer({ questionId, answerId }));
+                  }
                   setTimeout(goToNextQuestion, TRANSITION_DELAY);
                 }}
                 children={answer}
               />
             ))}
           </Layout>
-
-          <Layout style={styles.finishButton}>
-            <Button onPress={finishTest}>Finish Test</Button>
+          <Layout style={styles.BottomContainer}>
+            {allQuestionsAnswered && (
+              <Button
+                onPress={finishTest}
+                children={finished ? "Go to Summary" : "Finish Test"}
+              />
+            )}
           </Layout>
         </Layout>
       </FlingGestureHandler>
@@ -113,19 +130,20 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     flex: 1,
   },
-  question: {
-    margin: 5,
+  questionContainer: {
+    marginTop: 20,
     marginBottom: 20,
-    fontWeight: "bold",
+    marginHorizontal: 10,
   },
   answersContainer: {
-    flex: 1,
+    flex: 20,
+    marginHorizontal: 10,
   },
   answer: {
     margin: 5,
     marginBottom: 10,
   },
-  finishButton: {
+  BottomContainer: {
     flex: 1,
     justifyContent: "flex-end",
     marginBottom: 36,

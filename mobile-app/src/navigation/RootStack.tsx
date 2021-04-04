@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { TopNavigation } from "components/TopNavigation";
+import { TopNavigation } from "screens/common/TopNavigation";
 import { HomeScreen } from "screens/HomeScreen";
 import { TestMakerScreen } from "screens/TestMakerScreen";
 import { TestDrawer } from "./TestDrawer";

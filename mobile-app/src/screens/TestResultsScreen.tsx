@@ -14,6 +14,7 @@ export const TestResultsScreen: FunctionComponent<TestResultsScreenProps> = ({
 }) => {
   const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
+  const finished = useSelector((store) => store.currentTest.finished);
 
   const onFinishTest = () => {
     navigate("Home");
@@ -32,11 +33,13 @@ export const TestResultsScreen: FunctionComponent<TestResultsScreenProps> = ({
           <ListItem
             accessoryLeft={(props) => (
               <QuestionStateIcon
+                finished={finished}
                 selected={selected}
                 correct={correct}
                 {...props}
               />
             )}
+            onPress={() => navigate("Question", { questionIndex: index })}
             title={`${index + 1}) ${question}`}
             description={answers.find(({ id }) => id === correct)?.answer}
           />

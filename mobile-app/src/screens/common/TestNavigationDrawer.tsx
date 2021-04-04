@@ -18,8 +18,8 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
   navigation: { navigate },
   state: { routes },
 }) => {
-  const theme = useTheme();
   const questions = useSelector((store) => store.currentTest.questions);
+  const finished = useSelector((store) => store.currentTest.finished);
   const params = routes.slice(-1)[0].params as
     | TestDrawerParamList["Question"]
     | undefined;
@@ -34,6 +34,7 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
             accessoryLeft={(props) => (
               <QuestionStateIcon
                 {...props}
+                finished={finished}
                 selected={selected}
                 correct={correct}
               />
