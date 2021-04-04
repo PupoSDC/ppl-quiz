@@ -1,15 +1,9 @@
-import {
-  Button,
-  Card,
-  Layout,
-  List,
-  ListItem,
-  Text,
-} from "@ui-kitten/components";
+import { Button, Layout, List, ListItem } from "@ui-kitten/components";
 import { QuestionStateIcon } from "components/QuestionStateIcon";
+import { resetCurrentTest } from "constants/Actions";
 import React, { FunctionComponent } from "react";
 import { StatusBar, StyleSheet } from "react-native";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { TestStackScreenProps } from "types/navigation";
 import { TestQuestion } from "types/test";
 
@@ -18,10 +12,12 @@ export type TestResultsScreenProps = TestStackScreenProps<"Results">;
 export const TestResultsScreen: FunctionComponent<TestResultsScreenProps> = ({
   navigation: { navigate },
 }) => {
+  const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
 
   const onFinishTest = () => {
     navigate("Home");
+    dispatch(resetCurrentTest());
   };
 
   return (

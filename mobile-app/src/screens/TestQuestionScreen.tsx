@@ -18,23 +18,31 @@ import { TestCompletedModal } from "./common/TestCompletedModal";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
+const emptyQ;
+
 export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = ({
   route,
   navigation: { navigate },
 }) => {
   const dispatch = useDispatch();
   const questions = useSelector((store) => store.currentTest.questions);
+  const question = questions[route.params.questionIndex];
+
+  if (!question) {
+    return <></>;
+  }
+
   const {
     id: questionId,
     answers,
     selected,
     correct,
     index,
-    question,
-  } = questions[route.params.questionIndex];
+    question: questionText,
+  } = question;
 
   const goToNextQuestion = () => {
-    const questionIndex = Math.min(index + 1, questions.length + 1);
+    const questionIndex = Math.min(index + 1, questions.length - 1);
     navigate("Question", { questionIndex });
   };
 
@@ -67,7 +75,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
       >
         <Layout style={styles.container}>
           <TestCompletedModal onTestFinished={finishTest} />
-          <Text style={styles.question}>{`${index + 1}) ${question}`}</Text>
+          <Text style={styles.question}>{`${index + 1}) ${questionText}`}</Text>
           <Layout style={styles.answersContainer}>
             {answers.map(({ answer, id: answerId }) => (
               <Button
