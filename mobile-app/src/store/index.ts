@@ -34,6 +34,7 @@ export const store = configureStore({
   reducer: persistedReducer,
   middleware: getDefaultMiddleware({
     serializableCheck: false,
+    immutableCheck: false,
   }),
 });
 

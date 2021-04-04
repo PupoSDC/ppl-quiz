@@ -20,11 +20,12 @@ import questionBlocks from "assets/questions";
 
 store.dispatch(setQuestionBanks({ questionBlocks }));
 
+StatusBar.setBarStyle("dark-content", true);
+
 const App: FunctionComponent = () => (
   <NavigationContainer>
     <IconRegistry icons={EvaIconsPack} />
     <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar translucent barStyle="default" />
       <ApplicationProvider {...eva} theme={eva.light}>
         <Provider store={store}>
           <PersistGate persistor={persistor} loading={<Spinner />}>

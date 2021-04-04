@@ -9,9 +9,9 @@
     "userInterfaceStyle": "automatic",
     "entryPoint": "./src/App.tsx",
     "splash": {
-      "image": "./src/assets/images/splash.png",
+      "image": "./src/assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8ac9ff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

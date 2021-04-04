@@ -10,6 +10,7 @@ import {
 } from "@ui-kitten/components";
 import { StackHeaderProps } from "@react-navigation/stack";
 import { RenderProp } from "@ui-kitten/components/devsupport";
+import { default as icon } from "assets/icon.png";
 
 const BackIcon: RenderProp<Partial<ImageProps>> = (props) => (
   <Icon {...props} name="arrow-back" />
@@ -28,10 +29,7 @@ export const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
         }
         title={() => (
           <View style={styles.titleContainer}>
-            <Avatar
-              style={styles.logo}
-              source={require("../../assets/icon.png")}
-            />
+            <Avatar style={styles.logo} source={icon} />
             <Text category={"h5"}>{"PPL Quizz"}</Text>
           </View>
         )}
