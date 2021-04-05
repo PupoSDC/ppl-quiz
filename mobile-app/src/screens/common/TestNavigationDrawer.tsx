@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Drawer, DrawerItem, IndexPath } from "@ui-kitten/components";
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import { DrawerContentOptions } from "@react-navigation/drawer/lib/typescript/src/types";
@@ -7,6 +7,31 @@ import { TestDrawerParamList } from "types/navigation";
 import { QuestionStateIcon } from "components/QuestionStateIcon";
 
 export type TestNavigationDrawerProps = DrawerContentComponentProps<DrawerContentOptions>;
+
+type QuestionDrawerItemProps = {
+  correct: string;
+  selected?: string;
+  finished: boolean;
+  index: number;
+  navigate: TestNavigationDrawerProps["navigation"]["navigate"];
+};
+
+const QuestionDrawerItem = React.memo<QuestionDrawerItemProps>(
+  ({ correct, selected, finished, index, navigate }) => (
+    <DrawerItem
+      accessoryLeft={(props) => (
+        <QuestionStateIcon
+          {...props}
+          finished={finished}
+          selected={selected}
+          correct={correct}
+        />
+      )}
+      title={`Question ${index + 1}`}
+      onPress={() => navigate("Question", { questionIndex: index })}
+    />
+  )
+);
 
 export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerProps> = ({
   navigation: { navigate },
@@ -21,23 +46,14 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
 
   return (
     <Drawer selectedIndex={new IndexPath(currentIndex)}>
-      {questions.map(({ id, correct, selected }, questionIndex) => {
-        return (
-          <DrawerItem
-            key={id}
-            accessoryLeft={(props) => (
-              <QuestionStateIcon
-                {...props}
-                finished={finished}
-                selected={selected}
-                correct={correct}
-              />
-            )}
-            title={`Question ${questionIndex + 1}`}
-            onPress={() => navigate("Question", { questionIndex })}
-          />
-        );
-      })}
+      {questions.map((question) => (
+        <QuestionDrawerItem
+          {...question}
+          key={question.id}
+          navigate={navigate}
+          finished={finished}
+        />
+      ))}
     </Drawer>
   );
 };

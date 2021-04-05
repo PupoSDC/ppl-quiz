@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useCallback, useState } from "react";
 import { StatusBar, StyleSheet } from "react-native";
 import {
   Button,
@@ -16,9 +16,32 @@ import { makeTest } from "utils/makeTest";
 import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 
-export const TestMakerScreen: FunctionComponent<
-  RootStackScreenProps<"Home">
-> = ({ navigation: { navigate } }) => {
+export type TestMakerScreenProps = RootStackScreenProps<"Home">;
+
+type TestBlockListItem = {
+  id: string;
+  totalNumberOfQuestions: number;
+  selected: boolean;
+  title: string;
+  selectTestBlock: (id: string) => void;
+};
+
+const TestBlockListItem = React.memo<TestBlockListItem>(
+  ({ id, totalNumberOfQuestions, selected, title, selectTestBlock }) => (
+    <ListItem
+      title={title}
+      description={`total questions: ${totalNumberOfQuestions}`}
+      accessoryRight={() => (
+        <CheckBox checked={selected} onChange={() => selectTestBlock(id)} />
+      )}
+      onPress={() => selectTestBlock(id)}
+    />
+  )
+);
+
+export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
+  navigation: { navigate },
+}) => {
   const dispatch = useDispatch();
   const questionBank = useSelector((store) =>
     Object.values(store.questionBank)
@@ -28,12 +51,15 @@ export const TestMakerScreen: FunctionComponent<
     {}
   );
 
-  const selectTestBlock = (blockId: string) => {
-    setSelectedBlocks((blocks) => ({
-      ...blocks,
-      [blockId]: blocks[blockId] ? false : true,
-    }));
-  };
+  const selectTestBlock = useCallback(
+    (blockId: string) => {
+      setSelectedBlocks((blocks) => ({
+        ...blocks,
+        [blockId]: blocks[blockId] ? false : true,
+      }));
+    },
+    [setSelectedBlocks]
+  );
 
   const startTest = () => {
     const questions = makeTest({
@@ -60,38 +86,18 @@ export const TestMakerScreen: FunctionComponent<
           />
         )}
       />
-      <ListItem
-        disabled
-        style={styles.section}
-        title={"Questions to show: "}
-        description={() => (
-          <Select value="All" disabled>
-            <SelectItem title="All" />
-            <SelectItem title="Never seen before" />
-            <SelectItem title="Never seen and wrong" />
-            <SelectItem title="Wrong only" />
-          </Select>
-        )}
-      />
+
       <List
         style={styles.section}
         data={questionBank}
-        renderItem={({
-          item: { id, name, questions },
-        }: {
-          item: QuestionBlock;
-        }) => (
-          <ListItem
-            key={id}
-            title={name}
-            description={`total questions: ${questions.length}`}
-            accessoryRight={() => (
-              <CheckBox
-                checked={selectedBlocks[id]}
-                onChange={() => selectTestBlock(id)}
-              />
-            )}
-            onPress={() => selectTestBlock(id)}
+        renderItem={({ item }: { item: QuestionBlock }) => (
+          <TestBlockListItem
+            key={item.id}
+            id={item.id}
+            totalNumberOfQuestions={item.questions.length}
+            selected={selectedBlocks[item.id]}
+            title={item.name}
+            selectTestBlock={selectTestBlock}
           />
         )}
       />

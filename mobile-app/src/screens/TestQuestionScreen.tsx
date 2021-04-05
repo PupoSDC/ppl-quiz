@@ -18,6 +18,7 @@ import {
 import { TestCompletedModal } from "./common/TestCompletedModal";
 import { EvaStatus } from "@ui-kitten/components/devsupport";
 import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGestureHandler";
+import { ImageSource } from "react-native-image-viewing/dist/@types";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -125,7 +126,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
       </Layout>
       {image && (
         <ImageView
-          images={[image]}
+          images={[image as ImageSource]}
           imageIndex={0}
           visible={imageIsOpen}
           onRequestClose={() => setImageIsOpen(false)}

@@ -16,10 +16,9 @@ import { Provider } from "react-redux";
 import { store, persistor } from "store";
 import { RootStack } from "navigation/RootStack";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { setQuestionBanks } from "constants/actions";
-import questionBlocks from "assets/questions";
+import { enableScreens } from "react-native-screens";
 
-store.dispatch(setQuestionBanks({ questionBlocks }));
+enableScreens();
 StatusBar.setBarStyle("dark-content", true);
 ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 

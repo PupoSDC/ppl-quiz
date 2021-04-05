@@ -11,7 +11,6 @@ const Drawer = createDrawerNavigator<TestDrawerParamList>();
 export const TestDrawer: React.FunctionComponent = () => {
   const isFinished = useSelector((store) => store.currentTest.finished);
   const questions = useSelector((store) => store.currentTest.questions);
-
   const firstUnanswered = questions.findIndex((question) => !question.selected);
   return (
     <Drawer.Navigator
