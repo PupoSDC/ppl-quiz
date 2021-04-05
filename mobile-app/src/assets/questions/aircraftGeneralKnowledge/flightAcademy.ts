@@ -2912,7 +2912,7 @@ const questions: Question[] = [
   {
     id: "AGK0119",
     question:
-      "When is it necessary to adjust the pressure in the reference scale of an alitimeter?",
+      "When is it necessary to adjust the pressure in the reference scale of an altimeter?",
     answers: [
       {
         id: "AGK0119001",

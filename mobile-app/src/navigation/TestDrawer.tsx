@@ -13,8 +13,6 @@ export const TestDrawer: React.FunctionComponent = () => {
   const questions = useSelector((store) => store.currentTest.questions);
 
   const firstUnanswered = questions.findIndex((question) => !question.selected);
-
-  console.log(firstUnanswered);
   return (
     <Drawer.Navigator
       initialRouteName={isFinished ? "Results" : "Question"}

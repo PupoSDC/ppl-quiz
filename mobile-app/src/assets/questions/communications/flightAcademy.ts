@@ -3,7 +3,7 @@ import { Question } from "types/questionBank";
 const questions: Question[] = [
   {
     id: "COM0001",
-    question: " In which situations should a pilot use blind transmissions?",
+    question: "In which situations should a pilot use blind transmissions?",
     answers: [
       {
         id: "COM0001001",
@@ -31,7 +31,7 @@ const questions: Question[] = [
   {
     id: "COM0002",
     question:
-      " Leaving a control frequency (except when reaching the final parking position)... (1, P.)",
+      " Leaving a control frequency (except when reaching the final parking position)...",
     answers: [
       {
         id: "COM0002001",
@@ -383,7 +383,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0017",
-    question: " Which Q-code is used for the true bearing from the station?",
+    question: "Which Q-code is used for the true bearing from the station?",
     answers: [
       {
         id: "COM0017001",
@@ -406,7 +406,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0018",
-    question: " Which Q-code is used for the true bearing to the station?",
+    question: "Which Q-code is used for the true bearing to the station?",
     answers: [
       {
         id: "COM0018001",
@@ -558,7 +558,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0024",
-    question: " Which of the following messages has the highest priority?",
+    question: "Which of the following messages has the highest priority?",
     answers: [
       {
         id: "COM0024001",
@@ -581,7 +581,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0025",
-    question: " What is the correct way to transmit the call sign HB-YKM?",
+    question: "What is the correct way to transmit the call sign HB-YKM?",
     answers: [
       {
         id: "COM0025001",
@@ -604,7 +604,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0026",
-    question: " What is the correct way to transmit the call sign OE-JVK?",
+    question: "What is the correct way to transmit the call sign OE-JVK?",
     answers: [
       {
         id: "COM0026001",
@@ -650,7 +650,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0028",
-    question: " A heading of 285 degrees is correctly transmitted as...",
+    question: "A heading of 285 degrees is correctly transmitted as...",
     answers: [
       {
         id: "COM0028001",
@@ -673,7 +673,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0029",
-    question: " A frequency of 119.500 MHz is correctly transmitted as...",
+    question: "A frequency of 119.500 MHz is correctly transmitted as...",
     answers: [
       {
         id: "COM0029001",
@@ -1006,7 +1006,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0043",
-    question: " What is the call sign of the surface movement control?",
+    question: "What is the call sign of the surface movement control?",
     answers: [
       {
         id: "COM0043001",
@@ -1029,7 +1029,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0044",
-    question: " What is the call sign of the flight information service?",
+    question: "What is the call sign of the flight information service?",
     answers: [
       {
         id: "COM0044001",
@@ -1052,7 +1052,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0045",
-    question: " What is the correct abbreviation of the call sign D-EAZF?",
+    question: "What is the correct abbreviation of the call sign D-EAZF?",
     answers: [
       {
         id: "COM0045001",
@@ -1530,7 +1530,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0065",
-    question: " In what cases is visibility transmitted in kilometers?",
+    question: "In what cases is visibility transmitted in kilometers?",
     answers: [
       {
         id: "COM0065001",
@@ -1553,7 +1553,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0066",
-    question: " What information is broadcasted on a VOLMET frequency?",
+    question: "What information is broadcasted on a VOLMET frequency?",
     answers: [
       {
         id: "COM0066001",
@@ -1647,7 +1647,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0070",
-    question: " What is the correct phrase to begin a blind transmission?",
+    question: "What is the correct phrase to begin a blind transmission?",
     answers: [
       {
         id: "COM0070001",
@@ -1670,7 +1670,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0071",
-    question: " On what frequency shall a blind transmission be made?",
+    question: "On what frequency shall a blind transmission be made?",
     answers: [
       {
         id: "COM0071001",
@@ -1870,7 +1870,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0079",
-    question: " What is the correct frequency for an initial distress message?",
+    question: "What is the correct frequency for an initial distress message?",
     answers: [
       {
         id: "COM0079001",
@@ -1945,7 +1945,7 @@ const questions: Question[] = [
   {
     id: "COM0082",
     question:
-      " Which of the following frequencies is designated for VHF voice communication? (1, P.)",
+      " Which of the following frequencies is designated for VHF voice communication?",
     answers: [
       {
         id: "COM0082001",

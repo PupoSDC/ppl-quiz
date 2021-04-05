@@ -3,7 +3,7 @@ import { Question } from "types/questionBank";
 const questions: Question[] = [
   {
     id: "OPR0001",
-    question: ' The term "flight time" is defined as... (1,00 P.)',
+    question: ' The term "flight time" is defined as... ',
     answers: [
       {
         id: "OPR0001001",
@@ -31,7 +31,7 @@ const questions: Question[] = [
   {
     id: "OPR0002",
     question:
-      " What should be considered regarding a scheduled flight over water, when land cannot be reached in case of an emergency landing? (1,00 P.)",
+      " What should be considered regarding a scheduled flight over water, when land cannot be reached in case of an emergency landing? ",
     answers: [
       {
         id: "OPR0002001",
@@ -87,7 +87,7 @@ const questions: Question[] = [
   {
     id: "OPR0004",
     question:
-      " How can the pilot of an an engine-driven aircraft minimise the noise emission during descent and approach? (1,00 P.)",
+      " How can the pilot of an an engine-driven aircraft minimise the noise emission during descent and approach? ",
     answers: [
       {
         id: "OPR0004001",
@@ -115,7 +115,7 @@ const questions: Question[] = [
   {
     id: "OPR0005",
     question:
-      " When should turns at low altitudes above villages be avoided with regard to noise abatement procedures? (1,00 P.)",
+      " When should turns at low altitudes above villages be avoided with regard to noise abatement procedures? ",
     answers: [
       {
         id: "OPR0005001",
@@ -138,7 +138,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0006",
-    question: " How should departures near villages be carried out? (1,00 P.)",
+    question: " How should departures near villages be carried out? ",
     answers: [
       {
         id: "OPR0006001",
@@ -163,8 +163,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0007",
-    question:
-      " Which kind of engine is susceptible to carburettor fire? (1,00 P.)",
+    question: " Which kind of engine is susceptible to carburettor fire? ",
     answers: [
       {
         id: "OPR0007001",
@@ -188,7 +187,7 @@ const questions: Question[] = [
   {
     id: "OPR0008",
     question:
-      " Why is it dangerous to pump the throttle for engine start in cold weather? (1,00 P.)",
+      " Why is it dangerous to pump the throttle for engine start in cold weather? ",
     answers: [
       {
         id: "OPR0008001",
@@ -211,7 +210,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0009",
-    question: " Which danger exists during engine start? (1,00 P.)",
+    question: " Which danger exists during engine start? ",
     answers: [
       {
         id: "OPR0009001",
@@ -234,8 +233,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0010",
-    question:
-      " May an engine, which previously was on fire, be restarted? (1,00 P.)",
+    question: " May an engine, which previously was on fire, be restarted? ",
     answers: [
       {
         id: "OPR0010001",
@@ -259,7 +257,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0011",
-    question: " Which gas is most dangerous during an engine fire? (1,00 P.)",
+    question: " Which gas is most dangerous during an engine fire? ",
     answers: [
       {
         id: "OPR0011001",
@@ -283,7 +281,7 @@ const questions: Question[] = [
   {
     id: "OPR0012",
     question:
-      " Smoke enters the cockpit during an engine fire. Which actions have to be taken immediately? (1,00 P.)",
+      " Smoke enters the cockpit during an engine fire. Which actions have to be taken immediately? ",
     answers: [
       {
         id: "OPR0012001",
@@ -307,7 +305,7 @@ const questions: Question[] = [
   {
     id: "OPR0013",
     question:
-      " What should be the first action in case of a cable fire during a flight? (1,00 P.)",
+      " What should be the first action in case of a cable fire during a flight? ",
     answers: [
       {
         id: "OPR0013001",
@@ -331,7 +329,7 @@ const questions: Question[] = [
   {
     id: "OPR0014",
     question:
-      " What extinguishing agent is the least suitable for an aircraft fire? (1,00 P.)",
+      " What extinguishing agent is the least suitable for an aircraft fire? ",
     answers: [
       {
         id: "OPR0014001",
@@ -355,7 +353,7 @@ const questions: Question[] = [
   {
     id: "OPR0015",
     question:
-      " In flight, a little smoke emerges from behind the instrument panel. An electrical fire is suspected. Which action, with respect to the pilot's operating manual, should be taken? (1,00 P.)",
+      " In flight, a little smoke emerges from behind the instrument panel. An electrical fire is suspected. Which action, with respect to the pilot's operating manual, should be taken? ",
     answers: [
       {
         id: "OPR0015001",
@@ -379,7 +377,7 @@ const questions: Question[] = [
   {
     id: "OPR0016",
     question:
-      " In flight, a little smoke emerges from behind the instrument panel. An engine fire is suspected. Which action, with respect to the pilot's operating manual, should be taken? (1,00 P.)",
+      " In flight, a little smoke emerges from behind the instrument panel. An engine fire is suspected. Which action, with respect to the pilot's operating manual, should be taken? ",
     answers: [
       {
         id: "OPR0016001",
@@ -402,7 +400,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0017",
-    question: " A wind shear is... (1,00 P.)",
+    question: " A wind shear is... ",
     answers: [
       {
         id: "OPR0017001",
@@ -428,7 +426,7 @@ const questions: Question[] = [
   {
     id: "OPR0018",
     question:
-      " Which weather phenomenon is typically associated with wind shear? (1,00 P.)",
+      " Which weather phenomenon is typically associated with wind shear? ",
     answers: [
       {
         id: "OPR0018001",
@@ -451,7 +449,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0019",
-    question: " When do you expect wind shear? (1,00 P.)",
+    question: " When do you expect wind shear? ",
     answers: [
       {
         id: "OPR0019001",
@@ -475,7 +473,7 @@ const questions: Question[] = [
   {
     id: "OPR0020",
     question:
-      " During an approach the aeroplane experiences a windshear with a decreasing headwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? (1,00 P.)",
+      " During an approach the aeroplane experiences a windshear with a decreasing headwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? ",
     answers: [
       {
         id: "OPR0020001",
@@ -499,7 +497,7 @@ const questions: Question[] = [
   {
     id: "OPR0021",
     question:
-      " During an approach the aeroplane experiences a windshear with an increasing headwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? (1,00 P.)",
+      " During an approach the aeroplane experiences a windshear with an increasing headwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? ",
     answers: [
       {
         id: "OPR0021001",
@@ -525,7 +523,7 @@ const questions: Question[] = [
   {
     id: "OPR0022",
     question:
-      " During an approach the aeroplane experiences a windshear with a decreasing tailwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? (1,00 P.)",
+      " During an approach the aeroplane experiences a windshear with a decreasing tailwind. If the pilot does not make any corrections, how do the approach path and the indicated airspeed (IAS) change? ",
     answers: [
       {
         id: "OPR0022001",
@@ -549,7 +547,7 @@ const questions: Question[] = [
   {
     id: "OPR0023",
     question:
-      " After take-off an aeroplane gets into a wind shear with decreasing headwind. As a result... (1,00 P.)",
+      " After take-off an aeroplane gets into a wind shear with decreasing headwind. As a result... ",
     answers: [
       {
         id: "OPR0023001",
@@ -572,7 +570,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0024",
-    question: " How may windshear be recognised in flight? (1,00 P.)",
+    question: " How may windshear be recognised in flight? ",
     answers: [
       {
         id: "OPR0024001",
@@ -599,8 +597,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0025",
-    question:
-      " Which phenomenon may be expected at point 2 of the microburst? See figure (OPR-001) (1,00 P.) Siehe Anlage 1",
+    question: " Which phenomenon may be expected at point 2 of the microburst?",
     answers: [
       {
         id: "OPR0025001",
@@ -620,11 +617,11 @@ const questions: Question[] = [
       },
     ],
     correct: "OPR0025004",
+    image: require("./images/OPR01.png"),
   },
   {
     id: "OPR0026",
-    question:
-      " Which phenomenon may be expected at point 3 of the miroburst? See figure (OPR-001) (1,00 P.) Siehe Anlage 1",
+    question: " Which phenomenon may be expected at point 3 of the miroburst?",
     answers: [
       {
         id: "OPR0026001",
@@ -644,10 +641,11 @@ const questions: Question[] = [
       },
     ],
     correct: "OPR0026001",
+    image: require("./images/OPR01.png"),
   },
   {
     id: "OPR0027",
-    question: " How can a wind shear encounter in flight be avoided? (1,00 P.)",
+    question: " How can a wind shear encounter in flight be avoided? ",
     answers: [
       {
         id: "OPR0027001",
@@ -675,7 +673,7 @@ const questions: Question[] = [
   {
     id: "OPR0029",
     question:
-      " After lift-off, a much stronger than expected airspeed rise is experienced during the initial climb phase. What may be expected if the aeroplane entered a microburst? (1,00 P.)",
+      " After lift-off, a much stronger than expected airspeed rise is experienced during the initial climb phase. What may be expected if the aeroplane entered a microburst? ",
     answers: [
       {
         id: "OPR0029001",
@@ -699,7 +697,7 @@ const questions: Question[] = [
   {
     id: "OPR0030",
     question:
-      " Immediately after lift-off, a microburst is entered inadvertently. Which action might avoid an unintentional descent? (1,00 P.)",
+      " Immediately after lift-off, a microburst is entered inadvertently. Which action might avoid an unintentional descent? ",
     answers: [
       {
         id: "OPR0030001",
@@ -727,7 +725,7 @@ const questions: Question[] = [
   {
     id: "OPR0031",
     question:
-      " Wake turbulences develop during take-off just as the aeroplane... (1,00 P.)",
+      " Wake turbulences develop during take-off just as the aeroplane... ",
     answers: [
       {
         id: "OPR0031001",
@@ -750,7 +748,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0032",
-    question: " Wake turbulence is caused by... (1,00 P.)",
+    question: " Wake turbulence is caused by... ",
     answers: [
       {
         id: "OPR0032001",
@@ -773,7 +771,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0033",
-    question: " Wake turbulence is particularly strong... (1,00 P.)",
+    question: " Wake turbulence is particularly strong... ",
     answers: [
       {
         id: "OPR0033001",
@@ -796,7 +794,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0034",
-    question: " Wake turbulence is particularly strong... (1,00 P.)",
+    question: " Wake turbulence is particularly strong... ",
     answers: [
       {
         id: "OPR0034001",
@@ -819,7 +817,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0035",
-    question: " The intensity of wake turbulence depends on... (1,00 P.)",
+    question: " The intensity of wake turbulence depends on... ",
     answers: [
       {
         id: "OPR0035001",
@@ -843,7 +841,7 @@ const questions: Question[] = [
   {
     id: "OPR0036",
     question:
-      " Two aircraft of the same type, same grossweight and same configuration fly at different airspeeds. Which aircraft will cause more severe wake turbulence? (1,00 P.)",
+      " Two aircraft of the same type, same grossweight and same configuration fly at different airspeeds. Which aircraft will cause more severe wake turbulence? ",
     answers: [
       {
         id: "OPR0036001",
@@ -867,7 +865,7 @@ const questions: Question[] = [
   {
     id: "OPR0037",
     question:
-      " Two aircraft of the same type, same gross weight and same flap configuration fly with different speeds and altitude. Which aircraft will cause more wake turbulence? (1,00 P.)",
+      " Two aircraft of the same type, same gross weight and same flap configuration fly with different speeds and altitude. Which aircraft will cause more wake turbulence? ",
     answers: [
       {
         id: "OPR0037001",
@@ -891,7 +889,7 @@ const questions: Question[] = [
   {
     id: "OPR0038",
     question:
-      " With only a slight crosswind, what is the danger at take-off after the departure of a heavy aeroplane? (1,00 P.)",
+      " With only a slight crosswind, what is the danger at take-off after the departure of a heavy aeroplane? ",
     answers: [
       {
         id: "OPR0038001",
@@ -915,7 +913,7 @@ const questions: Question[] = [
   {
     id: "OPR0039",
     question:
-      ' A light aircraft intends to land behind a commercial airliner belonging to wake turbulence category "medium" or "heavy" on a long runway. How can the wake turbulence of the commercial aircraft be avoided? (1,00 P.)',
+      ' A light aircraft intends to land behind a commercial airliner belonging to wake turbulence category "medium" or "heavy" on a long runway. How can the wake turbulence of the commercial aircraft be avoided? ',
     answers: [
       {
         id: "OPR0039001",
@@ -943,7 +941,7 @@ const questions: Question[] = [
   {
     id: "OPR0040",
     question:
-      " What should be observed when taxiing behind a commercial airliner? (1,00 P.)",
+      " What should be observed when taxiing behind a commercial airliner? ",
     answers: [
       {
         id: "OPR0040001",
@@ -971,7 +969,7 @@ const questions: Question[] = [
   {
     id: "OPR0041",
     question:
-      " A technical fault requires an emergency off-field landing. Which steps, with respect to the pilot's operating handbook, are necessary? (1,00 P.)",
+      " A technical fault requires an emergency off-field landing. Which steps, with respect to the pilot's operating handbook, are necessary? ",
     answers: [
       {
         id: "OPR0041001",
@@ -999,7 +997,7 @@ const questions: Question[] = [
   {
     id: "OPR0042",
     question:
-      " Which method is appropriate to approach an unprepared landing field? (1,00 P.)",
+      " Which method is appropriate to approach an unprepared landing field? ",
     answers: [
       {
         id: "OPR0042001",
@@ -1024,7 +1022,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0043",
-    question: " Which area is suitable for an off-field landing? (1,00 P.)",
+    question: " Which area is suitable for an off-field landing? ",
     answers: [
       {
         id: "OPR0043001",
@@ -1047,7 +1045,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0044",
-    question: " An emergency landing is a landing... (1,00 P.)",
+    question: " An emergency landing is a landing... ",
     answers: [
       {
         id: "OPR0044001",
@@ -1073,7 +1071,7 @@ const questions: Question[] = [
   {
     id: "OPR0045",
     question:
-      " A landing conducted in response to circumstances forcing the aircraft to land is a / an... (1,00 P.)",
+      " A landing conducted in response to circumstances forcing the aircraft to land is a / an... ",
     answers: [
       {
         id: "OPR0045001",
@@ -1096,7 +1094,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0046",
-    question: " A precautionary landing is a landing... (1,00 P.)",
+    question: " A precautionary landing is a landing... ",
     answers: [
       {
         id: "OPR0046001",
@@ -1121,7 +1119,7 @@ const questions: Question[] = [
   {
     id: "OPR0047",
     question:
-      " Which of the following landing areas is most suitable for an off-field landing? (1,00 P.)",
+      " Which of the following landing areas is most suitable for an off-field landing? ",
     answers: [
       {
         id: "OPR0047001",
@@ -1145,7 +1143,7 @@ const questions: Question[] = [
   {
     id: "OPR0048",
     question:
-      " How does the pilot prepare for a VFR flight over a large distance of water, when it is unlikely that land can be reached in case of an engine failure? (1,00 P.)",
+      " How does the pilot prepare for a VFR flight over a large distance of water, when it is unlikely that land can be reached in case of an engine failure? ",
     answers: [
       {
         id: "OPR0048001",
@@ -1169,7 +1167,7 @@ const questions: Question[] = [
   {
     id: "OPR0049",
     question:
-      " Which items should a passenger briefing in case of an imminent emergency landing include? (1,00 P.)",
+      " Which items should a passenger briefing in case of an imminent emergency landing include? ",
     answers: [
       {
         id: "OPR0049001",
@@ -1197,7 +1195,7 @@ const questions: Question[] = [
   {
     id: "OPR0050",
     question:
-      " After a precautionary landing the brakes and wheels are very hot. In which way should the pilot approach them? (1,00 P.)",
+      " After a precautionary landing the brakes and wheels are very hot. In which way should the pilot approach them? ",
     answers: [
       {
         id: "OPR0050001",
@@ -1221,7 +1219,7 @@ const questions: Question[] = [
   {
     id: "OPR0051",
     question:
-      " What needs to be observed in conjunction with overheated brakes? (1,00 P.)",
+      " What needs to be observed in conjunction with overheated brakes? ",
     answers: [
       {
         id: "OPR0051001",
@@ -1246,7 +1244,7 @@ const questions: Question[] = [
   {
     id: "OPR0052",
     question:
-      " In case of an emergency ditching, the life vests have to be inflated... (1,00 P.)",
+      " In case of an emergency ditching, the life vests have to be inflated... ",
     answers: [
       {
         id: "OPR0052001",
@@ -1271,7 +1269,7 @@ const questions: Question[] = [
   {
     id: "OPR0053",
     question:
-      " What are the effects of wet grass on the take-off and landing distance? (1,00 P.)",
+      " What are the effects of wet grass on the take-off and landing distance? ",
     answers: [
       {
         id: "OPR0053001",
@@ -1327,7 +1325,7 @@ const questions: Question[] = [
   {
     id: "OPR0055",
     question:
-      ' What minimum coverage with ice or snow must be given to call a runway "contaminated"? (1,00 P.)',
+      ' What minimum coverage with ice or snow must be given to call a runway "contaminated"? ',
     answers: [
       {
         id: "OPR0055001",
@@ -1350,7 +1348,7 @@ const questions: Question[] = [
   },
   {
     id: "OPR0056",
-    question: " Wet snow on a runway can lead to... (1,00 P.)",
+    question: " Wet snow on a runway can lead to... ",
     answers: [
       {
         id: "OPR0056001",
@@ -1374,7 +1372,7 @@ const questions: Question[] = [
   {
     id: "OPR0057",
     question:
-      " What danger does standing water on the runway pose to aircraft? (1,00 P.)",
+      " What danger does standing water on the runway pose to aircraft? ",
     answers: [
       {
         id: "OPR0057001",
@@ -1398,7 +1396,7 @@ const questions: Question[] = [
   {
     id: "OPR0058",
     question:
-      " Which danger exists after a heavy rain shower for a landing aircraft? (1,00 P.)",
+      " Which danger exists after a heavy rain shower for a landing aircraft? ",
     answers: [
       {
         id: "OPR0058001",
@@ -1422,7 +1420,7 @@ const questions: Question[] = [
   {
     id: "OPR0059",
     question:
-      " Which would be the correct reaction when hydroplaning is suspected upon landing? (1,00 P.)",
+      " Which would be the correct reaction when hydroplaning is suspected upon landing? ",
     answers: [
       {
         id: "OPR0059001",
@@ -1449,7 +1447,7 @@ const questions: Question[] = [
   {
     id: "OPR0060",
     question:
-      " How should a landing on a contaminated runway be conducted if it proves to be inevitable? (1,00 P.)",
+      " How should a landing on a contaminated runway be conducted if it proves to be inevitable? ",
     answers: [
       {
         id: "OPR0060001",
@@ -1477,7 +1475,7 @@ const questions: Question[] = [
   {
     id: "OPR0061",
     question:
-      " During final approach, the glider pilot realizes a very bumpy surface on a selected off- field landing site. What technique may be recommended for landing? (1,00 P.)",
+      " During final approach, the glider pilot realizes a very bumpy surface on a selected off- field landing site. What technique may be recommended for landing? ",
     answers: [
       {
         id: "OPR0061001",
