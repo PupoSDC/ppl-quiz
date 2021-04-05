@@ -1,9 +1,4 @@
-import {
-  AnswerId,
-  Question,
-  QuestionBlockId,
-  QuestionId,
-} from "./questionBank";
+import { AnswerId, Question, QuestionBlockId } from "./questionBank";
 
 export enum TestMode {
   ALL = "ALL",

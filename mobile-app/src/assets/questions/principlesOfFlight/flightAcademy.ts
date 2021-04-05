@@ -1569,7 +1569,7 @@ const questions: Question[] = [
   {
     id: "POF0066",
     question:
-      "Which constructive feature is shown in the figure? See figure (PFA-006) L: Lift Siehe Anlage 4",
+      "Which constructive feature is shown in the figure? See figure (PFA-006) L: Lift",
     answers: [
       {
         id: "POF0066001",
@@ -1588,6 +1588,7 @@ const questions: Question[] = [
         answer: "Directional stability by lift generation",
       },
     ],
+    image: require("./images/PF4.png"),
     correct: "POF0066002",
   },
   {
@@ -2258,8 +2259,7 @@ const questions: Question[] = [
   },
   {
     id: "POF0095",
-    question:
-      "Point number 1 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
+    question: "Point number 1 in the figure indicates which flight state?",
     answers: [
       {
         id: "POF0095001",
@@ -2279,11 +2279,11 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0095002",
+    image: require("./images/PF5.png"),
   },
   {
     id: "POF0096",
-    question:
-      "Point number 5 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5",
+    question: "Point number 5 in the figure indicates which flight state?",
     answers: [
       {
         id: "POF0096001",
@@ -2303,6 +2303,7 @@ const questions: Question[] = [
       },
     ],
     correct: "POF0096002",
+    image: require("./images/PF5.png"),
   },
   {
     id: "POF0097",

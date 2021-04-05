@@ -1,5 +1,5 @@
 import { Question } from "types/questionBank";
-import { default as imageHPL01 } from "../images/HPL01.png";
+import { default as imageHPL01 } from "./images/HPL01.png";
 
 const questions: Question[] = [
   {
@@ -27,8 +27,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0002",
-    question:
-      ' The "swiss cheese model" can be used to explain the... (1,00 P.)',
+    question: ' The "swiss cheese model" can be used to explain the...',
     answers: [
       {
         id: "HPL0002001",
@@ -51,7 +50,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0003",
-    question: " What is the percentage of oxygen in the atmosphere at 6000 ft?",
+    question: "What is the percentage of oxygen in the atmosphere at 6000 ft?",
     answers: [
       {
         id: "HPL0003001",
@@ -74,7 +73,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0004",
-    question: " What is the percentage of nitrogen in the atmosphere?",
+    question: "What is the percentage of nitrogen in the atmosphere?",
     answers: [
       {
         id: "HPL0004001",
@@ -98,7 +97,7 @@ const questions: Question[] = [
   {
     id: "HPL0005",
     question:
-      " At which altitude is the atmospheric pressure approximately half the MSL value ( hPa)?",
+      "At which altitude is the atmospheric pressure approximately half the MSL value ( hPa)?",
     answers: [
       {
         id: "HPL0005001",
@@ -122,7 +121,7 @@ const questions: Question[] = [
   {
     id: "HPL0006",
     question:
-      " Air consists of oxygen, nitrogen and other gases. What is the approximate percentage of other gases?",
+      "Air consists of oxygen, nitrogen and other gases. What is the approximate percentage of other gases?",
     answers: [
       {
         id: "HPL0006001",
@@ -168,7 +167,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0008",
-    question: ' What does the term "Red-out" mean? (1,00 P.)',
+    question: ' What does the term "Red-out" mean?',
     answers: [
       {
         id: "HPL0008001",
@@ -214,7 +213,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0010",
-    question: " Which of the following is NOT a symptom of hyperventilaton?",
+    question: "Which of the following is NOT a symptom of hyperventilaton?",
     answers: [
       {
         id: "HPL0010001",
@@ -237,7 +236,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0011",
-    question: " Which of the following symptoms may indicate hypoxia?",
+    question: "Which of the following symptoms may indicate hypoxia?",
     answers: [
       {
         id: "HPL0011001",
@@ -260,7 +259,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0012",
-    question: " Which of the human senses is most influenced by hypoxia?",
+    question: "Which of the human senses is most influenced by hypoxia?",
     answers: [
       {
         id: "HPL0012001",
@@ -284,7 +283,7 @@ const questions: Question[] = [
   {
     id: "HPL0013",
     question:
-      " From which altitude on does the body usually react to the decreasing atmospheric pressure?",
+      "From which altitude on does the body usually react to the decreasing atmospheric pressure?",
     answers: [
       {
         id: "HPL0013001",
@@ -308,7 +307,7 @@ const questions: Question[] = [
   {
     id: "HPL0014",
     question:
-      " Which altitude marks the lower limit where the the body is unable to completely compensate the effects of the low atmospheric pressure?",
+      "Which altitude marks the lower limit where the the body is unable to completely compensate the effects of the low atmospheric pressure?",
     answers: [
       {
         id: "HPL0014001",
@@ -331,7 +330,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0015",
-    question: " What is the function of the red blood cells (erythrocytes)?",
+    question: "What is the function of the red blood cells (erythrocytes)?",
     answers: [
       {
         id: "HPL0015001",
@@ -355,7 +354,7 @@ const questions: Question[] = [
   {
     id: "HPL0016",
     question:
-      " Which of the following is responsible for the blood coagulation?",
+      "Which of the following is responsible for the blood coagulation?",
     answers: [
       {
         id: "HPL0016001",
@@ -378,7 +377,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0017",
-    question: " What is the function of the white blood cells (leucocytes)?",
+    question: "What is the function of the white blood cells (leucocytes)?",
     answers: [
       {
         id: "HPL0017001",
@@ -401,7 +400,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0018",
-    question: " What is the function of the blood platelets (thrombocytes)?",
+    question: "What is the function of the blood platelets (thrombocytes)?",
     answers: [
       {
         id: "HPL0018001",
@@ -424,7 +423,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0019",
-    question: " Which of the following is NOT a risk factor for hypoxia?",
+    question: "Which of the following is NOT a risk factor for hypoxia?",
     answers: [
       {
         id: "HPL0019001",
@@ -471,7 +470,7 @@ const questions: Question[] = [
   {
     id: "HPL0021",
     question:
-      " What is an appropriate reaction when a passenger during cruise flight suddenly feels uncomfortable?",
+      "What is an appropriate reaction when a passenger during cruise flight suddenly feels uncomfortable?",
     answers: [
       {
         id: "HPL0021001",
@@ -495,7 +494,7 @@ const questions: Question[] = [
   {
     id: "HPL0022",
     question:
-      " What ist the correct term for an involuntary and stereotypical reaction of an organism to the stimulation of a receptor?",
+      "What ist the correct term for an involuntary and stereotypical reaction of an organism to the stimulation of a receptor?",
     answers: [
       {
         id: "HPL0022001",
@@ -519,7 +518,7 @@ const questions: Question[] = [
   {
     id: "HPL0023",
     question:
-      " What is the correct term for the system which, among others, controls breathing, digestion, and heart frequency?",
+      "What is the correct term for the system which, among others, controls breathing, digestion, and heart frequency?",
     answers: [
       {
         id: "HPL0023001",
@@ -567,7 +566,7 @@ const questions: Question[] = [
   {
     id: "HPL0025",
     question:
-      " Which characteristic is important when choosing sunglasses used by pilots?",
+      "Which characteristic is important when choosing sunglasses used by pilots?",
     answers: [
       {
         id: "HPL0025001",
@@ -591,7 +590,7 @@ const questions: Question[] = [
   {
     id: "HPL0026",
     question:
-      " Which part of the visual system is responsible for colour vision?",
+      "Which part of the visual system is responsible for colour vision?",
     answers: [
       {
         id: "HPL0026001",
@@ -615,7 +614,7 @@ const questions: Question[] = [
   {
     id: "HPL0027",
     question:
-      " The connection between middle ear and nose and throat region is called...",
+      "The connection between middle ear and nose and throat region is called...",
     answers: [
       {
         id: "HPL0027001",
@@ -639,7 +638,7 @@ const questions: Question[] = [
   {
     id: "HPL0028",
     question:
-      " In which situation is it NOT possible to achieve a pressure compensation between the middle ear and the environment?",
+      "In which situation is it NOT possible to achieve a pressure compensation between the middle ear and the environment?",
     answers: [
       {
         id: "HPL0028001",
@@ -663,7 +662,7 @@ const questions: Question[] = [
   {
     id: "HPL0029",
     question:
-      " Wings level after a longer period of turning can lead to the impression of...",
+      "Wings level after a longer period of turning can lead to the impression of...",
     answers: [
       {
         id: "HPL0029001",
@@ -687,7 +686,7 @@ const questions: Question[] = [
   {
     id: "HPL0030",
     question:
-      " Which of the following options does NOT stimulate motion sickness (disorientation)?",
+      "Which of the following options does NOT stimulate motion sickness (disorientation)?",
     answers: [
       {
         id: "HPL0030001",
@@ -711,7 +710,7 @@ const questions: Question[] = [
   {
     id: "HPL0031",
     question:
-      " An acceleration during a straight horizontal flight can lead to the illusion of...",
+      "An acceleration during a straight horizontal flight can lead to the illusion of...",
     answers: [
       {
         id: "HPL0031001",
@@ -735,7 +734,7 @@ const questions: Question[] = [
   {
     id: "HPL0032",
     question:
-      " A deceleration during a straight horizontal flight can lead to the illusion of...",
+      "A deceleration during a straight horizontal flight can lead to the illusion of...",
     answers: [
       {
         id: "HPL0032001",
@@ -759,7 +758,7 @@ const questions: Question[] = [
   {
     id: "HPL0033",
     question:
-      " Which optical illusion might be caused by a runway with an upslope during the approach?",
+      "Which optical illusion might be caused by a runway with an upslope during the approach?",
     answers: [
       {
         id: "HPL0033001",
@@ -787,7 +786,7 @@ const questions: Question[] = [
   {
     id: "HPL0034",
     question:
-      " What impression may be caused when approaching a runway with an upslope? (1, P.)",
+      "What impression may be caused when approaching a runway with an upslope?",
     answers: [
       {
         id: "HPL0034001",
@@ -811,7 +810,7 @@ const questions: Question[] = [
   {
     id: "HPL0035",
     question:
-      " The occurence of a vertigo is most likely when moving the head...",
+      "The occurence of a vertigo is most likely when moving the head...",
     answers: [
       {
         id: "HPL0035001",
@@ -881,7 +880,7 @@ const questions: Question[] = [
   {
     id: "HPL0038",
     question:
-      " The average decrease of blood alcohol level for an adult in one hour is approximately...",
+      "The average decrease of blood alcohol level for an adult in one hour is approximately...",
     answers: [
       {
         id: "HPL0038001",
@@ -951,7 +950,7 @@ const questions: Question[] = [
   {
     id: "HPL0041",
     question:
-      " Which statement is correct with regard to the short-term memory?",
+      "Which statement is correct with regard to the short-term memory?",
     answers: [
       {
         id: "HPL0041001",
@@ -975,7 +974,7 @@ const questions: Question[] = [
   {
     id: "HPL0042",
     question:
-      " For what approximate time period can the short-time memory store information? (1, P.)",
+      "For what approximate time period can the short-time memory store information?",
     answers: [
       {
         id: "HPL0042001",
@@ -1022,7 +1021,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0044",
-    question: ' What does the term "confirmation bias" mean? (1,00 P.)',
+    question: ' What does the term "confirmation bias" mean?',
     answers: [
       {
         id: "HPL0044001",
@@ -1047,7 +1046,7 @@ const questions: Question[] = [
   {
     id: "HPL0045",
     question:
-      " The ongoing process to monitor the current flight situation is called...",
+      "The ongoing process to monitor the current flight situation is called...",
     answers: [
       {
         id: "HPL0045001",
@@ -1071,7 +1070,7 @@ const questions: Question[] = [
   {
     id: "HPL0046",
     question:
-      " Regarding the communication model, how can the use of the same code during radio communication be ensured?",
+      "Regarding the communication model, how can the use of the same code during radio communication be ensured?",
     answers: [
       {
         id: "HPL0046001",
@@ -1094,7 +1093,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0047",
-    question: " In what different ways can a risk be handled appropriately?",
+    question: "In what different ways can a risk be handled appropriately?",
     answers: [
       {
         id: "HPL0047001",
@@ -1118,7 +1117,7 @@ const questions: Question[] = [
   {
     id: "HPL0048",
     question:
-      " Under which circumstances is it more likely to accept higher risks?",
+      "Under which circumstances is it more likely to accept higher risks?",
     answers: [
       {
         id: "HPL0048001",
@@ -1141,7 +1140,7 @@ const questions: Question[] = [
   },
   {
     id: "HPL0049",
-    question: ' What is the meaning of "risky shift"? (1,00 P.)',
+    question: ' What is the meaning of "risky shift"?',
     answers: [
       {
         id: "HPL0049001",
@@ -1236,7 +1235,7 @@ const questions: Question[] = [
   {
     id: "HPL0053",
     question:
-      " What is the best combination of traits with respect to the individual attitude and behaviour for a pilot?",
+      "What is the best combination of traits with respect to the individual attitude and behaviour for a pilot?",
     answers: [
       {
         id: "HPL0053001",
@@ -1284,7 +1283,7 @@ const questions: Question[] = [
   {
     id: "HPL0055",
     question:
-      " The ideal level of arousal is at which point in the diagram? (P = Performance A = Arousal / Stress)",
+      "The ideal level of arousal is at which point in the diagram? (P = Performance A = Arousal / Stress)",
     answers: [
       {
         id: "HPL0055001",
@@ -1309,7 +1308,7 @@ const questions: Question[] = [
   {
     id: "HPL0056",
     question:
-      " At which point in the diagram will a pilot find himself to be overstrained? (P = Performance A = Arousal / Stress)",
+      "At which point in the diagram will a pilot find himself to be overstrained? (P = Performance A = Arousal / Stress)",
     answers: [
       {
         id: "HPL0056001",

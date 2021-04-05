@@ -2332,7 +2332,7 @@ const questions: Question[] = [
   {
     id: "ALW0095",
     question:
-      " What is the meaning of the illustrated ground signal as shown in the signal area of an aerodrome? See figure (ALW-012) Siehe Anlage 5",
+      " What is the meaning of the illustrated ground signal as shown in the signal area of an aerodrome?",
     answers: [
       {
         id: "ALWALW0095001",
