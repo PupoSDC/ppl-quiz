@@ -1,7 +1,8 @@
 import "react-native-gesture-handler";
 import { registerRootComponent } from "expo";
-import React, { FunctionComponent, Suspense, useEffect } from "react";
+import React, { FunctionComponent, Suspense } from "react";
 import * as eva from "@eva-design/eva";
+import * as ScreenOrientation from "expo-screen-orientation";
 import {
   ApplicationProvider,
   IconRegistry,
@@ -20,6 +21,7 @@ import questionBlocks from "assets/questions";
 
 store.dispatch(setQuestionBanks({ questionBlocks }));
 StatusBar.setBarStyle("dark-content", true);
+ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
 const App: FunctionComponent = () => {
   return (

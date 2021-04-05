@@ -3,8 +3,7 @@ import { Question } from "types/questionBank";
 const questions: Question[] = [
   {
     id: "COM0001",
-    question:
-      " In which situations should a pilot use blind transmissions? (1,00 P.)",
+    question: " In which situations should a pilot use blind transmissions?",
     answers: [
       {
         id: "COM0001001",
@@ -55,7 +54,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0003",
-    question: ' Which abbreviation is used for the term "abeam"? (1,00 P.)',
+    question: ' Which abbreviation is used for the term "abeam"?',
     answers: [
       {
         id: "COM0003001",
@@ -78,8 +77,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0004",
-    question:
-      ' Which abbreviation is used for the term "visual flight rules"? (1,00 P.)',
+    question: ' Which abbreviation is used for the term "visual flight rules"?',
     answers: [
       {
         id: "COM0004001",
@@ -102,7 +100,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0005",
-    question: ' Which abbreviation is used for the term "obstacle"? (1,00 P.)',
+    question: ' Which abbreviation is used for the term "obstacle"?',
     answers: [
       {
         id: "COM0005001",
@@ -125,7 +123,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0006",
-    question: ' What does the abbreviation "FIS" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "FIS" stand for?',
     answers: [
       {
         id: "COM0006001",
@@ -148,7 +146,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0007",
-    question: ' What does the abbreviaton "FIR" stand for? (1,00 P.)',
+    question: ' What does the abbreviaton "FIR" stand for?',
     answers: [
       {
         id: "COM0007001",
@@ -171,7 +169,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0008",
-    question: ' What does the abbreviation "H24" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "H24" stand for?',
     answers: [
       {
         id: "COM0008001",
@@ -194,7 +192,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0009",
-    question: ' What does the abbreviation "HX" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "HX" stand for?',
     answers: [
       {
         id: "COM0009001",
@@ -218,7 +216,7 @@ const questions: Question[] = [
   {
     id: "COM0010",
     question:
-      " The altimeter has to be set to what value in order to show zero on ground? (1,00 P.)",
+      " The altimeter has to be set to what value in order to show zero on ground?",
     answers: [
       {
         id: "COM0010001",
@@ -242,7 +240,7 @@ const questions: Question[] = [
   {
     id: "COM0011",
     question:
-      " Which altitude is displayed on the altimeter when set to a specific QNH? (1,00 P.)",
+      " Which altitude is displayed on the altimeter when set to a specific QNH?",
     answers: [
       {
         id: "COM0011001",
@@ -268,7 +266,7 @@ const questions: Question[] = [
   {
     id: "COM0012",
     question:
-      " Which altitude is displayed on the altimeter when set to a specific QFE? (1,00 P.)",
+      " Which altitude is displayed on the altimeter when set to a specific QFE?",
     answers: [
       {
         id: "COM0012001",
@@ -292,7 +290,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0013",
-    question: ' What does the abbreviation "QDR" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "QDR" stand for?',
     answers: [
       {
         id: "COM0013001",
@@ -315,7 +313,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0014",
-    question: ' What does the abbreviation "QUJ" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "QUJ" stand for?',
     answers: [
       {
         id: "COM0014001",
@@ -338,7 +336,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0015",
-    question: ' What does the abbreviation "QTE" stand for? (1,00 P.)',
+    question: ' What does the abbreviation "QTE" stand for?',
     answers: [
       {
         id: "COM0015001",
@@ -362,7 +360,7 @@ const questions: Question[] = [
   {
     id: "COM0016",
     question:
-      " Which Q-code is used for the magnetic bearing from the station? (1,00 P.)",
+      " Which Q-code is used for the magnetic bearing from the station?",
     answers: [
       {
         id: "COM0016001",
@@ -385,8 +383,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0017",
-    question:
-      " Which Q-code is used for the true bearing from the station? (1,00 P.)",
+    question: " Which Q-code is used for the true bearing from the station?",
     answers: [
       {
         id: "COM0017001",
@@ -409,8 +406,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0018",
-    question:
-      " Which Q-code is used for the true bearing to the station? (1,00 P.)",
+    question: " Which Q-code is used for the true bearing to the station?",
     answers: [
       {
         id: "COM0018001",
@@ -434,7 +430,7 @@ const questions: Question[] = [
   {
     id: "COM0019",
     question:
-      " Which of the listed radiotelephony messages has a higher priority than a flight safety message? (1,00 P.)",
+      " Which of the listed radiotelephony messages has a higher priority than a flight safety message?",
     answers: [
       {
         id: "COM0019001",
@@ -458,7 +454,7 @@ const questions: Question[] = [
   {
     id: "COM0020",
     question:
-      " What is the correct term for a message used for air traffic control? (1,00 P.)",
+      " What is the correct term for a message used for air traffic control?",
     answers: [
       {
         id: "COM0020001",
@@ -481,7 +477,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0021",
-    question: " Distress messages are messages... (1,00 P.)",
+    question: "Distress messages are messages...",
     answers: [
       {
         id: "COM0021001",
@@ -508,7 +504,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0022",
-    question: " Urgency messages are messages... (1,00 P.)",
+    question: "Urgency messages are messages...",
     answers: [
       {
         id: "COM0022001",
@@ -535,7 +531,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0023",
-    question: " Regularity messages are messages... (1,00 P.)",
+    question: "Regularity messages are messages...",
     answers: [
       {
         id: "COM0023001",
@@ -562,8 +558,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0024",
-    question:
-      " Which of the following messages has the highest priority? (1,00 P.)",
+    question: " Which of the following messages has the highest priority?",
     answers: [
       {
         id: "COM0024001",
@@ -586,8 +581,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0025",
-    question:
-      " What is the correct way to transmit the call sign HB-YKM? (1,00 P.)",
+    question: " What is the correct way to transmit the call sign HB-YKM?",
     answers: [
       {
         id: "COM0025001",
@@ -610,8 +604,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0026",
-    question:
-      " What is the correct way to transmit the call sign OE-JVK? (1,00 P.)",
+    question: " What is the correct way to transmit the call sign OE-JVK?",
     answers: [
       {
         id: "COM0026001",
@@ -634,7 +627,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0027",
-    question: " An altitude of 4500 ft is transmitted as... (1,00 P.)",
+    question: "An altitude of 4500 ft is transmitted as...",
     answers: [
       {
         id: "COM0027001",
@@ -657,8 +650,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0028",
-    question:
-      " A heading of 285 degrees is correctly transmitted as... (1,00 P.)",
+    question: " A heading of 285 degrees is correctly transmitted as...",
     answers: [
       {
         id: "COM0028001",
@@ -681,8 +673,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0029",
-    question:
-      " A frequency of 119.500 MHz is correctly transmitted as... (1,00 P.)",
+    question: " A frequency of 119.500 MHz is correctly transmitted as...",
     answers: [
       {
         id: "COM0029001",
@@ -706,7 +697,7 @@ const questions: Question[] = [
   {
     id: "COM0030",
     question:
-      ' The directional information "12 o\'clock" is correctly transmitted as... (1,00 P.)',
+      ' The directional information "12 o\'clock" is correctly transmitted as...',
     answers: [
       {
         id: "COM0030001",
@@ -729,7 +720,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0031",
-    question: " Times are transmitted as... (1,00 P.)",
+    question: "Times are transmitted as...",
     answers: [
       {
         id: "COM0031001",
@@ -753,7 +744,7 @@ const questions: Question[] = [
   {
     id: "COM0032",
     question:
-      " If there is any doubt about ambiguity, a time of 1620 is to be transmitted as... (1,00 P.)",
+      " If there is any doubt about ambiguity, a time of 1620 is to be transmitted as...",
     answers: [
       {
         id: "COM0032001",
@@ -776,7 +767,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0033",
-    question: ' What is the meaning of the phrase "Roger"? (1,00 P.)',
+    question: ' What is the meaning of the phrase "Roger"?',
     answers: [
       {
         id: "COM0033001",
@@ -800,7 +791,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0034",
-    question: ' What is the meaning of the phrase "Correction"? (1,00 P.)',
+    question: ' What is the meaning of the phrase "Correction"?',
     answers: [
       {
         id: "COM0034001",
@@ -824,7 +815,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0035",
-    question: ' What is the meaning of the phrase "Approved"? (1,00 P.)',
+    question: ' What is the meaning of the phrase "Approved"?',
     answers: [
       {
         id: "COM0035001",
@@ -849,7 +840,7 @@ const questions: Question[] = [
   {
     id: "COM0036",
     question:
-      " Which phrase does a pilot use when he / she wants to check the readability of his / her transmission? (1,00 P.)",
+      " Which phrase does a pilot use when he / she wants to check the readability of his / her transmission?",
     answers: [
       {
         id: "COM0036001",
@@ -873,7 +864,7 @@ const questions: Question[] = [
   {
     id: "COM0037",
     question:
-      " Which phrase is used by a pilot when he wants to fly through controlled airspace? (1,00 P.)",
+      " Which phrase is used by a pilot when he wants to fly through controlled airspace?",
     answers: [
       {
         id: "COM0037001",
@@ -897,7 +888,7 @@ const questions: Question[] = [
   {
     id: "COM0038",
     question:
-      ' What phrase is used by a pilot if a transmission is to be answered with "yes"? (1,00 P.)',
+      ' What phrase is used by a pilot if a transmission is to be answered with "yes"?',
     answers: [
       {
         id: "COM0038001",
@@ -921,7 +912,7 @@ const questions: Question[] = [
   {
     id: "COM0039",
     question:
-      ' What phrase is used by a pilot if a transmission is to be answered with "no"? (1,00 P.)',
+      ' What phrase is used by a pilot if a transmission is to be answered with "no"?',
     answers: [
       {
         id: "COM0039001",
@@ -945,7 +936,7 @@ const questions: Question[] = [
   {
     id: "COM0040",
     question:
-      " Which phrase is to be used when a pilot wants the tower to know that he is ready for take-off? (1,00 P.)",
+      " Which phrase is to be used when a pilot wants the tower to know that he is ready for take-off?",
     answers: [
       {
         id: "COM0040001",
@@ -969,7 +960,7 @@ const questions: Question[] = [
   {
     id: "COM0041",
     question:
-      " What phrase is used by a pilot to inform the tower about a go-around? (1,00 P.)",
+      " What phrase is used by a pilot to inform the tower about a go-around?",
     answers: [
       {
         id: "COM0041001",
@@ -992,7 +983,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0042",
-    question: " What is the call sign of the aerodrome control? (1,00 P.)",
+    question: "What is the call sign of the aerodrome control?",
     answers: [
       {
         id: "COM0042001",
@@ -1015,8 +1006,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0043",
-    question:
-      " What is the call sign of the surface movement control? (1,00 P.)",
+    question: " What is the call sign of the surface movement control?",
     answers: [
       {
         id: "COM0043001",
@@ -1039,8 +1029,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0044",
-    question:
-      " What is the call sign of the flight information service? (1,00 P.)",
+    question: " What is the call sign of the flight information service?",
     answers: [
       {
         id: "COM0044001",
@@ -1063,8 +1052,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0045",
-    question:
-      " What is the correct abbreviation of the call sign D-EAZF? (1,00 P.)",
+    question: " What is the correct abbreviation of the call sign D-EAZF?",
     answers: [
       {
         id: "COM0045001",
@@ -1088,7 +1076,7 @@ const questions: Question[] = [
   {
     id: "COM0046",
     question:
-      " In what case is the pilot allowed to abbreviate the call sign of his aircraft? (1,00 P.)",
+      " In what case is the pilot allowed to abbreviate the call sign of his aircraft?",
     answers: [
       {
         id: "COM0046001",
@@ -1112,7 +1100,7 @@ const questions: Question[] = [
   {
     id: "COM0047",
     question:
-      " What is the correct way of using the aircraft call sign at first contact? (1,00 P.)",
+      " What is the correct way of using the aircraft call sign at first contact?",
     answers: [
       {
         id: "COM0047001",
@@ -1136,7 +1124,7 @@ const questions: Question[] = [
   {
     id: "COM0048",
     question:
-      " What is the correct way of establishing radio communication between D-EAZF and Dusseldorf Tower? (1,00 P.)",
+      " What is the correct way of establishing radio communication between D-EAZF and Dusseldorf Tower?",
     answers: [
       {
         id: "COM0048001",
@@ -1160,7 +1148,7 @@ const questions: Question[] = [
   {
     id: "COM0049",
     question:
-      ' What is the correct way of acknowledging the instruction "Call Hamburg Tower on 121.275"? (1,00 P.)',
+      ' What is the correct way of acknowledging the instruction "Call Hamburg Tower on 121.275"?',
     answers: [
       {
         id: "COM0049001",
@@ -1183,7 +1171,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0050",
-    question: " What does a readability of 1 indicate? (1,00 P.)",
+    question: "What does a readability of 1 indicate?",
     answers: [
       {
         id: "COM0050001",
@@ -1206,7 +1194,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0051",
-    question: " What does a readability of 2 indicate? (1,00 P.)",
+    question: "What does a readability of 2 indicate?",
     answers: [
       {
         id: "COM0051001",
@@ -1229,7 +1217,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0052",
-    question: " What does a readability of 3 indicate? (1,00 P.)",
+    question: "What does a readability of 3 indicate?",
     answers: [
       {
         id: "COM0052001",
@@ -1252,7 +1240,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0053",
-    question: " What does a readability of 5 indicate? (1,00 P.)",
+    question: "What does a readability of 5 indicate?",
     answers: [
       {
         id: "COM0053001",
@@ -1276,7 +1264,7 @@ const questions: Question[] = [
   {
     id: "COM0054",
     question:
-      " Which information from a ground station does not require readback? (1,00 P.)",
+      " Which information from a ground station does not require readback?",
     answers: [
       {
         id: "COM0054001",
@@ -1300,7 +1288,7 @@ const questions: Question[] = [
   {
     id: "COM0055",
     question:
-      " Which information from a ground station does not require readback? (1,00 P.)",
+      " Which information from a ground station does not require readback?",
     answers: [
       {
         id: "COM0055001",
@@ -1324,7 +1312,7 @@ const questions: Question[] = [
   {
     id: "COM0056",
     question:
-      ' What is the correct way of acknowledging the instruction "DZF after lift-off climb straight ahead until 2500 feet before turning right heading 220 degrees, wind 090 degrees, 5 knots, runway 12, cleared for take-off"? (1,00 P.)',
+      ' What is the correct way of acknowledging the instruction "DZF after lift-off climb straight ahead until 2500 feet before turning right heading 220 degrees, wind 090 degrees, 5 knots, runway 12, cleared for take-off"?',
     answers: [
       {
         id: "COM0056001",
@@ -1352,7 +1340,7 @@ const questions: Question[] = [
   {
     id: "COM0057",
     question:
-      ' What is the correct way of acknowledging the instruction "Next report PAH"? (1,00 P.)',
+      ' What is the correct way of acknowledging the instruction "Next report PAH"?',
     answers: [
       {
         id: "COM0057001",
@@ -1376,7 +1364,7 @@ const questions: Question[] = [
   {
     id: "COM0058",
     question:
-      ' What is the correct way of acknowledging the instruction "Squawk 4321, Call Bremen Radar on 131.325"? (1,00 P.)',
+      ' What is the correct way of acknowledging the instruction "Squawk 4321, Call Bremen Radar on 131.325"?',
     answers: [
       {
         id: "COM0058001",
@@ -1400,7 +1388,7 @@ const questions: Question[] = [
   {
     id: "COM0059",
     question:
-      ' What is the correct way of acknowledging "You are now entering airspace Delta"? (1,00 P.)',
+      ' What is the correct way of acknowledging "You are now entering airspace Delta"?',
     answers: [
       {
         id: "COM0059001",
@@ -1424,7 +1412,7 @@ const questions: Question[] = [
   {
     id: "COM0060",
     question:
-      ' What does a cloud coverage of "FEW" mean in a METAR weather report? (1,00 P.)',
+      ' What does a cloud coverage of "FEW" mean in a METAR weather report?',
     answers: [
       {
         id: "COM0060001",
@@ -1448,7 +1436,7 @@ const questions: Question[] = [
   {
     id: "COM0061",
     question:
-      ' What does a cloud coverage of "SCT" mean in a METAR weather report? (1,00 P.)',
+      ' What does a cloud coverage of "SCT" mean in a METAR weather report?',
     answers: [
       {
         id: "COM0061001",
@@ -1472,7 +1460,7 @@ const questions: Question[] = [
   {
     id: "COM0062",
     question:
-      ' What does a cloud coverage of "BKN" mean in a METAR weather report? (1,00 P.)',
+      ' What does a cloud coverage of "BKN" mean in a METAR weather report?',
     answers: [
       {
         id: "COM0062001",
@@ -1496,7 +1484,7 @@ const questions: Question[] = [
   {
     id: "COM0063",
     question:
-      " Given a visibility of 12 km, what is the correct way to transmit this visibility? (1,00 P.)",
+      " Given a visibility of 12 km, what is the correct way to transmit this visibility?",
     answers: [
       {
         id: "COM0063001",
@@ -1519,7 +1507,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0064",
-    question: " In what case is visibility transmitted in meters? (1,00 P.)",
+    question: "In what case is visibility transmitted in meters?",
     answers: [
       {
         id: "COM0064001",
@@ -1542,8 +1530,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0065",
-    question:
-      " In what cases is visibility transmitted in kilometers? (1,00 P.)",
+    question: " In what cases is visibility transmitted in kilometers?",
     answers: [
       {
         id: "COM0065001",
@@ -1566,8 +1553,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0066",
-    question:
-      " What information is broadcasted on a VOLMET frequency? (1,00 P.)",
+    question: " What information is broadcasted on a VOLMET frequency?",
     answers: [
       {
         id: "COM0066001",
@@ -1591,7 +1577,7 @@ const questions: Question[] = [
   {
     id: "COM0067",
     question:
-      " Which navigation facility may be used for broadcasting the ATIS? (1,00 P.)",
+      " Which navigation facility may be used for broadcasting the ATIS?",
     answers: [
       {
         id: "COM0067001",
@@ -1615,7 +1601,7 @@ const questions: Question[] = [
   {
     id: "COM0068",
     question:
-      " How can you obtain meteorological information concerning airports during a cross- country flight? (1,00 P.)",
+      " How can you obtain meteorological information concerning airports during a cross- country flight?",
     answers: [
       {
         id: "COM0068001",
@@ -1638,7 +1624,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0069",
-    question: " Which transponder code indicates a radio failure? (1,00 P.)",
+    question: "Which transponder code indicates a radio failure?",
     answers: [
       {
         id: "COM0069001",
@@ -1661,8 +1647,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0070",
-    question:
-      " What is the correct phrase to begin a blind transmission? (1,00 P.)",
+    question: " What is the correct phrase to begin a blind transmission?",
     answers: [
       {
         id: "COM0070001",
@@ -1685,8 +1670,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0071",
-    question:
-      " On what frequency shall a blind transmission be made? (1,00 P.)",
+    question: " On what frequency shall a blind transmission be made?",
     answers: [
       {
         id: "COM0071001",
@@ -1709,7 +1693,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0072",
-    question: " How often shall a blind transmission be made? (1,00 P.)",
+    question: "How often shall a blind transmission be made?",
     answers: [
       {
         id: "COM0072001",
@@ -1733,7 +1717,7 @@ const questions: Question[] = [
   {
     id: "COM0073",
     question:
-      " In what situation is it appropriate to set the transponder code 7600? (1,00 P.)",
+      " In what situation is it appropriate to set the transponder code 7600?",
     answers: [
       {
         id: "COM0073001",
@@ -1757,7 +1741,7 @@ const questions: Question[] = [
   {
     id: "COM0074",
     question:
-      " What is the correct course of action when experiencing a radio failure in class D airspace? (1,00 P.)",
+      " What is the correct course of action when experiencing a radio failure in class D airspace?",
     answers: [
       {
         id: "COM0074001",
@@ -1785,7 +1769,7 @@ const questions: Question[] = [
   {
     id: "COM0075",
     question:
-      " Under what conditions may class D airspace be entered with a radio failure? (1,00 P.)",
+      " Under what conditions may class D airspace be entered with a radio failure?",
     answers: [
       {
         id: "COM0075001",
@@ -1809,7 +1793,7 @@ const questions: Question[] = [
   {
     id: "COM0076",
     question:
-      " Which phrase is to be repeated three times before transmitting an urgency message? (1,00 P.)",
+      " Which phrase is to be repeated three times before transmitting an urgency message?",
     answers: [
       {
         id: "COM0076001",
@@ -1832,7 +1816,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0077",
-    question: " Urgency messages are defined as... (1,00 P.)",
+    question: "Urgency messages are defined as...",
     answers: [
       {
         id: "COM0077001",
@@ -1859,7 +1843,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0078",
-    question: " Distress messages contain... (1,00 P.)",
+    question: "Distress messages contain...",
     answers: [
       {
         id: "COM0078001",
@@ -1886,8 +1870,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0079",
-    question:
-      " What is the correct frequency for an initial distress message? (1,00 P.)",
+    question: " What is the correct frequency for an initial distress message?",
     answers: [
       {
         id: "COM0079001",
@@ -1911,7 +1894,7 @@ const questions: Question[] = [
   {
     id: "COM0080",
     question:
-      " What kind of information should be included in an urgency message? (1,00 P.)",
+      " What kind of information should be included in an urgency message?",
     answers: [
       {
         id: "COM0080001",
@@ -1938,7 +1921,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0081",
-    question: " The correct transponder code for emergencies is... (1,00 P.)",
+    question: "The correct transponder code for emergencies is...",
     answers: [
       {
         id: "COM0081001",
@@ -1986,7 +1969,7 @@ const questions: Question[] = [
   {
     id: "COM0083",
     question:
-      " Which of the following frequencies is designated for VHF voice communication? (1,00 P.)",
+      " Which of the following frequencies is designated for VHF voice communication?",
     answers: [
       {
         id: "COM0083001",
@@ -2010,7 +1993,7 @@ const questions: Question[] = [
   {
     id: "COM0084",
     question:
-      " What is the correct designation of the frequency band from 118.000 to 136.975 MHz used for voice communication? (1,00 P.)",
+      " What is the correct designation of the frequency band from 118.000 to 136.975 MHz used for voice communication?",
     answers: [
       {
         id: "COM0084001",
@@ -2034,7 +2017,7 @@ const questions: Question[] = [
   {
     id: "COM0085",
     question:
-      " Which of the following factors affects the reception of VHF transmissions? (1,00 P.)",
+      " Which of the following factors affects the reception of VHF transmissions?",
     answers: [
       {
         id: "COM0085001",
@@ -2058,7 +2041,7 @@ const questions: Question[] = [
   {
     id: "COM0086",
     question:
-      " What is the approximate speed of electromagnetic wave propagation? (1,00 P.)",
+      " What is the approximate speed of electromagnetic wave propagation?",
     answers: [
       {
         id: "COM0086001",
@@ -2081,7 +2064,7 @@ const questions: Question[] = [
   },
   {
     id: "COM0087",
-    question: " An ATIS is valid for... (1,00 P.)",
+    question: "An ATIS is valid for...",
     answers: [
       {
         id: "COM0087001",

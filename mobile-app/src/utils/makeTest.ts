@@ -16,11 +16,18 @@ export const makeTest = ({
       ...sum,
       ...bank.questions.map((q) => ({
         ...q,
+
         questionBlockId: bank.id,
         index: 0,
       })),
     ],
     []
   );
-  return perfectShuffle(allQuestions).slice(0, numberOfQuestions);
+  return perfectShuffle(allQuestions)
+    .slice(0, numberOfQuestions)
+    .map(({ answers, ...question }, index) => ({
+      ...question,
+      index,
+      answers: perfectShuffle(answers),
+    }));
 };
