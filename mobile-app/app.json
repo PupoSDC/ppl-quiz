@@ -8,6 +8,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "entryPoint": "./src/App.tsx",
+    "description": "An EASA PPL (Private Pilot License) theory modules quizz app.",
     "splash": {
       "image": "./src/assets/splash.png",
       "resizeMode": "contain",
