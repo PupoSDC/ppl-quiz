@@ -952,8 +952,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0040",
-    question: `
-      An aeroplane's current supply is carried out by the:
+    question: `An aeroplane's current supply is carried out by the:
 
       1) Battery
       2) Generator
@@ -1927,7 +1926,7 @@ const questions: Question[] = [
       {
         id: "AGK0078003",
         answer:
-          "To reference the altimeter reading to a predetermined level such as mean sea level, aerodrome\nlevel or pressure level 1013.25 hPa",
+          "To reference the altimeter reading to a predetermined level such as mean sea level, aerodrome level or pressure level 1013.25 hPa",
       },
       {
         id: "AGK0078004",
