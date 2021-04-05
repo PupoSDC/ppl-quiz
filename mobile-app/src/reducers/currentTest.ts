@@ -1,6 +1,7 @@
 import { createReducer } from "@reduxjs/toolkit";
 import {
   resetCurrentTest,
+  resetProgress,
   setCurrentTest,
   setCurrentTestAnswer,
   setCurrentTestFinished,
@@ -48,6 +49,10 @@ export const currentTestReducer = createReducer<CurrentTestStore>(
         finished: true,
       }))
       .addCase(resetCurrentTest, () => ({
+        questions: [],
+        finished: false,
+      }))
+      .addCase(resetProgress, () => ({
         questions: [],
         finished: false,
       }))

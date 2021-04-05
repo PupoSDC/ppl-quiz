@@ -75,7 +75,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0004",
-    question: " Which wing configuration is shown in the attachment?",
+    question: "Which wing configuration is shown in the attachment?",
     answers: [
       {
         id: "AGK0004001",
@@ -123,7 +123,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0006",
-    question: " Which tail assembly is shown in the attachment?",
+    question: "Which tail assembly is shown in the attachment?",
     answers: [
       {
         id: "AGK0006001",
@@ -147,7 +147,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0007",
-    question: " What are the major components of an aircraft's tail?",
+    question: "What are the major components of an aircraft's tail?",
     answers: [
       {
         id: "AGK0007001",
@@ -170,7 +170,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0008",
-    question: " The sandwich structure consists of two...",
+    question: "The sandwich structure consists of two...",
     answers: [
       {
         id: "AGK0008001",
@@ -193,7 +193,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0009",
-    question: " Which constructional elements give the wing its profile shape?",
+    question: "Which constructional elements give the wing its profile shape?",
     answers: [
       {
         id: "AGK0009001",
@@ -239,7 +239,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0011",
-    question: " Which are the advantages of sandwich structures?",
+    question: "Which are the advantages of sandwich structures?",
     answers: [
       {
         id: "AGK0011001",
@@ -262,7 +262,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0012",
-    question: " Which of the stated materials shows the highest strength?",
+    question: "Which of the stated materials shows the highest strength?",
     answers: [
       {
         id: "AGK0012001",
@@ -313,7 +313,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0014",
-    question: " Reasons for dents in the aircraft structure are...",
+    question: "Reasons for dents in the aircraft structure are...",
     answers: [
       {
         id: "AGK0014001",
@@ -336,7 +336,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0015",
-    question: " What kind of hydraulic oil is used in aeroplane systems today?",
+    question: "What kind of hydraulic oil is used in aeroplane systems today?",
     answers: [
       {
         id: "AGK0015001",
@@ -359,7 +359,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0016",
-    question: " Number 1 on the gear designates the...",
+    question: "Number 1 on the gear designates the...",
     answers: [
       {
         id: "AGK0016001",
@@ -383,7 +383,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0017",
-    question: " The fuselage structure may be damaged by...",
+    question: "The fuselage structure may be damaged by...",
     answers: [
       {
         id: "AGK0017001",
@@ -406,7 +406,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0018",
-    question: " Number 2 on the gear designates the...",
+    question: "Number 2 on the gear designates the...",
     answers: [
       {
         id: "AGK0018001",
@@ -478,7 +478,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0021",
-    question: " What kind of control surface is connected with the nose wheel?",
+    question: "What kind of control surface is connected with the nose wheel?",
     answers: [
       {
         id: "AGK0021001",
@@ -501,7 +501,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0022",
-    question: " What is checked by the marking in the attachment?",
+    question: "What is checked by the marking in the attachment?",
     answers: [
       {
         id: "AGK0022001",
@@ -700,7 +700,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0030",
-    question: " What is the purpose of the secondary flight controls?",
+    question: "What is the purpose of the secondary flight controls?",
     answers: [
       {
         id: "AGK0030001",
@@ -726,7 +726,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0031",
-    question: " What is the purpose of a ground adjustable trim tab?",
+    question: "What is the purpose of a ground adjustable trim tab?",
     answers: [
       {
         id: "AGK0031001",
@@ -825,7 +825,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0035",
-    question: " The trim is used to...",
+    question: "The trim is used to...",
     answers: [
       {
         id: "AGK0035001",
@@ -875,7 +875,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0037",
-    question: " What has to be considered during refueling?",
+    question: "What has to be considered during refueling?",
     answers: [
       {
         id: "AGK0037001",
@@ -901,7 +901,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0038",
-    question: " The primer is...",
+    question: "The primer is...",
     answers: [
       {
         id: "AGK0038001",
@@ -928,7 +928,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0039",
-    question: " What is the purpose of the tank ventilation?",
+    question: "What is the purpose of the tank ventilation?",
     answers: [
       {
         id: "AGK0039001",
@@ -982,7 +982,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0041",
-    question: " What is the unit for voltage?",
+    question: "What is the unit for voltage?",
     answers: [
       {
         id: "AGK0041001",
@@ -1005,7 +1005,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0042",
-    question: " What is the unit for electrical power?",
+    question: "What is the unit for electrical power?",
     answers: [
       {
         id: "AGK0042001",
@@ -1028,7 +1028,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0043",
-    question: " What is the reason for static dischargers on aircraft?",
+    question: "What is the reason for static dischargers on aircraft?",
     answers: [
       {
         id: "AGK0043001",
@@ -1247,7 +1247,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0052",
-    question: " Where does the condensation water converge in the tank?",
+    question: "Where does the condensation water converge in the tank?",
     answers: [
       {
         id: "AGK0052001",
@@ -1270,7 +1270,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0053",
-    question: " What does the octane rating or fuel grade describe?",
+    question: "What does the octane rating or fuel grade describe?",
     answers: [
       {
         id: "AGK0053001",
@@ -1293,7 +1293,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0054",
-    question: " Which colour does Avgas 100 LL have?",
+    question: "Which colour does Avgas 100 LL have?",
     answers: [
       {
         id: "AGK0054001",
@@ -1340,7 +1340,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0056",
-    question: " What is the major task of a carburettor?",
+    question: "What is the major task of a carburettor?",
     answers: [
       {
         id: "AGK0056001",
@@ -1387,7 +1387,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0058",
-    question: " In which outside air temperature is icing most likely?",
+    question: "In which outside air temperature is icing most likely?",
     answers: [
       {
         id: "AGK0058001",
@@ -1437,7 +1437,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0060",
-    question: " Cylinder head temperature indication relates to...",
+    question: "Cylinder head temperature indication relates to...",
     answers: [
       {
         id: "AGK0060001",
@@ -1460,7 +1460,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0061",
-    question: " What happens during oil filter clocking?",
+    question: "What happens during oil filter clocking?",
     answers: [
       {
         id: "AGK0061001",
@@ -1487,7 +1487,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0062",
-    question: " How should an Otto engine be shut down?",
+    question: "How should an Otto engine be shut down?",
     answers: [
       {
         id: "AGK0062001",
@@ -1510,7 +1510,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0063",
-    question: " Piston engines of aircrafts have...",
+    question: "Piston engines of aircrafts have...",
     answers: [
       {
         id: "AGK0063001",
@@ -1533,7 +1533,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0064",
-    question: " How do you call fuel mixtures with a high amount of fuel?",
+    question: "How do you call fuel mixtures with a high amount of fuel?",
     answers: [
       {
         id: "AGK0064001",
@@ -1682,7 +1682,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0069",
-    question: " With increasing altitude, the power of a carburettor engine...",
+    question: "With increasing altitude, the power of a carburettor engine...",
     answers: [
       {
         id: "AGK0069001",
@@ -1733,7 +1733,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0071",
-    question: " Which gauges involve a measurement of temperature?",
+    question: "Which gauges involve a measurement of temperature?",
     answers: [
       {
         id: "AGK0071001",
@@ -1816,7 +1816,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0074",
-    question: " The Pitot / static system is required to...",
+    question: "The Pitot / static system is required to...",
     answers: [
       {
         id: "AGK0074001",
@@ -1840,7 +1840,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0075",
-    question: " Which pressure is sensed by the Pitot tube?",
+    question: "Which pressure is sensed by the Pitot tube?",
     answers: [
       {
         id: "AGK0075001",
@@ -1863,7 +1863,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0076",
-    question: " QFE is the...",
+    question: "QFE is the...",
     answers: [
       {
         id: "AGK0076001",
@@ -1888,7 +1888,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0077",
-    question: " QNE is the...",
+    question: "QNE is the...",
     answers: [
       {
         id: "AGK0077001",
@@ -1913,7 +1913,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0078",
-    question: " Which is the purpose of the altimeter subscale?",
+    question: "Which is the purpose of the altimeter subscale?",
     answers: [
       {
         id: "AGK0078001",
@@ -1966,7 +1966,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0080",
-    question: " Lower-than-standard temperature may lead to...",
+    question: "Lower-than-standard temperature may lead to...",
     answers: [
       {
         id: "AGK0080001",
@@ -1991,7 +1991,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0081",
-    question: " A flight level is a...",
+    question: "A flight level is a...",
     answers: [
       {
         id: "AGK0081001",
@@ -2014,7 +2014,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0082",
-    question: " A true altitude is...",
+    question: "A true altitude is...",
     answers: [
       {
         id: "AGK0082001",
@@ -2088,7 +2088,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0085",
-    question: " Which instrument can be affected by the hysteresis error?",
+    question: "Which instrument can be affected by the hysteresis error?",
     answers: [
       {
         id: "AGK0085001",
@@ -2111,7 +2111,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0086",
-    question: " The measurement of altitude is based on the change of the...",
+    question: "The measurement of altitude is based on the change of the...",
     answers: [
       {
         id: "AGK0086001",
@@ -2189,7 +2189,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0089",
-    question: " Calibrated airspeed (CAS) equals...",
+    question: "Calibrated airspeed (CAS) equals...",
     answers: [
       {
         id: "AGK0089001",
@@ -2485,7 +2485,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0101",
-    question: " Which cockpit instruments are connected to the static port?",
+    question: "Which cockpit instruments are connected to the static port?",
     answers: [
       {
         id: "AGK0101001",
@@ -2603,7 +2603,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0106",
-    question: " What does the dynamic pressure depend directly on?",
+    question: "What does the dynamic pressure depend directly on?",
     answers: [
       {
         id: "AGK0106001",
@@ -2650,7 +2650,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0108",
-    question: " What behaviour is shown by a rotating gyro in space?",
+    question: "What behaviour is shown by a rotating gyro in space?",
     answers: [
       {
         id: "AGK0108001",
@@ -2841,7 +2841,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0116",
-    question: " What does the abbreviation HSI stand for?",
+    question: "What does the abbreviation HSI stand for?",
     answers: [
       {
         id: "AGK0116001",
@@ -2984,7 +2984,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0122",
-    question: " A vertical speed indicator measures the difference between...",
+    question: "A vertical speed indicator measures the difference between...",
     answers: [
       {
         id: "AGK0122001",
@@ -3031,7 +3031,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0124",
-    question: " What does the slip indicator show?",
+    question: "What does the slip indicator show?",
     answers: [
       {
         id: "AGK0124001",
@@ -3080,7 +3080,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0126",
-    question: " What is the purpose of winglets?",
+    question: "What is the purpose of winglets?",
     answers: [
       {
         id: "AGK0126001",
@@ -3127,7 +3127,7 @@ const questions: Question[] = [
   },
   {
     id: "AGK0128",
-    question: " What is the purpose of engine oil in piston engine?",
+    question: "What is the purpose of engine oil in piston engine?",
     answers: [
       {
         id: "AGK0128001",

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet } from "react-native";
-import { Button, Layout, List, ListItem } from "@ui-kitten/components";
+import { Layout, List, ListItem } from "@ui-kitten/components";
 import { RootStackScreenProps } from "types/navigation";
 import { useSelector } from "react-redux";
 import { getQuestionBankStatistics } from "utils/testStatistics";
@@ -17,6 +17,7 @@ export const TestStatisticsScreen: FunctionComponent<TestStatisticsProps> = ({
     Object.values(store.questionBank)
   );
   const statistics = getQuestionBankStatistics(questionBank, questions);
+
   return (
     <Layout level="1">
       <List

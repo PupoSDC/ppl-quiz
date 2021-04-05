@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import { registerRootComponent } from "expo";
-import React, { FunctionComponent, Suspense } from "react";
+import React, { FunctionComponent, Suspense, useEffect } from "react";
 import * as eva from "@eva-design/eva";
 import {
   ApplicationProvider,
@@ -20,23 +20,27 @@ import questionBlocks from "assets/questions";
 
 store.dispatch(setQuestionBanks({ questionBlocks }));
 
-StatusBar.setBarStyle("dark-content", true);
+const App: FunctionComponent = () => {
+  useEffect(() => {
+    setTimeout(() => StatusBar.setBarStyle("dark-content", true), 3000);
+  }, []);
 
-const App: FunctionComponent = () => (
-  <NavigationContainer>
-    <IconRegistry icons={EvaIconsPack} />
-    <SafeAreaView style={{ flex: 1 }}>
-      <ApplicationProvider {...eva} theme={eva.light}>
-        <Provider store={store}>
-          <PersistGate persistor={persistor} loading={<Spinner />}>
-            <Suspense fallback={<Spinner />}>
-              <RootStack />
-            </Suspense>
-          </PersistGate>
-        </Provider>
-      </ApplicationProvider>
-    </SafeAreaView>
-  </NavigationContainer>
-);
+  return (
+    <NavigationContainer>
+      <IconRegistry icons={EvaIconsPack} />
+      <SafeAreaView style={{ flex: 1 }}>
+        <ApplicationProvider {...eva} theme={eva.light}>
+          <Provider store={store}>
+            <PersistGate persistor={persistor} loading={<Spinner />}>
+              <Suspense fallback={<Spinner />}>
+                <RootStack />
+              </Suspense>
+            </PersistGate>
+          </Provider>
+        </ApplicationProvider>
+      </SafeAreaView>
+    </NavigationContainer>
+  );
+};
 
 registerRootComponent(App);

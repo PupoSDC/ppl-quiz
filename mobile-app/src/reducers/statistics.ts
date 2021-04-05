@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { setCurrentTestFinished } from "constants/actions";
+import { resetProgress, setCurrentTestFinished } from "constants/actions";
 import { QuestionsHeatMap, TestHistory } from "types/statistics";
 
 export type StatisticsStore = {
@@ -13,9 +13,8 @@ export const statisticsReducer = createReducer<StatisticsStore>(
     testHistory: [],
   },
   (builder) =>
-    builder.addCase(
-      setCurrentTestFinished,
-      (state, { payload: { questions } }) => {
+    builder
+      .addCase(setCurrentTestFinished, (state, { payload: { questions } }) => {
         questions
           .filter(({ selected }) => Boolean(selected))
           .forEach(({ id, correct, selected, questionBlockId }) => {
@@ -30,6 +29,9 @@ export const statisticsReducer = createReducer<StatisticsStore>(
             state.questions[id].timesWrong += Number(selected !== correct);
           });
         state.testHistory.push({ questions });
-      }
-    )
+      })
+      .addCase(resetProgress, () => ({
+        questions: {},
+        testHistory: [],
+      }))
 );

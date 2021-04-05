@@ -13,6 +13,7 @@ const SET_CURRENT_TEST_REVIEW = "SET_CURRENT_TEST_REVIEW";
 const SET_CURRENT_TEST_ANSWER = "SET_CURRENT_TEST_ANSWER";
 const SET_CURRENT_TEST_FINISHED = "SET_CURRENT_TEST_FINISHED";
 const RESET_CURRENT_TEST = "RESET_CURRENT_TEST";
+const RESET_PROGRESS = "RESET_PROGRESS";
 
 export const setQuestionBanks = createAction<{
   questionBlocks: QuestionBlock[];
@@ -36,3 +37,4 @@ export const setCurrentTestFinished = createAction<{
 }>(SET_CURRENT_TEST_FINISHED);
 
 export const resetCurrentTest = createAction(RESET_CURRENT_TEST);
+export const resetProgress = createAction(RESET_PROGRESS);
