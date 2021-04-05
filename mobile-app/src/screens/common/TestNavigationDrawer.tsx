@@ -1,5 +1,10 @@
 import React, { FunctionComponent } from "react";
-import { Drawer, DrawerItem, IndexPath } from "@ui-kitten/components";
+import {
+  Drawer,
+  DrawerItem,
+  IndexPath,
+  MenuItemProps,
+} from "@ui-kitten/components";
 import { DrawerContentComponentProps } from "@react-navigation/drawer";
 import { DrawerContentOptions } from "@react-navigation/drawer/lib/typescript/src/types";
 import { useSelector } from "react-redux";
@@ -10,20 +15,28 @@ export type TestNavigationDrawerProps = DrawerContentComponentProps<DrawerConten
 
 type QuestionDrawerItemProps = {
   correct: string;
-  selected?: string;
+  questionSelected?: string;
   finished: boolean;
   index: number;
   navigate: TestNavigationDrawerProps["navigation"]["navigate"];
-};
+} & MenuItemProps;
 
 const QuestionDrawerItem = React.memo<QuestionDrawerItemProps>(
-  ({ correct, selected, finished, index, navigate }) => (
+  ({
+    correct,
+    questionSelected,
+    finished,
+    index,
+    navigate,
+    ...menuItemProps
+  }) => (
     <DrawerItem
+      {...menuItemProps}
       accessoryLeft={(props) => (
         <QuestionStateIcon
           {...props}
           finished={finished}
-          selected={selected}
+          selected={questionSelected}
           correct={correct}
         />
       )}
@@ -31,12 +44,13 @@ const QuestionDrawerItem = React.memo<QuestionDrawerItemProps>(
       onPress={() => navigate("Question", { questionIndex: index })}
     />
   ),
-  (prevProps, oldProps) =>
-    prevProps.correct === oldProps.correct &&
-    prevProps.selected === oldProps.selected &&
-    prevProps.finished === oldProps.finished &&
-    prevProps.index === oldProps.index &&
-    prevProps.navigate === oldProps.navigate
+  (prevProps, nextProps) =>
+    prevProps.questionSelected === nextProps.questionSelected &&
+    prevProps.correct === nextProps.correct &&
+    prevProps.selected === nextProps.selected &&
+    prevProps.finished === nextProps.finished &&
+    prevProps.index === nextProps.index &&
+    prevProps.navigate === nextProps.navigate
 );
 
 export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerProps> = ({
@@ -55,7 +69,7 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
       {questions.map((question) => (
         <QuestionDrawerItem
           correct={question.correct}
-          selected={question.selected}
+          questionSelected={question.selected}
           index={question.index}
           key={question.id}
           navigate={navigate}
