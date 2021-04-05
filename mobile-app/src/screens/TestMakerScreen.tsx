@@ -40,7 +40,7 @@ const TestBlockListItem = React.memo<TestBlockListItem>(
 );
 
 export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
-  navigation: { navigate },
+  navigation: { replace },
 }) => {
   const dispatch = useDispatch();
   const questionBank = useSelector((store) =>
@@ -68,7 +68,7 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
     });
     if (questions.length) {
       dispatch(setCurrentTest({ questions }));
-      navigate("Test");
+      replace("Test");
     }
   };
 

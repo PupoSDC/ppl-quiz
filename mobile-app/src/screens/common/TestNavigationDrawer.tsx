@@ -30,7 +30,13 @@ const QuestionDrawerItem = React.memo<QuestionDrawerItemProps>(
       title={`Question ${index + 1}`}
       onPress={() => navigate("Question", { questionIndex: index })}
     />
-  )
+  ),
+  (prevProps, oldProps) =>
+    prevProps.correct === oldProps.correct &&
+    prevProps.selected === oldProps.selected &&
+    prevProps.finished === oldProps.finished &&
+    prevProps.index === oldProps.index &&
+    prevProps.navigate === oldProps.navigate
 );
 
 export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerProps> = ({
@@ -48,7 +54,9 @@ export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerP
     <Drawer selectedIndex={new IndexPath(currentIndex)}>
       {questions.map((question) => (
         <QuestionDrawerItem
-          {...question}
+          correct={question.correct}
+          selected={question.selected}
+          index={question.index}
           key={question.id}
           navigate={navigate}
           finished={finished}
