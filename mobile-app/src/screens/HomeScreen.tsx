@@ -1,14 +1,16 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 import { StyleSheet } from "react-native";
 import { Button, Layout } from "@ui-kitten/components";
 import { RootStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { resetProgress, setQuestionBanks } from "constants/actions";
 import questionBlocks from "assets/questions";
+import { ResetTestModal } from "./common/ResetTestModal";
 
 export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
   navigation: { navigate },
 }) => {
+  const [showTestResetModal, setShowTestResetModal] = useState(false);
   const dispatch = useDispatch();
   const testInProgress = useSelector(
     (store) => store.currentTest.questions.length > 0
@@ -46,16 +48,22 @@ export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
             style={styles.button}
             children={"Statistics"}
           />
+          <Button
+            onPress={() => setShowTestResetModal(true)}
+            style={styles.button}
+            status={"danger"}
+            children={"Reset Progress"}
+          />
         </>
       )}
-      <Button
-        onPress={() => {
+
+      <ResetTestModal
+        modalVisible={showTestResetModal}
+        setModalVisible={setShowTestResetModal}
+        onAccepted={() => {
           dispatch(resetProgress());
           dispatch(setQuestionBanks({ questionBlocks }));
         }}
-        style={styles.button}
-        status={"danger"}
-        children={"Reset Progress"}
       />
     </Layout>
   );

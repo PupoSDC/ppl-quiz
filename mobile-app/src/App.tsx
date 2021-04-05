@@ -19,12 +19,9 @@ import { setQuestionBanks } from "constants/actions";
 import questionBlocks from "assets/questions";
 
 store.dispatch(setQuestionBanks({ questionBlocks }));
+StatusBar.setBarStyle("dark-content", true);
 
 const App: FunctionComponent = () => {
-  useEffect(() => {
-    setTimeout(() => StatusBar.setBarStyle("dark-content", true), 3000);
-  }, []);
-
   return (
     <NavigationContainer>
       <IconRegistry icons={EvaIconsPack} />
