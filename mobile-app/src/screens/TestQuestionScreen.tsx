@@ -13,6 +13,7 @@ import { TestCompletedModal } from "./common/TestCompletedModal";
 import { EvaStatus } from "@ui-kitten/components/devsupport";
 import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGestureHandler";
 import { ImageSource } from "react-native-image-viewing/dist/@types";
+import { ImageView } from "components/ImageView";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 

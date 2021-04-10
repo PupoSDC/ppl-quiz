@@ -1,4 +1,9 @@
-import React, { FunctionComponent, useCallback, useState } from "react";
+import React, {
+  FunctionComponent,
+  useCallback,
+  useMemo,
+  useState,
+} from "react";
 import { StatusBar, StyleSheet } from "react-native";
 import {
   Button,
@@ -7,12 +12,13 @@ import {
   CheckBox,
   Select,
   SelectItem,
+  IndexPath,
 } from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
 import { useDispatch, useSelector } from "react-redux";
 import { SliderWithInput } from "components/SliderWithInput";
 import { RootStackScreenProps } from "types/navigation";
-import { makeTest } from "utils/makeTest";
+import { filterQuestionBanks, makeTest, QuestionFilter } from "utils/makeTest";
 import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 
@@ -26,29 +32,58 @@ type TestBlockListItem = {
   selectTestBlock: (id: string) => void;
 };
 
+type SelectedBanksMap = Record<string, boolean>;
+
 const TestBlockListItem = React.memo<TestBlockListItem>(
-  ({ id, totalNumberOfQuestions, selected, title, selectTestBlock }) => (
-    <ListItem
-      title={title}
-      description={`total questions: ${totalNumberOfQuestions}`}
-      accessoryRight={() => (
-        <CheckBox checked={selected} onChange={() => selectTestBlock(id)} />
-      )}
-      onPress={() => selectTestBlock(id)}
-    />
-  )
+  ({ id, totalNumberOfQuestions, selected, title, selectTestBlock }) => {
+    const disabled = totalNumberOfQuestions === 0;
+    return (
+      <ListItem
+        title={title}
+        description={`total questions: ${totalNumberOfQuestions}`}
+        accessoryRight={() => (
+          <CheckBox
+            checked={selected}
+            disabled={disabled}
+            onChange={() => selectTestBlock(id)}
+          />
+        )}
+        onPress={() => selectTestBlock(id)}
+        disabled={disabled}
+      />
+    );
+  }
 );
+
+const selectOptions: Array<[QuestionFilter, string]> = [
+  ["ALL", "All"],
+  ["WRONG_ONLY", "Wrong only"],
+  ["NEVER_SEEN_AND_WRONG", "Never seen and wrong"],
+];
 
 export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
   navigation: { replace },
 }) => {
   const dispatch = useDispatch();
-  const questionBank = useSelector((store) =>
+  const questionsHeatMap = useSelector((store) => store.statistics.questions);
+  const questionBanks = useSelector((store) =>
     Object.values(store.questionBank)
   );
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
-  const [selectedBlocks, setSelectedBlocks] = useState<Record<string, boolean>>(
-    {}
+  const [questionFilterIndex, setQuestionFilterIndex] = useState(
+    new IndexPath(0)
+  );
+  const [selectedBlocks, setSelectedBlocks] = useState<SelectedBanksMap>({});
+  const [questionFilter] = selectOptions[questionFilterIndex.row];
+
+  const filteredQuestionBanks = useMemo(
+    () =>
+      filterQuestionBanks({
+        questionBanks,
+        questionsHeatMap,
+        questionFilter,
+      }),
+    [questionBanks, questionsHeatMap, questionFilter]
   );
 
   const selectTestBlock = useCallback(
@@ -63,8 +98,10 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
 
   const startTest = () => {
     const questions = makeTest({
-      questionBanks: questionBank.filter(({ id }) => selectedBlocks[id]),
+      questionBanks: questionBanks.filter(({ id }) => selectedBlocks[id]),
+      questionsHeatMap,
       numberOfQuestions,
+      questionFilter: selectOptions[questionFilterIndex.row][0],
     });
     if (questions.length) {
       dispatch(setCurrentTest({ questions }));
@@ -87,9 +124,29 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
         )}
       />
 
+      <ListItem
+        disabled
+        style={styles.section}
+        title={"Mode "}
+        description={() => (
+          <Select
+            selectedIndex={questionFilterIndex}
+            multiSelect={false}
+            value={selectOptions[questionFilterIndex.row][1]}
+            onSelect={(index) => {
+              if (!Array.isArray(index)) setQuestionFilterIndex(index);
+            }}
+          >
+            {selectOptions.map(([key, title]) => (
+              <SelectItem title={title} key={key} />
+            ))}
+          </Select>
+        )}
+      />
+
       <List
         style={styles.section}
-        data={questionBank}
+        data={filteredQuestionBanks}
         renderItem={({ item }: { item: QuestionBlock }) => (
           <TestBlockListItem
             key={item.id}
