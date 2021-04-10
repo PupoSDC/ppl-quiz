@@ -17,17 +17,22 @@ import { store, persistor } from "store";
 import { RootStack } from "navigation/RootStack";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
+import { disableLogs } from "utils/disableLogs";
 
 enableScreens();
 StatusBar.setBarStyle("dark-content", true);
 ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
+if (!__DEV__) {
+  disableLogs();
+}
+
 const App: FunctionComponent = () => {
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
-        <IconRegistry icons={EvaIconsPack} />
-        <ApplicationProvider {...eva} theme={eva.light}>
+      <ApplicationProvider {...eva} theme={eva.light}>
+        <NavigationContainer>
+          <IconRegistry icons={EvaIconsPack} />
           <Provider store={store}>
             <PersistGate persistor={persistor} loading={<Spinner />}>
               <Suspense fallback={<Spinner />}>
@@ -35,8 +40,8 @@ const App: FunctionComponent = () => {
               </Suspense>
             </PersistGate>
           </Provider>
-        </ApplicationProvider>
-      </NavigationContainer>
+        </NavigationContainer>
+      </ApplicationProvider>
     </SafeAreaProvider>
   );
 };
