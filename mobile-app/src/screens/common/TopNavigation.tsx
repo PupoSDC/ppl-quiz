@@ -12,21 +12,10 @@ import { StackHeaderProps } from "@react-navigation/stack";
 import { RenderProp } from "@ui-kitten/components/devsupport";
 import { default as icon } from "assets/icon.png";
 
-const BackIcon: RenderProp<Partial<ImageProps>> = (props) => (
-  <Icon {...props} name="arrow-back" />
-);
-
-export const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
-  navigation: { goBack, canGoBack },
-}) => {
+export const TopNavigation: React.FunctionComponent<StackHeaderProps> = () => {
   return (
     <>
       <BaseTopNavigation
-        accessoryLeft={
-          canGoBack()
-            ? () => <TopNavigationAction icon={BackIcon} onPress={goBack} />
-            : undefined
-        }
         title={() => (
           <View style={styles.titleContainer}>
             <Avatar style={styles.logo} source={icon} />
