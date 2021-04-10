@@ -28,11 +28,6 @@ export const filterQuestionBanks = ({
       const neverSeenBefore = !entry?.answers.length;
       const lastAnswer = entry?.answers[entry?.answers.length - 1] ?? correct;
       const wrong = lastAnswer !== correct;
-      console.log(
-        questionFilter,
-        neverSeenBefore,
-        entry?.answers[entry?.answers.length]
-      );
       switch (questionFilter) {
         case "ALL":
           return true;
