@@ -28,7 +28,7 @@ export const RootStack: React.FunctionComponent = () => {
       <Stack.Navigator
         headerMode="screen"
         screenOptions={{
-          header: (props) => <TopNavigation {...props} />,
+          header: () => <TopNavigation />,
         }}
       >
         <Stack.Screen name="Home" component={HomeScreen} />

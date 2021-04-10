@@ -1,18 +1,19 @@
 import React from "react";
-import { ImageProps, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import {
   Avatar,
   Divider,
-  Icon,
   Text,
   TopNavigation as BaseTopNavigation,
-  TopNavigationAction,
+  TopNavigationProps as BaseTopNavigationProps,
 } from "@ui-kitten/components";
-import { StackHeaderProps } from "@react-navigation/stack";
-import { RenderProp } from "@ui-kitten/components/devsupport";
 import { default as icon } from "assets/icon.png";
 
-export const TopNavigation: React.FunctionComponent<StackHeaderProps> = () => {
+export type TopNavigationProps = Omit<BaseTopNavigationProps, "title">;
+
+export const TopNavigation: React.FunctionComponent<TopNavigationProps> = (
+  props
+) => {
   return (
     <>
       <BaseTopNavigation
@@ -22,6 +23,7 @@ export const TopNavigation: React.FunctionComponent<StackHeaderProps> = () => {
             <Text category={"h5"}>{"PPL quiz"}</Text>
           </View>
         )}
+        {...props}
       />
       <Divider />
     </>
