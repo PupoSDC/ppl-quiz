@@ -1,4 +1,4 @@
-# PPL-quiz
+# PPL-QUIZ
 
 ![Banner](./banner.png?raw=true "Title")
 
