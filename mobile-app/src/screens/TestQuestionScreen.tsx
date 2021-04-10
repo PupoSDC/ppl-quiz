@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, TouchableOpacity, Image } from "react-native";
-import { default as ImageView } from "react-native-image-viewing";
 import { Button, Layout, Text } from "@ui-kitten/components";
-import { AnswerId, Question } from "types/questionBank";
-import {
-  Directions,
-  FlingGestureHandler,
-  State,
-} from "react-native-gesture-handler";
+import { AnswerId } from "types/questionBank";
 import { TRANSITION_DELAY } from "constants/animations";
 import { TestStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";

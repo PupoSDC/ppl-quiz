@@ -10,6 +10,7 @@ import { TestStatisticsScreen } from "screens/TestStatisticsScreen";
 import { useDispatch, useSelector } from "react-redux";
 import { setQuestionBanks } from "constants/actions";
 import questionBlocks from "assets/questions";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -23,20 +24,26 @@ export const RootStack: React.FunctionComponent = () => {
   }, [dispatch]);
 
   return (
-    <Stack.Navigator
-      screenOptions={{
-        header: (props) => <TopNavigation {...props} />,
-      }}
-    >
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="TestMaker" component={TestMakerScreen} />
-      <Stack.Screen name="TestHistory" component={TestHistoryScreen} />
-      <Stack.Screen name="TestStatistics" component={TestStatisticsScreen} />
-      <Stack.Screen
-        name="Test"
-        component={TestDrawer}
-        options={{ gestureEnabled: false }}
-      />
-    </Stack.Navigator>
+    <SafeAreaView style={{ flex: 1 }}>
+      <Stack.Navigator
+        headerMode="screen"
+        screenOptions={{
+          header: (props) => <TopNavigation {...props} />,
+        }}
+      >
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="TestMaker" component={TestMakerScreen} />
+        <Stack.Screen name="TestHistory" component={TestHistoryScreen} />
+        <Stack.Screen name="TestStatistics" component={TestStatisticsScreen} />
+        <Stack.Screen
+          name="Test"
+          component={TestDrawer}
+          options={{
+            gestureEnabled: false,
+            headerShown: false,
+          }}
+        />
+      </Stack.Navigator>
+    </SafeAreaView>
   );
 };

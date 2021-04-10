@@ -56,7 +56,6 @@ export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
           />
         </>
       )}
-
       <ResetTestModal
         modalVisible={showTestResetModal}
         setModalVisible={setShowTestResetModal}

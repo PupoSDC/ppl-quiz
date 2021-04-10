@@ -15,7 +15,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { store, persistor } from "store";
 import { RootStack } from "navigation/RootStack";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
 
 enableScreens();
@@ -24,9 +24,9 @@ ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
 const App: FunctionComponent = () => {
   return (
-    <NavigationContainer>
-      <IconRegistry icons={EvaIconsPack} />
-      <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <IconRegistry icons={EvaIconsPack} />
         <ApplicationProvider {...eva} theme={eva.light}>
           <Provider store={store}>
             <PersistGate persistor={persistor} loading={<Spinner />}>
@@ -36,8 +36,8 @@ const App: FunctionComponent = () => {
             </PersistGate>
           </Provider>
         </ApplicationProvider>
-      </SafeAreaView>
-    </NavigationContainer>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 
