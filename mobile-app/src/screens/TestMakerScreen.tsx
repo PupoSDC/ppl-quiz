@@ -4,7 +4,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { StatusBar, StyleSheet } from "react-native";
+import { StatusBar, StyleSheet, Text } from "react-native";
 import {
   Button,
   List,
@@ -13,6 +13,7 @@ import {
   Select,
   SelectItem,
   IndexPath,
+  Spinner,
 } from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,6 +22,8 @@ import { RootStackScreenProps } from "types/navigation";
 import { filterQuestionBanks, makeTest, QuestionFilter } from "utils/makeTest";
 import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
+import { useDelayedRender } from "hooks/useDelayedRender";
+import { ActivityIndicator } from "components/ActivityIndicator";
 
 export type TestMakerScreenProps = RootStackScreenProps<"Home">;
 
@@ -64,6 +67,7 @@ const selectOptions: Array<[QuestionFilter, string]> = [
 export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
   navigation: { replace },
 }) => {
+  const { isReady } = useDelayedRender();
   const dispatch = useDispatch();
   const questionsHeatMap = useSelector((store) => store.statistics.questions);
   const questionBanks = useSelector((store) =>
@@ -108,6 +112,10 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
       replace("Test");
     }
   };
+
+  if (!isReady) {
+    return <ActivityIndicator />;
+  }
 
   return (
     <Layout style={styles.container}>

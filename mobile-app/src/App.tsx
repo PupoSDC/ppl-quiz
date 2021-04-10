@@ -3,13 +3,9 @@ import { registerRootComponent } from "expo";
 import React, { FunctionComponent, Suspense } from "react";
 import * as eva from "@eva-design/eva";
 import * as ScreenOrientation from "expo-screen-orientation";
-import {
-  ApplicationProvider,
-  IconRegistry,
-  Spinner,
-} from "@ui-kitten/components";
+import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
-import { StatusBar } from "react-native";
+import { ActivityIndicator, StatusBar } from "react-native";
 import { PersistGate } from "redux-persist/integration/react";
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
@@ -34,8 +30,8 @@ const App: FunctionComponent = () => {
         <NavigationContainer>
           <IconRegistry icons={EvaIconsPack} />
           <Provider store={store}>
-            <PersistGate persistor={persistor} loading={<Spinner />}>
-              <Suspense fallback={<Spinner />}>
+            <PersistGate persistor={persistor} loading={<ActivityIndicator />}>
+              <Suspense fallback={<ActivityIndicator />}>
                 <RootStack />
               </Suspense>
             </PersistGate>
