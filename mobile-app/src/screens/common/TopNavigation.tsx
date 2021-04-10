@@ -30,7 +30,7 @@ export const TopNavigation: React.FunctionComponent<StackHeaderProps> = ({
         title={() => (
           <View style={styles.titleContainer}>
             <Avatar style={styles.logo} source={icon} />
-            <Text category={"h5"}>{"PPL Quizz"}</Text>
+            <Text category={"h5"}>{"PPL quiz"}</Text>
           </View>
         )}
       />

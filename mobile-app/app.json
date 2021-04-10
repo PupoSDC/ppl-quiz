@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "ppl-quizz",
-    "slug": "ppl-quizz",
+    "name": "ppl-quiz",
+    "slug": "ppl-quiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/iconStore.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "entryPoint": "./src/App.tsx",
-    "description": "An EASA PPL (Private Pilot License) theory modules quizz app.",
+    "description": "An EASA PPL (Private Pilot License) theory modules quiz app.",
     "splash": {
       "image": "./src/assets/splash.png",
       "resizeMode": "contain",
@@ -20,11 +20,11 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.puposdc.pplquizz",
+      "bundleIdentifier": "com.puposdc.pplquiz",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.puposdc.pplquizz",
+      "package": "com.puposdc.pplquiz",
       "versionCode": 1
     },
     "web": {

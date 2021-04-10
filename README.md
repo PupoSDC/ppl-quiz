@@ -1,8 +1,8 @@
-# PPL-Quizz
+# PPL-quiz
 
 ![Banner](./banner.png?raw=true "Title")
 
-An EASA PPL (Private Pilot License) theory modules quizz app.
+An EASA PPL (Private Pilot License) theory modules quiz app.
 
 Built using React Native, Expo, and UI-Kitten.
 
