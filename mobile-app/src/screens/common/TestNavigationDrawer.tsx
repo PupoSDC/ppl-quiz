@@ -21,27 +21,36 @@ type QuestionDrawerItemProps = {
   navigate: TestNavigationDrawerProps["navigation"]["navigate"];
 } & MenuItemProps;
 
-const QuestionDrawerItem: FunctionComponent<QuestionDrawerItemProps> = ({
-  correct,
-  questionSelected,
-  finished,
-  index,
-  navigate,
-  ...menuItemProps
-}) => (
-  <DrawerItem
-    {...menuItemProps}
-    accessoryLeft={(props) => (
-      <QuestionStateIcon
-        {...props}
-        finished={finished}
-        selected={questionSelected}
-        correct={correct}
-      />
-    )}
-    title={`Question ${index + 1}`}
-    onPress={() => navigate("Question", { questionIndex: index })}
-  />
+const QuestionDrawerItem = React.memo<QuestionDrawerItemProps>(
+  ({
+    correct,
+    questionSelected,
+    finished,
+    index,
+    navigate,
+    ...menuItemProps
+  }) => (
+    <DrawerItem
+      {...menuItemProps}
+      accessoryLeft={(props) => (
+        <QuestionStateIcon
+          {...props}
+          finished={finished}
+          selected={questionSelected}
+          correct={correct}
+        />
+      )}
+      title={`Question ${index + 1}`}
+      onPress={() => navigate("Question", { questionIndex: index })}
+    />
+  ),
+  (prevProps, nextProps) =>
+    prevProps.questionSelected === nextProps.questionSelected &&
+    prevProps.correct === nextProps.correct &&
+    prevProps.selected === nextProps.selected &&
+    prevProps.finished === nextProps.finished &&
+    prevProps.index === nextProps.index &&
+    prevProps.navigate === nextProps.navigate
 );
 
 export const TestNavigationDrawer: React.FunctionComponent<TestNavigationDrawerProps> = ({

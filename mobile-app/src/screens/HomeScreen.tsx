@@ -65,7 +65,7 @@ export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
           dispatch(setQuestionBanks({ questionBlocks }));
         }}
       />
-      <Text>Version 1</Text>
+      <Text>Version 2</Text>
     </Layout>
   );
 };
