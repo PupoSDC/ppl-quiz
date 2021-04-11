@@ -62,123 +62,123 @@ const selectOptions: Array<[QuestionFilter, string]> = [
   ["NEVER_SEEN_AND_WRONG", "Never seen and wrong"],
 ];
 
-export const TestMakerScreen = withDelayedTransitionWrapper<TestMakerScreenProps>(
-  ({ navigation: { replace } }) => {
-    const dispatch = useDispatch();
-    const questionsHeatMap = useSelector((store) => store.statistics.questions);
-    const questionBanks = useSelector(({ questionBank }) =>
-      Object.values(questionBank)
-    );
-    const [numberOfQuestions, setNumberOfQuestions] = useState(20);
-    const [questionFilterIndex, setQuestionFilterIndex] = useState(
-      new IndexPath(0)
-    );
-    const [selectedBlocks, setSelectedBlocks] = useState<SelectedBanksMap>({});
-    const [questionFilter] = selectOptions[questionFilterIndex.row];
-    const selectedTestBanks = questionBanks.filter(
-      ({ id }) => selectedBlocks[id]
-    );
+export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
+  navigation: { replace },
+}) => {
+  const dispatch = useDispatch();
+  const questionsHeatMap = useSelector((store) => store.statistics.questions);
+  const questionBanks = useSelector(({ questionBank }) =>
+    Object.values(questionBank)
+  );
+  const [numberOfQuestions, setNumberOfQuestions] = useState(20);
+  const [questionFilterIndex, setQuestionFilterIndex] = useState(
+    new IndexPath(0)
+  );
+  const [selectedBlocks, setSelectedBlocks] = useState<SelectedBanksMap>({});
+  const [questionFilter] = selectOptions[questionFilterIndex.row];
+  const selectedTestBanks = questionBanks.filter(
+    ({ id }) => selectedBlocks[id]
+  );
 
-    const disableStartButton =
-      selectedTestBanks.length === 0 || numberOfQuestions === 0;
+  const disableStartButton =
+    selectedTestBanks.length === 0 || numberOfQuestions === 0;
 
-    const filteredQuestionBanks = useMemo(
-      () =>
-        filterQuestionBanks({
-          questionBanks,
-          questionsHeatMap,
-          questionFilter,
-        }),
-      [questionBanks, questionsHeatMap, questionFilter]
-    );
-
-    const selectTestBlock = useCallback(
-      (blockId: string) => {
-        setSelectedBlocks((blocks) => ({
-          ...blocks,
-          [blockId]: blocks[blockId] ? false : true,
-        }));
-      },
-      [setSelectedBlocks]
-    );
-
-    const startTest = () => {
-      const questions = makeTest({
-        questionBanks: selectedTestBanks,
+  const filteredQuestionBanks = useMemo(
+    () =>
+      filterQuestionBanks({
+        questionBanks,
         questionsHeatMap,
-        numberOfQuestions,
-        questionFilter: selectOptions[questionFilterIndex.row][0],
-      });
-      if (questions.length) {
-        dispatch(setCurrentTest({ questions }));
-        replace("Test");
-      }
-    };
+        questionFilter,
+      }),
+    [questionBanks, questionsHeatMap, questionFilter]
+  );
 
-    return (
-      <Layout style={styles.container}>
-        <ListItem
-          disabled
-          style={styles.section}
-          title={"Number of Questions: "}
-          description={() => (
-            <SliderWithInput
-              style={styles.section}
-              value={numberOfQuestions}
-              onValueChange={setNumberOfQuestions}
-            />
-          )}
-        />
+  const selectTestBlock = useCallback(
+    (blockId: string) => {
+      setSelectedBlocks((blocks) => ({
+        ...blocks,
+        [blockId]: blocks[blockId] ? false : true,
+      }));
+    },
+    [setSelectedBlocks]
+  );
 
-        <ListItem
-          disabled
-          style={styles.section}
-          title={"Mode "}
-          description={() => (
-            <Select
-              selectedIndex={questionFilterIndex}
-              multiSelect={false}
-              value={selectOptions[questionFilterIndex.row][1]}
-              onSelect={(index) => {
-                if (!Array.isArray(index)) setQuestionFilterIndex(index);
-              }}
-            >
-              {selectOptions.map(([key, title]) => (
-                <SelectItem title={title} key={key} />
-              ))}
-            </Select>
-          )}
-        />
+  const startTest = () => {
+    const questions = makeTest({
+      questionBanks: selectedTestBanks,
+      questionsHeatMap,
+      numberOfQuestions,
+      questionFilter: selectOptions[questionFilterIndex.row][0],
+    });
+    if (questions.length) {
+      dispatch(setCurrentTest({ questions }));
+      replace("Test");
+    }
+  };
 
-        <List
-          style={styles.section}
-          data={filteredQuestionBanks}
-          renderItem={({ item }: { item: QuestionBlock }) => (
-            <TestBlockListItem
-              key={item.id}
-              id={item.id}
-              totalNumberOfQuestions={item.questions.length}
-              selected={selectedBlocks[item.id]}
-              title={item.name}
-              selectTestBlock={selectTestBlock}
-            />
-          )}
-        />
-        <ListItem
-          disabled
-          style={styles.section}
-          description={() => (
-            <Button
-              disabled={disableStartButton}
-              onPress={startTest}
-              children={"Start"}
-            />
-          )}
-        />
-      </Layout>
-    );
-  }
-);
+  return (
+    <Layout style={styles.container}>
+      <ListItem
+        disabled
+        style={styles.section}
+        title={"Number of Questions: "}
+        description={() => (
+          <SliderWithInput
+            style={styles.section}
+            value={numberOfQuestions}
+            onValueChange={setNumberOfQuestions}
+          />
+        )}
+      />
+
+      <ListItem
+        disabled
+        style={styles.section}
+        title={"Mode "}
+        description={() => (
+          <Select
+            selectedIndex={questionFilterIndex}
+            multiSelect={false}
+            value={selectOptions[questionFilterIndex.row][1]}
+            onSelect={(index) => {
+              if (!Array.isArray(index)) setQuestionFilterIndex(index);
+            }}
+          >
+            {selectOptions.map(([key, title]) => (
+              <SelectItem title={title} key={key} />
+            ))}
+          </Select>
+        )}
+      />
+
+      <List
+        style={styles.section}
+        data={filteredQuestionBanks}
+        renderItem={({ item }: { item: QuestionBlock }) => (
+          <TestBlockListItem
+            key={item.id}
+            id={item.id}
+            totalNumberOfQuestions={item.questions.length}
+            selected={selectedBlocks[item.id]}
+            title={item.name}
+            selectTestBlock={selectTestBlock}
+          />
+        )}
+      />
+      <ListItem
+        disabled
+        style={styles.section}
+        description={() => (
+          <Button
+            disabled={disableStartButton}
+            onPress={startTest}
+            children={"Start"}
+          />
+        )}
+      />
+    </Layout>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

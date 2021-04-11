@@ -102,16 +102,6 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
             style={styles.answer}
             appearance="outline"
             status={getStatus(answerId, pressedId === answerId)}
-            onPressIn={() => {
-              if (!finished) {
-                setPressedId(answerId);
-              }
-            }}
-            onPressOut={() => {
-              if (!finished) {
-                setPressedId("");
-              }
-            }}
             onPress={() => {
               dispatch(setCurrentTestAnswer({ questionId, answerId }));
               goToNextQuestion();
