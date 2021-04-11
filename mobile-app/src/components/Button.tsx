@@ -2,8 +2,7 @@ import {
   Button as UiKittenButton,
   ButtonProps as UiKittenButtonProps,
 } from "@ui-kitten/components";
-import { forwardRef, FunctionComponent, useCallback } from "react";
-import { TouchableOpacity } from "react-native";
+import React, { forwardRef, useCallback } from "react";
 import { heavyFeedback, mediumFeedback } from "utils/haptics";
 
 export type ButtonProps = UiKittenButtonProps & {
