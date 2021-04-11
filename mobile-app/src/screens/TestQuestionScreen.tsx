@@ -14,6 +14,7 @@ import { EvaStatus } from "@ui-kitten/components/devsupport";
 import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGestureHandler";
 import { ImageSource } from "react-native-image-viewing/dist/@types";
 import { ImageView } from "components/ImageView";
+import { ActivityIndicator } from "components/ActivityIndicator";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -21,15 +22,16 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
   route,
   navigation: { navigate },
 }) => {
-  const [imageIsOpen, setImageIsOpen] = useState(false);
   const dispatch = useDispatch();
+  const [pressedId, setPressedId] = useState("");
+  const [imageIsOpen, setImageIsOpen] = useState(false);
   const questions = useSelector((store) => store.currentTest.questions);
   const finished = useSelector((store) => store.currentTest.finished);
   const question = questions[route.params.questionIndex];
   const allQuestionsAnswered = !questions.find(({ selected }) => !selected);
 
   if (!question) {
-    return <></>;
+    return <ActivityIndicator />;
   }
 
   const {
@@ -59,8 +61,8 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     navigate("Results");
   };
 
-  const getStatus = (answerId: AnswerId): EvaStatus => {
-    if (!finished && selected === answerId) {
+  const getStatus = (answerId: AnswerId, pressed: boolean): EvaStatus => {
+    if (!finished && (selected === answerId || pressed)) {
       return "info";
     }
     if (finished && correct === answerId) {
@@ -69,7 +71,6 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
     if (finished && selected === answerId) {
       return "danger";
     }
-
     return "basic";
   };
 
@@ -100,11 +101,19 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
             key={answerId}
             style={styles.answer}
             appearance="outline"
-            status={getStatus(answerId)}
-            onPress={() => {
+            status={getStatus(answerId, pressedId === answerId)}
+            onPressIn={() => {
               if (!finished) {
-                dispatch(setCurrentTestAnswer({ questionId, answerId }));
+                setPressedId(answerId);
               }
+            }}
+            onPressOut={() => {
+              if (!finished) {
+                setPressedId("");
+              }
+            }}
+            onPress={() => {
+              dispatch(setCurrentTestAnswer({ questionId, answerId }));
               setTimeout(goToNextQuestion, TRANSITION_DELAY);
             }}
             children={answer}

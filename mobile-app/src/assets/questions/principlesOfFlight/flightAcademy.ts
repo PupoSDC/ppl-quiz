@@ -851,31 +851,56 @@ const questions: Question[] = [
   },
   {
     id: "POF0036",
-    question: "Which curve represents the induced drag? See Appendix (PFA-011)",
+    question: "Which curve represents the induced drag?",
     answers: [
       {
-        id: "POF0037001",
+        id: "POF0036001",
         answer: "1",
       },
       {
-        id: "POF0037002",
+        id: "POF0036002",
         answer: "2",
       },
       {
-        id: "POF0037003",
+        id: "POF0036003",
         answer: "3",
       },
       {
-        id: "POF0037004",
+        id: "POF0036004",
         answer: "4",
       },
     ],
-    correct: "POF0037001",
+    correct: "POF0036001",
+    image: require("./images/PF6.png"),
+  },
+  {
+    id: "POF00362",
+    question: "Which curve represents the total drag?",
+    answers: [
+      {
+        id: "POF00362001",
+        answer: "1",
+      },
+      {
+        id: "POF00362002",
+        answer: "2",
+      },
+      {
+        id: "POF00362003",
+        answer: "3",
+      },
+      {
+        id: "POF00362003  ",
+        answer: "4",
+      },
+    ],
+    correct: "POF003620013",
+    image: require("./images/PF6.png"),
   },
   {
     id: "POF0037",
     question:
-      "Pressure drag, interference drag and friction drag belong to the group of the... (1, P.)",
+      "Pressure drag, interference drag and friction drag belong to the group of the... ",
     answers: [
       {
         id: "POF0037001",
@@ -1569,7 +1594,7 @@ const questions: Question[] = [
   {
     id: "POF0066",
     question:
-      "Which constructive feature is shown in the figure? See figure (PFA-006) L: Lift",
+      "Which constructive feature is shown in the figure? See figure (L: Lift)",
     answers: [
       {
         id: "POF0066001",
