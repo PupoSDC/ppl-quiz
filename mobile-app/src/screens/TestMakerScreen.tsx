@@ -1,6 +1,7 @@
 import React, {
   FunctionComponent,
   useCallback,
+  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -70,8 +71,8 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
   const { isReady } = useDelayedRender();
   const dispatch = useDispatch();
   const questionsHeatMap = useSelector((store) => store.statistics.questions);
-  const questionBanks = useSelector((store) =>
-    Object.values(store.questionBank)
+  const questionBanks = useSelector(({ questionBank }) =>
+    Object.values(questionBank)
   );
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [questionFilterIndex, setQuestionFilterIndex] = useState(
@@ -79,6 +80,12 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
   );
   const [selectedBlocks, setSelectedBlocks] = useState<SelectedBanksMap>({});
   const [questionFilter] = selectOptions[questionFilterIndex.row];
+  const selectedTestBanks = questionBanks.filter(
+    ({ id }) => selectedBlocks[id]
+  );
+
+  const disableStartButton =
+    selectedTestBanks.length === 0 || numberOfQuestions === 0;
 
   const filteredQuestionBanks = useMemo(
     () =>
@@ -102,7 +109,7 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
 
   const startTest = () => {
     const questions = makeTest({
-      questionBanks: questionBanks.filter(({ id }) => selectedBlocks[id]),
+      questionBanks: selectedTestBanks,
       questionsHeatMap,
       numberOfQuestions,
       questionFilter: selectOptions[questionFilterIndex.row][0],
@@ -169,7 +176,13 @@ export const TestMakerScreen: FunctionComponent<TestMakerScreenProps> = ({
       <ListItem
         disabled
         style={styles.section}
-        description={() => <Button onPress={startTest} children={"Start"} />}
+        description={() => (
+          <Button
+            disabled={disableStartButton}
+            onPress={startTest}
+            children={"Start"}
+          />
+        )}
       />
     </Layout>
   );
