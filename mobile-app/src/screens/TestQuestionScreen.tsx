@@ -15,6 +15,7 @@ import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGes
 import { ImageSource } from "react-native-image-viewing/dist/@types";
 import { ImageView } from "components/ImageView";
 import { ActivityIndicator } from "components/ActivityIndicator";
+import { HeavyFeedback } from "utils/haptics";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -104,6 +105,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
             status={getStatus(answerId, pressedId === answerId)}
             onPressIn={() => {
               if (!finished) {
+                HeavyFeedback();
                 setPressedId(answerId);
               }
             }}
