@@ -114,7 +114,7 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
             }}
             onPress={() => {
               dispatch(setCurrentTestAnswer({ questionId, answerId }));
-              setTimeout(goToNextQuestion, TRANSITION_DELAY);
+              goToNextQuestion();
             }}
             children={answer}
           />
