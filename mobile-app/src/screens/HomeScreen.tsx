@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
 import { StyleSheet } from "react-native";
-import { Layout } from "@ui-kitten/components";
+import { Layout, Text } from "@ui-kitten/components";
 import { RootStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { resetProgress, setQuestionBanks } from "constants/actions";
@@ -65,6 +65,7 @@ export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
           dispatch(setQuestionBanks({ questionBlocks }));
         }}
       />
+      <Text>Version 1</Text>
     </Layout>
   );
 };
