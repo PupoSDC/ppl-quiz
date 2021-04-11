@@ -1,11 +1,12 @@
 import React, { FunctionComponent, useState } from "react";
 import { StyleSheet } from "react-native";
-import { Button, Layout } from "@ui-kitten/components";
+import { Layout } from "@ui-kitten/components";
 import { RootStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { resetProgress, setQuestionBanks } from "constants/actions";
 import questionBlocks from "assets/questions";
 import { ResetTestModal } from "./common/ResetTestModal";
+import { Button } from "components/Button";
 
 export const HomeScreen: FunctionComponent<RootStackScreenProps<"Home">> = ({
   navigation: { navigate },

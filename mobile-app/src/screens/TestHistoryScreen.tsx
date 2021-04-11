@@ -1,12 +1,13 @@
 import React, { FunctionComponent } from "react";
 import { StyleSheet } from "react-native";
-import { Button, Layout, List, ListItem } from "@ui-kitten/components";
+import { Layout, List, ListItem } from "@ui-kitten/components";
 import { RootStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { ScoreWidget } from "components/ScoreWidget";
 import { Test, TestQuestion } from "types/test";
 import { getBlocksInTest, getTestScore } from "utils/testStatistics";
 import { setCurrentTest, setCurrentTestReview } from "constants/actions";
+import { Button } from "components/Button";
 
 export type TestHistoryScreenProps = RootStackScreenProps<"TestHistory">;
 

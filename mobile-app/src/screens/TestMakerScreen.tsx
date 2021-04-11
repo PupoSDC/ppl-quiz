@@ -1,20 +1,17 @@
 import React, {
   FunctionComponent,
   useCallback,
-  useEffect,
   useMemo,
   useState,
 } from "react";
 import { StatusBar, StyleSheet, Text } from "react-native";
 import {
-  Button,
   List,
   Layout,
   CheckBox,
   Select,
   SelectItem,
   IndexPath,
-  Spinner,
 } from "@ui-kitten/components";
 import { ListItem } from "@ui-kitten/components";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,6 +22,7 @@ import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 import { useDelayedRender } from "hooks/useDelayedRender";
 import { ActivityIndicator } from "components/ActivityIndicator";
+import { Button } from "components/Button";
 
 export type TestMakerScreenProps = RootStackScreenProps<"Home">;
 

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, TouchableOpacity, Image } from "react-native";
-import { Button, Layout, Text } from "@ui-kitten/components";
+import { Layout, Text } from "@ui-kitten/components";
 import { AnswerId } from "types/questionBank";
-import { TRANSITION_DELAY } from "constants/animations";
 import { TestStackScreenProps } from "types/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,7 +14,7 @@ import { LeftAndRightFlingGestureHandler } from "components/LeftAndRightFlingGes
 import { ImageSource } from "react-native-image-viewing/dist/@types";
 import { ImageView } from "components/ImageView";
 import { ActivityIndicator } from "components/ActivityIndicator";
-import { HeavyFeedback } from "utils/haptics";
+import { Button } from "components/Button";
 
 export type QuestionScreenProps = TestStackScreenProps<"Question">;
 
@@ -105,7 +104,6 @@ export const TestQuestionScreen: React.FunctionComponent<QuestionScreenProps> = 
             status={getStatus(answerId, pressedId === answerId)}
             onPressIn={() => {
               if (!finished) {
-                HeavyFeedback();
                 setPressedId(answerId);
               }
             }}

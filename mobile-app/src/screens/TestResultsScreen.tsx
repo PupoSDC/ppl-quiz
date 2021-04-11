@@ -1,12 +1,5 @@
 import React, { FunctionComponent } from "react";
-import {
-  Button,
-  Layout,
-  List,
-  ListItem,
-  useTheme,
-  Text,
-} from "@ui-kitten/components";
+import { Layout, List, ListItem } from "@ui-kitten/components";
 import { QuestionStateIcon } from "components/QuestionStateIcon";
 import { resetCurrentTest } from "constants/actions";
 import { StatusBar, StyleSheet } from "react-native";
@@ -15,6 +8,7 @@ import { TestStackScreenProps } from "types/navigation";
 import { TestQuestion } from "types/test";
 import { ScoreWidget } from "components/ScoreWidget";
 import { getTestScore } from "utils/testStatistics";
+import { Button } from "components/Button";
 
 export type TestResultsScreenProps = TestStackScreenProps<"Results">;
 
