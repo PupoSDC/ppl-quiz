@@ -1,9 +1,14 @@
 import * as Haptics from "expo-haptics";
+import { Platform } from "react-native";
 
 export const mediumFeedback = () => {
-  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+  if (Platform.OS === "android" || Platform.OS === "ios") {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+  }
 };
 
 export const heavyFeedback = () => {
-  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+  if (Platform.OS === "android" || Platform.OS === "ios") {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+  }
 };
