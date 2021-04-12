@@ -1,4 +1,4 @@
-import { ComponentType, FunctionComponent } from "react";
+import React, { ComponentType, FunctionComponent } from "react";
 import { ModalProps } from "react-native";
 import { ImageSource } from "react-native-image-viewing/dist/@types";
 
