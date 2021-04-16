@@ -890,11 +890,11 @@ const questions: Question[] = [
         answer: "3",
       },
       {
-        id: "POF00362003  ",
+        id: "POF00362003",
         answer: "4",
       },
     ],
-    correct: "POF003620013",
+    correct: "POF00362003",
     image: require("./images/PF6.png"),
   },
   {
