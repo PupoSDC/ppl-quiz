@@ -318,7 +318,7 @@ const questions: Question[] = [
         answer: "Yes (Affirmative)",
       },
     ],
-    correct: "ALW1013002",
+    correct: "ALW1013003",
   },
 ];
 
