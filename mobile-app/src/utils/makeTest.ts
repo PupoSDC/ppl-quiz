@@ -46,7 +46,13 @@ export const makeTest = ({
   shuffleMode = "PERFECT",
   questionFilter = "ALL",
 }: MakeTestProps): TestQuestion[] => {
-  const allQuestions = questionBanks.reduce<TestQuestion[]>(
+  const filteredQuestions = filterQuestionBanks({
+    questionBanks,
+    questionsHeatMap,
+    questionFilter,
+  });
+
+  const mergedQuestions = filteredQuestions.reduce<TestQuestion[]>(
     (sum, bank) => [
       ...sum,
       ...bank.questions.map((q) => ({
@@ -58,27 +64,12 @@ export const makeTest = ({
     []
   );
 
-  const filteredQuestions = allQuestions.filter(({ id, correct }) => {
-    const entry = questionsHeatMap[id];
-    const neverSeenBefore = !entry?.answers.length;
-    const lastAnswer = entry?.answers[entry?.answers.length] ?? "";
-    const wrong = lastAnswer !== correct;
-    switch (questionFilter) {
-      case "ALL":
-        return true;
-      case "NEVER_SEEN_AND_WRONG":
-        return neverSeenBefore && wrong;
-      case "WRONG_ONLY":
-        return wrong;
-    }
-  });
-
   const shuffledQuestions = (() => {
     switch (shuffleMode) {
       case "BIASED":
-        return biasedShuffle(filteredQuestions);
+        return biasedShuffle(mergedQuestions);
       case "PERFECT":
-        return perfectShuffle(filteredQuestions);
+        return perfectShuffle(mergedQuestions);
     }
   })();
 

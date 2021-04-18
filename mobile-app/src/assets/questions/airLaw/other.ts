@@ -225,6 +225,101 @@ const questions: Question[] = [
     ],
     correct: "ALW1009003",
   },
+  {
+    id: "ALW1010",
+    question: "What is the type and colour of high intensity obstacle lights?",
+    answers: [
+      {
+        id: "ALW1010001",
+        answer: "flashing white",
+      },
+      {
+        id: "ALW1010002",
+        answer: "flashing orange",
+      },
+      {
+        id: "ALW1010003",
+        answer: "fixed white",
+      },
+      {
+        id: "ALW1010004",
+        answer: "fixed red",
+      },
+    ],
+    correct: "ALW1010001",
+  },
+  {
+    id: "ALW1011",
+    question:
+      "Low intensity obstacle lights on fixed objects have the following colour:",
+    answers: [
+      {
+        id: "ALW1011001",
+        answer: "fixed red",
+      },
+      {
+        id: "ALW1011002",
+        answer: "fixed white",
+      },
+      {
+        id: "ALW1011003",
+        answer: "flashing red",
+      },
+      {
+        id: "ALW1011004",
+        answer: "flashing yellow",
+      },
+    ],
+    correct: "ALW1011001",
+  },
+  {
+    id: "ALW1012",
+    question:
+      "During a search and rescue operation you see the following signal: `n`. What does it mean?",
+    answers: [
+      {
+        id: "ALW1012001",
+        answer: "Require Assistance",
+      },
+      {
+        id: "ALW1012002",
+        answer: "Require Medical Assistance",
+      },
+      {
+        id: "ALW1012003",
+        answer: "No (Negative)",
+      },
+      {
+        id: "ALW1012004",
+        answer: "Yes (Affirmative)",
+      },
+    ],
+    correct: "ALW1012001",
+  },
+  {
+    id: "ALW1013",
+    question:
+      "During a search and rescue operation you see the following signal: `n`. What does it mean?",
+    answers: [
+      {
+        id: "ALW1013001",
+        answer: "Require Assistance",
+      },
+      {
+        id: "ALW1013002",
+        answer: "Require Medical Assistance",
+      },
+      {
+        id: "ALW1013003",
+        answer: "No (Negative)",
+      },
+      {
+        id: "ALW1013004",
+        answer: "Yes (Affirmative)",
+      },
+    ],
+    correct: "ALW1013002",
+  },
 ];
 
 export default questions;

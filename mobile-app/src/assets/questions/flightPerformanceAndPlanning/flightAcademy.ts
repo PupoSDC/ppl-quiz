@@ -1382,30 +1382,6 @@ const questions: Question[] = [
     correct: "FPP0056004",
   },
   {
-    id: "FPP0057",
-    question:
-      " A pilot wants to take off on runway 36, the reported wind is 240 degrees 12 knots. What are the wind components acting on the aircraft on take-off and landing? (1,00 P.)",
-    answers: [
-      {
-        id: "FPP0057001",
-        answer: "Crosswind from the left 10.4 kt.\nTailwind 6 kt.",
-      },
-      {
-        id: "FPP0057002",
-        answer: "Crosswind from the left 6 kt.\nTailwind 10.4 kt.",
-      },
-      {
-        id: "FPP0057003",
-        answer: "Crosswind from the right 6 kt.\nHeadwind 10.4 kt.",
-      },
-      {
-        id: "FPP0057004",
-        answer: "Crosswind from the right 10.4 kt.\nTailwind 6 kt.",
-      },
-    ],
-    correct: "FPP0057001",
-  },
-  {
     id: "FPP0058",
     question:
       " Given the following conditions, the fuel consumption equals... Pressure altitude: 2000 ft Temperature: 31° C RPM: 2400 See annex (PFP-012) (1,00 P.) Siehe Anlage 10",
@@ -2475,27 +2451,27 @@ const questions: Question[] = [
   {
     id: "FPP0102",
     question:
-      " Wie beeinflusst die Lufttemperatur die Leistung eines Kolbenmotors? (1,00 P.)",
+      "How does the air temperature affect the performance of a piston engine?",
     answers: [
       {
         id: "FPP0102001",
         answer:
-          "Höhere Temperatur entspricht höherer Luftdichte,\ndies führt zu höherer Motorleistung",
+          "A higher temperature corresponds to a higher air density, which leads to higher engine performance",
       },
       {
         id: "FPP0102002",
         answer:
-          "Geringere Temperatur entspricht geringerer Luftdichte,\ndies führt zu höherer Motorleistung",
+          "Lower temperature corresponds to lower air density, which leads to higher engine performance",
       },
       {
         id: "FPP0102003",
         answer:
-          "Höhere Temperatur entspricht geringerer Luftdichte,\ndies führt zu geringerer Motorleistung",
+          "A higher temperature corresponds to a lower air density, which leads to lower engine performance",
       },
       {
         id: "FPP0102004",
         answer:
-          "Geringere Temperatur entspricht höherer Luftdichte,\ndies führt zu geringerer Motorleistung",
+          "Lower temperature corresponds to higher air density, which leads to lower engine performance",
       },
     ],
     correct: "FPP0102003",

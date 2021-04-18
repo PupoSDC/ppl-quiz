@@ -107,7 +107,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0005",
-    question: ' Which validity does the "Certificate of Airworthiness" have?',
+    question: 'Which validity does the "Certificate of Airworthiness" have?',
     answers: [
       {
         id: "ALWALW0005001",
@@ -130,7 +130,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0006",
-    question: ' What is the meaning of the abbreviation "ARC"?',
+    question: 'What is the meaning of the abbreviation "ARC"?',
     answers: [
       {
         id: "ALWALW0006001",
@@ -153,7 +153,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0007",
-    question: ' The "Certificate of Airworthiness" is issued by the state...',
+    question: 'The "Certificate of Airworthiness" is issued by the state...',
     answers: [
       {
         id: "ALWALW0007001",
@@ -401,7 +401,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0017",
-    question: ' What is the meaning of the abbreviation "SERA"?',
+    question: 'What is the meaning of the abbreviation "SERA"?',
     answers: [
       {
         id: "ALWALW0017001",
@@ -424,7 +424,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0018",
-    question: ' What is the meaning of the abbreviation "TRA"?',
+    question: 'What is the meaning of the abbreviation "TRA"?',
     answers: [
       {
         id: "ALWALW0018001",
@@ -518,7 +518,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0022",
-    question: ' What is the meaning of an area marked as "TMZ"?',
+    question: 'What is the meaning of an area marked as "TMZ"?',
     answers: [
       {
         id: "ALWALW0022001",
@@ -542,7 +542,7 @@ const questions: Question[] = [
   {
     id: "ALW0023",
     question:
-      ' According to ICAO Annex 2, the term "aerodrome traffic" is defined as:',
+      'According to ICAO Annex 2, the term "aerodrome traffic" is defined as:',
     answers: [
       {
         id: "ALWALW0023001",
@@ -571,7 +571,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0024",
-    question: ' What is the meaning of the abbreviation "IFR"?',
+    question: 'What is the meaning of the abbreviation "IFR"?',
     answers: [
       {
         id: "ALWALW0024001",
@@ -594,7 +594,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0025",
-    question: ' A flight is called a "visual flight", if the...',
+    question: 'A flight is called a "visual flight", if the...',
     answers: [
       {
         id: "ALWALW0025001",
@@ -617,7 +617,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0026",
-    question: ' What is the meaning of the abbreviation "VMC"?',
+    question: 'What is the meaning of the abbreviation "VMC"?',
     answers: [
       {
         id: "ALWALW0026001",
@@ -691,7 +691,7 @@ const questions: Question[] = [
   {
     id: "ALW0029",
     question:
-      ' In airspace "D" a Boeing 737 and a Cessna 152 are flying on crossing courses. Which aeroplane has to divert?',
+      'In airspace "D" a Boeing 737 and a Cessna 152 are flying on crossing courses. Which aeroplane has to divert?',
     answers: [
       {
         id: "ALWALW0029001",
@@ -817,7 +817,7 @@ const questions: Question[] = [
   {
     id: "ALW0034",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at 5000 ft MSL?',
+      'What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at 5000 ft MSL?',
     answers: [
       {
         id: "ALWALW0034001",
@@ -841,7 +841,7 @@ const questions: Question[] = [
   {
     id: "ALW0035",
     question:
-      ' What is the minimum flight visibility in airspace "E" for an aircraft operating under VFR at FL75?',
+      'What is the minimum flight visibility in airspace "E" for an aircraft operating under VFR at FL75?',
     answers: [
       {
         id: "ALWALW0035001",
@@ -865,7 +865,7 @@ const questions: Question[] = [
   {
     id: "ALW0036",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL110?',
+      'What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL110?',
     answers: [
       {
         id: "ALWALW0036001",
@@ -889,7 +889,7 @@ const questions: Question[] = [
   {
     id: "ALW0037",
     question:
-      ' What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL125?',
+      'What is the minimum flight visibility in airspace "C" for an aircraft operating under VFR at FL125?',
     answers: [
       {
         id: "ALWALW0037001",
@@ -913,7 +913,7 @@ const questions: Question[] = [
   {
     id: "ALW0038",
     question:
-      ' What are the minimum distances to clouds for a VFR flight in airspace "B"?',
+      'What are the minimum distances to clouds for a VFR flight in airspace "B"?',
     answers: [
       {
         id: "ALWALW0038001",
@@ -937,7 +937,7 @@ const questions: Question[] = [
   {
     id: "ALW0039",
     question:
-      ' What is the minimum flight visibility in airspace "C" below FL 100 for an aircraft operating under VFR?',
+      'What is the minimum flight visibility in airspace "C" below FL 100 for an aircraft operating under VFR?',
     answers: [
       {
         id: "ALWALW0039001",
@@ -961,7 +961,7 @@ const questions: Question[] = [
   {
     id: "ALW0040",
     question:
-      ' What is the minimum flight visibility in airspace "C" at and above FL 100 for an aircraft operating under VFR?',
+      'What is the minimum flight visibility in airspace "C" at and above FL 100 for an aircraft operating under VFR?',
     answers: [
       {
         id: "ALWALW0040001",
@@ -984,7 +984,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0041",
-    question: ' The term "ceiling" is defined as the...',
+    question: 'The term "ceiling" is defined as the...',
     answers: [
       {
         id: "ALWALW0041001",
@@ -1012,7 +1012,7 @@ const questions: Question[] = [
   {
     id: "ALW0042",
     question:
-      ' State the minimum weather conditions to enter a control zone (airspace "D") under special VFR conditions for a fixed-wing aircraft?',
+      'State the minimum weather conditions to enter a control zone (airspace "D") under special VFR conditions for a fixed-wing aircraft?',
     answers: [
       {
         id: "ALWALW0042001",
@@ -1335,7 +1335,7 @@ const questions: Question[] = [
   {
     id: "ALW0055",
     question:
-      ' Which answer is correct with regard to separation in airspace "E"?',
+      'Which answer is correct with regard to separation in airspace "E"?',
     answers: [
       {
         id: "ALWALW0055001",
@@ -1457,7 +1457,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0060",
-    question: ' What is the meaning of the abbreviation "AIREP"?',
+    question: 'What is the meaning of the abbreviation "AIREP"?',
     answers: [
       {
         id: "ALWALW0060001",
@@ -1532,7 +1532,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0063",
-    question: ' What information is provided in the part "AD" of the AIP?',
+    question: 'What information is provided in the part "AD" of the AIP?',
     answers: [
       {
         id: "ALWALW0063001",
@@ -1611,7 +1611,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0066",
-    question: ' The term "aerodrome elevation" is defined as...',
+    question: 'The term "aerodrome elevation" is defined as...',
     answers: [
       {
         id: "ALWALW0066001",
@@ -1634,7 +1634,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0067",
-    question: ' The term "runway" is defined as a...',
+    question: 'The term "runway" is defined as a...',
     answers: [
       {
         id: "ALWALW0067001",
@@ -1662,7 +1662,7 @@ const questions: Question[] = [
   {
     id: "ALW0068",
     question:
-      ' Which statement is correct with regard to the term "taxi holding point"?',
+      'Which statement is correct with regard to the term "taxi holding point"?',
     answers: [
       {
         id: "ALWALW0068001",
@@ -1689,7 +1689,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0069",
-    question: ' What does the reported runway condition "WET" mean?',
+    question: 'What does the reported runway condition "WET" mean?',
     answers: [
       {
         id: "ALWALW0069001",
@@ -1713,7 +1713,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0070",
-    question: ' What does the reported runway condition "DAMP" mean?',
+    question: 'What does the reported runway condition "DAMP" mean?',
     answers: [
       {
         id: "ALWALW0070001",
@@ -1732,12 +1732,12 @@ const questions: Question[] = [
         answer: "The runway is clear of water, ice, and snow",
       },
     ],
-    correct: "ALWALW0070001",
+    correct: "ALWALW0070003",
   },
   {
     id: "ALW0071",
     question:
-      ' What does "WATER PATCHES" mean regarding the reported runway condition? (1, P.)',
+      'What does "WATER PATCHES" mean regarding the reported runway condition? (1, P.)',
     answers: [
       {
         id: "ALWALW0071001",
@@ -2129,7 +2129,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0087",
-    question: ' What is a "PAPI" (Precision Approach Path Indicator)?',
+    question: 'What is a "PAPI" (Precision Approach Path Indicator)?',
     answers: [
       {
         id: "ALWALW0087001",
@@ -2357,7 +2357,7 @@ const questions: Question[] = [
   },
   {
     id: "ALW0096",
-    question: ' What is the meaning of "DETRESFA"?',
+    question: 'What is the meaning of "DETRESFA"?',
     answers: [
       {
         id: "ALWALW0096001",
