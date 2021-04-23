@@ -4,6 +4,7 @@
 
 type QuestionBlock @model {
   id: ID!
+  code: String!
   name: String!
   questions: [Question!]!
     @connection(keyName: "byQuestionBlock", fields: ["id"])
@@ -13,6 +14,7 @@ type Question
   @model
   @key(name: "byQuestionBlock", fields: ["questionBlockId"]) {
   id: ID!
+  questionId: String!
   questionBlockId: ID!
   correctAnswerId: String!
   question: String!
