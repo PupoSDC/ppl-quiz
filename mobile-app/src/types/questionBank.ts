@@ -18,12 +18,6 @@ export type Question = {
   explanation?: string;
 };
 
-export type QuestionReference = {
-  questionId: QuestionId;
-  selected?: AnswerId;
-  answers: AnswerId[];
-};
-
 export type QuestionBlock = {
   id: QuestionBlockId;
   name: string;

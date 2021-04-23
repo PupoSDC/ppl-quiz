@@ -1,20 +1,37 @@
-type Blog @model {
+###############################################################################
+# Global question banks #######################################################
+###############################################################################
+
+type QuestionBlock @model {
   id: ID!
   name: String!
-  posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
+  questions: [Question!]!
+    @connection(keyName: "byQuestionBlock", fields: ["id"])
 }
 
-type Post @model @key(name: "byBlog", fields: ["blogID"]) {
+type Question
+  @model
+  @key(name: "byQuestionBlock", fields: ["questionBlockId"]) {
   id: ID!
-  title: String!
-  blogID: ID!
-  blog: Blog @connection(fields: ["blogID"])
-  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+  questionBlockId: ID!
+  correctAnswerId: String!
+  question: String!
+  answers: [Answer!]!
+  image: String
+  explanation: String
 }
 
-type Comment @model @key(name: "byPost", fields: ["postID", "content"]) {
-  id: ID!
-  postID: ID!
-  post: Post @connection(fields: ["postID"])
-  content: String!
+type Answer {
+  id: String
+  answer: String
+}
+
+###############################################################################
+# User created tests ##########################################################
+###############################################################################
+
+type Test @model @auth(rules: [{ allow: owner }]) {
+  questions: [Question!]!
+  answers: [ID!]!
+  finished: Boolean!
 }
