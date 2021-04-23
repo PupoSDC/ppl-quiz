@@ -14,6 +14,11 @@ import { RootStack } from "navigation/RootStack";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
 import { disableLogs } from "utils/disableLogs";
+import { default as Amplify } from "@aws-amplify/core";
+import { default as config } from "./aws-exports";
+import { withAuthenticator } from "aws-amplify-react-native";
+
+Amplify.configure(config);
 
 enableScreens();
 StatusBar.setBarStyle("dark-content", true);
@@ -42,4 +47,11 @@ const App: FunctionComponent = () => {
   );
 };
 
-registerRootComponent(App);
+const SecuredApp = withAuthenticator(App, {
+  includeGreetings: true,
+  signUpConfig: {
+    hiddenDefaults: ["phone_number"],
+  },
+});
+
+registerRootComponent(SecuredApp);
