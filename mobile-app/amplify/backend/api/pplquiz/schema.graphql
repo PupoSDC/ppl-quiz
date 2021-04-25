@@ -2,7 +2,9 @@
 # Global question banks #######################################################
 ###############################################################################
 
-type QuestionBlock @model {
+type QuestionBlock
+  @model
+  @auth(rules: [{ allow: private, operations: [read] }]) {
   id: ID!
   code: String!
   name: String!
@@ -12,7 +14,8 @@ type QuestionBlock @model {
 
 type Question
   @model
-  @key(name: "questionsByQuestionBlock", fields: ["questionBlockId"]) {
+  @key(name: "questionsByQuestionBlock", fields: ["questionBlockId"])
+  @auth(rules: [{ allow: private, operations: [read] }]) {
   id: ID!
   questionBlockId: ID!
   correctAnswerId: String!
@@ -32,7 +35,7 @@ type Answer {
 ###############################################################################
 
 type Test @model @auth(rules: [{ allow: owner }]) {
-  questions: [Question!]!
-  answers: [ID!]!
+  questions: [Question!]! @connection(limit: 200)
+  answers: [Answer!]!
   finished: Boolean!
 }

@@ -14,9 +14,10 @@ import { RootStack } from "navigation/RootStack";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
 import { disableLogs } from "utils/disableLogs";
-import { default as Amplify } from "@aws-amplify/core";
-import { default as config } from "./aws-exports";
+import { default as Amplify } from "aws-amplify";
 import { withAuthenticator } from "aws-amplify-react-native";
+import { default as config } from "./aws-exports";
+import "store/DataStoreWrapper";
 
 Amplify.configure(config);
 

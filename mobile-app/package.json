@@ -6,7 +6,8 @@
     "start:android": "expo start --android",
     "start:ios": "expo start --ios",
     "start:web": "expo start --web",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "codegen:models": "if [ -d src/store/models ]; then rm -r src/store/models; fi; amplify codegen models; if [ -d src/models ]; then mv src/models ./src/store; fi"
   },
   "jest": {
     "preset": "jest-expo"

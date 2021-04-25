@@ -22,6 +22,7 @@ import { setCurrentTest } from "constants/actions";
 import { QuestionBlock } from "types/questionBank";
 import { Button } from "components/Button";
 import { withDelayedTransitionWrapper } from "components/DelayedTransitionWrapper";
+import { useQuestionBank } from "store/useQuestionBanks";
 
 export type TestMakerScreenProps = RootStackScreenProps<"Home">;
 
@@ -114,6 +115,8 @@ export const TestMakerScreen = withDelayedTransitionWrapper<TestMakerScreenProps
         replace("Test");
       }
     };
+
+    useQuestionBank();
 
     return (
       <Layout style={styles.container}>
