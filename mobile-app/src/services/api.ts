@@ -2,16 +2,18 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
-export type CreateBlogInput = {
+export type CreateQuestionBlockInput = {
   id?: string | null;
+  code: string;
   name: string;
 };
 
-export type ModelBlogConditionInput = {
+export type ModelQuestionBlockConditionInput = {
+  code?: ModelStringInput | null;
   name?: ModelStringInput | null;
-  and?: Array<ModelBlogConditionInput | null> | null;
-  or?: Array<ModelBlogConditionInput | null> | null;
-  not?: ModelBlogConditionInput | null;
+  and?: Array<ModelQuestionBlockConditionInput | null> | null;
+  or?: Array<ModelQuestionBlockConditionInput | null> | null;
+  not?: ModelQuestionBlockConditionInput | null;
 };
 
 export type ModelStringInput = {
@@ -53,69 +55,75 @@ export type ModelSizeInput = {
   between?: Array<number | null> | null;
 };
 
-export type Blog = {
-  __typename: "Blog";
+export type QuestionBlock = {
+  __typename: "QuestionBlock";
   id?: string;
+  code?: string;
   name?: string;
-  posts?: ModelPostConnection;
+  questions?: ModelQuestionConnection;
   createdAt?: string;
   updatedAt?: string;
 };
 
-export type ModelPostConnection = {
-  __typename: "ModelPostConnection";
-  items?: Array<Post | null> | null;
+export type ModelQuestionConnection = {
+  __typename: "ModelQuestionConnection";
+  items?: Array<Question | null> | null;
   nextToken?: string | null;
 };
 
-export type Post = {
-  __typename: "Post";
+export type Question = {
+  __typename: "Question";
   id?: string;
-  title?: string;
-  blogID?: string;
-  blog?: Blog;
-  comments?: ModelCommentConnection;
+  questionBlockId?: string;
+  correctAnswerId?: string;
+  question?: string;
+  answers?: Array<Answer>;
+  image?: string | null;
+  explanation?: string | null;
   createdAt?: string;
   updatedAt?: string;
 };
 
-export type ModelCommentConnection = {
-  __typename: "ModelCommentConnection";
-  items?: Array<Comment | null> | null;
-  nextToken?: string | null;
+export type Answer = {
+  __typename: "Answer";
+  id?: string | null;
+  answer?: string | null;
 };
 
-export type Comment = {
-  __typename: "Comment";
-  id?: string;
-  postID?: string;
-  post?: Post;
-  content?: string;
-  createdAt?: string;
-  updatedAt?: string;
-};
-
-export type UpdateBlogInput = {
+export type UpdateQuestionBlockInput = {
   id: string;
+  code?: string | null;
   name?: string | null;
 };
 
-export type DeleteBlogInput = {
+export type DeleteQuestionBlockInput = {
   id?: string | null;
 };
 
-export type CreatePostInput = {
+export type CreateQuestionInput = {
   id?: string | null;
-  title: string;
-  blogID: string;
+  questionBlockId: string;
+  correctAnswerId: string;
+  question: string;
+  answers: Array<AnswerInput>;
+  image?: string | null;
+  explanation?: string | null;
 };
 
-export type ModelPostConditionInput = {
-  title?: ModelStringInput | null;
-  blogID?: ModelIDInput | null;
-  and?: Array<ModelPostConditionInput | null> | null;
-  or?: Array<ModelPostConditionInput | null> | null;
-  not?: ModelPostConditionInput | null;
+export type AnswerInput = {
+  id?: string | null;
+  answer?: string | null;
+};
+
+export type ModelQuestionConditionInput = {
+  questionBlockId?: ModelIDInput | null;
+  correctAnswerId?: ModelStringInput | null;
+  question?: ModelStringInput | null;
+  image?: ModelStringInput | null;
+  explanation?: ModelStringInput | null;
+  and?: Array<ModelQuestionConditionInput | null> | null;
+  or?: Array<ModelQuestionConditionInput | null> | null;
+  not?: ModelQuestionConditionInput | null;
 };
 
 export type ModelIDInput = {
@@ -134,89 +142,123 @@ export type ModelIDInput = {
   size?: ModelSizeInput | null;
 };
 
-export type UpdatePostInput = {
+export type UpdateQuestionInput = {
   id: string;
-  title?: string | null;
-  blogID?: string | null;
+  questionBlockId?: string | null;
+  correctAnswerId?: string | null;
+  question?: string | null;
+  answers?: Array<AnswerInput> | null;
+  image?: string | null;
+  explanation?: string | null;
 };
 
-export type DeletePostInput = {
+export type DeleteQuestionInput = {
   id?: string | null;
 };
 
-export type CreateCommentInput = {
+export type CreateTestInput = {
   id?: string | null;
-  postID: string;
-  content: string;
+  answers: Array<string>;
+  finished: boolean;
 };
 
-export type ModelCommentConditionInput = {
-  postID?: ModelIDInput | null;
-  content?: ModelStringInput | null;
-  and?: Array<ModelCommentConditionInput | null> | null;
-  or?: Array<ModelCommentConditionInput | null> | null;
-  not?: ModelCommentConditionInput | null;
+export type ModelTestConditionInput = {
+  answers?: ModelIDInput | null;
+  finished?: ModelBooleanInput | null;
+  and?: Array<ModelTestConditionInput | null> | null;
+  or?: Array<ModelTestConditionInput | null> | null;
+  not?: ModelTestConditionInput | null;
 };
 
-export type UpdateCommentInput = {
-  id: string;
-  postID?: string | null;
-  content?: string | null;
+export type ModelBooleanInput = {
+  ne?: boolean | null;
+  eq?: boolean | null;
+  attributeExists?: boolean | null;
+  attributeType?: ModelAttributeTypes | null;
 };
 
-export type DeleteCommentInput = {
+export type Test = {
+  __typename: "Test";
+  id?: string;
+  questions?: Array<Question>;
+  answers?: Array<string>;
+  finished?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
+  owner?: string | null;
+};
+
+export type UpdateTestInput = {
+  answers?: Array<string> | null;
+  finished?: boolean | null;
+};
+
+export type DeleteTestInput = {
   id?: string | null;
 };
 
-export type ModelBlogFilterInput = {
+export type ModelQuestionBlockFilterInput = {
   id?: ModelIDInput | null;
+  code?: ModelStringInput | null;
   name?: ModelStringInput | null;
-  and?: Array<ModelBlogFilterInput | null> | null;
-  or?: Array<ModelBlogFilterInput | null> | null;
-  not?: ModelBlogFilterInput | null;
+  and?: Array<ModelQuestionBlockFilterInput | null> | null;
+  or?: Array<ModelQuestionBlockFilterInput | null> | null;
+  not?: ModelQuestionBlockFilterInput | null;
 };
 
-export type ModelBlogConnection = {
-  __typename: "ModelBlogConnection";
-  items?: Array<Blog | null> | null;
+export type ModelQuestionBlockConnection = {
+  __typename: "ModelQuestionBlockConnection";
+  items?: Array<QuestionBlock | null> | null;
   nextToken?: string | null;
 };
 
-export type ModelPostFilterInput = {
+export type ModelQuestionFilterInput = {
   id?: ModelIDInput | null;
-  title?: ModelStringInput | null;
-  blogID?: ModelIDInput | null;
-  and?: Array<ModelPostFilterInput | null> | null;
-  or?: Array<ModelPostFilterInput | null> | null;
-  not?: ModelPostFilterInput | null;
+  questionBlockId?: ModelIDInput | null;
+  correctAnswerId?: ModelStringInput | null;
+  question?: ModelStringInput | null;
+  image?: ModelStringInput | null;
+  explanation?: ModelStringInput | null;
+  and?: Array<ModelQuestionFilterInput | null> | null;
+  or?: Array<ModelQuestionFilterInput | null> | null;
+  not?: ModelQuestionFilterInput | null;
 };
 
-export type ModelCommentFilterInput = {
-  id?: ModelIDInput | null;
-  postID?: ModelIDInput | null;
-  content?: ModelStringInput | null;
-  and?: Array<ModelCommentFilterInput | null> | null;
-  or?: Array<ModelCommentFilterInput | null> | null;
-  not?: ModelCommentFilterInput | null;
+export type ModelTestFilterInput = {
+  answers?: ModelIDInput | null;
+  finished?: ModelBooleanInput | null;
+  and?: Array<ModelTestFilterInput | null> | null;
+  or?: Array<ModelTestFilterInput | null> | null;
+  not?: ModelTestFilterInput | null;
 };
 
-export type CreateBlogMutationVariables = {
-  input?: CreateBlogInput;
-  condition?: ModelBlogConditionInput | null;
+export type ModelTestConnection = {
+  __typename: "ModelTestConnection";
+  items?: Array<Test | null> | null;
+  nextToken?: string | null;
 };
 
-export type CreateBlogMutation = {
-  createBlog?: {
-    __typename: "Blog";
+export type CreateQuestionBlockMutationVariables = {
+  input?: CreateQuestionBlockInput;
+  condition?: ModelQuestionBlockConditionInput | null;
+};
+
+export type CreateQuestionBlockMutation = {
+  createQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -227,23 +269,27 @@ export type CreateBlogMutation = {
   } | null;
 };
 
-export type UpdateBlogMutationVariables = {
-  input?: UpdateBlogInput;
-  condition?: ModelBlogConditionInput | null;
+export type UpdateQuestionBlockMutationVariables = {
+  input?: UpdateQuestionBlockInput;
+  condition?: ModelQuestionBlockConditionInput | null;
 };
 
-export type UpdateBlogMutation = {
-  updateBlog?: {
-    __typename: "Blog";
+export type UpdateQuestionBlockMutation = {
+  updateQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -254,23 +300,27 @@ export type UpdateBlogMutation = {
   } | null;
 };
 
-export type DeleteBlogMutationVariables = {
-  input?: DeleteBlogInput;
-  condition?: ModelBlogConditionInput | null;
+export type DeleteQuestionBlockMutationVariables = {
+  input?: DeleteQuestionBlockInput;
+  condition?: ModelQuestionBlockConditionInput | null;
 };
 
-export type DeleteBlogMutation = {
-  deleteBlog?: {
-    __typename: "Blog";
+export type DeleteQuestionBlockMutation = {
+  deleteQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -281,244 +331,197 @@ export type DeleteBlogMutation = {
   } | null;
 };
 
-export type CreatePostMutationVariables = {
-  input?: CreatePostInput;
-  condition?: ModelPostConditionInput | null;
+export type CreateQuestionMutationVariables = {
+  input?: CreateQuestionInput;
+  condition?: ModelQuestionConditionInput | null;
 };
 
-export type CreatePostMutation = {
-  createPost?: {
-    __typename: "Post";
+export type CreateQuestionMutation = {
+  createQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type UpdatePostMutationVariables = {
-  input?: UpdatePostInput;
-  condition?: ModelPostConditionInput | null;
+export type UpdateQuestionMutationVariables = {
+  input?: UpdateQuestionInput;
+  condition?: ModelQuestionConditionInput | null;
 };
 
-export type UpdatePostMutation = {
-  updatePost?: {
-    __typename: "Post";
+export type UpdateQuestionMutation = {
+  updateQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type DeletePostMutationVariables = {
-  input?: DeletePostInput;
-  condition?: ModelPostConditionInput | null;
+export type DeleteQuestionMutationVariables = {
+  input?: DeleteQuestionInput;
+  condition?: ModelQuestionConditionInput | null;
 };
 
-export type DeletePostMutation = {
-  deletePost?: {
-    __typename: "Post";
+export type DeleteQuestionMutation = {
+  deleteQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type CreateCommentMutationVariables = {
-  input?: CreateCommentInput;
-  condition?: ModelCommentConditionInput | null;
+export type CreateTestMutationVariables = {
+  input?: CreateTestInput;
+  condition?: ModelTestConditionInput | null;
 };
 
-export type CreateCommentMutation = {
-  createComment?: {
-    __typename: "Comment";
+export type CreateTestMutation = {
+  createTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type UpdateCommentMutationVariables = {
-  input?: UpdateCommentInput;
-  condition?: ModelCommentConditionInput | null;
+export type UpdateTestMutationVariables = {
+  input?: UpdateTestInput;
+  condition?: ModelTestConditionInput | null;
 };
 
-export type UpdateCommentMutation = {
-  updateComment?: {
-    __typename: "Comment";
+export type UpdateTestMutation = {
+  updateTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type DeleteCommentMutationVariables = {
-  input?: DeleteCommentInput;
-  condition?: ModelCommentConditionInput | null;
+export type DeleteTestMutationVariables = {
+  input?: DeleteTestInput;
+  condition?: ModelTestConditionInput | null;
 };
 
-export type DeleteCommentMutation = {
-  deleteComment?: {
-    __typename: "Comment";
+export type DeleteTestMutation = {
+  deleteTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type GetBlogQueryVariables = {
+export type GetQuestionBlockQueryVariables = {
   id?: string;
 };
 
-export type GetBlogQuery = {
-  getBlog?: {
-    __typename: "Blog";
+export type GetQuestionBlockQuery = {
+  getQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -529,21 +532,22 @@ export type GetBlogQuery = {
   } | null;
 };
 
-export type ListBlogsQueryVariables = {
-  filter?: ModelBlogFilterInput | null;
+export type ListQuestionBlocksQueryVariables = {
+  filter?: ModelQuestionBlockFilterInput | null;
   limit?: number | null;
   nextToken?: string | null;
 };
 
-export type ListBlogsQuery = {
-  listBlogs?: {
-    __typename: "ModelBlogConnection";
+export type ListQuestionBlocksQuery = {
+  listQuestionBlocks?: {
+    __typename: "ModelQuestionBlockConnection";
     items?: Array<{
-      __typename: "Blog";
+      __typename: "QuestionBlock";
       id: string;
+      code: string;
       name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
+      questions?: {
+        __typename: "ModelQuestionConnection";
         nextToken?: string | null;
       } | null;
       createdAt: string;
@@ -553,69 +557,51 @@ export type ListBlogsQuery = {
   } | null;
 };
 
-export type GetPostQueryVariables = {
+export type GetQuestionQueryVariables = {
   id?: string;
 };
 
-export type GetPostQuery = {
-  getPost?: {
-    __typename: "Post";
+export type GetQuestionQuery = {
+  getQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type ListPostsQueryVariables = {
-  filter?: ModelPostFilterInput | null;
+export type ListQuestionsQueryVariables = {
+  filter?: ModelQuestionFilterInput | null;
   limit?: number | null;
   nextToken?: string | null;
 };
 
-export type ListPostsQuery = {
-  listPosts?: {
-    __typename: "ModelPostConnection";
+export type ListQuestionsQuery = {
+  listQuestions?: {
+    __typename: "ModelQuestionConnection";
     items?: Array<{
-      __typename: "Post";
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
     } | null> | null;
@@ -623,81 +609,87 @@ export type ListPostsQuery = {
   } | null;
 };
 
-export type GetCommentQueryVariables = {
+export type GetTestQueryVariables = {
   id?: string;
 };
 
-export type GetCommentQuery = {
-  getComment?: {
-    __typename: "Comment";
+export type GetTestQuery = {
+  getTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type ListCommentsQueryVariables = {
-  filter?: ModelCommentFilterInput | null;
+export type ListTestsQueryVariables = {
+  filter?: ModelTestFilterInput | null;
   limit?: number | null;
   nextToken?: string | null;
 };
 
-export type ListCommentsQuery = {
-  listComments?: {
-    __typename: "ModelCommentConnection";
+export type ListTestsQuery = {
+  listTests?: {
+    __typename: "ModelTestConnection";
     items?: Array<{
-      __typename: "Comment";
+      __typename: "Test";
       id: string;
-      postID: string;
-      post?: {
-        __typename: "Post";
+      questions: Array<{
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
-      } | null;
-      content: string;
+      }>;
+      answers: Array<string>;
+      finished: boolean;
       createdAt: string;
       updatedAt: string;
+      owner?: string | null;
     } | null> | null;
     nextToken?: string | null;
   } | null;
 };
 
-export type OnCreateBlogSubscription = {
-  onCreateBlog?: {
-    __typename: "Blog";
+export type OnCreateQuestionBlockSubscription = {
+  onCreateQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -708,18 +700,22 @@ export type OnCreateBlogSubscription = {
   } | null;
 };
 
-export type OnUpdateBlogSubscription = {
-  onUpdateBlog?: {
-    __typename: "Blog";
+export type OnUpdateQuestionBlockSubscription = {
+  onUpdateQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -730,18 +726,22 @@ export type OnUpdateBlogSubscription = {
   } | null;
 };
 
-export type OnDeleteBlogSubscription = {
-  onDeleteBlog?: {
-    __typename: "Blog";
+export type OnDeleteQuestionBlockSubscription = {
+  onDeleteQuestionBlock?: {
+    __typename: "QuestionBlock";
     id: string;
+    code: string;
     name: string;
-    posts?: {
-      __typename: "ModelPostConnection";
+    questions?: {
+      __typename: "ModelQuestionConnection";
       items?: Array<{
-        __typename: "Post";
+        __typename: "Question";
         id: string;
-        title: string;
-        blogID: string;
+        questionBlockId: string;
+        correctAnswerId: string;
+        question: string;
+        image?: string | null;
+        explanation?: string | null;
         createdAt: string;
         updatedAt: string;
       } | null> | null;
@@ -752,194 +752,155 @@ export type OnDeleteBlogSubscription = {
   } | null;
 };
 
-export type OnCreatePostSubscription = {
-  onCreatePost?: {
-    __typename: "Post";
+export type OnCreateQuestionSubscription = {
+  onCreateQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type OnUpdatePostSubscription = {
-  onUpdatePost?: {
-    __typename: "Post";
+export type OnUpdateQuestionSubscription = {
+  onUpdateQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type OnDeletePostSubscription = {
-  onDeletePost?: {
-    __typename: "Post";
+export type OnDeleteQuestionSubscription = {
+  onDeleteQuestion?: {
+    __typename: "Question";
     id: string;
-    title: string;
-    blogID: string;
-    blog?: {
-      __typename: "Blog";
-      id: string;
-      name: string;
-      posts?: {
-        __typename: "ModelPostConnection";
-        nextToken?: string | null;
-      } | null;
-      createdAt: string;
-      updatedAt: string;
-    } | null;
-    comments?: {
-      __typename: "ModelCommentConnection";
-      items?: Array<{
-        __typename: "Comment";
-        id: string;
-        postID: string;
-        content: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null> | null;
-      nextToken?: string | null;
-    } | null;
+    questionBlockId: string;
+    correctAnswerId: string;
+    question: string;
+    answers: Array<{
+      __typename: "Answer";
+      id?: string | null;
+      answer?: string | null;
+    }>;
+    image?: string | null;
+    explanation?: string | null;
     createdAt: string;
     updatedAt: string;
   } | null;
 };
 
-export type OnCreateCommentSubscription = {
-  onCreateComment?: {
-    __typename: "Comment";
+export type OnCreateTestSubscriptionVariables = {
+  owner?: string;
+};
+
+export type OnCreateTestSubscription = {
+  onCreateTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type OnUpdateCommentSubscription = {
-  onUpdateComment?: {
-    __typename: "Comment";
+export type OnUpdateTestSubscriptionVariables = {
+  owner?: string;
+};
+
+export type OnUpdateTestSubscription = {
+  onUpdateTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };
 
-export type OnDeleteCommentSubscription = {
-  onDeleteComment?: {
-    __typename: "Comment";
+export type OnDeleteTestSubscriptionVariables = {
+  owner?: string;
+};
+
+export type OnDeleteTestSubscription = {
+  onDeleteTest?: {
+    __typename: "Test";
     id: string;
-    postID: string;
-    post?: {
-      __typename: "Post";
+    questions: Array<{
+      __typename: "Question";
       id: string;
-      title: string;
-      blogID: string;
-      blog?: {
-        __typename: "Blog";
-        id: string;
-        name: string;
-        createdAt: string;
-        updatedAt: string;
-      } | null;
-      comments?: {
-        __typename: "ModelCommentConnection";
-        nextToken?: string | null;
-      } | null;
+      questionBlockId: string;
+      correctAnswerId: string;
+      question: string;
+      answers: Array<{
+        __typename: "Answer";
+        id?: string | null;
+        answer?: string | null;
+      }>;
+      image?: string | null;
+      explanation?: string | null;
       createdAt: string;
       updatedAt: string;
-    } | null;
-    content: string;
+    }>;
+    answers: Array<string>;
+    finished: boolean;
     createdAt: string;
     updatedAt: string;
+    owner?: string | null;
   } | null;
 };

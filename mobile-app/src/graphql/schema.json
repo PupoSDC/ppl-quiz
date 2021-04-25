@@ -17,7 +17,7 @@
           "description": null,
           "fields": [
             {
-              "name": "getBlog",
+              "name": "getQuestionBlock",
               "description": null,
               "args": [
                 {
@@ -37,14 +37,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "listBlogs",
+              "name": "listQuestionBlocks",
               "description": null,
               "args": [
                 {
@@ -52,7 +52,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelBlogFilterInput",
+                    "name": "ModelQuestionBlockFilterInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -80,14 +80,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "ModelBlogConnection",
+                "name": "ModelQuestionBlockConnection",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "getPost",
+              "name": "getQuestion",
               "description": null,
               "args": [
                 {
@@ -107,14 +107,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "listPosts",
+              "name": "listQuestions",
               "description": null,
               "args": [
                 {
@@ -122,7 +122,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelPostFilterInput",
+                    "name": "ModelQuestionFilterInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -150,14 +150,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "ModelPostConnection",
+                "name": "ModelQuestionConnection",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "getComment",
+              "name": "getTest",
               "description": null,
               "args": [
                 {
@@ -177,14 +177,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "listComments",
+              "name": "listTests",
               "description": null,
               "args": [
                 {
@@ -192,7 +192,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelCommentFilterInput",
+                    "name": "ModelTestFilterInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -220,7 +220,7 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "ModelCommentConnection",
+                "name": "ModelTestConnection",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -234,7 +234,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "Blog",
+          "name": "QuestionBlock",
           "description": null,
           "fields": [
             {
@@ -247,6 +247,22 @@
                 "ofType": {
                   "kind": "SCALAR",
                   "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "code",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
                   "ofType": null
                 }
               },
@@ -270,7 +286,7 @@
               "deprecationReason": null
             },
             {
-              "name": "posts",
+              "name": "questions",
               "description": null,
               "args": [
                 {
@@ -278,7 +294,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelPostFilterInput",
+                    "name": "ModelQuestionFilterInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -316,7 +332,7 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "ModelPostConnection",
+                "name": "ModelQuestionConnection",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -382,7 +398,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "ModelPostConnection",
+          "name": "ModelQuestionConnection",
           "description": null,
           "fields": [
             {
@@ -394,7 +410,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "OBJECT",
-                  "name": "Post",
+                  "name": "Question",
                   "ofType": null
                 }
               },
@@ -421,7 +437,7 @@
         },
         {
           "kind": "OBJECT",
-          "name": "Post",
+          "name": "Question",
           "description": null,
           "fields": [
             {
@@ -441,23 +457,7 @@
               "deprecationReason": null
             },
             {
-              "name": "title",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "blogID",
+              "name": "questionBlockId",
               "description": null,
               "args": [],
               "type": {
@@ -473,75 +473,80 @@
               "deprecationReason": null
             },
             {
-              "name": "blog",
+              "name": "correctAnswerId",
               "description": null,
               "args": [],
               "type": {
-                "kind": "OBJECT",
-                "name": "Blog",
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "question",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "answers",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Answer",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "image",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "comments",
+              "name": "explanation",
               "description": null,
-              "args": [
-                {
-                  "name": "content",
-                  "description": null,
-                  "type": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "ModelStringKeyConditionInput",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
-                  "name": "filter",
-                  "description": null,
-                  "type": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "ModelCommentFilterInput",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
-                  "name": "sortDirection",
-                  "description": null,
-                  "type": {
-                    "kind": "ENUM",
-                    "name": "ModelSortDirection",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
-                  "name": "limit",
-                  "description": null,
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "Int",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
-                  "name": "nextToken",
-                  "description": null,
-                  "type": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                }
-              ],
+              "args": [],
               "type": {
-                "kind": "OBJECT",
-                "name": "ModelCommentConnection",
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -587,27 +592,11 @@
         },
         {
           "kind": "OBJECT",
-          "name": "ModelCommentConnection",
+          "name": "Answer",
           "description": null,
           "fields": [
             {
-              "name": "items",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "OBJECT",
-                  "name": "Comment",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "nextToken",
+              "name": "id",
               "description": null,
               "args": [],
               "type": {
@@ -617,106 +606,15 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "Comment",
-          "description": null,
-          "fields": [
-            {
-              "name": "id",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
             },
             {
-              "name": "postID",
+              "name": "answer",
               "description": null,
               "args": [],
               "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "post",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Post",
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "content",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "createdAt",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "AWSDateTime",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "updatedAt",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "AWSDateTime",
-                  "ofType": null
-                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -739,92 +637,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "ModelStringKeyConditionInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "le",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "lt",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ge",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "gt",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "between",
-              "description": null,
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "beginsWith",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "ModelCommentFilterInput",
+          "name": "ModelQuestionFilterInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -839,7 +652,7 @@
               "defaultValue": null
             },
             {
-              "name": "postID",
+              "name": "questionBlockId",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -849,7 +662,37 @@
               "defaultValue": null
             },
             {
-              "name": "content",
+              "name": "correctAnswerId",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "question",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "explanation",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -866,7 +709,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelCommentFilterInput",
+                  "name": "ModelQuestionFilterInput",
                   "ofType": null
                 }
               },
@@ -880,7 +723,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelCommentFilterInput",
+                  "name": "ModelQuestionFilterInput",
                   "ofType": null
                 }
               },
@@ -891,7 +734,7 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelCommentFilterInput",
+                "name": "ModelQuestionFilterInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -1391,87 +1234,8 @@
           "possibleTypes": null
         },
         {
-          "kind": "INPUT_OBJECT",
-          "name": "ModelPostFilterInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "id",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "ModelIDInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "title",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "ModelStringInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "blogID",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "ModelIDInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "and",
-              "description": null,
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "ModelPostFilterInput",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "or",
-              "description": null,
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "ModelPostFilterInput",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "not",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "ModelPostFilterInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
-          "name": "ModelBlogConnection",
+          "name": "ModelQuestionBlockConnection",
           "description": null,
           "fields": [
             {
@@ -1483,7 +1247,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "OBJECT",
-                  "name": "Blog",
+                  "name": "QuestionBlock",
                   "ofType": null
                 }
               },
@@ -1510,7 +1274,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "ModelBlogFilterInput",
+          "name": "ModelQuestionBlockFilterInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -1520,6 +1284,16 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "ModelIDInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "code",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -1542,7 +1316,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelBlogFilterInput",
+                  "name": "ModelQuestionBlockFilterInput",
                   "ofType": null
                 }
               },
@@ -1556,7 +1330,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelBlogFilterInput",
+                  "name": "ModelQuestionBlockFilterInput",
                   "ofType": null
                 }
               },
@@ -1567,7 +1341,301 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelBlogFilterInput",
+                "name": "ModelQuestionBlockFilterInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Test",
+          "description": null,
+          "fields": [
+            {
+              "name": "id",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "questions",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Question",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "answers",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "ID",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "finished",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "createdAt",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "AWSDateTime",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "updatedAt",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "AWSDateTime",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "owner",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ModelTestConnection",
+          "description": null,
+          "fields": [
+            {
+              "name": "items",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Test",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "nextToken",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ModelTestFilterInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelIDInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "finished",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelBooleanInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "and",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ModelTestFilterInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "or",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ModelTestFilterInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "not",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelTestFilterInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ModelBooleanInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "attributeExists",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "attributeType",
+              "description": null,
+              "type": {
+                "kind": "ENUM",
+                "name": "ModelAttributeTypes",
                 "ofType": null
               },
               "defaultValue": null
@@ -1583,7 +1651,7 @@
           "description": null,
           "fields": [
             {
-              "name": "createBlog",
+              "name": "createQuestionBlock",
               "description": null,
               "args": [
                 {
@@ -1594,7 +1662,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "CreateBlogInput",
+                      "name": "CreateQuestionBlockInput",
                       "ofType": null
                     }
                   },
@@ -1605,7 +1673,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelBlogConditionInput",
+                    "name": "ModelQuestionBlockConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1613,14 +1681,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "updateBlog",
+              "name": "updateQuestionBlock",
               "description": null,
               "args": [
                 {
@@ -1631,7 +1699,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "UpdateBlogInput",
+                      "name": "UpdateQuestionBlockInput",
                       "ofType": null
                     }
                   },
@@ -1642,7 +1710,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelBlogConditionInput",
+                    "name": "ModelQuestionBlockConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1650,14 +1718,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "deleteBlog",
+              "name": "deleteQuestionBlock",
               "description": null,
               "args": [
                 {
@@ -1668,7 +1736,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "DeleteBlogInput",
+                      "name": "DeleteQuestionBlockInput",
                       "ofType": null
                     }
                   },
@@ -1679,7 +1747,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelBlogConditionInput",
+                    "name": "ModelQuestionBlockConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1687,14 +1755,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "createPost",
+              "name": "createQuestion",
               "description": null,
               "args": [
                 {
@@ -1705,7 +1773,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "CreatePostInput",
+                      "name": "CreateQuestionInput",
                       "ofType": null
                     }
                   },
@@ -1716,7 +1784,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelPostConditionInput",
+                    "name": "ModelQuestionConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1724,14 +1792,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "updatePost",
+              "name": "updateQuestion",
               "description": null,
               "args": [
                 {
@@ -1742,7 +1810,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "UpdatePostInput",
+                      "name": "UpdateQuestionInput",
                       "ofType": null
                     }
                   },
@@ -1753,7 +1821,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelPostConditionInput",
+                    "name": "ModelQuestionConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1761,14 +1829,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "deletePost",
+              "name": "deleteQuestion",
               "description": null,
               "args": [
                 {
@@ -1779,7 +1847,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "DeletePostInput",
+                      "name": "DeleteQuestionInput",
                       "ofType": null
                     }
                   },
@@ -1790,7 +1858,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelPostConditionInput",
+                    "name": "ModelQuestionConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1798,14 +1866,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "createComment",
+              "name": "createTest",
               "description": null,
               "args": [
                 {
@@ -1816,7 +1884,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "CreateCommentInput",
+                      "name": "CreateTestInput",
                       "ofType": null
                     }
                   },
@@ -1827,7 +1895,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelCommentConditionInput",
+                    "name": "ModelTestConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1835,14 +1903,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "updateComment",
+              "name": "updateTest",
               "description": null,
               "args": [
                 {
@@ -1853,7 +1921,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "UpdateCommentInput",
+                      "name": "UpdateTestInput",
                       "ofType": null
                     }
                   },
@@ -1864,7 +1932,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelCommentConditionInput",
+                    "name": "ModelTestConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1872,14 +1940,14 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "deleteComment",
+              "name": "deleteTest",
               "description": null,
               "args": [
                 {
@@ -1890,7 +1958,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "DeleteCommentInput",
+                      "name": "DeleteTestInput",
                       "ofType": null
                     }
                   },
@@ -1901,7 +1969,7 @@
                   "description": null,
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "ModelCommentConditionInput",
+                    "name": "ModelTestConditionInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -1909,7 +1977,7 @@
               ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -1923,7 +1991,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "CreateBlogInput",
+          "name": "CreateQuestionBlockInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -1934,6 +2002,20 @@
                 "kind": "SCALAR",
                 "name": "ID",
                 "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "code",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
               },
               "defaultValue": null
             },
@@ -1958,10 +2040,20 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "ModelBlogConditionInput",
+          "name": "ModelQuestionBlockConditionInput",
           "description": null,
           "fields": null,
           "inputFields": [
+            {
+              "name": "code",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
             {
               "name": "name",
               "description": null,
@@ -1980,7 +2072,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelBlogConditionInput",
+                  "name": "ModelQuestionBlockConditionInput",
                   "ofType": null
                 }
               },
@@ -1994,7 +2086,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelBlogConditionInput",
+                  "name": "ModelQuestionBlockConditionInput",
                   "ofType": null
                 }
               },
@@ -2005,7 +2097,7 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelBlogConditionInput",
+                "name": "ModelQuestionBlockConditionInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -2017,7 +2109,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "UpdateBlogInput",
+          "name": "UpdateQuestionBlockInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -2032,6 +2124,16 @@
                   "name": "ID",
                   "ofType": null
                 }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "code",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
               },
               "defaultValue": null
             },
@@ -2052,7 +2154,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "DeleteBlogInput",
+          "name": "DeleteQuestionBlockInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -2073,7 +2175,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "CreatePostInput",
+          "name": "CreateQuestionInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -2088,7 +2190,21 @@
               "defaultValue": null
             },
             {
-              "name": "title",
+              "name": "questionBlockId",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "correctAnswerId",
               "description": null,
               "type": {
                 "kind": "NON_NULL",
@@ -2102,16 +2218,58 @@
               "defaultValue": null
             },
             {
-              "name": "blogID",
+              "name": "question",
               "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
                 "ofType": {
                   "kind": "SCALAR",
-                  "name": "ID",
+                  "name": "String",
                   "ofType": null
                 }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "INPUT_OBJECT",
+                      "name": "AnswerInput",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "explanation",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
               },
               "defaultValue": null
             }
@@ -2122,22 +2280,43 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "ModelPostConditionInput",
+          "name": "AnswerInput",
           "description": null,
           "fields": null,
           "inputFields": [
             {
-              "name": "title",
+              "name": "id",
               "description": null,
               "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "ModelStringInput",
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "blogID",
+              "name": "answer",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ModelQuestionConditionInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "questionBlockId",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -2147,181 +2326,37 @@
               "defaultValue": null
             },
             {
-              "name": "and",
-              "description": null,
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "ModelPostConditionInput",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "or",
-              "description": null,
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "ModelPostConditionInput",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "not",
+              "name": "correctAnswerId",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelPostConditionInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "UpdatePostInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "id",
-              "description": null,
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "title",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
+                "name": "ModelStringInput",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "blogID",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "DeletePostInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "id",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "CreateCommentInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "id",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "postID",
-              "description": null,
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "content",
-              "description": null,
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "ModelCommentConditionInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "postID",
+              "name": "question",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelIDInput",
+                "name": "ModelStringInput",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "content",
+              "name": "image",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelStringInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "explanation",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -2338,7 +2373,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelCommentConditionInput",
+                  "name": "ModelQuestionConditionInput",
                   "ofType": null
                 }
               },
@@ -2352,7 +2387,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "ModelCommentConditionInput",
+                  "name": "ModelQuestionConditionInput",
                   "ofType": null
                 }
               },
@@ -2363,7 +2398,7 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "ModelCommentConditionInput",
+                "name": "ModelQuestionConditionInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -2375,7 +2410,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "UpdateCommentInput",
+          "name": "UpdateQuestionInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -2394,7 +2429,7 @@
               "defaultValue": null
             },
             {
-              "name": "postID",
+              "name": "questionBlockId",
               "description": null,
               "type": {
                 "kind": "SCALAR",
@@ -2404,7 +2439,55 @@
               "defaultValue": null
             },
             {
-              "name": "content",
+              "name": "correctAnswerId",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "question",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "AnswerInput",
+                    "ofType": null
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "image",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "explanation",
               "description": null,
               "type": {
                 "kind": "SCALAR",
@@ -2420,7 +2503,193 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "DeleteCommentInput",
+          "name": "DeleteQuestionInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "CreateTestInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "id",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "ID",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "finished",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ModelTestConditionInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelIDInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "finished",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelBooleanInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "and",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ModelTestConditionInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "or",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ModelTestConditionInput",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "not",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "ModelTestConditionInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "UpdateTestInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "answers",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "finished",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "DeleteTestInput",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -2445,108 +2714,153 @@
           "description": null,
           "fields": [
             {
-              "name": "onCreateBlog",
+              "name": "onCreateQuestionBlock",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onUpdateBlog",
+              "name": "onUpdateQuestionBlock",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onDeleteBlog",
+              "name": "onDeleteQuestionBlock",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Blog",
+                "name": "QuestionBlock",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onCreatePost",
+              "name": "onCreateQuestion",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onUpdatePost",
+              "name": "onUpdateQuestion",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onDeletePost",
+              "name": "onDeleteQuestion",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
-                "name": "Post",
+                "name": "Question",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onCreateComment",
+              "name": "onCreateTest",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "owner",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onUpdateComment",
+              "name": "onUpdateTest",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "owner",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "onDeleteComment",
+              "name": "onDeleteTest",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "owner",
+                  "description": null,
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
               "type": {
                 "kind": "OBJECT",
-                "name": "Comment",
+                "name": "Test",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -2669,57 +2983,6 @@
           "description": "Built-in Float",
           "fields": null,
           "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "ModelBooleanInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "attributeExists",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "attributeType",
-              "description": null,
-              "type": {
-                "kind": "ENUM",
-                "name": "ModelAttributeTypes",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
@@ -3701,6 +3964,26 @@
           "onField": true
         },
         {
+          "name": "deprecated",
+          "description": null,
+          "locations": ["FIELD_DEFINITION", "ENUM_VALUE"],
+          "args": [
+            {
+              "name": "reason",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": "\"No longer supported\""
+            }
+          ],
+          "onOperation": false,
+          "onFragment": false,
+          "onField": false
+        },
+        {
           "name": "aws_auth",
           "description": "Directs the schema to enforce authorization on a field",
           "locations": ["FIELD_DEFINITION"],
@@ -3753,26 +4036,6 @@
           "description": "Tells the service this field/object has access authorized by sigv4 signing.",
           "locations": ["OBJECT", "FIELD_DEFINITION"],
           "args": [],
-          "onOperation": false,
-          "onFragment": false,
-          "onField": false
-        },
-        {
-          "name": "deprecated",
-          "description": null,
-          "locations": ["FIELD_DEFINITION", "ENUM_VALUE"],
-          "args": [
-            {
-              "name": "reason",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": "\"No longer supported\""
-            }
-          ],
           "onOperation": false,
           "onFragment": false,
           "onField": false

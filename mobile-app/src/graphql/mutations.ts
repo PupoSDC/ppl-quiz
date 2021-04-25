@@ -2,19 +2,23 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createBlog = /* GraphQL */ `
-  mutation CreateBlog(
-    $input: CreateBlogInput!
-    $condition: ModelBlogConditionInput
+export const createQuestionBlock = /* GraphQL */ `
+  mutation CreateQuestionBlock(
+    $input: CreateQuestionBlockInput!
+    $condition: ModelQuestionBlockConditionInput
   ) {
-    createBlog(input: $input, condition: $condition) {
+    createQuestionBlock(input: $input, condition: $condition) {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -25,19 +29,23 @@ export const createBlog = /* GraphQL */ `
     }
   }
 `;
-export const updateBlog = /* GraphQL */ `
-  mutation UpdateBlog(
-    $input: UpdateBlogInput!
-    $condition: ModelBlogConditionInput
+export const updateQuestionBlock = /* GraphQL */ `
+  mutation UpdateQuestionBlock(
+    $input: UpdateQuestionBlockInput!
+    $condition: ModelQuestionBlockConditionInput
   ) {
-    updateBlog(input: $input, condition: $condition) {
+    updateQuestionBlock(input: $input, condition: $condition) {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -48,19 +56,23 @@ export const updateBlog = /* GraphQL */ `
     }
   }
 `;
-export const deleteBlog = /* GraphQL */ `
-  mutation DeleteBlog(
-    $input: DeleteBlogInput!
-    $condition: ModelBlogConditionInput
+export const deleteQuestionBlock = /* GraphQL */ `
+  mutation DeleteQuestionBlock(
+    $input: DeleteQuestionBlockInput!
+    $condition: ModelQuestionBlockConditionInput
   ) {
-    deleteBlog(input: $input, condition: $condition) {
+    deleteQuestionBlock(input: $input, condition: $condition) {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -71,192 +83,153 @@ export const deleteBlog = /* GraphQL */ `
     }
   }
 `;
-export const createPost = /* GraphQL */ `
-  mutation CreatePost(
-    $input: CreatePostInput!
-    $condition: ModelPostConditionInput
+export const createQuestion = /* GraphQL */ `
+  mutation CreateQuestion(
+    $input: CreateQuestionInput!
+    $condition: ModelQuestionConditionInput
   ) {
-    createPost(input: $input, condition: $condition) {
+    createQuestion(input: $input, condition: $condition) {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const updatePost = /* GraphQL */ `
-  mutation UpdatePost(
-    $input: UpdatePostInput!
-    $condition: ModelPostConditionInput
+export const updateQuestion = /* GraphQL */ `
+  mutation UpdateQuestion(
+    $input: UpdateQuestionInput!
+    $condition: ModelQuestionConditionInput
   ) {
-    updatePost(input: $input, condition: $condition) {
+    updateQuestion(input: $input, condition: $condition) {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const deletePost = /* GraphQL */ `
-  mutation DeletePost(
-    $input: DeletePostInput!
-    $condition: ModelPostConditionInput
+export const deleteQuestion = /* GraphQL */ `
+  mutation DeleteQuestion(
+    $input: DeleteQuestionInput!
+    $condition: ModelQuestionConditionInput
   ) {
-    deletePost(input: $input, condition: $condition) {
+    deleteQuestion(input: $input, condition: $condition) {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const createComment = /* GraphQL */ `
-  mutation CreateComment(
-    $input: CreateCommentInput!
-    $condition: ModelCommentConditionInput
+export const createTest = /* GraphQL */ `
+  mutation CreateTest(
+    $input: CreateTestInput!
+    $condition: ModelTestConditionInput
   ) {
-    createComment(input: $input, condition: $condition) {
+    createTest(input: $input, condition: $condition) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const updateComment = /* GraphQL */ `
-  mutation UpdateComment(
-    $input: UpdateCommentInput!
-    $condition: ModelCommentConditionInput
+export const updateTest = /* GraphQL */ `
+  mutation UpdateTest(
+    $input: UpdateTestInput!
+    $condition: ModelTestConditionInput
   ) {
-    updateComment(input: $input, condition: $condition) {
+    updateTest(input: $input, condition: $condition) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const deleteComment = /* GraphQL */ `
-  mutation DeleteComment(
-    $input: DeleteCommentInput!
-    $condition: ModelCommentConditionInput
+export const deleteTest = /* GraphQL */ `
+  mutation DeleteTest(
+    $input: DeleteTestInput!
+    $condition: ModelTestConditionInput
   ) {
-    deleteComment(input: $input, condition: $condition) {
+    deleteTest(input: $input, condition: $condition) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;

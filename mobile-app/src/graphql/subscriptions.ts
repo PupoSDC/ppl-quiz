@@ -2,16 +2,20 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateBlog = /* GraphQL */ `
-  subscription OnCreateBlog {
-    onCreateBlog {
+export const onCreateQuestionBlock = /* GraphQL */ `
+  subscription OnCreateQuestionBlock {
+    onCreateQuestionBlock {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -22,16 +26,20 @@ export const onCreateBlog = /* GraphQL */ `
     }
   }
 `;
-export const onUpdateBlog = /* GraphQL */ `
-  subscription OnUpdateBlog {
-    onUpdateBlog {
+export const onUpdateQuestionBlock = /* GraphQL */ `
+  subscription OnUpdateQuestionBlock {
+    onUpdateQuestionBlock {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -42,16 +50,20 @@ export const onUpdateBlog = /* GraphQL */ `
     }
   }
 `;
-export const onDeleteBlog = /* GraphQL */ `
-  subscription OnDeleteBlog {
-    onDeleteBlog {
+export const onDeleteQuestionBlock = /* GraphQL */ `
+  subscription OnDeleteQuestionBlock {
+    onDeleteQuestionBlock {
       id
+      code
       name
-      posts {
+      questions {
         items {
           id
-          title
-          blogID
+          questionBlockId
+          correctAnswerId
+          question
+          image
+          explanation
           createdAt
           updatedAt
         }
@@ -62,174 +74,135 @@ export const onDeleteBlog = /* GraphQL */ `
     }
   }
 `;
-export const onCreatePost = /* GraphQL */ `
-  subscription OnCreatePost {
-    onCreatePost {
+export const onCreateQuestion = /* GraphQL */ `
+  subscription OnCreateQuestion {
+    onCreateQuestion {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const onUpdatePost = /* GraphQL */ `
-  subscription OnUpdatePost {
-    onUpdatePost {
+export const onUpdateQuestion = /* GraphQL */ `
+  subscription OnUpdateQuestion {
+    onUpdateQuestion {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const onDeletePost = /* GraphQL */ `
-  subscription OnDeletePost {
-    onDeletePost {
+export const onDeleteQuestion = /* GraphQL */ `
+  subscription OnDeleteQuestion {
+    onDeleteQuestion {
       id
-      title
-      blogID
-      blog {
+      questionBlockId
+      correctAnswerId
+      question
+      answers {
         id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
+        answer
       }
-      comments {
-        items {
-          id
-          postID
-          content
-          createdAt
-          updatedAt
-        }
-        nextToken
-      }
+      image
+      explanation
       createdAt
       updatedAt
     }
   }
 `;
-export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment {
-    onCreateComment {
+export const onCreateTest = /* GraphQL */ `
+  subscription OnCreateTest($owner: String!) {
+    onCreateTest(owner: $owner) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment {
-    onUpdateComment {
+export const onUpdateTest = /* GraphQL */ `
+  subscription OnUpdateTest($owner: String!) {
+    onUpdateTest(owner: $owner) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment {
-    onDeleteComment {
+export const onDeleteTest = /* GraphQL */ `
+  subscription OnDeleteTest($owner: String!) {
+    onDeleteTest(owner: $owner) {
       id
-      postID
-      post {
+      questions {
         id
-        title
-        blogID
-        blog {
+        questionBlockId
+        correctAnswerId
+        question
+        answers {
           id
-          name
-          createdAt
-          updatedAt
+          answer
         }
-        comments {
-          nextToken
-        }
+        image
+        explanation
         createdAt
         updatedAt
       }
-      content
+      answers
+      finished
       createdAt
       updatedAt
+      owner
     }
   }
 `;
